@@ -83,6 +83,58 @@ a:hover {
     text-decoration-color: initial;
 }
 
+input[type="text"] {
+    background-color: var(--dark-neutral);
+    border: 0;
+    font-family: "Inconsolata", sans-serif;
+    padding: 5px 0;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--primary);
+    background-color: var(--dark-neutral);
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: var(--primary);
+}
+
+input[type="checkbox"] + label:after {
+    content: "";
+    position: absolute;
+    left: calc(1px + 0.25rem);
+    top: calc(1px + 0.25rem);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--dark-neutral);
+    border-radius: 2px;
+}
+
 .no-scrollbar {
     overflow: hidden;
 }

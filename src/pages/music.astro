@@ -152,12 +152,22 @@ const meta = {
     font-weight: bold;
     width: fit-content;
     padding: 5px;
+    margin: 0;
 }
 
 .see-more::before {
     content: "See Less";
     color: transparent;
-    position: absolute;
+    width: initial;
+    height: initial;
+    top: initial;
+    left: initial;
+    border: 0;
+    background-color: initial;
+}
+
+.see-more::after {
+    display: none;
 }
 
 .see-more:hover {
@@ -175,6 +185,7 @@ const meta = {
 
 .usage-box-toggle:checked ~ .see-more::before {
     color: var(--primary);
+    background-color: transparent;
 }
 
 .usage-box-toggle:checked ~ .see-more:hover::before {
