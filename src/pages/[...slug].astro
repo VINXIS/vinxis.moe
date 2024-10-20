@@ -1,0 +1,47 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Default from "../layouts/Default.astro";
+
+export const getStaticPaths = (async () => {
+    const blog = await getCollection("blog");
+    const notes = await getCollection("notes");
+    const posts = await getCollection("posts");
+
+    const pages = [...blog, ...notes, ...posts];
+    return pages.map(page => {
+        return {
+            params: { slug: `/${page.collection}/${page.slug}` },
+            props: { title: page.id.replace(/\.md$/, ""), page },
+        };
+    });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+
+const title = `${page.collection.charAt(0).toUpperCase() + page.collection.slice(1)} - ${page.id.replace(/\.md$/, "").charAt(0).toUpperCase() + page.id.replace(/\.md$/, "").slice(1)}`;
+const description = page.body.slice(0, 99) + "…";
+
+const meta = {
+    title, 
+    description,
+    ogTitle: title,
+    ogDescription: description,
+    ogType: "website",
+    ogUrl: "https://vinxis.moe",
+    ogSiteName: title,
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: title,
+    twitterDescription: description,
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+---
+<Default meta={meta}>
+    <div class="page">
+        <h1>{title}</h1>
+        <Content />
+    </div>
+</Default>

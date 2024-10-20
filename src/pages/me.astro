@@ -234,10 +234,9 @@ document.addEventListener("astro:page-load", () => {
             // Replace all text with VINXIS
             const container = document.getElementById("drag-container")!;
             const replaceTextInNode = (node: Node) => {
-                if (node.nodeType === Node.TEXT_NODE && node.textContent?.trim()) {
-                    console.log(node.textContent);
+                if (node.nodeType === Node.TEXT_NODE && node.textContent?.trim())
                     node.textContent = node.textContent.replace(/(\p{L}|\d+)+/gu, "VINXIS");
-                } else if (node.hasChildNodes())
+                else if (node.hasChildNodes())
                     node.childNodes.forEach(child => replaceTextInNode(child));
             };
             container.childNodes.forEach(child => replaceTextInNode(child));

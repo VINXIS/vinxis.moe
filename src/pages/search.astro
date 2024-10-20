@@ -1,0 +1,128 @@
+---
+import Default from "../layouts/Default.astro";
+
+const meta = {
+    title: "VINXIS",
+    description: "I make music and other stuff",
+    ogTitle: "VINXIS",
+    ogDescription: "I make music and other stuff",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "VINXIS",
+    twitterDescription: "I make music and other stuff",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+
+import { getCollection } from "astro:content";
+
+const blog = await getCollection("blog");
+const notes = await getCollection("notes");
+const posts = await getCollection("posts");
+
+const pages = [...blog, ...notes, ...posts];
+
+---
+<Default meta={meta}>
+    <div class="page search-page">
+        <div class="search-section">
+            <h1>Search Pages</h1>
+            <span class="small-text">Not exactly optimized currently... will look into it later</span>
+            <br>
+            <br>
+            <input type="text" id="search" placeholder="Search notes..." autocomplete="off" />
+            <div class="page-types">
+                <input type="checkbox" id="blog" checked />
+                <label for="blog">Blog</label>
+                <input type="checkbox" id="notes" checked />
+                <label for="notes">Notes</label>
+                <input type="checkbox" id="posts" checked />
+                <label for="posts">Posts</label>
+            </div>
+            <input type="text" id="searchTags" placeholder="Search tags..." autocomplete="off" />
+        </div>
+        <div id="searchList">
+            {
+                pages.map(async (page) => {
+                    const render = await page.render();
+                    return (
+                        <a href={page.collection + "/" + page.slug}>
+                            <h2>{render.remarkPluginFrontmatter.title}</h2>
+                            <p>{render.remarkPluginFrontmatter.lastModified}</p>
+                        </a>
+                    );
+                })
+            }
+        </div>
+    </div>
+</Default>
+
+<script>
+import { getCollection } from "astro:content";
+import damerauLevenshteinDistance from "../utils/levenshtein";
+
+const distanceCompare = damerauLevenshteinDistance(2);
+
+const blog = await getCollection("blog");
+const notes = await getCollection("notes");
+const posts = await getCollection("posts");
+
+const pages = [...blog, ...notes, ...posts];
+let filteredPages = [...pages];
+let search = "";
+let searchTags = "";
+
+async function updateList () {
+    filteredPages = pages.filter(page => {
+        if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
+        if (searchTags.length > 0 && !page.data.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
+
+        if (!(document.getElementById("blog")! as HTMLInputElement).checked && page.collection === "blog") return false;
+        if (!(document.getElementById("notes")! as HTMLInputElement).checked && page.collection === "notes") return false;
+        if (!(document.getElementById("posts")! as HTMLInputElement).checked && page.collection === "posts") return false;
+
+        return true;
+    });
+
+    document.getElementById("searchList")!.innerHTML = (await Promise.all(filteredPages.map(async (page) => {
+        const render = await page.render();
+        return `<a href="${page.collection}/${page.slug}"><h2>${render.remarkPluginFrontmatter.title}</h2><p>${render.remarkPluginFrontmatter.lastModified}</p></a>`;
+    }))).join("");
+}
+
+document.addEventListener("astro:page-load", () => {
+    document.getElementById("search")!.addEventListener("input", event => {
+        search = (event.target as HTMLInputElement).value.toLowerCase();
+        updateList().catch(console.error);
+    });
+    document.getElementById("search")!.addEventListener("click", e => e.stopPropagation());
+
+    document.getElementById("searchTags")!.addEventListener("input", event => {
+        searchTags = (event.target as HTMLInputElement).value.toLowerCase();
+        updateList().catch(console.error);
+    });
+    document.getElementById("searchTags")!.addEventListener("click", e => e.stopPropagation());
+
+    ["blog", "notes", "posts"].forEach(type => {
+        document.getElementById(type)!.addEventListener("change", () => updateList().catch(console.error));
+        document.getElementById(type)!.addEventListener("click", (e) => e.stopPropagation());
+    });
+});
+</script>
+
+<style>
+    .search-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #searchList {
+        flex: 1;
+    }
+</style>
