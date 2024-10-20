@@ -17,6 +17,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "astro": "^4.16.0",
     "rehype-katex": "^7.0.1",
+    "remark-breaks": "^4.0.0",
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
