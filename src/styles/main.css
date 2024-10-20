@@ -83,6 +83,10 @@ a:hover {
     text-decoration-color: initial;
 }
 
+ul {
+    list-style-position: inside;
+}
+
 input[type="text"] {
     background-color: var(--dark-neutral);
     border: 0;
