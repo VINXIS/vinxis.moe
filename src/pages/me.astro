@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Default from "../layouts/Default.astro";
 import vinxisOrange from "../images/vinxisOrange.png";
+import dateToString from "../utils/dateToString";
 
 const email = "oykxf2@gmail.com";
 const corsaceEmail = "contact@corsace.io";
@@ -22,7 +23,10 @@ const meta = {
     twitterImage: "https://vinxis.moe/metaImage.png",
 };
 
-const currentlyLastUpdated = new Date(1729234020000);
+const currentlyLastUpdated = 1729234020000;
+
+const firstCommit = 1460786460000;
+const latestVersion = 1728521100000;
 
 // For js disabled users
 const birthDate = 909814500000;
@@ -53,23 +57,19 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
                 <br>
                 <p>Not on any <a title="Wikipedia link" href="https://wikipedia.org/wiki/Microblogging">microblogging</a>/<a title="Wikipedia link" href="https://wikipedia.org/wiki/Social_networking_service">social network</a> sites anymore since cohost died; anywhere else I am is listed below</p>
                 <br>
-                <p class="small-text">Site built with <a href="https://astro.build/" target="_blank" title="Astro's website">Astro</a> for optimized and minimal size =)</p>
+                <p class="small-text">Site code can be found <a href="https://github.com/VINXIS/vinxis.moe" target="_blank" title="GitHub Repo">here</a></p>
+                <p class="small-text">Built with <a href="https://astro.build/" target="_blank" title="Astro's website">Astro</a> for optimized and minimal size =)</p>
+                <p class="small-text">First ever update of the site was on {dateToString(firstCommit)}</p>
+                <p class="small-text">Latest version of the site started on {dateToString(latestVersion)}</p>
             </div>
             <div draggable="true" class="draggable">
                 <h3>Currently...</h3>
-                <span class="small-text">Last updated: {new Intl.DateTimeFormat("en-GB", {
-                    year: "numeric",
-                    month: "short",
-                    day: "2-digit",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    hour12: false,
-                }).format(currentlyLastUpdated).replace(",", "")} in your timezone</span>
+                <span class="small-text">Last updated: {dateToString(currentlyLastUpdated)}</span>
                 <br>
                 <br>
                 <div>
                     <h4>Short Term:</h4>
-                    <p>- Trying to finish setting up this site for myself</p>
+                    <p class="bold">- Trying to finish setting up this site for myself</p>
                     <p>- Attempting to release music this month for once</p>
                     <p>- Attempt to make actually good seitan</p>
                     <p>- Working on (and unlikely finish) a music project I started last month</p>

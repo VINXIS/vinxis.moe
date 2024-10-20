@@ -1,10 +1,12 @@
 :root {
+    color-scheme: light dark;
     --primary: #ff6200;
     --secondary: #009aff;
     --analogous1: #ffa600;
     --analogous2: #ff3100;
     --neutral: #7c7c7c;
     --dark-neutral: #333333;
+    --code-bg: #24292e;
 }
 
 /* vietnamese */
@@ -83,8 +85,13 @@ a:hover {
     text-decoration-color: initial;
 }
 
-ul {
+ul, ol {
     list-style-position: inside;
+}
+
+code {
+    background-color: var(--code-bg);
+    padding: 0 2px;
 }
 
 input[type="text"] {
