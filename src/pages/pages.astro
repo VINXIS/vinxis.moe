@@ -71,8 +71,11 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
                 }
             </div>
         </div>
+        <noscript>
+            Javascript is required to use search functionality
+        </noscript>
         <br>
-        <br>    
+        <br>
         <div id="search-list">
             {
                 pages.map((page) => {
@@ -99,8 +102,15 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
             }
         </div>
     </div>
-    <span slot="hidden" class="hidden">Top 10 tags ordered based on frequency</span>
-    <span slot="hidden" class="hidden" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
+    <noscript>
+        <style>
+            .search-section, .hidden-search-info {
+                display: none;
+            }
+        </style>
+    </noscript>
+    <span slot="hidden" class="hidden hidden-search-info">Top 10 tags ordered based on frequency</span>
+    <span slot="hidden" class="hidden hidden-search-info" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
 </Default>
 
 <script>
