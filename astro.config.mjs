@@ -7,6 +7,7 @@ import remarkTitle from "./plugins/remark-title.mjs";
 import remarkMath from "remark-math";
 import remarkBreaks from "remark-breaks";
 import rehypeKatex from "rehype-katex";
+import remarkWikiLink from "remark-wiki-link";
 
 // https://astro.build/config
 export default defineConfig({
@@ -30,6 +31,13 @@ export default defineConfig({
             remarkTitle,
             remarkMath,
             remarkBreaks,
+            [
+                remarkWikiLink,
+                {
+                    pageResolver: (name) => [name.replace(/ /g, "-").toLowerCase()],
+                    hrefTemplate: (permalink) => `../notes/${permalink}`,
+                },
+            ],
         ],
         rehypePlugins: [
             rehypeKatex,
