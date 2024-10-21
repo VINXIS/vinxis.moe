@@ -25,7 +25,7 @@ const posts = await getCollection("posts");
 
 const categoryToColour = {
     blog: "var(--secondary)",
-    notes: "rgb(167 139 250)",
+    notes: "var(--obsidian)",
     posts: "var(--analogous1)",
 };
 
@@ -39,22 +39,18 @@ pages.sort((a, b) => {
     return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
 });
 
-// Tag list sorted by frequency
 const tagDict: Record<string, number> = {};
 pages.forEach(page => {
     page.render.remarkPluginFrontmatter.tags?.forEach((tag: string) => {
         tagDict[tag] = (tagDict[tag] ?? 0) + 1;
     });
 });
-const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).map(([tag]) => tag)]);
+const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).map(([tag]) => tag)].slice(0, 10));
 ---
 <Default meta={meta}>
-    <div class="page">
+    <div class="page search-page">
         <div class="search-section">
             <h1>Search Pages</h1>
-            <span class="small-text">Not exactly optimized currently... will improve later</span>
-            <br>
-            <br>
             <input type="text" id="search" placeholder="Search notes..." autocomplete="off" />
             <div class="page-types">
                 <input type="checkbox" id="blog" checked />
@@ -66,7 +62,6 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
             </div>
             <input type="text" id="search-tags" placeholder="Search tags..." autocomplete="off" />
             <div class="search-tags-list">
-                Order of tags is based on frequency
                 {
                     [...tagList].map(tag => {
                         return (
@@ -77,12 +72,16 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
             </div>
         </div>
         <br>
+        <br>    
         <div id="search-list">
             {
                 pages.map((page) => {
                     return (
                         <a href={page.page.collection + "/" + page.page.slug} style={`color:${categoryToColour[page.page.collection]}; height:100px;`}>
-                            <h2>{page.page.collection} {page.render.remarkPluginFrontmatter.title}</h2>
+                            <div style="display:flex; justify-content:space-between;">
+                                <h2>{page.render.remarkPluginFrontmatter.title}</h2>
+                                <h2>{page.page.collection}</h2>
+                            </div>
                             <div style="display:flex; gap:1rem;">
                                 {
                                     page.render.remarkPluginFrontmatter.tags?.map((tag: string) => {
@@ -100,6 +99,8 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
             }
         </div>
     </div>
+    <span slot="hidden" class="hidden">Top 10 tags ordered based on frequency</span>
+    <span slot="hidden" class="hidden" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
 </Default>
 
 <script>
@@ -155,7 +156,10 @@ document.addEventListener("astro:page-load", async () => {
 
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
             return `<a href="${page.page.collection}/${page.page.slug}" style="color:${categoryToColour[page.page.collection]}; height:100px;">
-                <h2>${page.page.collection} ${page.render.remarkPluginFrontmatter.title}</h2>
+                <div style="display:flex; justify-content:space-between;">
+                    <h2>${page.render.remarkPluginFrontmatter.title}</h2>
+                    <h2>${page.page.collection}</h2>
+                </div>
                 <div style="display:flex; gap:1rem;">
                     ${[...new Set((page.render.remarkPluginFrontmatter.tags ?? []) as string[])].map((tag: string) => {
         return `<div>#${tag}</div>`;
@@ -199,33 +203,36 @@ document.addEventListener("astro:page-load", async () => {
 </script>
 
 <style>
+.search-page {
+    width: fit-content;
+}
 
-    .search-section {
-        width: fit-content;
-    }
+.search-section {
+    width: fit-content;
+}
 
-    .search-tags-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+.search-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-    .search-tag {
-        cursor: pointer;
-        color: var(--secondary);
-        text-decoration-color: transparent;
-    }
+.search-tag {
+    cursor: pointer;
+    color: var(--secondary);
+    text-decoration-color: transparent;
+}
 
-    .search-tag:hover {
-        text-decoration: underline;
-        text-decoration-color: initial;
-    }
+.search-tag:hover {
+    text-decoration: underline;
+    text-decoration-color: initial;
+}
 
-    #search-list {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        width: fit-content;
-        text-transform: capitalize;
-    }
+#search-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-transform: capitalize;
+}
 </style>
