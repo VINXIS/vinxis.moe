@@ -1,8 +1,9 @@
 import { defineConfig } from "astro/config";
 import vercel from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
-import { remarkModifiedTime } from "./plugins/remark-modified-time.mjs";
-import { remarkTitle } from "./plugins/remark-title.mjs";
+import remarkContentTags from "./plugins/remark-content-tags.mjs";
+import remarkModifiedTime from "./plugins/remark-modified-time.mjs";
+import remarkTitle from "./plugins/remark-title.mjs";
 import remarkMath from "remark-math";
 import remarkBreaks from "remark-breaks";
 import rehypeKatex from "rehype-katex";
@@ -24,6 +25,7 @@ export default defineConfig({
     },
     markdown: {
         remarkPlugins: [
+            remarkContentTags,
             remarkModifiedTime,
             remarkTitle,
             remarkMath,

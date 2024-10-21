@@ -12,15 +12,14 @@ export const getStaticPaths = (async () => {
     return pages.map(page => {
         return {
             params: { slug: `/${page.collection}/${page.slug}` },
-            props: { title: page.id.replace(/\.md$/, ""), page },
+            props: { title: `${page.collection} - ${page.data.title ?? page.id.replace(/\.[^/\\.]*$/, "")}`, page },
         };
     });
 }) satisfies GetStaticPaths;
 
-const { page } = Astro.props;
-const { Content } = await page.render();
+const { page, title } = Astro.props;
 
-const title = `${page.collection.charAt(0).toUpperCase() + page.collection.slice(1)} - ${page.id.replace(/\.md$/, "").charAt(0).toUpperCase() + page.id.replace(/\.md$/, "").slice(1)}`;
+const { Content } = await page.render();
 const description = page.body.slice(0, 99) + "…";
 
 const meta = {
@@ -41,8 +40,14 @@ const meta = {
 ---
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">
 <Default meta={meta}>
-    <div class="page">
+    <div class="page post-page">
         <h1>{title}</h1>
         <Content />
     </div>
 </Default>
+
+<style>
+    .post-page h1 {
+        text-transform: capitalize;
+    }
+</style>

@@ -23,14 +23,36 @@ const blog = await getCollection("blog");
 const notes = await getCollection("notes");
 const posts = await getCollection("posts");
 
-const pages = [...blog, ...notes, ...posts];
+const categoryToColour = {
+    blog: "var(--secondary)",
+    notes: "rgb(167 139 250)",
+    posts: "var(--analogous1)",
+};
 
+const pages = await Promise.all([...blog, ...notes, ...posts].map(async page => {
+    return {
+        page,
+        render: await page.render(),
+    };
+}));
+pages.sort((a, b) => {
+    return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
+});
+
+// Tag list sorted by frequency
+const tagDict: Record<string, number> = {};
+pages.forEach(page => {
+    page.render.remarkPluginFrontmatter.tags?.forEach((tag: string) => {
+        tagDict[tag] = (tagDict[tag] ?? 0) + 1;
+    });
+});
+const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).map(([tag]) => tag)]);
 ---
 <Default meta={meta}>
-    <div class="page search-page">
+    <div class="page">
         <div class="search-section">
             <h1>Search Pages</h1>
-            <span class="small-text">Not exactly optimized currently... will look into it later</span>
+            <span class="small-text">Not exactly optimized currently... will improve later</span>
             <br>
             <br>
             <input type="text" id="search" placeholder="Search notes..." autocomplete="off" />
@@ -42,16 +64,36 @@ const pages = [...blog, ...notes, ...posts];
                 <input type="checkbox" id="posts" checked />
                 <label for="posts">Posts</label>
             </div>
-            <input type="text" id="searchTags" placeholder="Search tags..." autocomplete="off" />
+            <input type="text" id="search-tags" placeholder="Search tags..." autocomplete="off" />
+            <div class="search-tags-list">
+                Order of tags is based on frequency
+                {
+                    [...tagList].map(tag => {
+                        return (
+                            <div class="search-tag">#{tag}</div>
+                        );
+                    })
+                }
+            </div>
         </div>
-        <div id="searchList">
+        <br>
+        <div id="search-list">
             {
-                pages.map(async (page) => {
-                    const render = await page.render();
+                pages.map((page) => {
                     return (
-                        <a href={page.collection + "/" + page.slug}>
-                            <h2>{render.remarkPluginFrontmatter.title}</h2>
-                            <p>{render.remarkPluginFrontmatter.lastModified}</p>
+                        <a href={page.page.collection + "/" + page.page.slug} style={`color:${categoryToColour[page.page.collection]}; height:100px;`}>
+                            <h2>{page.page.collection} {page.render.remarkPluginFrontmatter.title}</h2>
+                            <div style="display:flex; gap:1rem;">
+                                {
+                                    page.render.remarkPluginFrontmatter.tags?.map((tag: string) => {
+                                        return (<div>#{tag}</div>);
+                                    })
+                                }
+                            </div>
+                            <div>
+                                <div>Created: {page.render.remarkPluginFrontmatter.created}</div>
+                                <div>Last modified: {page.render.remarkPluginFrontmatter.lastModified}</div>
+                            </div>
                         </a>
                     );
                 })
@@ -64,65 +106,126 @@ const pages = [...blog, ...notes, ...posts];
 import { getCollection } from "astro:content";
 import damerauLevenshteinDistance from "../utils/levenshtein";
 
-const distanceCompare = damerauLevenshteinDistance(2);
+document.addEventListener("astro:page-load", async () => {
 
-const blog = await getCollection("blog");
-const notes = await getCollection("notes");
-const posts = await getCollection("posts");
+    const distanceCompare = damerauLevenshteinDistance(1);
 
-const pages = [...blog, ...notes, ...posts];
-let filteredPages = [...pages];
-let search = "";
-let searchTags = "";
+    const blog = await getCollection("blog");
+    const notes = await getCollection("notes");
+    const posts = await getCollection("posts");
 
-async function updateList () {
-    filteredPages = pages.filter(page => {
-        if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
-        if (searchTags.length > 0 && !page.data.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
+    const categoryToColour = {
+        blog: "var(--secondary)",
+        notes: "rgb(167 139 250)",
+        posts: "var(--analogous1)",
+    };
 
-        if (!(document.getElementById("blog")! as HTMLInputElement).checked && page.collection === "blog") return false;
-        if (!(document.getElementById("notes")! as HTMLInputElement).checked && page.collection === "notes") return false;
-        if (!(document.getElementById("posts")! as HTMLInputElement).checked && page.collection === "posts") return false;
-
-        return true;
+    const pages = [...blog, ...notes, ...posts];
+    let filteredPages = await Promise.all([...pages].map(async page => {
+        return {
+            page,
+            render: await page.render(),
+        };
+    }));
+    filteredPages.sort((a, b) => {
+        return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
     });
+    let search = "";
+    let searchTags = "";
 
-    document.getElementById("searchList")!.innerHTML = (await Promise.all(filteredPages.map(async (page) => {
-        const render = await page.render();
-        return `<a href="${page.collection}/${page.slug}"><h2>${render.remarkPluginFrontmatter.title}</h2><p>${render.remarkPluginFrontmatter.lastModified}</p></a>`;
-    }))).join("");
-}
+    async function updateList () {
+        filteredPages = await Promise.all(pages.filter(page => {
+            if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
+            if (searchTags.length > 0 && !page.data.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
 
-document.addEventListener("astro:page-load", () => {
+            if (!(document.getElementById("blog")! as HTMLInputElement).checked && page.collection === "blog") return false;
+            if (!(document.getElementById("notes")! as HTMLInputElement).checked && page.collection === "notes") return false;
+            if (!(document.getElementById("posts")! as HTMLInputElement).checked && page.collection === "posts") return false;
+
+            return true;
+        }).map(async page => {
+            return {
+                page,
+                render: await page.render(),
+            };
+        }));
+        filteredPages.sort((a, b) => {
+            return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
+        });
+
+        document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
+            return `<a href="${page.page.collection}/${page.page.slug}" style="color:${categoryToColour[page.page.collection]}; height:100px;">
+                <h2>${page.page.collection} ${page.render.remarkPluginFrontmatter.title}</h2>
+                <div style="display:flex; gap:1rem;">
+                    ${[...new Set((page.render.remarkPluginFrontmatter.tags ?? []) as string[])].map((tag: string) => {
+        return `<div>#${tag}</div>`;
+    }).join("")}
+                </div>
+                <div>
+                    <div>Created: ${page.render.remarkPluginFrontmatter.created}</div>
+                    <div>Last modified: ${page.render.remarkPluginFrontmatter.lastModified}</div>
+                </div>
+            </a>`;
+        }).join("");
+    }
     document.getElementById("search")!.addEventListener("input", event => {
         search = (event.target as HTMLInputElement).value.toLowerCase();
         updateList().catch(console.error);
     });
     document.getElementById("search")!.addEventListener("click", e => e.stopPropagation());
 
-    document.getElementById("searchTags")!.addEventListener("input", event => {
-        searchTags = (event.target as HTMLInputElement).value.toLowerCase();
-        updateList().catch(console.error);
-    });
-    document.getElementById("searchTags")!.addEventListener("click", e => e.stopPropagation());
-
     ["blog", "notes", "posts"].forEach(type => {
         document.getElementById(type)!.addEventListener("change", () => updateList().catch(console.error));
         document.getElementById(type)!.addEventListener("click", (e) => e.stopPropagation());
+    });
+
+    document.getElementById("search-tags")!.addEventListener("input", event => {
+        searchTags = (event.target as HTMLInputElement).value.toLowerCase();
+        if (searchTags[0] === "#")
+            searchTags = searchTags.slice(1);
+        
+        updateList().catch(console.error);
+    });
+    document.getElementById("search-tags")!.addEventListener("click", e => e.stopPropagation());
+
+    document.querySelectorAll(".search-tag").forEach(tag => {
+        tag.addEventListener("click", event => {
+            searchTags = (event.target as HTMLElement).textContent!.slice(1).toLowerCase();
+            (document.getElementById("search-tags")! as HTMLInputElement).value = searchTags;
+            updateList().catch(console.error);
+        });
     });
 });
 </script>
 
 <style>
-    .search-page {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+
+    .search-section {
+        width: fit-content;
     }
 
-    #searchList {
+    .search-tags-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-tag {
+        cursor: pointer;
+        color: var(--secondary);
+        text-decoration-color: transparent;
+    }
+
+    .search-tag:hover {
+        text-decoration: underline;
+        text-decoration-color: initial;
+    }
+
+    #search-list {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        text-transform: capitalize;
     }
 </style>

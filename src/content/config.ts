@@ -4,23 +4,24 @@ const blog = defineCollection({
     type: "content",
     schema: z.object({
         title: z.string(),
-        publishDate: z.date(),
-        lastUpdated: z.date(),
         tags: z.array(z.string()),
         image: z.string(),
-        content: z.string(),
     }),
 });
 
 const notes = defineCollection({
     type: "content",
     schema: z.object({
-        // tags: z.array(z.string()),
+        tags: z.array(z.string()).optional(),
+        isObsidianImport: z.boolean().optional(),
     }),
 });
 
 const posts = defineCollection({
     type: "content",
+    schema: z.object({
+        tags: z.array(z.string()).optional(),
+    }),
 });
 
 export const collections = {

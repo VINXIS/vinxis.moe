@@ -1,3 +1,8 @@
+---
+isObsidianImport: true
+created: Wed Apr 13 2022 12:51:44 GMT-0600 (Mountain Daylight Saving Time)
+lastModified: Wed Apr 13 2022 12:56:37 GMT-0600 (Mountain Daylight Saving Time)
+---
 Adam's 2-D Heat Equation provides the ability to calculate the temperature at a point in the weld pool depending on certain factors. The relationship is as follows:
 $$T_p=\frac{1}{\frac{4.13VYg\rho C}{Q} + \frac{1}{T_m - T_0}} + T_0$$
 - $g$ is thickness
