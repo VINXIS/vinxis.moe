@@ -1,0 +1,43 @@
+---
+import Default from "../layouts/Default.astro";
+const meta = {
+    title: "404",
+    description: "Page not found",
+    ogTitle: "404",
+    ogDescription: "Page not found",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "404",
+    twitterDescription: "Page not found",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+
+const isNote = Astro.url.pathname.startsWith("/notes/");
+---
+
+<Default meta={meta}>
+    <div class="page">
+        <h1>404</h1>
+        <noscript>
+            <style>
+                .notfoundtext    {
+                    display: none;
+                }
+            </style>
+            {isNote ? (
+                <p>There is no note with that name. <a href="/pages">View all notes</a> or <a href="/">go back to the homepage</a>.</p>
+            ) : (
+                <p>Page not found. <a href="/">Go back to the homepage</a>.</p>
+            )}
+        </noscript>
+        {isNote ? (
+            <p class="notfoundtext">There is no note with that name. <a href="/pages">View all notes</a> or <a href="javascript:history.back()">go back to the previous page</a>.</p>
+        ) : (
+            <p class="notfoundtext">Page not found. <a href="/">Go back to the homepage</a> or <a href="javascript:history.back()">go back to the previous page</a>.</p>
+        )}
+    </div>
+</Default>
