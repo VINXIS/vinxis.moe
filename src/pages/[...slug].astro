@@ -12,7 +12,7 @@ export const getStaticPaths = (async () => {
     return pages.map(page => {
         return {
             params: { slug: `/${page.collection}/${page.slug}` },
-            props: { title: `${page.collection} - ${page.data.title ?? page.id.replace(/\.[^/\\.]*$/, "")}`, page },
+            props: { title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`, page },
         };
     });
 }) satisfies GetStaticPaths;
