@@ -19,17 +19,9 @@ const meta = {
 
 import { getCollection } from "astro:content";
 
-type collectionName = "blog" | "notes" | "posts";
-
 const blog = await getCollection("blog");
 const notes = await getCollection("notes");
 const posts = await getCollection("posts");
-
-const categoryToColour = {
-    blog: "var(--secondary)",
-    notes: "var(--obsidian)",
-    posts: "var(--analogous1)",
-};
 
 const pages = await Promise.all([...blog, ...notes, ...posts].map(async page => {
     return {
@@ -82,7 +74,7 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
             {
                 pages.map((page) => {
                     return (
-                        <a href={page.page.collection + "/" + page.page.slug} style={`color:${categoryToColour[page.page.collection as collectionName]}; height:100px;`}>
+                        <a href={page.page.collection + "/" + page.page.slug} style={`color:var(--${page.page.collection}); height:100px;`}>
                             <div style="display:flex; justify-content:space-between;">
                                 <h2>{page.render.remarkPluginFrontmatter.title}</h2>
                                 <h2>{page.page.collection}</h2>
@@ -123,17 +115,9 @@ document.addEventListener("astro:page-load", async () => {
 
     const distanceCompare = damerauLevenshteinDistance(1);
 
-    type collectionName = "blog" | "notes" | "posts";
-
     const blog = await getCollection("blog");
     const notes = await getCollection("notes");
     const posts = await getCollection("posts");
-
-    const categoryToColour = {
-        blog: "var(--secondary)",
-        notes: "rgb(167 139 250)",
-        posts: "var(--analogous1)",
-    };
 
     const pages = [...blog, ...notes, ...posts];
     let filteredPages = await Promise.all([...pages].map(async page => {
@@ -169,7 +153,7 @@ document.addEventListener("astro:page-load", async () => {
         });
 
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
-            return `<a href="${page.page.collection}/${page.page.slug}" style="color:${categoryToColour[page.page.collection as collectionName]}; height:100px;">
+            return `<a href="${page.page.collection}/${page.page.slug}" style="color:var(--${page.page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between;">
                     <h2>${page.render.remarkPluginFrontmatter.title}</h2>
                     <h2>${page.page.collection}</h2>

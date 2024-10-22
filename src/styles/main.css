@@ -6,7 +6,10 @@
     --analogous2: #ff3100;
     --neutral: #7c7c7c;
     --dark-neutral: #333333;
-    --obsidian: rgb(167 139 250);
+    --obsidian: #A78BFA;
+    --blog: var(--secondary);
+    --notes: var(--obsidian);
+    --posts: var(--analogous1);
     --code-bg: #24292e;
 }
 
