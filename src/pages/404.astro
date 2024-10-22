@@ -29,13 +29,13 @@ const isNote = Astro.url.pathname.startsWith("/notes/");
                 }
             </style>
             {isNote ? (
-                <p>There is no note with that name. <a href="/pages">View all notes</a> or <a href="/">go back to the homepage</a>.</p>
+                <p>There is no note with that name (yet). <a href="/pages">View all notes</a> or <a href="/">go back to the homepage</a>.</p>
             ) : (
                 <p>Page not found. <a href="/">Go back to the homepage</a>.</p>
             )}
         </noscript>
         {isNote ? (
-            <p class="notfoundtext">There is no note with that name. <a href="/pages">View all notes</a> or <a href="javascript:history.back()">go back to the previous page</a>.</p>
+            <p class="notfoundtext">There is no note with that name (yet). <a href="/pages">View all notes</a> or <a href="javascript:history.back()">go back to the previous page</a>.</p>
         ) : (
             <p class="notfoundtext">Page not found. <a href="/">Go back to the homepage</a> or <a href="javascript:history.back()">go back to the previous page</a>.</p>
         )}

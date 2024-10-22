@@ -22,6 +22,19 @@ const { page, title } = Astro.props;
 const { Content } = await page.render();
 const description = page.body.slice(0, 99) + "…";
 
+const backlinksRes = await fetch(`${Astro.url.origin}/backlinksData.json`);
+const backlinksData: Record<string, { name: string, pageExists: boolean, backlinks: string[] }> = await backlinksRes.json();
+let backlinksPages: {
+    name: string;
+    slug: string;
+}[] = [];
+if (backlinksData[page.slug]) {
+    backlinksData[page.slug]!.backlinks.forEach(backlink => {
+        if (backlinksData[backlink])
+            backlinksPages.push({ name: backlinksData[backlink]!.name, slug: backlink });
+    });
+}
+
 const meta = {
     title, 
     description,
@@ -43,6 +56,20 @@ const meta = {
     <div class="page post-page">
         <h1>{title}</h1>
         <Content />
+        <br>
+        <br>
+        {backlinksPages && backlinksPages.length > 0 ? (
+            <div class="backlinks">
+                <h2>Pages referencing this page:</h2>
+                <ul>
+                    {backlinksPages.map(backlink => (
+                        <li>
+                            <a href={backlink.slug}>{backlink.name}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        ) : null}
     </div>
 </Default>
 
