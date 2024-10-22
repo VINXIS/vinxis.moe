@@ -12,6 +12,7 @@ export default tseslint.config(
             "@typescript-eslint/no-non-null-assertion": "off",
             "@typescript-eslint/explicit-function-return-type": "off",
             "@typescript-eslint/explicit-module-boundary-types": "off",
+            "@typescript-eslint/no-shadow": "error",
             "space-infix-ops": "error",
             "space-before-function-paren": ["error", {
                 "anonymous": "ignore",
