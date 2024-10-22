@@ -210,3 +210,39 @@ input[type="checkbox"] + label:after {
 .strike {
     text-decoration: line-through;
 }
+
+.invalid-internal-link {
+    /* Do not make them clickable or functional */
+    cursor: default;
+    color: var(--neutral);
+    text-decoration: none;
+    position: relative;
+}
+
+.invalid-internal-link:hover {
+    text-decoration: none;
+}
+
+.invalid-internal-link:active {
+    pointer-events: none;
+}
+
+/* A popup that appears on .invalid-internal-link during hover */
+.invalid-internal-link::after {
+    content: "This link does not currently exist.";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--code-bg);
+    color: var(--analogous2);
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.invalid-internal-link:hover::after {
+    opacity: 0.85;
+}

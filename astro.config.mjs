@@ -9,6 +9,12 @@ import remarkBreaks from "remark-breaks";
 import rehypeKatex from "rehype-katex";
 import remarkWikiLink from "remark-wiki-link";
 
+// Gets all content files and create an array of slug strings for the remark wiki link plugin
+const files = import.meta.glob("./src/content/**/*.md");
+const permalinks = [];
+for (const file in files)
+    permalinks.push(file.split("/").pop().replace(".md", "").replace(/ /g, "-").toLowerCase());
+
 // https://astro.build/config
 export default defineConfig({
     output: "static",
@@ -34,8 +40,10 @@ export default defineConfig({
             [
                 remarkWikiLink,
                 {
+                    permalinks,
                     pageResolver: (name) => [name.replace(/ /g, "-").toLowerCase()],
                     hrefTemplate: (permalink) => `../notes/${permalink}`,
+                    newClassName: "invalid-internal-link",
                 },
             ],
         ],
