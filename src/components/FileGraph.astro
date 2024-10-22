@@ -1,0 +1,197 @@
+---
+import type { BasePageInfo, PageLink } from "../utils/pageInfo";
+
+interface SingleFileProps {
+    centralFile: BasePageInfo,
+    backlinks: BasePageInfo[],
+    forwardlinks: PageLink[],
+}
+
+type FileGraphProps = SingleFileProps & { elementStyle: string };
+
+let { centralFile, backlinks, forwardlinks, elementStyle } = Astro.props as FileGraphProps;
+centralFile.name = centralFile.name.replace(/^(blog|notes|posts) - /g, "");
+forwardlinks = forwardlinks.map<PageLink>(forwardlink => ({
+    slug: forwardlink.slug.split("/").pop()!,
+    name: forwardlink.name.replace(/^(blog|notes|posts) - /g, ""),
+    collection: forwardlink.collection,
+}));
+backlinks = backlinks.map(backlink => ({
+    slug: backlink.slug.split("/").pop()!,
+    name: backlink.name.replace(/^(blog|notes|posts) - /g, ""),
+    collection: backlink.collection,
+})).filter(backlink => forwardlinks.findIndex(forwardlink => forwardlink.slug === backlink.slug) === -1);
+---
+
+<file-graph
+    style={elementStyle}
+    data-central-file={JSON.stringify(centralFile)}
+    data-backlinks={JSON.stringify(backlinks)}
+    data-forwardlinks={JSON.stringify(forwardlinks)}
+>
+    {forwardlinks.some(link => !link.collection) && <div class="filegraph-empty-link-toggle">Hide non-existent pages</div>}
+</file-graph>
+
+<script>
+    import * as d3 from "d3";
+    import type { BasePageInfo, PageLink } from "../utils/pageInfo";
+
+    interface noteNode extends d3.SimulationNodeDatum {
+        id: string;
+        label: string;
+        group: string | undefined;
+    }
+
+    const width = 300;
+    const height = 300;
+
+    class FileGraph extends HTMLElement {
+
+        connectedCallback () {
+            const centralFile: BasePageInfo = JSON.parse(this.getAttribute("data-central-file")!);
+            const backlinks: BasePageInfo[] = JSON.parse(this.getAttribute("data-backlinks")!);
+            const forwardlinks: PageLink[] = JSON.parse(this.getAttribute("data-forwardlinks")!);
+
+            // Make nodes and links
+            const nodes: noteNode[] = [
+                { id: centralFile.slug, label: centralFile.name, group: "main" },
+                ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
+                ...backlinks.map(backlink => ({ id: backlink.slug, label: backlink.name, group: backlink.collection })),
+            ]; 
+            const links: {
+                source: string | noteNode;
+                target: string | noteNode;
+            }[] = [
+                ...forwardlinks.map(forwardlink => ({ source: centralFile.slug, target: forwardlink.slug })),
+                ...backlinks.map(backlink => ({ source: backlink.slug, target: centralFile.slug })),
+            ];
+
+            // Set up the SVG
+            const svg = d3.select(this).append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("viewBox", [-width / 2, -height / 2, width, height])
+                .attr("style", `height: ${height * 1.5}px; width: ${width * 1.5}px;`);
+
+            // Set up the simulation
+            const simulation = d3.forceSimulation(nodes)
+                .force("link", d3.forceLink(links)
+                    .id(d => (d as noteNode).id)
+                    .distance(() => Math.random() * 70 + 50)
+                )
+                .force("charge", d3.forceManyBody())
+                .force("x", d3.forceX())
+                .force("y", d3.forceY());
+
+            // Draw the links
+            const link = svg.append("g")
+                .attr("stroke", "var(--neutral)")
+                .attr("stroke-opacity", 0.6)
+                .selectAll("line")
+                .data(links)
+                .join("line")
+                .attr("stroke-width", 2)
+                .attr("style", "transition: none;");
+
+            // Add labels
+            const text = svg.append("g")
+                .selectAll("text")
+                .data(nodes)
+                .join("text")
+                .text(d => d.label)
+                .attr("fill", d => !d.group ? "var(--neutral)" : d.group === "main" ? "var(--primary)" : `var(--${d.group})`)
+                .attr("font-size", 8)
+                .attr("style", "transition: none;");
+
+            // Draw the nodes
+            const node = svg.append("g")
+                .attr("stroke", "var(--dark-neutral)")
+                .attr("stroke-width", 1.5)
+                .selectAll("circle")
+                .data(nodes)
+                .join("circle")
+                .attr("r", 5)
+                .attr("fill", d => !d.group ? "var(--neutral)" : d.group === "main" ? "var(--primary)" : `var(--${d.group})`)
+                .attr("style", d => `transition: none; ${d.group !== "main" && d.group ? "cursor: pointer;" : ""}`)
+                .on("click", click)
+                .call(d3.drag<SVGCircleElement, noteNode>()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended) as any);
+
+            node.append("title")
+                .text(d => d.label);
+
+            // Add the node and link forces to the simulation
+            simulation.on("tick", () => {
+                link
+                    .attr("x1", d => (d.source as noteNode).x!)
+                    .attr("y1", d => (d.source as noteNode).y!)
+                    .attr("x2", d => (d.target as noteNode).x!)
+                    .attr("y2", d => (d.target as noteNode).y!);
+
+                node
+                    .attr("cx", d => d.x!)
+                    .attr("cy", d => d.y!);
+
+                // Calculate text length and adjust position accordingly
+                const textLength = text.nodes().map(nodeText => (nodeText as SVGTextElement).getComputedTextLength());
+                text
+                    .attr("x", (d, i) => d.x! - textLength[i]! / 2)
+                    .attr("y", d => d.y! + 15);
+            });
+
+            function dragstarted (event: any) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+
+            function dragged (event: any) {
+                event.subject.fx = event.x;
+                event.subject.fy = event.y;
+            }
+
+            function dragended (event: any) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+            }
+
+            function click (_: any, d: noteNode) {
+                if (d.group === "main" || !d.group) return;
+                window.location.href = d.id;
+            }
+
+            // Toggle visibility of non-existent pages
+            const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
+            emptyLinkToggle?.addEventListener("click", () => {
+                const nonExistentLinks = node.filter(d => !d.group);
+                const nonExistentText = text.filter(d => !d.group);
+                const nonExistentLink = link.filter(d => !(d.source as noteNode).group || !(d.target as noteNode).group);
+
+                if (nonExistentLinks.style("display") === "none") {
+                    nonExistentLinks.style("display", null);
+                    nonExistentText.style("display", null);
+                    nonExistentLink.style("display", null);
+                    emptyLinkToggle.textContent = "Hide non-existent pages";
+                } else {
+                    nonExistentLinks.style("display", "none");
+                    nonExistentText.style("display", "none");
+                    nonExistentLink.style("display", "none");
+                    emptyLinkToggle.textContent = "Show non-existent pages";
+                }
+            });
+        }
+    }
+
+    customElements.define("file-graph", FileGraph);
+</script>
+
+<style>
+    .filegraph-empty-link-toggle {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+</style>

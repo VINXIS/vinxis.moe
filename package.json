@@ -16,6 +16,7 @@
     "@astrojs/vercel": "^7.8.1",
     "@vercel/speed-insights": "^1.0.12",
     "astro": "^4.16.0",
+    "d3": "^7.9.0",
     "rehype-katex": "^7.0.1",
     "remark-breaks": "^4.0.0",
     "remark-math": "^6.0.0",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",
+    "@types/d3": "^7.4.3",
     "@types/eslint__js": "^8.42.3",
     "eslint": "^9.12.0",
     "eslint-plugin-astro": "^1.2.4",
