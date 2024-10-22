@@ -9,31 +9,41 @@ export const getStaticPaths = (async () => {
     const posts = await getCollection("posts");
 
     const pages = [...blog, ...notes, ...posts];
+
     return pages.map(page => {
+        let backlinks: { slug: string, name: string }[] = [];
+        if (page.collection === "notes") {
+            pages.forEach(targetPage => {
+                targetPage.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
+                    const slug = link.replace(/ /g, "-").toLowerCase();
+                    if (slug === page.slug)
+                        backlinks.push({
+                            slug: `/${targetPage.collection}/${targetPage.slug}`,
+                            name: `${targetPage.collection.charAt(0).toUpperCase() + targetPage.collection.slice(1)} - ${"title" in targetPage.data && targetPage.data.title ? targetPage.data.title : targetPage.id.replace(/\.[^/\\.]*$/, "")}`,
+                        });
+                    return _;
+                });
+            });
+            backlinks = backlinks.filter((backlink, index, self) => self.findIndex(t => t.slug === backlink.slug) === index);
+        }
+
         return {
-            params: { slug: `/${page.collection}/${page.slug}` },
-            props: { title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`, page },
+            params: {
+                slug: `/${page.collection}/${page.slug}`,
+            },
+            props: {
+                title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`,
+                page,
+                backlinks,
+            },
         };
     });
 }) satisfies GetStaticPaths;
 
-const { page, title } = Astro.props;
+const { page, title, backlinks } = Astro.props;
 
 const { Content } = await page.render();
 const description = page.body.slice(0, 99) + "…";
-
-const backlinksRes = await fetch(`${Astro.url.origin}/backlinksData.json`);
-const backlinksData: Record<string, { name: string, pageExists: boolean, backlinks: string[] }> = await backlinksRes.json();
-let backlinksPages: {
-    name: string;
-    slug: string;
-}[] = [];
-if (backlinksData[page.slug]) {
-    backlinksData[page.slug]!.backlinks.forEach(backlink => {
-        if (backlinksData[backlink])
-            backlinksPages.push({ name: backlinksData[backlink]!.name, slug: backlink });
-    });
-}
 
 const meta = {
     title, 
@@ -58,18 +68,19 @@ const meta = {
         <Content />
         <br>
         <br>
-        {backlinksPages && backlinksPages.length > 0 ? (
+        { 
+            backlinks.length > 0 &&
             <div class="backlinks">
                 <h2>Pages referencing this page:</h2>
                 <ul>
-                    {backlinksPages.map(backlink => (
+                    {backlinks.map(backlink => (
                         <li>
                             <a href={backlink.slug}>{backlink.name}</a>
                         </li>
                     ))}
                 </ul>
             </div>
-        ) : null}
+        }
     </div>
 </Default>
 
