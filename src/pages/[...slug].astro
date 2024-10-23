@@ -44,7 +44,7 @@ export const getStaticPaths = (async () => {
             const targetPage = pages.find(target => target.slug === slug); // Find the page it goes to (it may also not exist yet)
             if (!targetPage || targetPage.slug !== page.slug)
                 forwardlinks.push({
-                    slug: `/${page.collection}/${slug}`,
+                    slug: `/${targetPage?.collection}/${slug}`,
                     name: targetPage ? `${targetPage.collection} - ${"title" in targetPage.data && targetPage.data.title ? targetPage.data.title : targetPage.id.replace(/\.[^/\\.]*$/, "")}` : link,
                     collection: targetPage?.collection,
                 });

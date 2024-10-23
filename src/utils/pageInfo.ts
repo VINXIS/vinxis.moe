@@ -9,3 +9,7 @@ export interface BasePageInfo {
 export type PageLink = Omit<BasePageInfo, "collection"> & {
     collection: CollectionKey | undefined;
 }
+
+export interface PageInfo extends PageLink {
+    internalLinks: PageLink[];
+}

@@ -1,5 +1,5 @@
 ---
-import type { BasePageInfo, PageLink } from "../utils/pageInfo";
+import type { BasePageInfo, PageInfo, PageLink } from "../utils/pageInfo";
 
 interface SingleFileProps {
     centralFile: BasePageInfo,
@@ -7,20 +7,46 @@ interface SingleFileProps {
     forwardlinks: PageLink[],
 }
 
-type FileGraphProps = SingleFileProps & { elementStyle: string };
+interface MultiFileProps {
+    files: PageInfo[],
+}
 
-let { centralFile, backlinks, forwardlinks, elementStyle } = Astro.props as FileGraphProps;
-centralFile.name = centralFile.name.replace(/^(blog|notes|posts) - /g, "");
-forwardlinks = forwardlinks.map<PageLink>(forwardlink => ({
-    slug: forwardlink.slug.split("/").pop()!,
-    name: forwardlink.name.replace(/^(blog|notes|posts) - /g, ""),
-    collection: forwardlink.collection,
-}));
-backlinks = backlinks.map(backlink => ({
-    slug: backlink.slug.split("/").pop()!,
-    name: backlink.name.replace(/^(blog|notes|posts) - /g, ""),
-    collection: backlink.collection,
-})).filter(backlink => forwardlinks.findIndex(forwardlink => forwardlink.slug === backlink.slug) === -1);
+type FileGraphProps = (SingleFileProps | MultiFileProps) & { elementStyle: string };
+
+const props = Astro.props as FileGraphProps;
+
+const elementStyle = props.elementStyle;
+
+let centralFile: BasePageInfo | undefined = undefined;
+let backlinks: BasePageInfo[] = [];
+let forwardlinks: PageLink[] = [];
+let files: PageInfo[] = [];
+
+if ("centralFile" in props) {
+    centralFile = props.centralFile;
+    centralFile.name = centralFile.name.replace(/^(blog|notes|posts) - /g, "");
+
+    forwardlinks = props.forwardlinks.map<PageLink>(forwardlink => ({
+        slug: forwardlink.slug.split("/").pop()!,
+        name: forwardlink.name.replace(/^(blog|notes|posts) - /g, ""),
+        collection: forwardlink.collection,
+    }));
+    backlinks = props.backlinks.map<BasePageInfo>(backlink => ({
+        slug: backlink.slug.split("/").pop()!,
+        name: backlink.name.replace(/^(blog|notes|posts) - /g, ""),
+        collection: backlink.collection,
+    })).filter(backlink => forwardlinks.findIndex(forwardlink => forwardlink.slug === backlink.slug) === -1);
+} else
+    files = props.files.map<PageInfo>(file => ({
+        name: file.name.replace(/^(blog|notes|posts) - /g, ""),
+        slug: file.slug,
+        collection: file.collection,
+        internalLinks: file.internalLinks.map<PageLink>(link => ({
+            name: link.name.replace(/^(blog|notes|posts) - /g, ""),
+            slug: link.slug,
+            collection: link.collection,
+        })),
+    }));
 ---
 
 <file-graph
@@ -28,13 +54,14 @@ backlinks = backlinks.map(backlink => ({
     data-central-file={JSON.stringify(centralFile)}
     data-backlinks={JSON.stringify(backlinks)}
     data-forwardlinks={JSON.stringify(forwardlinks)}
+    data-files={JSON.stringify(files)}
 >
-    {forwardlinks.some(link => !link.collection) && <div class="filegraph-empty-link-toggle">Hide non-existent pages</div>}
+    {(forwardlinks.some(link => !link.collection) || files.some(link => !link.collection)) && <div class="filegraph-empty-link-toggle">Hide non-existent pages</div>}
 </file-graph>
 
 <script>
     import * as d3 from "d3";
-    import type { BasePageInfo, PageLink } from "../utils/pageInfo";
+    import type { BasePageInfo, PageInfo, PageLink } from "../utils/pageInfo";
 
     interface noteNode extends d3.SimulationNodeDatum {
         id: string;
@@ -42,36 +69,49 @@ backlinks = backlinks.map(backlink => ({
         group: string | undefined;
     }
 
-    const width = 300;
-    const height = 300;
-
     class FileGraph extends HTMLElement {
 
         connectedCallback () {
-            const centralFile: BasePageInfo = JSON.parse(this.getAttribute("data-central-file")!);
+            const centralFile: BasePageInfo | undefined = JSON.parse(this.getAttribute("data-central-file")!);
             const backlinks: BasePageInfo[] = JSON.parse(this.getAttribute("data-backlinks")!);
             const forwardlinks: PageLink[] = JSON.parse(this.getAttribute("data-forwardlinks")!);
+            const files: PageInfo[] = JSON.parse(this.getAttribute("data-files")!);
 
             // Make nodes and links
-            const nodes: noteNode[] = [
-                { id: centralFile.slug, label: centralFile.name, group: "main" },
-                ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
-                ...backlinks.map(backlink => ({ id: backlink.slug, label: backlink.name, group: backlink.collection })),
-            ]; 
-            const links: {
-                source: string | noteNode;
-                target: string | noteNode;
-            }[] = [
-                ...forwardlinks.map(forwardlink => ({ source: centralFile.slug, target: forwardlink.slug })),
-                ...backlinks.map(backlink => ({ source: backlink.slug, target: centralFile.slug })),
-            ];
+            let nodes: noteNode[] = [];
+            let links: { source: string | noteNode; target: string | noteNode; }[] = [];
+            let width = 1000;
+            let height = 1000;
+
+            if (centralFile) {
+                width = 300;
+                height = 300;
+                nodes = [
+                    { id: centralFile.slug, label: centralFile.name, group: "main" },
+                    ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
+                    ...backlinks.map(backlink => ({ id: backlink.slug, label: backlink.name, group: backlink.collection })),
+                ]; 
+                links = [
+                    ...forwardlinks.map(forwardlink => ({ source: centralFile.slug, target: forwardlink.slug })),
+                    ...backlinks.map(backlink => ({ source: backlink.slug, target: centralFile.slug })),
+                ];
+            } else
+                for (const file of files) {
+                    if (!nodes.find(node => node.id === file.slug))
+                        nodes.push({ id: file.slug, label: file.name, group: file.collection });
+                    for (const link of file.internalLinks) {
+                        if (!nodes.find(node => node.id === link.slug))
+                            nodes.push({ id: link.slug, label: link.name, group: link.collection });
+                        links.push({ source: file.slug, target: link.slug });
+                    }
+                }
 
             // Set up the SVG
             const svg = d3.select(this).append("svg")
                 .attr("width", width)
                 .attr("height", height)
                 .attr("viewBox", [-width / 2, -height / 2, width, height])
-                .attr("style", `height: ${height * 1.5}px; width: ${width * 1.5}px;`);
+                .attr("style", `height: ${height * (centralFile ? 1.5 : 1.2)}px; width: ${width * (centralFile ? 1.5 : 1.2)}px;`);
 
             // Set up the simulation
             const simulation = d3.forceSimulation(nodes)
@@ -165,7 +205,8 @@ backlinks = backlinks.map(backlink => ({
 
             // Toggle visibility of non-existent pages
             const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
-            emptyLinkToggle?.addEventListener("click", () => {
+            emptyLinkToggle?.addEventListener("click", (e) => {
+                e.stopPropagation();
                 const nonExistentLinks = node.filter(d => !d.group);
                 const nonExistentText = text.filter(d => !d.group);
                 const nonExistentLink = link.filter(d => !(d.source as noteNode).group || !(d.target as noteNode).group);
