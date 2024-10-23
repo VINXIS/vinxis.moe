@@ -211,7 +211,7 @@ Peptides/oligopeptides are typically synthetic [[Peptide]]s
 
 The secondary structures of [[Protein]]s consist of the form of shape the [[Peptide]] backbones take.
 
-Loops are typically irregular structures, while [[sheet]]s or [[Helix]]es are normal. Helixes are also right hand twists like DNA.
+Loops are typically irregular structures, while [[Sheet]]s or [[Helix]]es are normal. Helixes are also right hand twists like DNA.
 
 The [[Carbonyl]] oxygen combines with the [[Amine]] 4 residues later, so C1 -> N5.
 
@@ -221,7 +221,7 @@ Only terminal groups in [[Peptide]]s retain charge.
 
 Sheets are typically formed by [[Peptide]]s that are side-by-side. They can be parallel or anti-parallel. Anti-parallel [[Peptide]]s are more straight and slightly more stable.
 
-Loops connect the sheets. Anti-parallel loops are much shorter than Parallel loops. Loops can also be of different shapes as well.
+Loops connect the Sheets. Anti-parallel loops are much shorter than Parallel loops. Loops can also be of different shapes as well.
 
 **A SHEET DOES NOT INCLUDE THE LOOPS**
 
@@ -268,7 +268,7 @@ For [[Protein]]s, a monomer is when it has 1 [[Polypeptide]] chain, not the same
 
 The dissociation constant of a [[Ligand]] for a [[Protein]] is the concentration of the [[Ligand]] when 50% saturation occurs. Higher $K_d$ means more concentration needed, and less affinity of the [[Ligand]] to the protein.
 
-[[Myoglobin]] typically has 1 domain and no sheets. To store $O_2$ it contains a [[Prosthetic Group]] called [[Heme]].
+[[Myoglobin]] typically has 1 domain and no Sheets. To store $O_2$ it contains a [[Prosthetic Group]] called [[Heme]].
 
 [[Heme]] is connected to a Histidine and it is named **His F8**. The oxygen connected to [[Heme]] can also connect to another **distal** Histidine which is notated **His E7**. His E7 helps with avoiding binding with $CO$ by forcing connections with [[Heme]] and His E7.
 
