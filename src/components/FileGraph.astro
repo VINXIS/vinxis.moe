@@ -69,6 +69,17 @@ if ("centralFile" in props) {
         group: string | undefined;
     }
 
+    const cssStyle = getComputedStyle(document.body);
+    const colours = {
+        primary: cssStyle.getPropertyValue("--primary"),
+        secondary: cssStyle.getPropertyValue("--secondary"),
+        neutral: cssStyle.getPropertyValue("--neutral"),
+        "dark-neutral": cssStyle.getPropertyValue("--dark-neutral"),
+        blog: cssStyle.getPropertyValue("--blog"),
+        notes: cssStyle.getPropertyValue("--notes"),
+        posts: cssStyle.getPropertyValue("--posts"),
+    };
+
     class FileGraph extends HTMLElement {
 
         connectedCallback () {
@@ -80,12 +91,12 @@ if ("centralFile" in props) {
             // Make nodes and links
             let nodes: noteNode[] = [];
             let links: { source: string | noteNode; target: string | noteNode; }[] = [];
-            let width = 1000;
-            let height = 1000;
+            let width = 1200;
+            let height = 1200;
 
             if (centralFile) {
-                width = 300;
-                height = 300;
+                width = 450;
+                height = 450;
                 nodes = [
                     { id: centralFile.slug, label: centralFile.name, group: "main" },
                     ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
@@ -106,80 +117,99 @@ if ("centralFile" in props) {
                     }
                 }
 
-            // Set up the SVG
-            const svg = d3.select(this).append("svg")
+            // Set up the Canvas
+            const canvas = d3.select(this).append("canvas")
                 .attr("width", width)
                 .attr("height", height)
-                .attr("viewBox", [-width / 2, -height / 2, width, height])
-                .attr("style", `height: ${height * (centralFile ? 1.5 : 1.2)}px; width: ${width * (centralFile ? 1.5 : 1.2)}px;`);
+                .node()!;
 
-            // Set up the simulation
+            const context = canvas.getContext("2d")!;
+
+            // Variables to store all nodes and links
+            const allNodes = nodes;
+            const allLinks = links;
+
+            // Initialize the simulation
             const simulation = d3.forceSimulation(nodes)
                 .force("link", d3.forceLink(links)
                     .id(d => (d as noteNode).id)
-                    .distance(() => Math.random() * 70 + 50)
+                    .distance(() => Math.random() * 70 + 120)
                 )
                 .force("charge", d3.forceManyBody())
-                .force("x", d3.forceX())
-                .force("y", d3.forceY());
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .on("tick", ticked);
 
-            // Draw the links
-            const link = svg.append("g")
-                .attr("stroke", "var(--neutral)")
-                .attr("stroke-opacity", 0.6)
-                .selectAll("line")
-                .data(links)
-                .join("line")
-                .attr("stroke-width", 2)
-                .attr("style", "transition: none;");
-
-            // Add labels
-            const text = svg.append("g")
-                .selectAll("text")
-                .data(nodes)
-                .join("text")
-                .text(d => d.label)
-                .attr("fill", d => !d.group ? "var(--neutral)" : d.group === "main" ? "var(--primary)" : `var(--${d.group})`)
-                .attr("font-size", 8)
-                .attr("style", "transition: none;");
-
-            // Draw the nodes
-            const node = svg.append("g")
-                .attr("stroke", "var(--dark-neutral)")
-                .attr("stroke-width", 1.5)
-                .selectAll("circle")
-                .data(nodes)
-                .join("circle")
-                .attr("r", 5)
-                .attr("fill", d => !d.group ? "var(--neutral)" : d.group === "main" ? "var(--primary)" : `var(--${d.group})`)
-                .attr("style", d => `transition: none; ${d.group !== "main" && d.group ? "cursor: pointer;" : ""}`)
-                .on("click", click)
-                .call(d3.drag<SVGCircleElement, noteNode>()
+            // Handle dragging
+            d3.select(canvas)
+                .call(d3.drag()
+                    .container(canvas)
+                    .subject(dragsubject)
                     .on("start", dragstarted)
                     .on("drag", dragged)
                     .on("end", dragended) as any);
 
-            node.append("title")
-                .text(d => d.label);
+            function ticked () {
+                context.clearRect(0, 0, width, height);
 
-            // Add the node and link forces to the simulation
-            simulation.on("tick", () => {
-                link
-                    .attr("x1", d => (d.source as noteNode).x!)
-                    .attr("y1", d => (d.source as noteNode).y!)
-                    .attr("x2", d => (d.target as noteNode).x!)
-                    .attr("y2", d => (d.target as noteNode).y!);
+                // Draw links
+                context.beginPath();
+                context.strokeStyle = "rgba(124, 124, 124, 0.6)";
+                context.lineWidth = 4;
+                links.forEach(drawLink);
+                context.stroke();
 
-                node
-                    .attr("cx", d => d.x!)
-                    .attr("cy", d => d.y!);
+                // Draw nodes
+                nodes.forEach(drawNode);
 
-                // Calculate text length and adjust position accordingly
-                const textLength = text.nodes().map(nodeText => (nodeText as SVGTextElement).getComputedTextLength());
-                text
-                    .attr("x", (d, i) => d.x! - textLength[i]! / 2)
-                    .attr("y", d => d.y! + 15);
-            });
+                // Draw labels
+                nodes.forEach(drawLabel);
+            }
+
+            function drawLink (d: any) {
+                context.moveTo(d.source.x, d.source.y);
+                context.lineTo(d.target.x, d.target.y);
+            }
+
+            function drawNode (d: any) {
+                context.beginPath();
+                context.fillStyle = getNodeColor(d);
+                context.arc(d.x, d.y, 10, 0, 2 * Math.PI);
+                context.fill();
+                context.strokeStyle = colours["dark-neutral"];
+                context.lineWidth = 3;
+                context.stroke();
+            }
+
+            function drawLabel (d: any) {
+                context.fillStyle = getNodeColor(d);
+                context.font = "16px Inconsolata";
+                const textLength = context.measureText(d.label).width;
+                context.fillText(d.label, d.x - textLength / 2, d.y + 25);
+            }
+
+            function getNodeColor (d: any) {
+                return !d.group
+                    ? colours.neutral
+                    : d.group === "main"
+                        ? colours.primary
+                        : colours[d.group as "blog" | "notes" | "posts"];
+            }
+
+            function dragsubject (event: any) {
+                const [x, y] = d3.pointer(event, canvas);
+                let subject = null;
+                let minDistance = Infinity;
+                for (const d of nodes) {
+                    const dx = x - d.x!;
+                    const dy = y - d.y!;
+                    const distance = dx * dx + dy * dy;
+                    if (distance < minDistance && distance < 100) {
+                        minDistance = distance;
+                        subject = d;
+                    }
+                }
+                return subject;
+            }
 
             function dragstarted (event: any) {
                 if (!event.active) simulation.alphaTarget(0.3).restart();
@@ -198,31 +228,73 @@ if ("centralFile" in props) {
                 event.subject.fy = null;
             }
 
-            function click (_: any, d: noteNode) {
-                if (d.group === "main" || !d.group) return;
-                window.location.href = d.id;
-            }
+            // Handle click events
+            canvas.addEventListener("click", function(event) {
+                const [x, y] = d3.pointer(event, canvas);
+                for (const d of nodes) {
+                    const dx = x - d.x!;
+                    const dy = y - d.y!;
+                    if (dx * dx + dy * dy < 100) { // 10px radius
+                        if (d.group === "main" || !d.group) return;
+                        window.location.href = d.id;
+                        break;
+                    }
+                }
+            });
+
+            // Change cursor to pointer when mouse is over nodes
+            canvas.addEventListener("mousemove", function(event) {
+                const [x, y] = d3.pointer(event, canvas);
+                for (const d of nodes) {
+                    const dx = x - d.x!;
+                    const dy = y - d.y!;
+                    if (dx * dx + dy * dy < 100) { // 10px radius
+                        if (d.group === "main" || !d.group) continue;
+                        canvas.style.cursor = "pointer";
+                        return;
+                    }
+                }
+                canvas.style.cursor = "default";
+            });
+
+            // // Zoom in and out at the mouse position
+            // let zoom = 1;
+            // canvas.addEventListener("wheel", function(event) {
+            //     event.preventDefault();
+            //     const [x, y] = d3.pointer(event, canvas);
+            //     const delta = event.deltaY;
+            //     zoom = delta > 0 ? zoom * 0.9 : zoom * 1.1;
+            //     simulation.force
+            // });
 
             // Toggle visibility of non-existent pages
             const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
+            let showNonExistent = true;
+
             emptyLinkToggle?.addEventListener("click", (e) => {
                 e.stopPropagation();
-                const nonExistentLinks = node.filter(d => !d.group);
-                const nonExistentText = text.filter(d => !d.group);
-                const nonExistentLink = link.filter(d => !(d.source as noteNode).group || !(d.target as noteNode).group);
-
-                if (nonExistentLinks.style("display") === "none") {
-                    nonExistentLinks.style("display", null);
-                    nonExistentText.style("display", null);
-                    nonExistentLink.style("display", null);
-                    emptyLinkToggle.textContent = "Hide non-existent pages";
-                } else {
-                    nonExistentLinks.style("display", "none");
-                    nonExistentText.style("display", "none");
-                    nonExistentLink.style("display", "none");
-                    emptyLinkToggle.textContent = "Show non-existent pages";
-                }
+                showNonExistent = !showNonExistent;
+                emptyLinkToggle.textContent = showNonExistent
+                    ? "Hide non-existent pages"
+                    : "Show non-existent pages";
+                updateVisibility();
+                simulation.nodes(nodes);
+                simulation.force("link", d3.forceLink(links).id(d => (d as noteNode).id).distance(() => Math.random() * 70 + 120));
+                simulation.alpha(1).restart();
             });
+
+            function updateVisibility () {
+                if (showNonExistent) {
+                    nodes = allNodes;
+                    links = allLinks;
+                } else {
+                    nodes = allNodes.filter(d => d.group);
+                    const nodeIds = new Set(nodes.map(d => d.id));
+                    links = allLinks.filter(
+                        d => nodeIds.has((d.source as noteNode).id) && nodeIds.has((d.target as noteNode).id)
+                    );
+                }
+            }
         }
     }
 
