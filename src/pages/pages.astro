@@ -81,8 +81,14 @@ pageInfos.forEach(pageInfo => {
 <Default meta={meta}>
     <div class="page search-page">
         <div class="search-section">
-            <h1>Search Pages</h1>
             <FileGraph elementStyle="position: absolute; top: 10rem;right: 5rem;" files={pageInfos} />
+            <h1>Search Pages</h1>
+            <div class="rss-list">
+                <a href="rss.xml">RSS (All)</a>
+                <a href="rss_blog.xml">RSS (Blog)</a>
+                <a href="rss_notes.xml">RSS (Notes)</a>
+                <a href="rss_posts.xml">RSS (Posts)</a>
+            </div>
             <input type="text" id="search" placeholder="Search notes..." autocomplete="off" />
             <div class="page-types">
                 <input type="checkbox" id="blog" checked />

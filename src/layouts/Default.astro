@@ -40,6 +40,30 @@ const { meta } = Astro.props as { meta: MetaProps };
         {meta.twitterTitle && <meta name="twitter:title" content={meta.twitterTitle} />}
         {meta.twitterDescription && <meta name="twitter:description" content={meta.twitterDescription} />}
         {meta.twitterImage && <meta name="twitter:image" content={meta.twitterImage} />}
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS"
+            href={new URL("rss.xml", Astro.site)}
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS - Blog"
+            href={new URL("rss_blog.xml", Astro.site)}
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS - Notes"
+            href={new URL("rss_notes.xml", Astro.site)}
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS - Posts"
+            href={new URL("rss_posts.xml", Astro.site)}
+        />
         <ViewTransitions />
         <SpeedInsights />
     </head>
