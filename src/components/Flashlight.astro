@@ -31,9 +31,7 @@
             mouseX = event.touches[0]!.clientX;
             mouseY = event.touches[0]!.clientY;
         });
-        document.addEventListener("touchend", (event) => {
-            mouseX = event.touches[0]!.clientX;
-            mouseY = event.touches[0]!.clientY;
+        document.addEventListener("touchend", () => {
             if (disabled)
                 return;
             gray = 0;
