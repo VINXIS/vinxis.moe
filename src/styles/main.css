@@ -93,6 +93,10 @@ ul, ol {
     list-style-position: inside;
 }
 
+ul ul, ul ol, ol ul, ol ol {
+    margin-left: 1rem;
+}
+
 table {
     border-spacing: 0;
 }
