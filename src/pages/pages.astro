@@ -120,7 +120,7 @@ pageInfos.forEach(pageInfo => {
                     return (
                         <a href={page.page.collection + "/" + page.page.slug} style={`color:var(--${page.page.collection}); height:100px;`}>
                             <div style="display:flex; justify-content:space-between; gap:1rem;">
-                                <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{page.render.remarkPluginFrontmatter.title}</h2>
+                                <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title={page.render.remarkPluginFrontmatter.title}>{page.render.remarkPluginFrontmatter.title}</h2>
                                 <h2>{page.page.collection}</h2>
                             </div>
                             <div style="display:flex; gap:1rem;">
@@ -199,7 +199,7 @@ document.addEventListener("astro:page-load", async () => {
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
             return `<a href="${page.page.collection}/${page.page.slug}" style="color:var(--${page.page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between; gap:1rem;">
-                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${page.render.remarkPluginFrontmatter.title}</h2>
+                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.render.remarkPluginFrontmatter.title}>${page.render.remarkPluginFrontmatter.title}</h2>
                     <h2>${page.page.collection}</h2>
                 </div>
                 <div style="display:flex; gap:1rem;">
