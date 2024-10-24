@@ -106,22 +106,17 @@ const meta = {
             </div>
         }
     </div>
-    <FileGraph elementStyle="position: absolute; top: 10rem;right: 5rem;" centralFile={{slug: page.slug, name: title }} backlinks={backlinks} forwardlinks={forwardlinks} />
+    <FileGraph elementStyle="position: absolute; top:10rem; right:5rem;" centralFile={{slug: page.slug, name: title }} backlinks={backlinks} forwardlinks={forwardlinks} />
 </Default>
 
 <style>
 
     .post-page {
         position: relative;
-        width: calc(100% - 10rem - 450px);
-    }
-
-    .post-graph {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 300px;
-        height: 300px;
+        min-width: 250px;
+        @media (min-width: 860px) { /* Width of the page will become the minimum allowed (250px) */
+            width: calc(100% - 10rem - 450px);
+        }
     }
 
     .post-page h1, .post-backlink {

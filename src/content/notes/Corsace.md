@@ -39,9 +39,7 @@ Some planned features in my head
 	- [ ] base salary for head staff
 	- [ ] go on from there 
 - [ ] expansion outside of osu!
-	- [ ] not sure? 
-	- [ ] maybe help with [[The Requirement]]
-		- [ ] political party
+	- [ ] not sure?
 
 # Tasks
 I forgot to continue I've been so tired all day
@@ -55,5 +53,4 @@ I forgot to continue I've been so tired all day
 - [ ] #task check up on sponsors
 - [ ] #task create zip generator for mappacks
 - [ ] trim node_modules in [[Corsace]]
-- [ ] look more into [[The Requirement]]
 - [ ] start planning stuff for [[The Story]]

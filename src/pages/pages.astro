@@ -81,7 +81,7 @@ pageInfos.forEach(pageInfo => {
 <Default meta={meta}>
     <div class="page search-page">
         <div class="search-section">
-            <FileGraph elementStyle="position: absolute; top: 10rem;right: 5rem;" files={pageInfos} />
+            <FileGraph elementStyle="position:absolute; top:10rem; right:5rem; z-index:-1;" files={pageInfos} />
             <h1>Search Pages</h1>
             <div class="rss-list">
                 <a href="rss.xml">RSS (All)</a>
@@ -120,7 +120,7 @@ pageInfos.forEach(pageInfo => {
                     return (
                         <a href={page.page.collection + "/" + page.page.slug} style={`color:var(--${page.page.collection}); height:100px;`}>
                             <div style="display:flex; justify-content:space-between; gap:1rem;">
-                                <h2>{page.render.remarkPluginFrontmatter.title}</h2>
+                                <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{page.render.remarkPluginFrontmatter.title}</h2>
                                 <h2>{page.page.collection}</h2>
                             </div>
                             <div style="display:flex; gap:1rem;">
@@ -199,7 +199,7 @@ document.addEventListener("astro:page-load", async () => {
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
             return `<a href="${page.page.collection}/${page.page.slug}" style="color:var(--${page.page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between; gap:1rem;">
-                    <h2>${page.render.remarkPluginFrontmatter.title}</h2>
+                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${page.render.remarkPluginFrontmatter.title}</h2>
                     <h2>${page.page.collection}</h2>
                 </div>
                 <div style="display:flex; gap:1rem;">
@@ -246,11 +246,11 @@ document.addEventListener("astro:page-load", async () => {
 
 <style>
 .search-page {
-    width: fit-content;
 }
 
 .search-section {
     width: fit-content;
+    background-color: var(--dark-neutral);
 }
 
 .search-tags-list {
@@ -271,10 +271,10 @@ document.addEventListener("astro:page-load", async () => {
 }
 
 #search-list {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: fit-content;
     text-transform: capitalize;
+    background-color: var(--dark-neutral);
 }
 </style>

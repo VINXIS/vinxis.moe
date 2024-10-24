@@ -83,20 +83,31 @@ if ("centralFile" in props) {
     class FileGraph extends HTMLElement {
 
         connectedCallback () {
+
             const centralFile: BasePageInfo | undefined = JSON.parse(this.getAttribute("data-central-file")!);
             const backlinks: BasePageInfo[] = JSON.parse(this.getAttribute("data-backlinks")!);
             const forwardlinks: PageLink[] = JSON.parse(this.getAttribute("data-forwardlinks")!);
             const files: PageInfo[] = JSON.parse(this.getAttribute("data-files")!);
 
+            if (window.innerWidth < 1150 && !centralFile)
+                return;
+            else if (window.innerWidth < 860 && centralFile) { // remove all position styling if centralFile is present
+                this.style.removeProperty("position");
+                this.style.removeProperty("top");
+                this.style.removeProperty("left");
+                this.style.removeProperty("right");
+                this.style.removeProperty("bottom");
+            }
+
             // Make nodes and links
             let nodes: noteNode[] = [];
             let links: { source: string | noteNode; target: string | noteNode; }[] = [];
-            let width = 1200;
-            let height = 1200;
+            let width = window.innerWidth - 720;
+            let height = window.innerWidth - 720;
 
             if (centralFile) {
-                width = 450;
-                height = 450;
+                width = Math.min(window.innerWidth, 450);
+                height = Math.min(window.innerWidth, 450);
                 nodes = [
                     { id: centralFile.slug, label: centralFile.name, group: "main" },
                     ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
@@ -158,10 +169,8 @@ if ("centralFile" in props) {
                 links.forEach(drawLink);
                 context.stroke();
 
-                // Draw nodes
+                // Draw nodes and labels
                 nodes.forEach(drawNode);
-
-                // Draw labels
                 nodes.forEach(drawLabel);
             }
 
