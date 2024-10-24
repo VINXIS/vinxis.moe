@@ -88,10 +88,12 @@ if ("centralFile" in props) {
             const backlinks: BasePageInfo[] = JSON.parse(this.getAttribute("data-backlinks")!);
             const forwardlinks: PageLink[] = JSON.parse(this.getAttribute("data-forwardlinks")!);
             const files: PageInfo[] = JSON.parse(this.getAttribute("data-files")!);
+            const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
 
-            if (window.innerWidth < 1150 && !centralFile)
+            if (window.innerWidth < 1150 && !centralFile) {
+                emptyLinkToggle?.remove();
                 return;
-            else if (window.innerWidth < 860 && centralFile) { // remove all position styling if centralFile is present
+            } else if (window.innerWidth < 860 && centralFile) { // remove all position styling if centralFile is present
                 this.style.removeProperty("position");
                 this.style.removeProperty("top");
                 this.style.removeProperty("left");
@@ -277,7 +279,6 @@ if ("centralFile" in props) {
             // });
 
             // Toggle visibility of non-existent pages
-            const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
             let showNonExistent = true;
 
             emptyLinkToggle?.addEventListener("click", (e) => {

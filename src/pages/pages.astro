@@ -80,8 +80,8 @@ pageInfos.forEach(pageInfo => {
 ---
 <Default meta={meta}>
     <div class="page search-page">
+        <FileGraph elementStyle="position:absolute; top:10rem; right:5rem;" files={pageInfos} />
         <div class="search-section">
-            <FileGraph elementStyle="position:absolute; top:10rem; right:5rem; z-index:-1;" files={pageInfos} />
             <h1>Search Pages</h1>
             <div class="rss-list">
                 <a href="rss.xml">RSS (All)</a>
