@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Default from "../layouts/Default.astro";
 import vinxisOrange from "../images/vinxisOrange.png";
 import dateToString from "../utils/dateToString";
+import { execSync } from "child_process";
 
 const email = "oykxf2@gmail.com";
 const corsaceEmail = "contact@corsace.io";
@@ -27,6 +28,8 @@ const currentlyLastUpdated = 1729748819000;
 
 const firstCommit = 1460786460000;
 const latestVersion = 1728521100000;
+const latestCommitHash = execSync("git rev-parse HEAD").toString().trim();
+const latestCommitDate = new Date(parseInt(execSync(`git show -s --format=%ct ${latestCommitHash}`).toString().trim()) * 1000);
 
 // For js disabled users
 const birthDate = 909814500000;
@@ -58,6 +61,7 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
                 <p>Not on any <a title="Wikipedia link" href="https://wikipedia.org/wiki/Microblogging">microblogging</a>/<a title="Wikipedia link" href="https://wikipedia.org/wiki/Social_networking_service">social network</a> sites anymore since cohost died; anywhere else I am is listed below</p>
                 <br>
                 <p class="small-text">Site code can be found <a href="https://github.com/VINXIS/vinxis.moe" target="_blank" title="GitHub Repo">here</a></p>
+                <p class="small-text">Last site update: <a href={`https://github.com/VINXIS/vinxis.moe/commit/${latestCommitHash}`} target="_blank"><code>{latestCommitHash.slice(0,7)}</code></a> {dateToString(latestCommitDate)}</p>
                 <p class="small-text">Built with <a href="https://astro.build/" target="_blank" title="Astro's website">Astro</a> for optimized and minimal size =)</p>
                 <p class="small-text">First ever update of the site was on {dateToString(firstCommit)}</p>
                 <p class="small-text">Latest version of the site started on {dateToString(latestVersion)}</p>
@@ -193,14 +197,14 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
         </div>
     </div>
     <span slot="hidden" class="hidden">idgaf/any</span>
-    <span slot="hidden" class="hidden draggable-info" style="top:8rem; left:2rem; padding:3rem;">The sections below are draggable!</span>
+    <span slot="hidden" class="hidden draggable-info" style="top:8rem; left:2rem; padding:2rem;">The sections below are draggable!</span>
     <noscript>
         <style>
             .draggable-info {
                 display: none;
             }
         </style>
-        <span slot="hidden" class="hidden" style="top:8rem; left:2rem; padding:3rem;">The sections below are draggable when javascript is enabled!</span>
+        <span slot="hidden" class="hidden" style="top:8rem; left:2rem; padding:2rem;">The sections below are draggable when javascript is enabled!</span>
     </noscript>
     <span slot="hidden" class="hidden" style="top:initial; left:initial; bottom:0; position:fixed; max-height:2.5rem;"><a href="https://youtu.be/_twR_GdoVfk" target="_blank">skibidi toilet ended my 5 five year long relationship So to give a little background info, I love watching youtube shorts, I binge watch them. On average, I spend about 8 hours daily watching shorts, it's my guilty pleasure. No one knows about this, as I keep it a good secret. One day, when I was meant to be at school, I was watching some shorts. My mum came in and was shocked. So she didn't see what I was doing, I hid my phone under my pillow and told her to leave because I was having a wank. I got away with it, but the same day, I was around my GF's house, and we were watching a movie. I was watching shorts the whole time, and I was so sneaky, she didn't notice. She was trying to make advances on me and she put her hand on my thigh. I didn't think much of it and kept scrolling. She noticed that I was watching youtube shorts when I was watching ''skibidi toilet 58 (fanmade)'' and suddenly my phone's volume went up to the maximum out of nowhere (the volume button on my phone has been broken for like a month now.). She immediately took her hand off of my thigh and screamed ''ARE YOU WATCHING FUCKING SKIBIDI TOILET?!'' and, I'll spare you the details, but I'm currently sitting on her porch, bawling my fucking eyes out. I'm not sure if I'll ever recover from this, but atleast I have youtube shorts.</a></span>
     <span slot="hidden" class="hidden" style="top:5rem; left:50%; transform:translateX(-50%);">Quite jealous of people who find any form of solace with pseudoscientific identifiers, birthdays, characters, astrology, etc...</span>
