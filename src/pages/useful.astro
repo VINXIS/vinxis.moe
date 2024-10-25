@@ -1,0 +1,32 @@
+---
+import Default from "../layouts/Default.astro";
+import { Content } from "./useful.md";
+
+const meta = {
+    title: "Useful Content",
+    ogTitle: "Useful Content",
+    description: "A list of useful links and stuff for various purposes",
+    ogDescription: "A list of useful links and stuff for various purposes",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "Useful Links",
+    twitterDescription: "A list of useful links and stuff for various purposes",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+---
+
+<Default meta={meta}>
+    <div class="page">
+        <h1>
+            Useful Content
+        </h1>
+        <span class="small-text">Work in Progress</span>
+        <br>
+        <span class="small-text">If you are looking for my own links for contacting/seeing where I am, you can find them at the bottom/bottom right <a href="/me">here</a></span>
+        <Content />
+    </div>
+</Default>

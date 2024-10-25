@@ -209,13 +209,9 @@ input[type="checkbox"] + label:after {
     color: var(--analogous1);
 }
 
-.bold {
+.bold, strong {
     font-weight: bold;
     color: var(--analogous2);
-}
-
-.strike {
-    text-decoration: line-through;
 }
 
 .invalid-internal-link {
