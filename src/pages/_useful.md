@@ -8,6 +8,8 @@ Highly recommend getting these if u touch a computer
   - [Guide if you are on Linux](https://github.com/ShareX/ShareX/issues/6531)
   - There is quite literally no reason to use any other sharing tool, especially for images
     - If you really don't want to bother with that guide cuz ur a noob in using computers or something (why are u on a linux OS then), then u could use [Flameshot](https://flameshot.org)... very powerful, but still doesnt compete with ShareX
+- [Bitwarden](https://bitwarden.com) - Super simple, streamlined, free, and open source password manager that works and syncs cross-platform
+  - If ur good with computers, can also be self hosted
 - [ActivityWatch](https://activitywatch.net) - Automated time tracker that fully runs locally, and is highly customizable to track ur computer use however way u want to
 - [RapidTables](https://www.rapidtables.com) - Exhaustive set of tools for web, day to day online tasks, math, science, engineering, misc. calculators, converters, and more
   - [Knowledge Walls](https://tools.knowledgewalls.com/) - Similar to RapidTables, but with tools more focused towards files and programming
@@ -31,7 +33,8 @@ Highly recommend getting these if u touch a computer
 - [Avidemux](https://avidemux.sourceforge.net/) - Simple video editor that's good for quick cutting/clipping
 - [OBS](https://obsproject.com/) - Open Broadcaster Software, THE go to for streaming or recording **SUPER USEFUL**
 - [Ableton Live](https://www.ableton.com) - Digital Audio Workstation (DAW), in other words, music production software (this is the one I use) **SUPER USEFUL**
-- [LMMS](https://lmms.io) - A decent alternative to Ableton Live with a pretty good set of features to make music in if you need something free instead
+  - [LMMS](https://lmms.io) - A decent alternative to Ableton Live with a pretty good set of features to make music in if you need something free instead
+  - [Musescore](https://musescore.com) - Another free and open source alternative, but more focused on sheet music/notation
 - [LovelyComposer](https://1oogames.itch.io/lovely-composer) - Chiptune music creation tool inspired by Mario Paint Composer
 - [Furnace](https://github.com/tildearrow/furnace/releases) - Super robust chiptune music creation tool
   - [FamiStudio](https://famistudio.org/) - NES-focused music creation tool, more user-friendly and easier to get into (especially if u dont code or know what the fuck GitHub is)
@@ -47,6 +50,7 @@ Highly recommend getting these if u touch a computer
 - [Every Noise at Once](https://everynoise.com) - A map of music genres and artists (RIP updates cuz the guy got fired from Spotify but it's still up) **SUPER USEFUL**
 - [RateYourMusic](https://rateyourmusic.com) - Music discovery and reviews
   - [Album of the Year](https://www.albumoftheyear.org) - A smaller site with basically the same functionality
+  - [Name Your Price Essentials](https://rateyourmusic.com/list/lospollitoz/name-your-price-essentials-free-albums/) - List of free music from Bandcamp that's rated highly on RYM
 - [Letterboxd](https://letterboxd.com) - Movie discovery and reviews
 - [Discogs](https://www.discogs.com) - Music database and marketplace (good for vinyls)
 - [MusicBrainz](https://musicbrainz.org) - Music database and (usually) comprehensive artist/music metadata
@@ -74,6 +78,7 @@ Highly recommend getting these if u touch a computer
 - [ShareX](https://getsharex.com) - Has a super robust capturing + editor system (even includes automation features) **SUPER USEFUL**
 - [Ezgif](https://ezgif.com/) - Absolutely goated online GIF editor with literally every gif editing feature ever **SUPER USEFUL**
 - [ffmpeg](https://ffmpeg.org) - It does images too! (Don't need ImageMagick)
+- [Photomosh](https://photomosh.com) - Glitch art generation site
 - [ExifTool](https://exiftool.org) - Metadata editor
 - [waifu2x](https://www.waifu2x.net/) - OG Image upscaler (and noise reduction)
   - [unlimted waifu2x](https://unlimited.waifu2x.net/) - waifu2x that runs in browser instead (more rendering options)
@@ -85,7 +90,6 @@ Highly recommend getting these if u touch a computer
 ### Drawing
 - [Inkscape](https://inkscape.org) - Illustrating and vector graphics
 - [Krita](https://krita.org) - Digital art and drawing (better than GIMP or Paint.NET for drawing)
-- [Photomosh](https://photomosh.com) - Glitch art generation site
 - [Aseprite](https://www.aseprite.org) - Pixel art and animation
 <br>
 <br>
@@ -100,7 +104,7 @@ Highly recommend getting these if u touch a computer
 <br>
 <br>
 
-## Text
+## Writing
 ### Editors
 - [Obsidian](https://obsidian.md) - Fully featured markdown editor with super epic interlinking features and plugins **SUPER USEFUL**
 - [Dillinger](https://dillinger.io) - Super minimal online markdown editor
@@ -135,9 +139,62 @@ Highly recommend getting these if u touch a computer
 ### Tools (Not Editing)
 - [Text Mechanic](https://textmechanic.com) - A bunch of text manipulation tools **SUPER USEFUL**
 - [Multiline to Single line](https://tools.knowledgewalls.com/online-multiline-to-single-line-converter) - Copypaste text to put it all into a single line
-- [Random Word Generator](https://randomwordgenerator.com) - Random word generator
+- [Random Word Generator](https://randomwordgenerator.com) - Random Word Generator
   - Multiple languages!
   - Also has a bunch of other random generators (but some are only English)
 <br>
 <br>
+<br>
 
+## Unorganized (until I get around to it)
+- [Anilist](https://anilist.co) - Anime and manga database and social network
+  - [MyAnimeList](https://myanimelist.net) - The more popular alternative
+  - [Kitsu](https://kitsu.io) - Another alternative
+- [Visual Studio Code](https://code.visualstudio.com) - Code editor that's super customizable and has a bunch of extensions **SUPER USEFUL**
+- [Neocities](https://neocities.org) - Free web hosting and pseudo-social media site
+  - [Nekoweb](https://nekoweb.org/) - Neocities 2.0
+  - [GitHub Pages](https://pages.github.com) - If ur just looking for free web hosting this is probably the simplest and most reliable
+  - [Vercel](https://vercel.com) - Can host sites that arent static
+  - [Netlify](https://www.netlify.com) - Can also host sites that arent static
+- [Hugo](https://gohugo.io) - Static site generator
+  - [Jekyll](https://jekyllrb.com) - Another static site generator
+  - [Gatsby](https://www.gatsbyjs.com) - Another static site generator
+  - [Hexo](https://hexo.io) - Another static site generator
+- [Bearblog](https://bearblog.dev) - Free minimalist blog hosting
+  - [Write.as](https://write.as) - Another free minimalist blog hoster
+- [Telegra.ph](https://telegra.ph) - Always public, write plain text, publish anonymously (hosted by Telegram)
+- [Our World of Text](https://www.ourworldoftext.com) - Collaborative text editor 
+  - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site
+- [Trello](https://trello.com) - Task management and organization
+- [Calibre](https://calibre-ebook.com) - E-book management
+- [LibreOffice](https://www.libreoffice.org) - Free office suite
+- [nyaa.si](https://nyaa.si) - Anime and manga torrent site
+- [ktt2](https://ktt2.com) - (Primarily rap) music forum
+- [levels.fyi](https://www.levels.fyi) - Salary comparison site
+- [The Anarchist Library](https://theanarchistlibrary.org) - Anarchist literature anyone can read and contribute to
+- [Desmos](https://www.desmos.com) - Graphing calculator
+- [WolframAlpha](https://www.wolframalpha.com) - Goated calculator
+- [Sci-Hub](https://sci-hub.se) - Access to scientific papers
+- [GrimGrains](https://grimgrains.com) - Vegan recipes
+- [JustHungry](https://justhungry.com) - Japanese recipes
+- [Zotero](https://www.zotero.org) - Reference manager
+- [DLsite](https://www.dlsite.com) - Japanese doujin site
+- [Itch.io](https://itch.io) - Indie game marketplace
+- [Learn X in Y Minutes](https://learnxinyminutes.com) - Quick reference for programming languages
+- [Excalidraw](https://excalidraw.com) - Whiteboard tool
+- [Drawabox](https://drawabox.com) - Drawing lessons
+- [Pixiv](https://www.pixiv.net) - Japanese art site
+- [PsychonautWiki](https://psychonautwiki.org) - Relatively robust drug wiki
+- [Hacker Typer](https://hackertyper.net) - Fake hacking simulator
+<br>
+<br>
+<br>
+
+## Other Good Lists On The Internet
+- [BOOKMRKS-MTHRFCKR](https://github.com/whoisdsmith/BOOKMRKS-MTHRFCKR) - The biggest list of things ull ever see, AND its well indexed
+- [computervirus.neocities list](https://computervirus.neocities.org/resources)
+- [jd.bearblog](https://jd.bearblog.dev/tools-links/)
+- [brisray.com](https://brisray.com/utils/links.htm)
+- [indieseek.xyz](https://indieseek.xyz/links/)
+- [The Useless Web](https://theuselessweb.com) - Random useless websites
+  - You can find the list of sites it can take u to [here](https://theuselessweb.com/js/uselessweb.js)
