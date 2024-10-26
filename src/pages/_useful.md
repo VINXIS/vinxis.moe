@@ -77,6 +77,7 @@ Highly recommend getting these if u touch a computer
 ### Editing
 - [ShareX](https://getsharex.com) - Has a super robust capturing + editor system (even includes automation features) **SUPER USEFUL**
 - [Ezgif](https://ezgif.com/) - Absolutely goated online GIF editor with literally every gif editing feature ever **SUPER USEFUL**
+- [Photopea](https://www.photopea.com) - Basically free and online Photoshop
 - [ffmpeg](https://ffmpeg.org) - It does images too! (Don't need ImageMagick)
 - [Photomosh](https://photomosh.com) - Glitch art generation site
 - [ExifTool](https://exiftool.org) - Metadata editor
@@ -116,6 +117,8 @@ Highly recommend getting these if u touch a computer
 ### Sharing
 - [GitHub Gist](https://gist.github.com) - Easy way to publish snippets of text (or code) online, can be used as a PasteBin alternative
 - [PrivateBin](https://privatebin.net) - FOSS Pastebin alternative with better privacy/security
+- [Bearblog](https://bearblog.dev) - Free minimalist blog hosting
+  - [Write.as](https://write.as) - Another free minimalist blog hoster
 <br>
 <br>
 
@@ -146,11 +149,52 @@ Highly recommend getting these if u touch a computer
 <br>
 <br>
 
-## Unorganized (until I get around to it)
+## Anime/Manga
 - [Anilist](https://anilist.co) - Anime and manga database and social network
   - [MyAnimeList](https://myanimelist.net) - The more popular alternative
-  - [Kitsu](https://kitsu.io) - Another alternative
-- [Visual Studio Code](https://code.visualstudio.com) - Code editor that's super customizable and has a bunch of extensions **SUPER USEFUL**
+  - [Kitsu](https://kitsu.app) - Another alternative
+- [Cubari](https://cubari.moe) - A good manga reader that u can read manga from other sites on
+  - [MangaDex](https://mangadex.org) - A good place to find manga and copypaste into Cubari for a better reading experience
+- [nyaa.si](https://nyaa.si) - Anime and manga torrent site
+- [Pixiv](https://www.pixiv.net) - Goated japanese art site **Accessible NSFW**
+- [DLsite](https://www.dlsite.com) - Japanese doujin site **Easily accessible NSFW**
+- [Gelbooru](https://gelbooru.com) - Anime/hentai imageboard **NSFW**
+<br>
+<br>
+<br>
+
+## Programming
+### Editors
+- [Visual Studio Code](https://code.visualstudio.com) - Easiest code editor to get into with a lot of tooling and extensions **SUPER USEFUL**
+  - [Lapce](https://lapce.dev/) - May be a viable and more efficient alternative to VSCode soon (if it isn't already)
+- [NeoVim](https://neovim.io) - A more advanced and efficient code editor if ur insane
+- [Emacs](https://www.gnu.org/software/emacs/) - Another even more advanced and efficient code editor if ur insane
+<br>
+<br>
+
+### Coding Resources
+- [DevDocs](https://devdocs.io) - Documentation for pretty much every coding language and framework
+- [Learn X in Y Minutes](https://learnxinyminutes.com) - Quick reference for coding languages
+- [MDN Web Docs](https://developer.mozilla.org) - Web development documentation
+- [Can I Use](https://caniuse.com) - Browser compatibility tables for HTML, CSS, JS
+- [Codecademy](https://www.codecademy.com) - Really basic and easy to follow coding tutorials
+<br>
+<br>
+
+### Command Line/Terminals
+- [SS64](https://ss64.com) - Command line references for Windows, Linux, and macOS
+#### Windows
+- [Windows Terminal](https://aka.ms/terminal) - Improved terminal experience for Windows
+#### Linux
+- [tldr.sh](https://tldr.sh) - Simplified documentation for common commands
+<br>
+<br>
+
+### Web Development
+- [Next](https://nextjs.org) - Good server-based framework (not good for static/beginners)
+  - [Nuxt](https://nuxtjs.org) - Vue version of Next and sexier
+  - [SvelteKit](https://kit.svelte.dev) - Svelte version of Next and also sexier
+- [Astro](https://astro.build) - Good static framework (not good for server-side/beginners)
 - [Neocities](https://neocities.org) - Free web hosting and pseudo-social media site
   - [Nekoweb](https://nekoweb.org/) - Neocities 2.0
   - [GitHub Pages](https://pages.github.com) - If ur just looking for free web hosting this is probably the simplest and most reliable
@@ -160,30 +204,37 @@ Highly recommend getting these if u touch a computer
   - [Jekyll](https://jekyllrb.com) - Another static site generator
   - [Gatsby](https://www.gatsbyjs.com) - Another static site generator
   - [Hexo](https://hexo.io) - Another static site generator
-- [Bearblog](https://bearblog.dev) - Free minimalist blog hosting
+- [Bearblog](https://bearblog.dev) - Free minimalist blog hosting as said before in the writing section
   - [Write.as](https://write.as) - Another free minimalist blog hoster
+<br>
+<br>
+<br>
+
+## Unorganized (until I get around to it)
 - [Telegra.ph](https://telegra.ph) - Always public, write plain text, publish anonymously (hosted by Telegram)
-- [Our World of Text](https://www.ourworldoftext.com) - Collaborative text editor 
+- [Our World of Text](https://www.ourworldoftext.com) - Massive online anonymous canvas to write bullshit in
   - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site
-- [Trello](https://trello.com) - Task management and organization
-- [Calibre](https://calibre-ebook.com) - E-book management
+- [Calibre](https://calibre-ebook.com) - Best ebook manager and and reader and shit
 - [LibreOffice](https://www.libreoffice.org) - Free office suite
-- [nyaa.si](https://nyaa.si) - Anime and manga torrent site
 - [ktt2](https://ktt2.com) - (Primarily rap) music forum
 - [levels.fyi](https://www.levels.fyi) - Salary comparison site
 - [The Anarchist Library](https://theanarchistlibrary.org) - Anarchist literature anyone can read and contribute to
+- [Sci-Hub](https://sci-hub.se) - Access to scientific papers
 - [Desmos](https://www.desmos.com) - Graphing calculator
 - [WolframAlpha](https://www.wolframalpha.com) - Goated calculator
-- [Sci-Hub](https://sci-hub.se) - Access to scientific papers
+- [Fake Identity Generator](https://www.fakenamegenerator.com/gen-random-us-us.php) - Generates an entirely fake persona to use
+- [thispersondoesnotexist](https://thispersondoesnotexist.com/) - Generates a face that doesn't exist every refresh
+- [anonaddy](https://addy.io/) - Anon email forwarding
+- [Bitwarden](https://bitwarden.com) - Super simple, streamlined, free, and open source password manager that works and syncs cross-platform
+  - If ur good with computers, can also be self hosted
+- [ActivityWatch](https://activitywatch.net) - Automated time tracker that fully runs locally, and is highly customizable to track ur computer use however way u want to
+- [Zotero](https://www.zotero.org) - Reference manager
+- [Excalidraw](https://excalidraw.com) - Whiteboard tool
+- [Trello](https://trello.com) - Task management and organization
 - [GrimGrains](https://grimgrains.com) - Vegan recipes
 - [JustHungry](https://justhungry.com) - Japanese recipes
-- [Zotero](https://www.zotero.org) - Reference manager
-- [DLsite](https://www.dlsite.com) - Japanese doujin site
 - [Itch.io](https://itch.io) - Indie game marketplace
-- [Learn X in Y Minutes](https://learnxinyminutes.com) - Quick reference for programming languages
-- [Excalidraw](https://excalidraw.com) - Whiteboard tool
 - [Drawabox](https://drawabox.com) - Drawing lessons
-- [Pixiv](https://www.pixiv.net) - Japanese art site
 - [PsychonautWiki](https://psychonautwiki.org) - Relatively robust drug wiki
 - [Hacker Typer](https://hackertyper.net) - Fake hacking simulator
 <br>
@@ -196,5 +247,5 @@ Highly recommend getting these if u touch a computer
 - [jd.bearblog](https://jd.bearblog.dev/tools-links/)
 - [brisray.com](https://brisray.com/utils/links.htm)
 - [indieseek.xyz](https://indieseek.xyz/links/)
-- [The Useless Web](https://theuselessweb.com) - Random useless websites
+- [The Useless Web](https://theuselessweb.com)
   - You can find the list of sites it can take u to [here](https://theuselessweb.com/js/uselessweb.js)
