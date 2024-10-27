@@ -51,6 +51,7 @@ Highly recommend getting these if u touch a computer
 - [RateYourMusic](https://rateyourmusic.com) - Music discovery and reviews
   - [Album of the Year](https://www.albumoftheyear.org) - A smaller site with basically the same functionality
   - [Name Your Price Essentials](https://rateyourmusic.com/list/lospollitoz/name-your-price-essentials-free-albums/) - List of free music from Bandcamp that's rated highly on RYM
+- [ktt2](https://ktt2.com) - (Primarily rap) music forum
 - [Letterboxd](https://letterboxd.com) - Movie discovery and reviews
 - [Discogs](https://www.discogs.com) - Music database and marketplace (good for vinyls)
 - [MusicBrainz](https://musicbrainz.org) - Music database and (usually) comprehensive artist/music metadata
@@ -89,6 +90,7 @@ Highly recommend getting these if u touch a computer
 <br>
 
 ### Drawing
+- [Drawabox](https://drawabox.com) - Drawing lessons
 - [Inkscape](https://inkscape.org) - Illustrating and vector graphics
 - [Krita](https://krita.org) - Digital art and drawing (better than GIMP or Paint.NET for drawing)
 - [Aseprite](https://www.aseprite.org) - Pixel art and animation
@@ -119,6 +121,7 @@ Highly recommend getting these if u touch a computer
 - [PrivateBin](https://privatebin.net) - FOSS Pastebin alternative with better privacy/security
 - [Bearblog](https://bearblog.dev) - Free minimalist blog hosting
   - [Write.as](https://write.as) - Another free minimalist blog hoster
+- [Telegra.ph](https://telegra.ph) - Always public, write plain text, publish anonymously (Note: hosted by Telegram)
 <br>
 <br>
 
@@ -147,6 +150,17 @@ Highly recommend getting these if u touch a computer
   - Also has a bunch of other random generators (but some are only English)
 <br>
 <br>
+
+### Reading
+- [Calibre](https://calibre-ebook.com) - Best ebook manager and and reader and shit **SUPER USEFUL**
+- [Anna's Archive](https://annas-archive.org/) - Largest archive of any type of text ever **SUPER USEFUL**
+- [Project Gutenberg](https://www.gutenberg.org) - More free books
+- [Library Genesis](https://libgen.is/) - Good for textbooks
+- [Sci-Hub](https://sci-hub.se) - Access to scientific papers
+- [The Anarchist Library](https://theanarchistlibrary.org) - Anarchist literature anyone can read and contribute to
+- [server.elscione.com](https://server.elscione.com/) - Sophisticated LN epub DB + some other random stuff
+<br>
+<br>
 <br>
 
 ## Anime/Manga
@@ -156,6 +170,8 @@ Highly recommend getting these if u touch a computer
 - [Cubari](https://cubari.moe) - A good manga reader that u can read manga from other sites on
   - [MangaDex](https://mangadex.org) - A good place to find manga and copypaste into Cubari for a better reading experience
 - [nyaa.si](https://nyaa.si) - Anime and manga torrent site
+- [Novel Updates](https://www.novelupdates.com/) - Light novel database
+- [The Visual Novel Database](https://vndb.org/) - Visual novel database
 - [Pixiv](https://www.pixiv.net) - Goated japanese art site **Accessible NSFW**
 - [DLsite](https://www.dlsite.com) - Japanese doujin site **Easily accessible NSFW**
 - [Gelbooru](https://gelbooru.com) - Anime/hentai imageboard **NSFW**
@@ -210,33 +226,69 @@ Highly recommend getting these if u touch a computer
 <br>
 <br>
 
-## Unorganized (until I get around to it)
-- [Telegra.ph](https://telegra.ph) - Always public, write plain text, publish anonymously (hosted by Telegram)
-- [Our World of Text](https://www.ourworldoftext.com) - Massive online anonymous canvas to write bullshit in
-  - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site
-- [Calibre](https://calibre-ebook.com) - Best ebook manager and and reader and shit
-- [LibreOffice](https://www.libreoffice.org) - Free office suite
-- [ktt2](https://ktt2.com) - (Primarily rap) music forum
-- [levels.fyi](https://www.levels.fyi) - Salary comparison site
-- [The Anarchist Library](https://theanarchistlibrary.org) - Anarchist literature anyone can read and contribute to
-- [Sci-Hub](https://sci-hub.se) - Access to scientific papers
-- [Desmos](https://www.desmos.com) - Graphing calculator
-- [WolframAlpha](https://www.wolframalpha.com) - Goated calculator
+## Security
+- [Bitwarden](https://bitwarden.com) - Super simple, streamlined, free, and open source password manager that works and syncs cross-platform
+  - If ur good with computers, can also be self hosted **SUPER USEFUL**
 - [Fake Identity Generator](https://www.fakenamegenerator.com/gen-random-us-us.php) - Generates an entirely fake persona to use
 - [thispersondoesnotexist](https://thispersondoesnotexist.com/) - Generates a face that doesn't exist every refresh
+- [Have I Been Pwned](https://haveibeenpwned.com) - Check if your email has been compromised
 - [anonaddy](https://addy.io/) - Anon email forwarding
-- [Bitwarden](https://bitwarden.com) - Super simple, streamlined, free, and open source password manager that works and syncs cross-platform
-  - If ur good with computers, can also be self hosted
-- [ActivityWatch](https://activitywatch.net) - Automated time tracker that fully runs locally, and is highly customizable to track ur computer use however way u want to
-- [Zotero](https://www.zotero.org) - Reference manager
+- [ProtonMail](https://protonmail.com) - Encrypted email
+- [Tor](https://www.torproject.org) - Anonymity network
+- [Tails](https://tails.boum.org) - OS if ur a paranoid schizophrenic
+- [Signal](https://signal.org) - Encrypted messaging
+- [VeraCrypt](https://www.veracrypt.fr/en/Home.html) - Encrypt Ur Files
+<br>
+<br>
+<br>
+
+## General Productivity
+- [ActivityWatch](https://activitywatch.net) - Automated time tracker **SUPER USEFUL**
+- [Notion](https://www.notion.so) - All-in-1 site thing again
+  - [Obsidian](https://obsidian.md) - Goated markdown editor again **SUPER USEFUL**
+- [Trello](https://trello.com) - Yeaaa I love organization yeaaaaaaa
+<br>
+<br>
+
+### Work/Study Specific
+- [Notion](https://www.notion.so) - All-in-1 site thing again
+  - [Obsidian](https://obsidian.md) - Goated markdown editor again **SUPER USEFUL**
 - [Excalidraw](https://excalidraw.com) - Whiteboard tool
 - [Trello](https://trello.com) - Task management and organization
+- [WolframAlpha](https://www.wolframalpha.com) - Goated calculator **SUPER USEFUL**
+- [Desmos](https://www.desmos.com) - Graphing calculator
+- [Anna's Archive](https://annas-archive.org/) - Largest archive of any type of text ever **SUPER USEFUL**
+- [Library Genesis](https://libgen.is/) - Good for textbooks
+- [Sci-Hub](https://sci-hub.se) - Access to scientific papers
+- [Zotero](https://www.zotero.org) - Reference manager and generates citations **SUPER USEFUL**
+- [LibreOffice](https://www.libreoffice.org) - Free office suite
+- [Anki](https://apps.ankiweb.net) - Robust flashcard app
+- [Pomofocus](https://pomofocus.io) - Timer that [breaks ur shit into intervals](https://en.wikipedia.org/wiki/Pomodoro_Technique) or whatever i don't actually do this myself and there isnt really any research done on its effectiveness (AFAIK) but it helps some people working on things this way
+- [levels.fyi](https://www.levels.fyi) - Site to compare salaries and shit
+<br>
+<br>
+<br>
+
+## Food/Drugs
+### Food
 - [GrimGrains](https://grimgrains.com) - Vegan recipes
 - [JustHungry](https://justhungry.com) - Japanese recipes
-- [Itch.io](https://itch.io) - Indie game marketplace
-- [Drawabox](https://drawabox.com) - Drawing lessons
+- [Cook Well](https://www.cookwell.com/) - Good recipes and includes info about [food fundamentals](https://cookwell.com/fundamentals) 
+<br>
+<br>
+
+### Drugs
 - [PsychonautWiki](https://psychonautwiki.org) - Relatively robust drug wiki
+- [The Drug Classroom](https://www.youtube.com/@TheDrugClassroom/videos) - Dead YT channel project but still contains a shitton of useful centralized information if you want to understand the pharmacokinetics/pharmacodynamics and chemistry of the drugs u might wanna take
+<br>
+<br>
+<br>
+
+## Random Shit (aka Unorganized aka Miscellaneous)
+- [Our World of Text](https://www.ourworldoftext.com) - Massive online anonymous canvas to write bullshit in
+  - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site
 - [Hacker Typer](https://hackertyper.net) - Fake hacking simulator
+- [Itch.io](https://itch.io) - Indie game marketplace
 <br>
 <br>
 <br>
