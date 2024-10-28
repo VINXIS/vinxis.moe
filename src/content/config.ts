@@ -2,10 +2,13 @@ import { z, defineCollection } from "astro:content";
 
 const blog = defineCollection({
     type: "content",
-    schema: z.object({
+    schema: ({ image }) => z.object({
         title: z.string(),
         tags: z.array(z.string()),
-        image: z.string(),
+        image: image().optional(),
+        imageAlt: z.string().optional(),
+        created: z.string(),
+        lastModified: z.string(),
     }),
 });
 
@@ -14,6 +17,8 @@ const notes = defineCollection({
     schema: z.object({
         tags: z.array(z.string()).optional(),
         isObsidianImport: z.boolean().optional(),
+        created: z.string(),
+        lastModified: z.string(),
     }),
 });
 
@@ -21,6 +26,7 @@ const posts = defineCollection({
     type: "content",
     schema: z.object({
         tags: z.array(z.string()).optional(),
+        created: z.string(),
     }),
 });
 

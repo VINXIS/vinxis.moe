@@ -132,7 +132,7 @@ pageInfos.forEach(pageInfo => {
                             </div>
                             <div>
                                 <div>Created: {page.render.remarkPluginFrontmatter.created}</div>
-                                <div>Last modified: {page.render.remarkPluginFrontmatter.lastModified}</div>
+                                <div>Last modified: {page.render.remarkPluginFrontmatter.lastModified ?? "N/A"}</div>
                             </div>
                         </a>
                     );
@@ -209,7 +209,7 @@ document.addEventListener("astro:page-load", async () => {
                 </div>
                 <div>
                     <div>Created: ${page.render.remarkPluginFrontmatter.created}</div>
-                    <div>Last modified: ${page.render.remarkPluginFrontmatter.lastModified}</div>
+                    <div>Last modified: ${page.render.remarkPluginFrontmatter.lastModified ?? "N/A"}</div>
                 </div>
             </a>`;
         }).join("");

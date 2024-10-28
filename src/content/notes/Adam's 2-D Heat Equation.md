@@ -12,7 +12,7 @@ $$T_p=\frac{1}{\frac{4.13VYg\rho C}{Q} + \frac{1}{T_m - T_0}} + T_0$$
 - $T_m$ is the melting temperature
 - $T_0$ is the standard temperature 298K
 - $Q$ is the power provided 
-To calculate $Q$, the welding effeciency $n$, voltage $E$, and current $I$ is required to achieve the following:
+To calculate $Q$, the welding efficiency $n$, voltage $E$, and current $I$ is required to achieve the following:
 $$Q=EIn$$
 
 This is useful when the assumptions for [[Rosenthal Heat Flow]] can not be applied.

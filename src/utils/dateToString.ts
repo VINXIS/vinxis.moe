@@ -1,8 +1,11 @@
 export default function dateToString (date: Date | string | number): string {
     if (typeof date === "string") {
-        date = new Date(date);
-        if (isNaN(date.getTime()))
+        let parsedDate = new Date(date);
+        if (isNaN(parsedDate.getTime()))
+            parsedDate = new Date(parseInt(date));
+        if (isNaN(parsedDate.getTime()))
             return "";
+        date = parsedDate;
     }
     return new Intl.DateTimeFormat("en-GB", {
         year: "numeric",

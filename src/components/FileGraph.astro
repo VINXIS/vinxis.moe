@@ -27,12 +27,12 @@ if ("centralFile" in props) {
     centralFile.name = centralFile.name.replace(/^(blog|notes|posts) - /g, "");
 
     forwardlinks = props.forwardlinks.map<PageLink>(forwardlink => ({
-        slug: forwardlink.slug.split("/").pop()!,
+        slug: forwardlink.slug,
         name: forwardlink.name.replace(/^(blog|notes|posts) - /g, ""),
         collection: forwardlink.collection,
     }));
     backlinks = props.backlinks.map<BasePageInfo>(backlink => ({
-        slug: backlink.slug.split("/").pop()!,
+        slug: backlink.slug,
         name: backlink.name.replace(/^(blog|notes|posts) - /g, ""),
         collection: backlink.collection,
     })).filter(backlink => forwardlinks.findIndex(forwardlink => forwardlink.slug === backlink.slug) === -1);

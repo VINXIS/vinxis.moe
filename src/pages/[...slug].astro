@@ -68,7 +68,8 @@ export const getStaticPaths = (async () => {
 
 const { page, title, backlinks, forwardlinks } = Astro.props;
 
-const { Content } = await page.render();
+const render = await page.render();
+const Content = render.Content;
 const description = page.body.slice(0, 99) + "…";
 
 const meta = {
@@ -91,6 +92,8 @@ const meta = {
 <Default meta={meta}>
     <div class="page post-page">
         <h1>{title}</h1>
+        <h2>Created: {render.remarkPluginFrontmatter.created}</h2>
+        {render.remarkPluginFrontmatter.lastModified && (<h2>Last Modified: {render.remarkPluginFrontmatter.lastModified}</h2>)}
         <Content />
         <br>
         <br>

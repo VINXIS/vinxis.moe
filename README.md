@@ -1,6 +1,6 @@
 # VINXIS.moe
 
-This uses astro to run the site. Statically generated.
+This uses `astro` to run the site. Statically generated.
 
 ## Setup
 
