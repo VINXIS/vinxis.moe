@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import remarkContentTags from "./plugins/remark-content-tags.mjs";
 import remarkModifiedTime from "./plugins/remark-modified-time.mjs";
@@ -18,11 +17,6 @@ for (const file in files)
 // https://astro.build/config
 export default defineConfig({
     output: "static",
-    adapter: vercel({
-        webAnalytics: {
-            enabled: true,
-        },
-    }),
     site: "https://vinxis.moe",
     integrations: [
         sitemap(),

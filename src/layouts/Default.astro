@@ -1,6 +1,5 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import SpeedInsights from "@vercel/speed-insights/astro";
 import NavigationBar from "../components/NavigationBar.astro";
 import Flashlight from "../components/Flashlight.astro";
 import "../styles/main.css";
@@ -65,7 +64,6 @@ const { meta } = Astro.props as { meta: MetaProps };
             href={new URL("rss_posts.xml", Astro.site)}
         />
         <ViewTransitions />
-        <SpeedInsights />
     </head>
     <body>
         <NavigationBar />
