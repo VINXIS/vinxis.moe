@@ -247,6 +247,8 @@ Highly recommend getting these if u touch a computer
 - [Notion](https://www.notion.so) - All-in-1 site thing again
   - [Obsidian](https://obsidian.md) - Goated markdown editor again **SUPER USEFUL**
 - [Trello](https://trello.com) - Yeaaa I love organization yeaaaaaaa
+- [World Time Buddy](https://www.worldtimebuddy.com/) - Super simple time zone comparer
+- [When2meet](https://www.when2meet.com) - Super simple event planner
 <br>
 <br>
 
