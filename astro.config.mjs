@@ -21,6 +21,11 @@ export default defineConfig({
     integrations: [
         sitemap(),
     ],
+    redirects: {
+        "/about": "/me",
+        "/now": "/me",
+        "/contact": "/me",
+    },
     server: {
         open: true,
     },
