@@ -291,6 +291,7 @@ Highly recommend getting these if u touch a computer
   - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site
 - [Hacker Typer](https://hackertyper.net) - Fake hacking simulator
 - [Itch.io](https://itch.io) - Indie game marketplace
+- [Wiki-Map](https://wiki-map.com/) - A map with geolocated wikipedia links
 <br>
 <br>
 <br>
