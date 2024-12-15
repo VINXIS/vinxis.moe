@@ -14,7 +14,7 @@ Honestly kinda overpriced for the experience I got, and it's also pretty overrat
 # [Hollow Knight](https://store.steampowered.com/app/367520/Hollow_Knight/)
 Super late to the party but whatever mann;
 <br>it's pretty good, but it's also like a good™ type of game and not like a *good* game in my opinion. The metroidvania aspect of this game was actually really annoying, just traversing the shit after a while it's like ok man what the fuck am I doing.
-<br>The bosses were epic af tho, and the lore is also pretty sick honestly. I actually got shivers when I reached a certain cutscene regarding voids...
+<br>The bosses were epic af tho, and the lore is also pretty sick honestly. I actually got shivers when I reached a certain cutscene regarding voids... NO SPOILERS!!!
 <br>But honestly if the game didn't lean so hard on it's metroidvania, and also if it didn't have random platforming moments (they suck ass honestly), this game would be really epic, but it's like... just good... in my opinion.
 
 # [Infinity Nikki](https://infinitynikki.infoldgames.com/en/home)
@@ -32,7 +32,7 @@ Ok like I didn't really have any expectations but it was weirdly way more than I
 # [Rusted Moss](https://store.steampowered.com/app/1772830/Rusted_Moss/)
 Epic. The story sux and is nothingburger and just feels like it was tacked on but otherwise its epic video game. Metroidvania with crazy movement mechanics.
 <br>Oh the bosses suck for the most part (especially one of the bosses in the endings that was absolutely fucking terrible) but that's like whatever. 
-<br>The overwhelming majority of the game is not really combat and moreso platforming funnies and the platforming funnies are really good. Yummy game. Didn't play DLC though and find everything because it started randomly eating my left/A inputs and ruined it for me. But it seems to just be me that has this issue so idk.
+<br>The overwhelming majority of the game is not really combat and moreso platforming funnies and the platforming funnies are really good. Yummy game. Didn't play DLC and find everything though because it started randomly eating my left/A inputs and ruined it for me. But it seems to just be me that has this issue so idk.
 <br>PLAY THE GAME!!!!
 
 # [Balatro](https://store.steampowered.com/app/2379780/Balatro/)
