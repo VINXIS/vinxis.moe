@@ -26,7 +26,7 @@ Honestly I hate gacha but I wanted to play this after seeing it on The Game Awar
 # [Degrees of Lewdity](https://www.vrelnir.com/) 18+ if it wasnt obvious
 Ok like I didn't really have any expectations but it was weirdly way more than I was expecting for a random shitty looking porn game on the internet. There's like a VERY complex set of systems and paths you can go in for the entire game for some reason (though the game's UI isn't really good at explaining how anything works/gives you 0 info)
 <br>Probably never playing it again though because I don't really give a shit about porn
-<br>AND I ended up breaking my immersion completely when some really bizzarely fucked up shit happened because I was like "what if I just don't pay my rent this time" (you have to pay gradually increasing rent every month or whatever) and everyone including yourself just go back to normal as if nothing happened immediately after you get back from the shit that happened. The writing is also like bruh, but whatever.
+<br>AND I ended up breaking my immersion completely when some really bizzarely fucked up shit happened because I was like "what if I just don't pay my rent this time" (you have to pay gradually increasing rent every week or whatever) and everyone including yourself just go back to normal as if nothing happened immediately after you get back from the shit that happened. The writing is also like bruh, but whatever.
 <br>Kudos to the dev though for making this over the years just to learn how to code, it's really impressive from a technical standpoint.
 
 # [Rusted Moss](https://store.steampowered.com/app/1772830/Rusted_Moss/)
