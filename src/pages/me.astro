@@ -49,6 +49,11 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
             />
             <span class="about-name" id="name">Omar Kamal</span>
         </h1>
+        <div id="statuscafe">
+            <h3>Latest status.cafe:</h3>
+            <div id="statuscafe-username">...</div>
+            <div id="statuscafe-content">Loading...</div>
+        </div>
         <div class="about-sections" id="drag-container">
             <div draggable="true" class="draggable">
                 <h3>Intro</h3>
@@ -227,6 +232,18 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
 
 <script>
 document.addEventListener("astro:page-load", () => {
+    // status.cafe code derived from https://status.cafe/current-status.js?name=vinxis
+    fetch("https://status.cafe/users/vinxis/status.json")
+        .then(r => r.json())
+        .then(r => {
+            if (!r.content.length) {
+                document.getElementById("statuscafe-content")!.innerHTML = "No status yet.";
+                return;
+            }
+            document.getElementById("statuscafe-username")!.innerHTML = `<a href="https://status.cafe/users/vinxis" target="_blank">${r.author}</a> ${r.face} ${r.timeAgo}`;
+            document.getElementById("statuscafe-content")!.innerHTML = r.content;
+        });
+
     const birthDate = 909814500000;
     const precision = 20;
     const multiplier = 10 ** precision;
@@ -375,6 +392,10 @@ document.addEventListener("astro:page-load", () => {
 
 .about-header:hover .about-name::before {
     color: var(--primary);
+}
+
+#statuscafe {
+    margin: 20px 0;
 }
 
 .about-sections {
