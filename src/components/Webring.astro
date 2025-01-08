@@ -1,0 +1,31 @@
+---
+const { position, align } = Astro.props;
+---
+<div class:list={["latex4000Webring", position ? `webring${position}` : "", align ? `webring${align}` : ""]}>
+    <a href="https://latex4000.neocities.org" title="Collective">Latex 4000</a>
+    <div class="latex4000WebringButtons">
+        <a href="https://latex4000.neocities.org" id="latex4000Prev" title="Previous">←</a>
+        <a href="https://latex4000.neocities.org" id="latex4000Random" title="Random">Random</a>
+        <a href="https://latex4000.neocities.org" id="latex4000Next" title="Next">→</a>
+    </div>
+    <script id="latex4000Webring" src="https://latex4000.neocities.org/webring.min.js" data-alias="vinxis"></script>
+</div>
+
+<style>
+    .latex4000Webring {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .webringLeft {
+        width: fit-content;
+    }
+
+    .webringAbsolute {
+        position: absolute;
+        bottom: 0.5rem;
+        left: 0.5rem;
+    }
+</style>

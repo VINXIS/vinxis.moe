@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Default from "../layouts/Default.astro";
 import vinxisOrange from "../images/vinxisOrange.png";
+import Webring from "../components/Webring.astro";
 
 const meta = {
     title: "VINXIS",
@@ -31,6 +32,7 @@ const meta = {
             <h1 class="name">VINXIS</h1>
         </div>
     </div>
+    <Webring position="Absolute"/>
     <span slot="hidden" class="hidden">I make music and other stuff</span>
     <span slot="hidden" class="hidden" style="top:calc(20vh + 3rem + 30vh); left:0; right:0; display:flex; justify-content:center;">You can find hidden text on every page!</span>
     <span slot="hidden" class="hidden" style="top:200px; left:initial; right:300px;">How u doin? Lemme know <a href="/me">here</a></span>
@@ -43,6 +45,7 @@ const meta = {
         justify-content: center;
         align-items: center;
         height: 100vh;
+        position: relative;
     }
 
     .logo-container {

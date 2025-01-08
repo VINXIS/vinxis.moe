@@ -4,6 +4,7 @@ import Default from "../layouts/Default.astro";
 import vinxisOrange from "../images/vinxisOrange.png";
 import dateToString from "../utils/dateToString";
 import { execSync } from "child_process";
+import Webring from "../components/Webring.astro";
 
 const email = "oykxf2@gmail.com";
 const corsaceEmail = "contact@corsace.io";
@@ -71,6 +72,7 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
                 <p class="small-text">Built with <a href="https://astro.build/" target="_blank" title="Astro's website">Astro</a> for optimized and minimal size =)</p>
                 <p class="small-text">First ever update of the site was on {dateToString(firstCommit)}</p>
                 <p class="small-text">Latest version of the site started on {dateToString(latestVersion)}</p>
+                <Webring align="Left"/>
             </div>
             <div draggable="true" class="draggable">
                 <h3>Currently...</h3>
