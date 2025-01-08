@@ -26,7 +26,10 @@ const { meta } = Astro.props as { meta: MetaProps };
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"><title>{meta.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{meta.title}</title>
+        <meta name="theme-color" content="#FF6200" />
+        <meta name="author" content="VINXIS" />
         {meta.description && <meta name="description" content={meta.description} />}
         {meta.ogTitle && <meta property="og:title" content={meta.ogTitle} />}
         {meta.ogDescription && <meta property="og:description" content={meta.ogDescription} />}
