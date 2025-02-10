@@ -19,7 +19,7 @@ export const GET: APIRoute = async ({ site, params }) => {
             return {
                 title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`,
                 description: page.body.slice(0, 99) + "…",
-                url: `/${page.collection}/${page.slug}`,
+                url: `${site ?? "https://vinxis.moe"}/${page.collection}/${page.slug}`,
                 pubDate: (await page.render()).remarkPluginFrontmatter.created,
             };
         })),
