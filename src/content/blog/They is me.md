@@ -10,7 +10,8 @@ image: ./lustrous.png
 imageAlt: Lustrous
 ---
 
-Edits: Spoiler header and an extra line in the spoiler box below
+Edits:
+ - Spoiler header and an extra line in the spoiler box below. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/a32c1a85a1afa54913904a34c6f90f5883ee1747)
 
 ## **THERE ARE NO SPOILERS ON THE EVENTS THAT OCCUR**
 ## **THERE ARE SPOILERS ON WHAT HOUSEKI NO KUNI IS ABOUT**
