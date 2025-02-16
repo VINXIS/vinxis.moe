@@ -82,11 +82,11 @@ const meta = {
     ogUrl: "https://vinxis.moe",
     ogSiteName: title,
     ogLocale: "en_US",
-    ogImage: "image" in page.data && page.data.image ? `${Astro.site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}` : "https://vinxis.moe/metaImage.png",
+    ogImage: "image" in page.data && page.data.image ? `${Astro.site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}?${Math.round(Math.random() * 1000000)}` : "https://vinxis.moe/metaImage.png",
     twitterCard: "summary_large_image",
     twitterTitle: title,
     twitterDescription: description,
-    twitterImage: "image" in page.data && page.data.image ? `${Astro.site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}` : "https://vinxis.moe/metaImage.png",
+    twitterImage: "image" in page.data && page.data.image ? `${Astro.site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}?${Math.round(Math.random() * 1000000)}` : "https://vinxis.moe/metaImage.png",
 };
 ---
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">
