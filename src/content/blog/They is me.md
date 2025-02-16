@@ -1,7 +1,7 @@
 ---
 title: They is me
 created: "1739670027305"
-lastModified: "1739670027305"
+lastModified: "1739716348000"
 tags:
   - anime
   - manga
@@ -9,6 +9,13 @@ tags:
 image: ./lustrous.png
 imageAlt: Lustrous
 ---
+
+Edits: Spoiler header and an extra line in the spoiler box below
+
+## **THERE ARE NO SPOILERS ON THE EVENTS THAT OCCUR**
+## **THERE ARE SPOILERS ON WHAT HOUSEKI NO KUNI IS ABOUT**
+## **PLEASE READ AT YOUR OWN RISK.**
+
 It has been 2 nights since I read [Land of the Lustrous/Houseki no Kuni](https://hnk.rocks) and it has traumatized me.
 
 I asked a couple friends what they thought of the ending, if they thought it was a happy or sad ending, e.t.c. **Obviously** the answer is neither: it's simply a perfect ending; however, I am forced to mark the ending as one of them for myself... and to me, I am forced to label it as a sad one.
@@ -93,7 +100,7 @@ Honestly, I do have some degree of issue with how some of the gems progress with
 <summary>
 Spoilers for clarity's sake
 </summary>
-<p>Diamond and Euclase especially felt very half baked, and it made me very sad.</p>
+<p>Diamond and Euclase especially felt very half baked, and as far as the focus on this aspect of the story... it did make me very sad.</p>
 
 <p>Diamond truly felt like they had no development at all, and for some reason Bort just says Ouuu.... u have changed... yey. Like no, diamond really didn't change much... they got a lot of validation, but nothing really showed their validation transforming them at all honestly</p>
 
