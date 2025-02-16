@@ -109,8 +109,9 @@ table, th, td {
     border: 0.5px solid var(--primary);
 }
 
-code {
+code, blockquote, blockquote p {
     background-color: var(--code-bg);
+    color: var(--analogous1);
     padding: 0 2px;
 }
 
