@@ -98,6 +98,20 @@
         cursor: pointer;
     }
 
+    @media (max-width: 768px) {
+        .flashlight-toggle {
+            width: calc(var(--toggle-size) / 1.5);
+            height: calc(var(--toggle-size) / 1.5);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .flashlight-toggle {
+            width: calc(var(--toggle-size) / 2);
+            height: calc(var(--toggle-size) / 2);
+        }
+    }
+
     .flashlight-text {
         left: initial;
         top: calc(var(--toggle-size) / 2);
