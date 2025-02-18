@@ -178,7 +178,7 @@ if ("centralFile" in props) {
             // Handle zooming
             let transform = d3.zoomIdentity;
             const zoom = d3.zoom<HTMLCanvasElement, unknown>()
-                .scaleExtent([0.5, 5])
+                .scaleExtent([0.1, 10])
                 .on("zoom", (event) => {
                     transform = event.transform;
                     ticked();
@@ -186,9 +186,8 @@ if ("centralFile" in props) {
                 // Only let zoom start if NOT clicking on a node:
                 .filter((event) => {
                     // For mouse events, check if a node is nearby (using our dragsubject)
-                    if (event.type === "mousedown" || event.type === "touchstart") {
+                    if (event.type === "mousedown" || event.type === "touchstart")
                         return dragsubject(event) == null;
-                    }
                     return true;
                 });
 
