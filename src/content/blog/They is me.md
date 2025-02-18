@@ -1,11 +1,12 @@
 ---
 title: They is me
 created: "1739670027305"
-lastModified: "1739716348000"
+lastModified: "1739844441000"
 tags:
   - anime
   - manga
   - life
+  - houseki no kuni
 image: ./lustrous.png
 imageAlt: Lustrous
 ---
