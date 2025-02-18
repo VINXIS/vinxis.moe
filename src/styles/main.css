@@ -182,13 +182,13 @@ input[type="checkbox"] + label:after {
 
 @media (max-width: 768px) {
     .page {
-        padding: 5rem 2.5rem 2.5rem;
+        padding: calc(10rem / 1.5) calc(5rem / 1.5) calc(5rem / 1.5);
     }
 }
 
 @media (max-width: 480px) {
     .page {
-        padding: 2.5rem 1.25rem 1.25rem;
+        padding: calc(10rem / 2) calc(5rem / 2) calc(5rem / 2);
     }
 }
 
