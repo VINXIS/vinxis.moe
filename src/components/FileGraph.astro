@@ -100,7 +100,8 @@ if ("centralFile" in props) {
             function updateResponsiveStyles () {
                 if (window.innerWidth < 1150 && !centralFile) // Hide toggle on small devices if there is no central file
                     emptyLinkToggle?.setAttribute("data-hidden", "true");
-                else if (window.innerWidth < 860 && centralFile) { // Remove position styling if centralFile is present on small devices
+                
+                if (window.innerWidth < 1150) { // Remove position styling if centralFile is present on small devices
                     style.position = "initial";
                     style.top = "initial";
                     style.left = "initial";
@@ -327,12 +328,12 @@ if ("centralFile" in props) {
 
             // Resize canvas on window resize and update responsive styles
             window.addEventListener("resize", () => {
-                if (centralFile) {
+                if (window.innerWidth < 1150) {
                     width = Math.min(window.innerWidth, 450);
                     height = Math.min(window.innerWidth, 450);
                 } else {
-                    width = window.innerWidth - 720;
-                    height = window.innerWidth - 720;
+                    width = Math.max(window.innerWidth - 720, 450);
+                    height = Math.max(window.innerWidth - 720, 450);
                 }
                 canvas.width = width;
                 canvas.height = height;
@@ -385,5 +386,9 @@ if ("centralFile" in props) {
         width: 100%;
         text-align: center;
         cursor: pointer;
+    }
+
+    .filegraph-empty-link-toggle[data-hidden="true"] {
+        display: none;
     }
 </style>

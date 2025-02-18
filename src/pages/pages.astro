@@ -80,7 +80,6 @@ pageInfos.forEach(pageInfo => {
 ---
 <Default meta={meta}>
     <div class="page search-page">
-        <FileGraph elementStyle="position:absolute; top:10rem; right:5rem;" files={pageInfos} />
         <div class="search-section">
             <h1>Search Pages</h1>
             <div class="rss-list">
@@ -113,6 +112,7 @@ pageInfos.forEach(pageInfo => {
             Javascript is required to use search functionality
         </noscript>
         <br>
+        <FileGraph elementStyle="position:absolute; top:10rem; right:5rem;" files={pageInfos} />
         <br>
         <div id="search-list">
             {
