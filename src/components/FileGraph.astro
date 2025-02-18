@@ -90,26 +90,40 @@ if ("centralFile" in props) {
             const files: PageInfo[] = JSON.parse(this.getAttribute("data-files")!);
             const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
 
-            if (window.innerWidth < 1150 && !centralFile) {
-                emptyLinkToggle?.remove();
-                return;
-            } else if (window.innerWidth < 860 && centralFile) { // remove all position styling if centralFile is present
-                this.style.removeProperty("position");
-                this.style.removeProperty("top");
-                this.style.removeProperty("left");
-                this.style.removeProperty("right");
-                this.style.removeProperty("bottom");
+            // Make responsive styling reactive instead of an early exit
+            const { style } = this;
+            const originalPosition = style.position;
+            const originalTop = style.top;
+            const originalLeft = style.left;
+            const originalRight = style.right;
+            const originalBottom = style.bottom;
+            function updateResponsiveStyles () {
+                if (window.innerWidth < 1150 && !centralFile) // Hide toggle on small devices if there is no central file
+                    emptyLinkToggle?.setAttribute("data-hidden", "true");
+                else if (window.innerWidth < 860 && centralFile) { // Remove position styling if centralFile is present on small devices
+                    style.position = "initial";
+                    style.top = "initial";
+                    style.left = "initial";
+                    style.right = "initial";
+                    style.bottom = "initial";
+                } else {
+                    emptyLinkToggle?.removeAttribute("data-hidden");
+                    style.position = originalPosition;
+                    style.top = originalTop;
+                    style.left = originalLeft;
+                    style.right = originalRight;
+                    style.bottom = originalBottom;
+                }
             }
+            updateResponsiveStyles();
 
             // Make nodes and links
             let nodes: noteNode[] = [];
             let links: { source: string | noteNode; target: string | noteNode; }[] = [];
-            let width = window.innerWidth - 720;
-            let height = window.innerWidth - 720;
+            let width = centralFile ? Math.min(window.innerWidth, 450) : window.innerWidth - 720;
+            let height = centralFile ? Math.min(window.innerWidth, 450) : window.innerWidth - 720;
 
             if (centralFile) {
-                width = Math.min(window.innerWidth, 450);
-                height = Math.min(window.innerWidth, 450);
                 nodes = [
                     { id: centralFile.slug, label: centralFile.name, group: "main" },
                     ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
@@ -135,10 +149,9 @@ if ("centralFile" in props) {
                 .attr("width", width)
                 .attr("height", height)
                 .node()!;
-
             const context = canvas.getContext("2d")!;
 
-            // Variables to store all nodes and links
+            // Consts to store all nodes and links
             const allNodes = nodes;
             const allLinks = links;
 
@@ -161,19 +174,43 @@ if ("centralFile" in props) {
                     .on("drag", dragged)
                     .on("end", dragended) as any);
 
+            // Handle zooming
+            let transform = d3.zoomIdentity;
+            const zoom = d3.zoom<HTMLCanvasElement, unknown>()
+                .scaleExtent([0.5, 5])
+                .on("zoom", (event) => {
+                    transform = event.transform;
+                    ticked();
+                })
+                // Only let zoom start if NOT clicking on a node:
+                .filter((event) => {
+                    // For mouse events, check if a node is nearby (using our dragsubject)
+                    if (event.type === "mousedown" || event.type === "touchstart") {
+                        return dragsubject(event) == null;
+                    }
+                    return true;
+                });
+
+            d3.select(canvas).call(zoom);
+
+            // Draw the graph
             function ticked () {
+                context.save();
                 context.clearRect(0, 0, width, height);
+                context.translate(transform.x, transform.y);
+                context.scale(transform.k, transform.k);
 
                 // Draw links
                 context.beginPath();
                 context.strokeStyle = "rgba(124, 124, 124, 0.6)";
-                context.lineWidth = 4;
+                context.lineWidth = 4 / transform.k;  // adjust for zoom
                 links.forEach(drawLink);
                 context.stroke();
 
                 // Draw nodes and labels
                 nodes.forEach(drawNode);
                 nodes.forEach(drawLabel);
+                context.restore();
             }
 
             function drawLink (d: any) {
@@ -187,7 +224,7 @@ if ("centralFile" in props) {
                 context.arc(d.x, d.y, 10, 0, 2 * Math.PI);
                 context.fill();
                 context.strokeStyle = colours["dark-neutral"];
-                context.lineWidth = 3;
+                context.lineWidth = 3 / transform.k;  // adjust for zoom
                 context.stroke();
             }
 
@@ -207,15 +244,15 @@ if ("centralFile" in props) {
             }
 
             function dragsubject (event: any) {
-                const [x, y] = d3.pointer(event, canvas);
-                let subject = null;
+                const [sx, sy] = transform.invert(d3.pointer(event, canvas));
+                let subject: noteNode | null = null;
                 let minDistance = Infinity;
                 for (const d of nodes) {
-                    const dx = x - d.x!;
-                    const dy = y - d.y!;
-                    const distance = dx * dx + dy * dy;
-                    if (distance < minDistance && distance < 100) {
-                        minDistance = distance;
+                    const dx = sx - d.x!;
+                    const dy = sy - d.y!;
+                    const dist = dx * dx + dy * dy;
+                    if (dist < 100 && dist < minDistance) {
+                        minDistance = dist;
                         subject = d;
                     }
                 }
@@ -223,29 +260,49 @@ if ("centralFile" in props) {
             }
 
             function dragstarted (event: any) {
-                if (!event.active) simulation.alphaTarget(0.3).restart();
-                event.subject.fx = event.subject.x;
-                event.subject.fy = event.subject.y;
+                const subject = event.subject;
+                if (subject) {
+                    // Stop propagation so the zoom doesn’t kick in too
+                    event.sourceEvent.stopPropagation();
+                    if (!event.active)
+                        simulation.alphaTarget(0.3).restart();
+                    const [sx, sy] = transform.invert([event.x, event.y]);
+                    // Store the offset between the node's current position and the pointer position
+                    subject.offsetX = subject.x - sx;
+                    subject.offsetY = subject.y - sy;
+                    subject.fx = subject.x;
+                    subject.fy = subject.y;
+                }
             }
 
             function dragged (event: any) {
-                event.subject.fx = event.x;
-                event.subject.fy = event.y;
+                const subject = event.subject;
+                if (subject) {
+                    const [sx, sy] = transform.invert([event.x, event.y]);
+                    subject.fx = sx + subject.offsetX;
+                    subject.fy = sy + subject.offsetY;
+                }
             }
 
             function dragended (event: any) {
-                if (!event.active) simulation.alphaTarget(0);
-                event.subject.fx = null;
-                event.subject.fy = null;
+                const subject = event.subject;
+                if (subject) {
+                    if (!event.active)
+                        simulation.alphaTarget(0);
+                    subject.fx = null;
+                    subject.fy = null;
+                    delete subject.offsetX;
+                    delete subject.offsetY;
+                }
             }
 
             // Handle click events
             canvas.addEventListener("click", function(event) {
-                const [x, y] = d3.pointer(event, canvas);
+                const [x, y] = transform.invert(d3.pointer(event, canvas));
                 for (const d of nodes) {
                     const dx = x - d.x!;
                     const dy = y - d.y!;
-                    if (dx * dx + dy * dy < 100) { // 10px radius
+                    if (dx * dx + dy * dy < 100) { // 10px radius (in simulation coords, not screen coords)
                         if (d.group === "main" || !d.group) return;
                         window.location.href = d.id;
                         break;
@@ -255,11 +312,11 @@ if ("centralFile" in props) {
 
             // Change cursor to pointer when mouse is over nodes
             canvas.addEventListener("mousemove", function(event) {
-                const [x, y] = d3.pointer(event, canvas);
+                const [x, y] = transform.invert(d3.pointer(event, canvas));
                 for (const d of nodes) {
                     const dx = x - d.x!;
                     const dy = y - d.y!;
-                    if (dx * dx + dy * dy < 100) { // 10px radius
+                    if (dx * dx + dy * dy < 100) { // 10px radius (in simulation coords, not screen coords)
                         if (d.group === "main" || !d.group) continue;
                         canvas.style.cursor = "pointer";
                         return;
@@ -268,15 +325,22 @@ if ("centralFile" in props) {
                 canvas.style.cursor = "default";
             });
 
-            // // Zoom in and out at the mouse position
-            // let zoom = 1;
-            // canvas.addEventListener("wheel", function(event) {
-            //     event.preventDefault();
-            //     const [x, y] = d3.pointer(event, canvas);
-            //     const delta = event.deltaY;
-            //     zoom = delta > 0 ? zoom * 0.9 : zoom * 1.1;
-            //     simulation.force
-            // });
+            // Resize canvas on window resize and update responsive styles
+            window.addEventListener("resize", () => {
+                if (centralFile) {
+                    width = Math.min(window.innerWidth, 450);
+                    height = Math.min(window.innerWidth, 450);
+                } else {
+                    width = window.innerWidth - 720;
+                    height = window.innerWidth - 720;
+                }
+                canvas.width = width;
+                canvas.height = height;
+                simulation.force("center", d3.forceCenter(width / 2, height / 2));
+                simulation.alpha(1).restart();
+                ticked();
+                updateResponsiveStyles();
+            });
 
             // Toggle visibility of non-existent pages
             let showNonExistent = true;
@@ -289,7 +353,12 @@ if ("centralFile" in props) {
                     : "Show non-existent pages";
                 updateVisibility();
                 simulation.nodes(nodes);
-                simulation.force("link", d3.forceLink(links).id(d => (d as noteNode).id).distance(() => Math.random() * 70 + 120));
+                simulation.force(
+                    "link",
+                    d3.forceLink(links)
+                        .id(d => (d as noteNode).id)
+                        .distance(() => Math.random() * 70 + 120)
+                );
                 simulation.alpha(1).restart();
             });
 
