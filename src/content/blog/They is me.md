@@ -1,7 +1,7 @@
 ---
 title: They is me
 created: "1739670027305"
-lastModified: "1739844441000"
+lastModified: "1740332111000"
 tags:
   - anime
   - manga
@@ -108,6 +108,8 @@ Spoilers for clarity's sake
 <p>Diamond truly felt like they had no development at all, and for some reason Bort just says Ouuu.... u have changed... yey. Like no, diamond really didn't change much... they got a lot of validation, but nothing really showed their validation transforming them at all honestly</p>
 
 <p>And then Euclase just accepts their situation...? Though really, this might have been affected by the timeskip, becuase that entire part handwaves A LOT.</p>
+<br>
+<p>Also... don't even get me started on the Cairngorm grooming relationship holy fuck</p>
 </details>
 
 Really though, this isn't really much of an issue at all, because while it took me out JUST A LITTLE BIT... it *really* didn't detract any of the experience that mattered to me.
