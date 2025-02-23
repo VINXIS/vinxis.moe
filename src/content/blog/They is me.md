@@ -14,6 +14,7 @@ imageAlt: Lustrous
 Edits:
  - Spoiler header and an extra line in the spoiler box below. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/a32c1a85a1afa54913904a34c6f90f5883ee1747)
  - Add hnk tag. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/c445a892eb095e9bf9491ca759d691c165888fba)
+ - Add extra line that I thought was always there in spoilerbox. Spoilers obviously. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/3c94867888db26dcaecf1dd6ec183f07976067d4)
 
 ## **THERE ARE NO SPOILERS ON THE EVENTS THAT OCCUR**
 ## **THERE ARE SPOILERS ON WHAT HOUSEKI NO KUNI IS ABOUT**
