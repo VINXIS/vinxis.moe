@@ -90,6 +90,12 @@ if ("centralFile" in props) {
             const files: PageInfo[] = JSON.parse(this.getAttribute("data-files")!);
             const emptyLinkToggle = this.querySelector(".filegraph-empty-link-toggle");
 
+            // Make nodes and links
+            let nodes: noteNode[] = [];
+            let links: { source: string | noteNode; target: string | noteNode; }[] = [];
+            let width = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
+            let height = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
+
             // Make responsive styling reactive instead of an early exit
             const { style } = this;
             const originalPosition = style.position;
@@ -98,9 +104,6 @@ if ("centralFile" in props) {
             const originalRight = style.right;
             const originalBottom = style.bottom;
             function updateResponsiveStyles () {
-                if (window.innerWidth < 1150 && !centralFile) // Hide toggle on small devices if there is no central file
-                    emptyLinkToggle?.setAttribute("data-hidden", "true");
-                
                 if (window.innerWidth < 1150) { // Remove position styling if centralFile is present on small devices
                     style.position = "initial";
                     style.top = "initial";
@@ -108,7 +111,6 @@ if ("centralFile" in props) {
                     style.right = "initial";
                     style.bottom = "initial";
                 } else {
-                    emptyLinkToggle?.removeAttribute("data-hidden");
                     style.position = originalPosition;
                     style.top = originalTop;
                     style.left = originalLeft;
@@ -117,12 +119,6 @@ if ("centralFile" in props) {
                 }
             }
             updateResponsiveStyles();
-
-            // Make nodes and links
-            let nodes: noteNode[] = [];
-            let links: { source: string | noteNode; target: string | noteNode; }[] = [];
-            let width = centralFile ? Math.min(window.innerWidth, 450) : window.innerWidth - 720;
-            let height = centralFile ? Math.min(window.innerWidth, 450) : window.innerWidth - 720;
 
             if (centralFile) {
                 nodes = [
@@ -327,13 +323,8 @@ if ("centralFile" in props) {
 
             // Resize canvas on window resize and update responsive styles
             window.addEventListener("resize", () => {
-                if (window.innerWidth < 1150) {
-                    width = Math.min(window.innerWidth, 450);
-                    height = Math.min(window.innerWidth, 450);
-                } else {
-                    width = Math.max(window.innerWidth - 720, 450);
-                    height = Math.max(window.innerWidth - 720, 450);
-                }
+                width = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
+                height = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
                 canvas.width = width;
                 canvas.height = height;
                 simulation.force("center", d3.forceCenter(width / 2, height / 2));
@@ -385,9 +376,5 @@ if ("centralFile" in props) {
         width: 100%;
         text-align: center;
         cursor: pointer;
-    }
-
-    .filegraph-empty-link-toggle[data-hidden="true"] {
-        display: none;
     }
 </style>
