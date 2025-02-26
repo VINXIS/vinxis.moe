@@ -93,8 +93,16 @@ if ("centralFile" in props) {
             // Make nodes and links
             let nodes: noteNode[] = [];
             let links: { source: string | noteNode; target: string | noteNode; }[] = [];
-            let width = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
-            let height = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
+
+            function setWidthAndHeight () {
+                let res = 450;
+                if (centralFile)
+                    res = window.innerWidth < 860 ? Math.min(window.innerWidth, 450) : 450;
+                else
+                    res = window.innerWidth < 860 ? Math.min(window.innerWidth - 177, 682) :  window.innerWidth - 702;
+                return { width: res, height: res };
+            }
+            let { width, height } = setWidthAndHeight();
 
             // Make responsive styling reactive instead of an early exit
             const { style } = this;
@@ -104,7 +112,7 @@ if ("centralFile" in props) {
             const originalRight = style.right;
             const originalBottom = style.bottom;
             function updateResponsiveStyles () {
-                if (window.innerWidth < 1150) { // Remove position styling if centralFile is present on small devices
+                if (window.innerWidth < 860) { // Remove position styling if centralFile is present on small devices
                     style.position = "initial";
                     style.top = "initial";
                     style.left = "initial";
@@ -323,8 +331,7 @@ if ("centralFile" in props) {
 
             // Resize canvas on window resize and update responsive styles
             window.addEventListener("resize", () => {
-                width = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
-                height = window.innerWidth < 1150 ? Math.min(window.innerWidth, 450) : Math.max(window.innerWidth - 720, 450);
+                ({ width, height } = setWidthAndHeight());
                 canvas.width = width;
                 canvas.height = height;
                 simulation.force("center", d3.forceCenter(width / 2, height / 2));

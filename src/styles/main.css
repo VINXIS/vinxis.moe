@@ -180,7 +180,7 @@ input[type="checkbox"] + label:after {
     padding: 10rem 5rem 5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
     .page {
         padding: calc(10rem / 1.5) calc(5rem / 1.5) calc(5rem / 1.5);
     }
