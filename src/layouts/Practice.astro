@@ -1,0 +1,57 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{frontmatter.title}</title>
+        <meta name="description" content=`Writing practice from ${new Date(frontmatter.date).toLocaleString()}` />
+        <meta name="theme-color" content="#FF6200" />
+        <meta name="author" content="VINXIS" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS"
+            href={new URL("rss.xml", Astro.site)}
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS - Blog"
+            href={new URL("rss_blog.xml", Astro.site)}
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS - Notes"
+            href={new URL("rss_notes.xml", Astro.site)}
+        />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="VINXIS - Posts"
+            href={new URL("rss_posts.xml", Astro.site)}
+        />
+    </head>
+    <body>
+        <main>
+            <h1>{frontmatter.title}</h1>
+            <small>{new Date(frontmatter.date).toLocaleString()}</small>
+            <slot />
+        </main>
+    </body>
+</html>
+
+
+<style>
+    body {
+        background: #cccccc;
+        color: #222222;
+        margin: 40px;
+        line-height: 1.5;
+    }
+</style>
