@@ -1,0 +1,187 @@
+---
+import Default from "../../layouts/Default.astro";
+
+const markdownFiles = await Astro.glob("./*.md");
+
+const sortedByNewest = markdownFiles.sort((a, b) => b.frontmatter.date - a.frontmatter.date);
+
+function formatDate (timestamp: number) {
+    const date = new Date(timestamp);
+    return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+}
+
+const meta = {
+    title: "Practice Sessions",
+    description: "List of practice sessions sorted by date",
+    ogTitle: "Practice Sessions",
+    ogDescription: "List of practice sessions sorted by date",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe/practice",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "Practice Sessions",
+    twitterDescription: "List of practice sessions sorted by date",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+---
+
+<Default meta={meta}>
+    <div class="practice-page">
+        <h1>Practice Sessions</h1>
+    
+        <div class="sort-controls">
+            <button id="newestBtn" class="active">Newest First</button>
+            <span class="separator">|</span>
+            <button id="oldestBtn">Oldest First</button>
+        </div>
+    
+        <ul class="practice-list" id="practiceList">
+            {sortedByNewest.map((file) => (
+                <li class="practice-item" data-date={file.frontmatter.date}>
+                    <a href={file.url}>
+                        <h2>{file.frontmatter.title}</h2>
+                        <time datetime={new Date(file.frontmatter.date).toISOString()}>
+                            {formatDate(file.frontmatter.date)}
+                        </time>
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+</Default>
+
+<script>
+    // Client-side JavaScript to handle the sorting
+    document.addEventListener("DOMContentLoaded", () => {
+        const newestBtn = document.getElementById("newestBtn")!;
+        const oldestBtn = document.getElementById("oldestBtn")!;
+        const practiceList = document.getElementById("practiceList")!;
+        const items: HTMLElement[] = [...practiceList.querySelectorAll(".practice-item")] as HTMLElement[];
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const sortParam = urlParams.get("sort");
+        
+        if (sortParam === "oldest")
+            sortOldestFirst();
+        
+        newestBtn.addEventListener("click", () => {
+            sortNewestFirst();
+            // Update URL without refreshing page
+            const url = new URL(window.location.href);
+            url.searchParams.set("sort", "newest");
+            window.history.pushState({}, "", url);
+        });
+        
+        oldestBtn.addEventListener("click", () => {
+            sortOldestFirst();
+            // Update URL without refreshing page
+            const url = new URL(window.location.href);
+            url.searchParams.set("sort", "oldest");
+            window.history.pushState({}, "", url);
+        });
+        
+        function sortNewestFirst () {
+            items.sort((a, b) => {
+                const dateA = parseInt(a.dataset.date!);
+                const dateB = parseInt(b.dataset.date!);
+                return dateB - dateA;
+            });
+            
+            reorderItems();
+            
+            newestBtn.classList.add("active");
+            oldestBtn.classList.remove("active");
+        }
+        
+        function sortOldestFirst () {
+            items.sort((a, b) => {
+                const dateA = parseInt(a.dataset.date!);
+                const dateB = parseInt(b.dataset.date!);
+                return dateA - dateB;
+            });
+            
+            reorderItems();
+            
+            oldestBtn.classList.add("active");
+            newestBtn.classList.remove("active");
+        }
+        
+        function reorderItems () {
+            // Clear the list and re-append items in the new order
+            items.forEach(item => practiceList.appendChild(item));
+        }
+    });
+</script>
+
+<style>
+  .practice-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .sort-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .sort-controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: #666;
+  }
+  
+  .sort-controls button.active {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .separator {
+    padding: 0 0.5rem;
+  }
+  
+  .practice-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .practice-item {
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem 0;
+  }
+  
+  .practice-item:last-child {
+    border-bottom: none;
+  }
+  
+  .practice-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .practice-item h2 {
+    margin: 0 0 0.5rem;
+  }
+  
+  .practice-item time {
+    color: #666;
+    font-size: 0.9rem;
+  }
+</style>
