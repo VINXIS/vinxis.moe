@@ -111,3 +111,20 @@ My anki had been insanely flopping lately because I completely neglected it for 
 And before I sleep, I'm just figuring out implementation for attaching pictures to this blog post, and then going to sleep. Also my clothes FINALLY dried, but I'm not fully sure if they smell fine or not. At the very least, the scent they have now is very... Neutral I suppose. I just hope that they don't start smelling like mildew once I wear them.
 
 I'll add pictures after I wake up tomorrow. I added 2 for the first day... hopefully it just... works... and so all I'd have to do tomorrow is pic dump...
+
+# April 6 2025 JST
+*Written at April 6 10:32 UTC*
+
+For some reason my Obsidian isn't expanding its window on my laptop. It's running NixOS, which... comes with its upsides and downsides, but I do enjoy using it so far.
+
+Today was mostly just home improvement more than anything though. I still wanted pillows, and started looking at Amazon, but it was honestly relatively quite expensive looking at it.
+
+Finally, a friend of mine though suggested to get it from Nitori, and so I went there, and not only did i IMMEDIATELY find pillows, I also found clothing hangers cheaper than in Donki, 10 hangers vs 7 for the same price. Crazy
+
+After that I was finally able to put my suitcases to the side instead of having them filled with clothes, and get a bit more space in my room that was being taken up by my massive suitcase.
+
+I still didn't eat at all today and I was thinking of starting to cook for myself, so I went to COOP and got some groceries. Took a bit, but I found pretty much everything I was trying to look for I think. Rice, meat, spices, egg, milk, coffee, sugar, bananas. Also got myself a 280 yen meal to eat today which was nice. I did forget oil though, but oh well..
+
+I'm shocked that the milk here is actually just so much better than in North America. I took a sip of coffee and it immediately hit. I was like WHAT the hell??? The milk is so fucking good? and I got the cheapest milk there was in COOP. Absolutely mindblowing honestly.
+
+Unfortunately I wasted a decent amount of my day fooling around online, so I ended up not having much time to add more pictures to this. Hopefully I get to it like this week or so.
