@@ -128,3 +128,18 @@ I still didn't eat at all today and I was thinking of starting to cook for mysel
 I'm shocked that the milk here is actually just so much better than in North America. I took a sip of coffee and it immediately hit. I was like WHAT the hell??? The milk is so fucking good? and I got the cheapest milk there was in COOP. Absolutely mindblowing honestly.
 
 Unfortunately I wasted a decent amount of my day fooling around online, so I ended up not having much time to add more pictures to this. Hopefully I get to it like this week or so.
+
+# April 7 2025
+*Written at April 7 12:32 UTC*
+
+Still had no time to add more pictures today, maybe tomorrow or the day after or the day after...
+
+Lots of interesting stuff at the lab today. Saw someone do surgery on a rat with close-up gore. It was honestly very interesting though of how stroke models were being set up with genetic changes and all.
+
+I also had ramen in Japan for the first time. I got some really mid ass ramen though from the faculty cafeteria for 5 bux, but honestly it compares similarly to the fuckass 20 dollar ramen u get in Canada so...
+
+After that it was some more cell bio lab technique stuff, specifically PCR and E.Coli culturing. During that time I heard from one of the PhD students that Sendai is known for beef tongue, and for Zundamon, and that I should try the Zunda shake. Honestly I didn't even know that [Zundamon](https://voisona.com/song/artist/zundamon_ja_JP/)'s character design was based on Edamame, so that was an interesting revelation...
+
+Afterwards I went back home, copped a Zunda shake, and a Lawson chiki. Lawson chiki was as good as famichiki, but yea that's the end of the chiki saga I'm not having any more in Japan lol. Zunda shake though.................. that was probably the best thing I've tasted here so far. Holy shit it was so fukcing good i want more even though it was kinda expensive at like 3-4 dollars for a small cup.
+
+I was actually in the lab so long that it's almost 10 pm and I still haven't finished my Anki... oh well it probably won't be for as long tomorrow or the day after(?) There's new students coming this week though so idk, gonna have to see
