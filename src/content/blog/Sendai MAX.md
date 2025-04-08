@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1743857781713"
+lastModified: "1744155831606"
 tags:
   - life
   - japan
