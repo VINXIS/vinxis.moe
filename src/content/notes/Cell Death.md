@@ -11,3 +11,6 @@ Cell death occurs after either overwhelming damage, or from specific signalling 
 Further types include:
 - Mitotic Catastrophe<sup>[1]</sup>
 - Ferroptosis<sup>[1]</sup>
+
+References:
+[1] https://doi.org/10.1101/cshperspect.a006080
