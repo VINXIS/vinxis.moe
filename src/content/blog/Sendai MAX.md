@@ -140,6 +140,15 @@ I also had ramen in Japan for the first time. I got some really mid ass ramen th
 
 After that it was some more cell bio lab technique stuff, specifically PCR and E.Coli culturing. During that time I heard from one of the PhD students that Sendai is known for beef tongue, and for Zundamon, and that I should try the Zunda shake. Honestly I didn't even know that [Zundamon](https://voisona.com/song/artist/zundamon_ja_JP/)'s character design was based on Edamame, so that was an interesting revelation...
 
-Afterwards I went back home, copped a Zunda shake, and a Lawson chiki. Lawson chiki was as good as famichiki, but yea that's the end of the chiki saga I'm not having any more in Japan lol. Zunda shake though.................. that was probably the best thing I've tasted here so far. Holy shit it was so fukcing good i want more even though it was kinda expensive at like 3-4 dollars for a small cup.
+Afterwards I went back home, copped a Zunda shake for 380 yen, and a Lawson chiki. Lawson chiki was as good as famichiki, but yea that's the end of the chiki saga I'm not having any more in Japan lol. Zunda shake though.................. that was probably the best thing I've tasted here so far. Holy shit it was so fukcing good i want more even though it was kinda expensive at like 3-4 dollars for a small cup.
 
 I was actually in the lab so long that it's almost 10 pm and I still haven't finished my Anki... oh well it probably won't be for as long tomorrow or the day after(?) There's new students coming this week though so idk, gonna have to see
+
+# April 8 2025
+*Written at April 8 23:37 UTC*
+
+Nothing super exciting really happened; today I met the prof again in the lab meeting and also discussed about how I do programming with him and an assistant professor later, and then watched some more PCR experimental process stuff. Was going to watch someone else do something as well, but they had to leave to do clinic work early.
+
+I tried the [hagi no tsuki](https://www.sanzen.co.jp/english/haginotsuki/index.html) though. It was chill, not amazing but yea. Zunda shake still at top rn. Honestly though it was like 260(?) yen for one, and it was really expensive for what it was worth tbh, the zunda shake was worth its price much more in comparison.
+
+Tried to do more anki when I got home but instead I watched ishowspeed china vods and then passed out lol. Was going to get more home appliances stuff but it was gonna start raining by the time I'd have been done so I just went home instead. I'm writing this the day after's morning if you can't tell lol
