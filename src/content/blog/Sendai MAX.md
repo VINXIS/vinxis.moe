@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744155831606"
+lastModified: "1744204682963"
 tags:
   - life
   - japan
@@ -152,3 +152,20 @@ Nothing super exciting really happened; today I met the prof again in the lab me
 I tried the [hagi no tsuki](https://www.sanzen.co.jp/english/haginotsuki/index.html) though. It was chill, not amazing but yea. Zunda shake still at top rn. Honestly though it was like 260(?) yen for one, and it was really expensive for what it was worth tbh, the zunda shake was worth its price much more in comparison.
 
 Tried to do more anki when I got home but instead I watched ishowspeed china vods and then passed out lol. Was going to get more home appliances stuff but it was gonna start raining by the time I'd have been done so I just went home instead. I'm writing this the day after's morning if you can't tell lol
+
+# April 9 2025
+*Written at April 9 12:43 UTC*
+
+Reallyyy busy day today I didn't get home until 8 pm. Trying to remember what happened first off... ah watched more E.Coli culturing, and then talked about PCR results analysis, and then watched some insane process of Northern Blotting. I remember doing Western Blot in a biology class a few years ago, but my memory is barely there for that; watching northern blotting was kind of insane... also saw the production of Agar feed for E.Coli.
+
+By that time it was around like 5 pm and people were heading out for dinner and invited me. One of them paid for my ramen which was REALLY epic of them, because I put a 10k yen bill into my Suica lol so I basically have no cash left.
+
+The place we went to was a fish ramen shop, which was really interesting. It was also technically my first Official ramen because the ramen in the cafeteria for 5 bux doesn't really count. Anyway this fish ramen was fuckin epic it was way better than the ramen at the cafeteria. Actually surprising how good it tasted considering it's fish in ramen, a combination I didn't expect to work so well.
+
+The city layout and planning in Japan is just so different, like you see how different it is online already, but when you're there in person it's really interesting how everything is laid out/side by side when you walk down streets of various sizes. Getting to the ramen shop you go down a decently-sized street in Sendai's standards, and even that is nothing like you would see in North America at all. It's so fascinating something so simple and fundamental and basic in Sendai is just nonexistent in North America. Man Canada fucking sucks.
+
+This was also the first time I rode the bus in Sendai. I might just ride the bus from now on instead of the subway because it's not only cheaper (190 yen to 210 yen), it also takes less time, because most of the walking I do between the station and the university is covered by the bus. The bus ride itself was just a normal ass bus ride nothing crazy. Though it was interesting how you always have to leave from the front of the bus because of how payment works for them.
+
+Also got myself bag clips for once, so I can finally cook some rice for myself, maybe for breakfast tomorrow if I wake up early enough, but we'll see.
+
+I also started working on the comments section for my site, and will probably change the sort ordering for pages by last updated instead of created. Maybe both will be done tomorrow. Maybe I'll also finally add pictures to this blog post tomorrow too. We'll see. Tomorrow I'm with the lab until like 7-8 pm so who knows.
