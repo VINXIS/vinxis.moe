@@ -11,16 +11,14 @@ if (!postID) {
 
     if (
         postID !== "me" &&
-    postID !== "comments" &&
-    postID.split("/").length < 2 &&
-    ["blog", "posts"].includes(postID.split("/")[0]!)
-    ) {
+        postID !== "comments" &&
+        postID.split("/").length < 2 &&
+        ["blog", "posts"].includes(postID.split("/")[0]!)
+    )
         throw new Error("Invalid post ID");
-    }
 
-    if (postID === "comments") {
+    if (postID === "comments")
         postID = "global";
-    }
 }
 
 // The client-side script handles fetching and displaying comments
@@ -72,7 +70,6 @@ if (!postID) {
             </div>
 
             <div class="form-buttons">
-                <button type="button" id="toggle-owner">Post as owner</button>
                 <button type="submit">Post Comment</button>
             </div>
         </form>
@@ -85,6 +82,7 @@ if (!postID) {
 </div>
 
 <script>
+document.addEventListener("astro:page-load", () => {
     interface Comment {
         ID: number;
         postID: string;
@@ -125,7 +123,6 @@ if (!postID) {
     const replyToContainer = document.getElementById("reply-to-container") as HTMLElement | null;
     const replyToName = document.getElementById("reply-to-name") as HTMLElement | null;
     const replyIDInput = document.getElementById("replyID") as HTMLInputElement | null;
-    const toggleOwnerBtn = document.getElementById("toggle-owner") as HTMLButtonElement | null;
     const ownerSection = document.querySelector(".owner-section") as HTMLElement | null;
     const cancelReplyBtn = document.getElementById("cancel-reply") as HTMLButtonElement | null;
     if (
@@ -133,7 +130,6 @@ if (!postID) {
         !replyToContainer ||
         !replyToName ||
         !replyIDInput ||
-        !toggleOwnerBtn ||
         !ownerSection ||
         !cancelReplyBtn
     )
@@ -235,10 +231,30 @@ if (!postID) {
         replyToContainer.style.display = "none";
     });
 
-    // Toggle owner password field
-    toggleOwnerBtn.addEventListener("click", () => {
-        ownerSection.style.display =
-        ownerSection.style.display === "none" ? "block" : "none";
+    // If user types "vnxs", show owner section
+    let pressedKeys = new Set<string>();
+    document.addEventListener("keydown", (event) => {
+        if (pressedKeys.has(event.key))
+            return;
+        if (event.key === "CapsLock")
+            pressedKeys = new Set<string>();
+        if (pressedKeys.has(event.key.toUpperCase()) || pressedKeys.has(event.key.toLowerCase())) {
+            pressedKeys.delete(event.key.toUpperCase());
+            pressedKeys.delete(event.key.toLowerCase());
+        }
+        pressedKeys.add(event.key);
+        if (
+            (pressedKeys.has("v") || pressedKeys.has("V")) &&
+            (pressedKeys.has("n") || pressedKeys.has("N")) &&
+            (pressedKeys.has("x") || pressedKeys.has("X")) &&
+            (pressedKeys.has("s") || pressedKeys.has("S"))
+        ) {
+            ownerSection.style.display = "block";
+            pressedKeys.clear();
+        }
+    });
+    document.addEventListener("keyup", (event) => {
+        pressedKeys.delete(event.key);
     });
 
     // Handle form submission
@@ -329,28 +345,23 @@ if (!postID) {
             commentsList!.innerHTML =
                 "<div class=\"error\">Failed to load comments. Please try again later.</div>";
         });
+});
 </script>
 
 <style is:global>
   .comments-container {
     margin-top: 2rem;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      sans-serif;
   }
 
   .comments-list {
-    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 
   .comment {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #f9f9f9;
+    background-color: var(--code-bg);
   }
 
   .comment.reply {
@@ -377,7 +388,7 @@ if (!postID) {
   }
 
   .comment-owner {
-    background-color: #007bff;
+    background-color: var(--secondary);
     color: white;
     padding: 0.1rem 0.3rem;
     border-radius: 4px;
@@ -386,11 +397,11 @@ if (!postID) {
 
   .comment-website {
     font-size: 0.8rem;
-    color: #0066cc;
+    color: var(--secondary);
   }
 
   .comment-timestamp {
-    color: #666;
+    color: var(--neutral);
     font-size: 0.8rem;
     margin-left: auto;
   }
@@ -406,37 +417,22 @@ if (!postID) {
     justify-content: flex-end;
   }
 
-  .reply-button {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0.2rem 0.5rem;
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-
-  .reply-button:hover {
-    background-color: #f0f0f0;
-  }
-
-  .loading,
-  .error,
-  .no-comments {
+  .loading, .error, .no-comments {
     padding: 1rem;
     text-align: center;
-    color: #666;
+    color: var(--analogous1);
   }
 
   .error {
-    color: #dc3545;
+    color: var(--analogous2);
   }
 
-  /* Form styles */
   .comment-form-container {
     margin-top: 2rem;
   }
 
   .comment-form {
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -452,47 +448,17 @@ if (!postID) {
     font-weight: 500;
   }
 
-  input,
-  textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: inherit;
-  }
-
-  textarea {
-    resize: vertical;
-  }
-
   .form-buttons {
     display: flex;
     gap: 0.5rem;
     justify-content: flex-end;
   }
 
-  button {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-
-  button[type="submit"] {
-    background-color: #007bff;
-    color: white;
-    border-color: #007bff;
-  }
-
-  button:hover {
-    opacity: 0.9;
-  }
-
   #reply-to-container {
     margin-top: 1rem;
     padding: 0.5rem;
-    background-color: #f0f0f0;
-    border-radius: 4px;
+    background-color: var(--code-bg);
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
