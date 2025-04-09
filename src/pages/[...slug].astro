@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import { getCollection } from "astro:content";
 import Default from "../layouts/Default.astro";
+import Comments from "../components/Comments.astro";
 import FileGraph from "../components/FileGraph.astro";
 import type { BasePageInfo, PageLink } from "../utils/pageInfo";
 import { Image } from "astro:assets";
@@ -110,6 +111,7 @@ const meta = {
                 </div>
             </div>
         }
+        { page.collection !== "notes" && (<Comments />)}
     </div>
     <FileGraph elementStyle="position: absolute; top:10rem; right:5rem;" centralFile={{slug: page.slug, name: title }} backlinks={backlinks} forwardlinks={forwardlinks} />
 </Default>
