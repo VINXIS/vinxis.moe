@@ -1,12 +1,12 @@
 ---
 isObsidianImport: false
 created: "1743988136869"
-lastModified: "1744080291867"
+lastModified: "1744167834284"
 tags:
   - biology
   - research
 ---
-Stress towards cells occurs when the cell experiences errors in function due to various factors, ranging from cytotoxic substances to adverse environments. The responses to stress by cells depends on the type and intensity of the stresses provided onto the cells. They can be categorised as such<sup>[1]</sup>:
+[[Cell]] stress occurs when the cell experiences errors in function due to various factors, ranging from cytotoxic substances to adverse environments. The responses to stress by cells depends on the type and intensity of the stresses provided onto the cells. They can be categorised as such<sup>[1]</sup>:
 - [[Heat Shock Response]]
 - [[Unfolded Protein Response]]
 - [[DNA Damage Response]]

@@ -6,7 +6,7 @@ tags:
   - research
   - biology
 ---
-Cell passaging (aka Subculturing or Splitting) is a lab technique to grow more cells from a given culture obtained. Cells of some amount (not all) from a previous medium are transferred to a new medium in order to continue their proliferation.
+[[Cell]] passaging (aka Subculturing or Splitting) is a lab technique to grow more cells from a given culture obtained. Cells of some amount (not all) from a previous medium are transferred to a new medium in order to continue their proliferation.
 
 1. Cells should be examined via microscope and visually for contamination
 2. Previous media is drained/vacuumed
