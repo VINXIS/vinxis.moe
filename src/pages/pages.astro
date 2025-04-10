@@ -256,6 +256,24 @@ document.addEventListener("astro:page-load", async () => {
     background-color: var(--dark-neutral);
 }
 
+#search, #search-tags {
+    padding: 1rem;
+    background-color: var(--neutral);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+#search::placeholder, #search-tags::placeholder {
+    color: white;
+}
+
+#search:focus, #search-tags:focus {
+    outline: none;
+    border: none;
+}
+
 .search-tags-list {
     display: flex;
     flex-wrap: wrap;
