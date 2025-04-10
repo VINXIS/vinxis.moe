@@ -76,6 +76,7 @@ if (!postID) {
 
         <div id="reply-to-container" style="display: none;">
             <p>Replying to: <span id="reply-to-name"></span></p>
+            <p id="reply-content"></p>
             <button type="button" id="cancel-reply">Cancel Reply</button>
         </div>
     </div>
@@ -122,6 +123,7 @@ document.addEventListener("astro:page-load", () => {
     const commentForm = document.getElementById("comment-form") as HTMLFormElement | null;
     const replyToContainer = document.getElementById("reply-to-container") as HTMLElement | null;
     const replyToName = document.getElementById("reply-to-name") as HTMLElement | null;
+    const replyContent = document.getElementById("reply-content") as HTMLElement | null;
     const replyIDInput = document.getElementById("replyID") as HTMLInputElement | null;
     const ownerSection = document.querySelector(".owner-section") as HTMLElement | null;
     const cancelReplyBtn = document.getElementById("cancel-reply") as HTMLButtonElement | null;
@@ -129,6 +131,7 @@ document.addEventListener("astro:page-load", () => {
         !commentForm ||
         !replyToContainer ||
         !replyToName ||
+        !replyContent ||
         !replyIDInput ||
         !ownerSection ||
         !cancelReplyBtn
@@ -218,6 +221,7 @@ document.addEventListener("astro:page-load", () => {
 
         replyIDInput.value = commentId;
         replyToName.textContent = commentName;
+        replyContent.textContent = (event.currentTarget as HTMLButtonElement).closest(".comment")?.querySelector(".comment-body")?.textContent || "";
         replyToContainer.style.display = "block";
 
         // Scroll to comment form
@@ -366,8 +370,7 @@ document.addEventListener("astro:page-load", () => {
 
   .comment.reply {
     margin-left: 2rem;
-    border-left: 3px solid #007bff;
-    background-color: #f5f5f5;
+    border-left: 3px solid var(--secondary);
   }
 
   .replies {
