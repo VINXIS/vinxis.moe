@@ -32,7 +32,7 @@ const pages = await Promise.all([...blog, ...notes, ...posts].map(async page => 
     };
 }));
 pages.sort((a, b) => {
-    return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
+    return new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime();
 });
 
 const tagDict: Record<string, number> = {};
@@ -97,6 +97,17 @@ pageInfos.forEach(pageInfo => {
                 <input type="checkbox" id="posts" checked />
                 <label for="posts">Posts</label>
             </div>
+            <div class="sort-options">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="modified-desc" selected>Last Modified (Newest)</option>
+                    <option value="created-desc">Created (Newest)</option>
+                    <option value="modified-asc">Last Modified (Oldest)</option>
+                    <option value="created-asc">Created (Oldest)</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                </select>
+            </div>
             <input type="text" id="search-tags" placeholder="Search tags..." autocomplete="off" />
             <div class="search-tags-list">
                 {
@@ -157,6 +168,16 @@ import damerauLevenshteinDistance from "../utils/levenshtein";
 
 document.addEventListener("astro:page-load", async () => {
 
+    const sortMethods = {
+        "modified-desc": (a: any, b: any) => new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime(),
+        "modified-asc": (a: any, b: any) => new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime(),
+        "created-desc": (a: any, b: any) => new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime(),
+        "created-asc": (a: any, b: any) => new Date(a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.created).getTime(),
+        "title-asc": (a: any, b: any) => a.page.id.localeCompare(b.page.id),
+        "title-desc": (a: any, b: any) => b.page.id.localeCompare(a.page.id),
+    } as const;
+    type SortMethod = keyof typeof sortMethods;
+
     const distanceCompare = damerauLevenshteinDistance(1);
 
     const blog = await getCollection("blog");
@@ -170,11 +191,10 @@ document.addEventListener("astro:page-load", async () => {
             render: await page.render(),
         };
     }));
-    filteredPages.sort((a, b) => {
-        return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
-    });
+
     let search = "";
     let searchTags = "";
+    let currentSort: SortMethod = "modified-desc";
 
     async function updateList () {
         filteredPages = await Promise.all(pages.filter(page => {
@@ -192,9 +212,7 @@ document.addEventListener("astro:page-load", async () => {
                 render: await page.render(),
             };
         }));
-        filteredPages.sort((a, b) => {
-            return new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime();
-        });
+        filteredPages.sort(sortMethods[currentSort]);
 
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
             return `<a href="${page.page.collection}/${page.page.slug}" style="color:var(--${page.page.collection}); height:100px;">
@@ -221,9 +239,15 @@ document.addEventListener("astro:page-load", async () => {
     document.getElementById("search")!.addEventListener("click", e => e.stopPropagation());
 
     ["blog", "notes", "posts"].forEach(type => {
-        document.getElementById(type)!.addEventListener("change", () => updateList().catch(console.error));
+        document.getElementById(type)!.addEventListener ("change", () => updateList().catch(console.error));
         document.getElementById(type)!.addEventListener("click", (e) => e.stopPropagation());
     });
+
+    document.getElementById("sort-select")!.addEventListener("change", event => {
+        currentSort = (event.target as HTMLSelectElement).value as SortMethod;
+        updateList().catch(console.error);
+    });
+    document.getElementById("sort-select")!.addEventListener("click", e => e.stopPropagation());
 
     document.getElementById("search-tags")!.addEventListener("input", event => {
         searchTags = (event.target as HTMLInputElement).value.toLowerCase();
@@ -267,6 +291,15 @@ document.addEventListener("astro:page-load", async () => {
 
 #search::placeholder, #search-tags::placeholder {
     color: var(--primary);
+}
+
+#sort-select {
+    background-color: var(--dark-neutral);
+    border: 0;
+    font-family: "Inconsolata", sans-serif;
+    padding: 5px 0;
+    color: var(--primary);
+    font-size: 1rem;
 }
 
 .search-tags-list {
