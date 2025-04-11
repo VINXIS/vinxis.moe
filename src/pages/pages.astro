@@ -256,6 +256,19 @@ document.addEventListener("astro:page-load", async () => {
     background-color: var(--dark-neutral);
 }
 
+#search, #search-tags {
+    background-color: var(--dark-neutral);
+    border: 0;
+    font-family: "Inconsolata", sans-serif;
+    padding: 5px 0;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+#search::placeholder, #search-tags::placeholder {
+    color: var(--primary);
+}
+
 .search-tags-list {
     display: flex;
     flex-wrap: wrap;

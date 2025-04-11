@@ -61,9 +61,9 @@ const meta = {
                     placeholder="Output will appear here"
                 />
             </div>
-            <div class="button" id="generate">
+            <button id="generate">
                 Generate
-            </div>
+            </button>
         </div>
     </div>
 </Default>
@@ -132,22 +132,7 @@ const meta = {
 
 .text-boxes textarea {
     flex: 1;
-    padding: 1rem;
-    font-family: "Inconsolata", sans-serif;
     font-size: 1rem;
-    background-color: var(--neutral);
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-}
-
-.text-boxes textarea::placeholder {
-    color: white;
-}
-
-.text-boxes textarea:focus {
-    outline: none;
-    border: none;
 }
 
 .knobs {
@@ -217,20 +202,5 @@ const meta = {
 
 .knob label {
     color: white;
-}
-
-.button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    background-color: var(--dark-neutral);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    height: min-content;
-}
-
-.button:hover {
-    background-color: var(--secondary);
 }
 </style>

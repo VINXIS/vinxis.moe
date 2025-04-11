@@ -120,17 +120,26 @@ code, blockquote, blockquote p {
     padding: 0 2px;
 }
 
-input[type="text"] {
-    background-color: var(--dark-neutral);
-    border: 0;
-    font-family: "Inconsolata", sans-serif;
-    padding: 5px 0;
-    color: var(--primary);
-    font-size: 1rem;
+input, textarea {
+    padding: 1rem;
+    background-color: var(--neutral);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
 }
 
-input[type="text"]:focus {
+textarea {
+    resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
+input:focus, textarea:focus {
     outline: none;
+    border: none;
 }
 
 input[type="checkbox"] {
@@ -170,6 +179,22 @@ input[type="checkbox"] + label:after {
     height: 0.5rem;
     background-color: var(--dark-neutral);
     border-radius: 2px;
+}
+
+button {
+    padding: 1rem 2rem;
+    font: inherit;
+    font-size: 1rem;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: min-content;
+}
+
+button:hover {
+    background-color: var(--secondary);
 }
 
 .no-scrollbar {

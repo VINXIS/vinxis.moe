@@ -4,6 +4,7 @@ import Default from "../layouts/Default.astro";
 import vinxisOrange from "../images/vinxisOrange.png";
 import dateToString from "../utils/dateToString";
 import { execSync } from "child_process";
+import Comments from "../components/Comments.astro";
 import Webring from "../components/Webring.astro";
 
 const email = "oykxf2@gmail.com";
@@ -215,6 +216,7 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
                 </div>
             </div>
         </div>
+        <Comments />
     </div>
     <span slot="hidden" class="hidden">idgaf/any</span>
     <span slot="hidden" class="hidden draggable-info" style="top:8rem; left:2rem; padding:2rem;">The sections below are draggable!</span>
