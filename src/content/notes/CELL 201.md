@@ -1,7 +1,7 @@
 ---
 isObsidianImport: true
 created: Thu Sep 08 2022 15:41:25 GMT-0600 (Mountain Daylight Saving Time)
-lastModified: Tue Nov 15 2022 12:12:21 GMT-0700 (Mountain Standard Time)
+lastModified: "1744339883799"
 ---
 # CELL 201 | Introduction to Molecular Cell Biology
 Fall 2022 #Class
@@ -51,7 +51,7 @@ Fredrich Wöhler showed compounds living organisms make can be made in a lab wit
 
 Eduard Buchner showed sugar can be fermented without yeast using [[Enzyme]]s such as zymase in 1897
 
-Gregor Mendel laid the foundation on the understanding of how hereditary factors pass from parents to offspring using pea plants in 1866. Called [[Genes]]
+Gregor Mendel laid the foundation on the understanding of how hereditary factors pass from parents to offspring using pea plants in 1866. Called genes.
 
 Walther Flemming discovered [[Chromosome]]s in 1880. Called the process in which they appeared [[Mitosis]]
 
