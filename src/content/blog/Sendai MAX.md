@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744204682963"
+lastModified: "1744329696133"
 tags:
   - life
   - japan
@@ -156,7 +156,7 @@ Tried to do more anki when I got home but instead I watched ishowspeed china vod
 # April 9 2025
 *Written at April 9 12:43 UTC*
 
-Reallyyy busy day today I didn't get home until 8 pm. Trying to remember what happened first off... ah watched more E.Coli culturing, and then talked about PCR results analysis, and then watched some insane process of Northern Blotting. I remember doing Western Blot in a biology class a few years ago, but my memory is barely there for that; watching northern blotting was kind of insane... also saw the production of Agar feed for E.Coli.
+Reallyyy busy day today I didn't get home until 8 pm. Trying to remember what happened first off... ah watched more E.Coli culturing, and then talked about PCR results analysis, and then watched some insane process of the [[Northern Blot]]. I remember doing Western Blot in a biology class a few years ago, but my memory is barely there for that; watching northern blotting was kind of insane... also saw the production of Agar feed for E.Coli.
 
 By that time it was around like 5 pm and people were heading out for dinner and invited me. One of them paid for my ramen which was REALLY epic of them, because I put a 10k yen bill into my Suica lol so I basically have no cash left.
 
@@ -169,3 +169,30 @@ This was also the first time I rode the bus in Sendai. I might just ride the bus
 Also got myself bag clips for once, so I can finally cook some rice for myself, maybe for breakfast tomorrow if I wake up early enough, but we'll see.
 
 I also started working on the comments section for my site, and will probably change the sort ordering for pages by last updated instead of created. Maybe both will be done tomorrow. Maybe I'll also finally add pictures to this blog post tomorrow too. We'll see. Tomorrow I'm with the lab until like 7-8 pm so who knows.
+
+# April 10 2025
+*Written at April 10 23:24 UTC*
+
+What a hectic day. New student came in to the lab this day. He's from France and he does look very french; that in itself was quite exciting honestly. After that it was a bunch more lab stuff, did some cell passaging and made my own cell culture plate for [[HEK]] cells, and then I also watched the final process of the [[Northern Blot]] which is such a long process honestly and it seems difficulty to deal with the gel and stuff. After that was further [[Ribonucleic Acid]] extraction from E.Coli cells.
+
+Ah before the lab, I had a meeting with professors back at the University of Alberta, hoping to see how that goes. Ideally, I can get into a sort of double masters thing where I can do a masters at both Tohokudai and UofA, but I don't really know yet. Next week is going to be very stressful to try to figure all of this out.
+
+Ate lunch at the university cafeteria this day, and got a nice bowl of rice and crispy fried fish, and it was like a total of like 250 yen or something. It's kind of crazy how even the most basic of foods tastes so much better than in Canada for so much cheaper man I don't understand how Canada flops like this.
+
+I'm also running out of money; luckily a friend of mine found some bank spots and stuff that can convert usd to yen, so i gotta do that april 11, i also want a zunda shake again SO BAD its fucking gkilling me man
+
+That evening was the "hanami" but there wasn't really any cherry blossom viewing happening. So basically the entire neurosurgery departments of Sendai rented out an all you can eat yakiniku spot across the city, and there were like hundreds of people there it was crazy. Ironically almost no foreigners though and the foreigners were like in their own little corner lol. It's not like it really mattered that much just amusing. 
+
+Anyway the food there was probably some of the best food I ever had. What the fuck. Someone ordered a pizza at the yakiniku LOL but it was like the second best pizza I ever had???? At a yakiniku???????? Like what the fuck. Also the meat was so fucking good, the fries were so fucking good, the kimchi was epic, the almond jelly was fucking amazinf. I can't believe it. And it was free because all the neurosurgeons basically paid for the meal lololol
+
+We DID take an entire massive group picture by the cherry blossom trees after the food, but it was night so it's not the greatest picture. It was really pretty though multiple layers of cherry blossom branches on top of another, and the trees were also lined up side by side as well. Really gorgeous sight honestly.
+
+Some point after someone asked me about if I have a girlfriend in Canada, and then it later on devolved towards the idea of "You should get a girlfriend here in Japan" and "Are you thinking of dating/Why don't you wanna date?" And Honestly at the moment it wasn't that bad, I just said it's complicated over and over until they stopped picking on it, but it's been kind of rotting my brain.
+
+The inherent issue is like, how do I truly discern if I can talk about gender and sexuality at a given space? Even in Edmonton/Alberta/Canada it's kind of impossible/inscrutable to discern this usually, and it's not like it's any easier in Sendai lol. Like I'm not even sure if I'm asexual or pansexual or even like women or men or anything else for that matter, but I can't really talk about that because it's never clear if it's safe to talk about stuff like that or not. 
+
+Even if I were to try dating women in Japan, I'm not really sure if I could handle the cultural differences truly? If I were to date someone it'd probably be someone who doesn't really give a shit about gender, but I am PRETTY sure gender identity is very strictly adhered to by people here, at least the cis people here.
+
+Ok I don't really want to ramble about this brainrot because it's just really drunk people asking me about stuff because they are really drunk, so I'll just end that there. I got home at like around 10 pm? While I was going to the station from the university, I also saw my professor behind me when I turned to go into a 7/11, and he had a massive smile and waved back at me. He's so epic
+
+Hopefully I get pictures up soon. Comments should be up April 11 though.
