@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744329696133"
+lastModified: "1744512435012"
 tags:
   - life
   - japan
@@ -196,3 +196,39 @@ Even if I were to try dating women in Japan, I'm not really sure if I could hand
 Ok I don't really want to ramble about this brainrot because it's just really drunk people asking me about stuff because they are really drunk, so I'll just end that there. I got home at like around 10 pm? While I was going to the station from the university, I also saw my professor behind me when I turned to go into a 7/11, and he had a massive smile and waved back at me. He's so epic
 
 Hopefully I get pictures up soon. Comments should be up April 11 though.
+
+# April 11 2025
+*Written at April 13 2:01 UTC*
+
+Comments DID go up this day let me tell you. They did in fact go up. I'm actually really happy about it even though at the time of writing there hasn't been new comments lolol. Hopefully I also get table of contents up for pages like these as well for easier nav.... and also the pictures...
+
+Not much actually happened this day I believe. The majority of the lab was basically knocked out I think from the night before because noone was there. I left a bit early as a result since there wasn't really much to do this day. I wanted to ask about a project the professor was talking about on the bus as we were going to the dinner, but he wasn't there either.
+
+I also converted the USD i actually brought now finally, honestly the fact I was able to survive for a week off of like just 150 CAD is pretty impressive in my opinion. Like I had to get home appliances and stuff too, and I still ate out, and it still all fit in 150 CAD the past like 9 or so days. Anyway I lost 10 dollars apparently because the USD JPY was like 143 JPY per dollar? and I exchanged at 140. Oh well
+
+After that I think I basically did nothing. I finally got on discord VC for once after so long. Back home I'd always be on discord VC like basically every waking moment, so it's kind of crazy how little I was on discord VC since until now. Since my laptop is running NixOS and it's honestly like my first time using a Linux OS that isn't just like a server or like WSL or something, it was a bit of a hassle. The audio drivers still bug out for some reason, which I'm not sure why, but it's manageable so far.
+
+Proton works really well too, I'm kind of shocked. I just turned on the steam play toggle thing and I was immediately able to just play Neon White. Weirdly though, the mouse feels like its polling rate is really low for some reason? It's the same mouse I used at home, so I think it's just something with the drivers of this computer currently, but that's an investigation for another time.
+
+# April 12 2025
+*Written at April 13 2:29 UTC*
+
+This morning was hell. The night of April 10 was brainrotting me like crazy. Something about it was just bothering me so much but I couldn't really figure out why. The whole thing of being asked if I have a GF and that I should get one and that I should go to Osaka and whatever the fuck. Like it's not really the issue of them saying all that, but the issue of me not being sure if I'm allowed to respond how I want to when that shit is brought up.
+
+Also I have to contemplate a lot about what to do for Masters. I didn't bring it up for the April 11 day, but basically they said they are chill for me to come as a Mechanical Engineering masters student to their lab September or January; however, I asked them if a double degree situation would be possible, where I would be able to do a dual masters program between Tohoku University and the University of Alberta, and they said the administrative work is not feasible at the current time. Which I get, but it's also very unfortunate and annoying that this is the situation now...
+
+I REALLY do not want to be stuck in Edmonton for so much longer, and the lab at Tohokudai is so fuckin chill (so far), but the degree at U of A would be really beneficial. I am considering basically 3 options now:
+1. I'm just fucked and I just do the masters at UofA and stay stuck there for more years I guess
+2. Suggest if I can just do the paperwork for them or something maybe
+3. Do 2 simultaneous disconnected Masters at the same time.
+In order of preference, I guess it's just 2 > 3 >= 1. 3 sounds like an insane hassle to try to manage. If they let me do 2 then that would be really nice. 1 would be so fucking sad, but maybe I could just do PhD at Tohokudai after? But if I get offered in U of A again, I'd end up having to take that instead.
+
+Whatever, anyway I went out for a long time this day. I was craving some eel, but before that I also needed to get cream, so I went window shopping for a long time. They have SO MUCH lotion here, but no cream... in the end I went to hell (Don Quijote) and I found some moisturising gel, which sounded quite interesting. I found out it's like even lighter than lotion later though, but honestly considering my skin is not really that oily or dry, I figured I should try it. The reason I used cream before was because it lasted super long, but it wasn't like much better than lotion in the first place for me.
+
+After that, I ate at an Izakaya that specialised in eel dishes. I got 2 dishes, a Garlic Harami Bowl, and an Unaju Take. The reason I got 2 dishes was because I failed like crazy getting the Garlic Harami Bowl because I thought it was an eel dish but it was steak... and I'm eating at an eel place... and I'm craving eel... so I HAD to get the Unaju Take. It was kind of a mistake because I was already full by the Garlic Harami Bowl, but I had to get some fucking eel man. The Garlic Harami Bowl was 1980 yen, and the Unaju Take bowl was 1990 yen; both were on the bit of the pricey side, but they were some really bougie dishes I can't lie, and they tasted fucking amazing so like I honestly don't care they could've charged me like 25 bux for each instead really.
+
+I did some more window shopping but ultimately didn't really get anything, and then just went back home. I have been slacking like crazy on Anki, so I was thinking of doing some of that, but I just passed out for like 2-3 hours apparently. Woke up and forgot that I have to finish some food that's in my fridge because the best before dates were coming up on them...... so I had to eat EVEN more lol, but it's ok.
+
+A friend gave me a [[Made in Abyss]] mug for my last birthday, and I found out that since I'm in Japan, I could go to the store he got it from, the name of which is Cospa. It was apparently in the building I went to at some point while window shopping, so I'm going to go again April 13 to check out what they got.
+
+Tried writing a Statement of Purpose but failed finishing it last night, so I'm gonna have to do that April 13 as well. Oh well, hopefully though I catch up on Anki and get pictures up on this page soon.
