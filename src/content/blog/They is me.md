@@ -1,16 +1,17 @@
 ---
 title: They is me
 created: "1739670027305"
-lastModified: "1740332111000"
+lastModified: "1744631489029"
 tags:
   - anime
   - manga
   - life
-  - houseki no kuni
+  - houseki
+  - no
+  - kuni
 image: ./lustrous.png
 imageAlt: Lustrous
 ---
-
 Edits:
  - Spoiler header and an extra line in the spoiler box below. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/a32c1a85a1afa54913904a34c6f90f5883ee1747)
  - Add hnk tag. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/c445a892eb095e9bf9491ca759d691c165888fba)
@@ -20,7 +21,7 @@ Edits:
 ## **THERE ARE SPOILERS ON WHAT HOUSEKI NO KUNI IS ABOUT**
 ## **PLEASE READ AT YOUR OWN RISK.**
 
-It has been 2 nights since I read [Land of the Lustrous/Houseki no Kuni](https://hnk.rocks) and it has traumatized me.
+It has been 2 nights since I read Land of the Lustrous/[[Houseki no Kuni]] and it has traumatized me.
 
 I asked a couple friends what they thought of the ending, if they thought it was a happy or sad ending, e.t.c. **Obviously** the answer is neither: it's simply a perfect ending; however, I am forced to mark the ending as one of them for myself... and to me, I am forced to label it as a sad one.
 
@@ -75,7 +76,7 @@ This is like a religion... I do not condone religion but just let the irony sink
 
 ---
 
-Identity is a fuck. Around the same time I decided to read all of the manga, discussions about gender has been popping up a lot in my personal friend group. Houseki no Kuni is notorious--even for people who haven't read it--to touch heavily on the topics of identity.
+Identity is a fuck. Around the same time I decided to read all of the manga, discussions about gender has been popping up a lot in my personal friend group. [[Houseki no Kuni]] is notorious--even for people who haven't read it--to touch heavily on the topics of identity.
 
 Gender is a very touchy topic for many reasons.
 

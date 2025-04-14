@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744603319886"
+lastModified: "1744633313945"
 tags:
   - life
   - japan
@@ -51,6 +51,9 @@ After that I went to the Tohokudai Aobayama Campus. This campus of the universit
 
 The main picture of this blog post is from there as well! Very nice campus
 
+![walk through the arterial rode of Tohokudai Aobayama Campus](./sendai3.jpg)
+![Aobayama Campus Garden](./sendai4.jpg)
+
 I realised I ended up buying some things at Loft tax-free, but I was going to use them in Japan... I completely misunderstood what they were trying to tell me so I messed up pretty bad. I guess I really only have to just keep this receipt and then pay like 13 bucks at customs though. I was considering going back to Loft, but I already troubled them a bunch by accidentally purchasing stuff tax-free, and I can only imagine they either can't do anything, or it'd just be even more extra overhead for them to deal with for no reason...
 
 Anyway I got back home, and realised there's an insane smell... it was my shoes and socks...
@@ -59,6 +62,8 @@ I had no idea what to do about the shoes, but for the socks, and all the clothes
 
 # April 3 2025 JST
 *Written at April 5 10:24 UTC*
+
+![Right before leaving with gifts to professors and secretaries](./sendai5.jpg)
 
 This was my first day at the lab. Started off with a presentation from one of the assistant professors, and then I gradually met most of the people in the lab. Massive lab by the way it spans across 2 floors. They gave me my own desk and a spot in the shoe rack even though I'm like not even actually a student which is cool. One of the PhD students that met me at the station 2 days before also gave me a tour through the entire 2 floors of labs that they use too.
 
@@ -69,6 +74,8 @@ After that not much really happened at the lab that day, I gave presents to the 
 When I left I went to Loft because I wanted some more pillows, and I wanted hangers, but I couldn't find them selling pillows... AND their hangers were expensive, so I said gg, then I went to COOP to see what the grocery store is like, but ended up only really getting chocolate (and a huge bottle of Pocari Sweat). I'll probably get actual groceries soon though.
 
 Also I had a nanachiki this day, it was so mid bruh whatever man
+
+![Pocari Sweat x Nanachiki](./sendai6.jpg)
 
 After that I slowly passed out to sleep.
 
@@ -83,7 +90,11 @@ This was the first day doing actual lab stuff, though I was just shadowing the w
 
 Apparently the lab has a meeting with some company of some sorts, and they be giving the lab free food. They saved a box of lunch for me and it was epic as fuck it was actually so good I was eating like a king randomly.
 
+![Beautiful lunch box](./sendai7.jpg)
+
 I still needed some hangers, so after the lab, I decided to try Don Quijote instead of Loft to see if I can find any stuff there instead. What an absolutely absurd experience it is going into that store. Everything wants to grab your entire attention at all times, and its just an insane level of sensory overload. Everything is also very hard to find in that store since everything is just everywhere. SOMEHOW after a while I found packs of 7 hangers for less than 200 yen which is so crazy cheap and made the entire suffering worth it, but still no pillows. Asked someone if they sell any but they took me to the pet pillows so I guessed there wasn't.
+
+![Hell (Don Quijote)](./sendai8.jpg)
 
 Went to a ministop near me and got their chicken. I've been getting chicken from all the convenience stores to see what the hype is about, since everyone talks about the "konbini chicken". Yesterday was the nanachiki and it was mid, and this day was the ministop chicken. This was actually noticeably better, it wasn't like a sloggy slush of chicken this time, and it was nice. I'm shocked this is like 1-2 dollars and just right there at the konbini.
 
@@ -100,7 +111,11 @@ Regrettably... I can't really check off either which I guess I should've expecte
 
 The cherry blossoms themselves also haven't really blossomed yet, so I guess I decided to do this trip a bit early; though it's weird since I had been constantly hearing that due to global warming, they are blossoming sooner or faster than usual. I guess the news was moreso for the southern part of Japan moreso than the Tohoku region I guess.
 
+![Toshogu Shrine 1](./sendai9.jpg) ![Toshogu Shrine 2](./sendai10.jpg) ![Toshogu Shrine 3](./sendai11.jpg) ![Toshogu Shrine 4](./sendai12.jpg) ![Toshogu Shrine 5](./sendai13.jpg) ![Toshogu Shrine 6](./sendai14.jpg)
+
 Either way it was a great trip. It was so absurd yet amazing taking the train, just going one stop over, and then suddenly it's like I'm in a completely different city. The entire neighbourhood and everything near the shrine looked so insanely different than from near the university campus and the city centre that I was kind of taken aback. The Aobayama campus itself didn't look out of place either because of the amount of really tall buildings on that campus. It was really cool. Definitely considering just taking random trains to random stations honestly.
+
+![Toshogu neighbourhood](./sendai15.jpg)
 
 I decided after, that it was time to try to go to Don Quijote ONCE again. This is because it was possible that there was a communication issue and they thought that since I was on the same floor the animal pillows were, I was looking for those pillows. Unfortunately, they just straight up don't have pillows. It's fine though I bought strawberry and white chocolate pocky to try later. They were decent, the strawberry one tasted better though, and it was also cheaper lol.
 
@@ -144,12 +159,16 @@ Afterwards I went back home, copped a Zunda shake for 380 yen, and a Lawson chik
 
 I was actually in the lab so long that it's almost 10 pm and I still haven't finished my Anki... oh well it probably won't be for as long tomorrow or the day after(?) There's new students coming this week though so idk, gonna have to see
 
+![Tohoku University Dentistry Department](./sendai16.jpg)
+
 # April 8 2025 JST
 *Written at April 8 23:37 UTC*
 
 Nothing super exciting really happened; today I met the prof again in the lab meeting and also discussed about how I do programming with him and an assistant professor later, and then watched some more PCR experimental process stuff. Was going to watch someone else do something as well, but they had to leave to do clinic work early.
 
 I tried the [hagi no tsuki](https://www.sanzen.co.jp/english/haginotsuki/index.html) though. It was chill, not amazing but yea. Zunda shake still at top rn. Honestly though it was like 260(?) yen for one, and it was really expensive for what it was worth tbh, the zunda shake was worth its price much more in comparison.
+
+![Hagi no Tsuki](./sendai17.jpg)
 
 Tried to do more anki when I got home but instead I watched ishowspeed china vods and then passed out lol. Was going to get more home appliances stuff but it was gonna start raining by the time I'd have been done so I just went home instead. I'm writing this the day after's morning if you can't tell lol
 
@@ -162,9 +181,13 @@ By that time it was around like 5 pm and people were heading out for dinner and 
 
 The place we went to was a fish ramen shop, which was really interesting. It was also technically my first Official ramen because the ramen in the cafeteria for 5 bux doesn't really count. Anyway this fish ramen was fuckin epic it was way better than the ramen at the cafeteria. Actually surprising how good it tasted considering it's fish in ramen, a combination I didn't expect to work so well.
 
+![Ramen Shop Shelf](./sendai18.jpg) ![Ramen Shop Item Selector](./sendai19.jpg) ![Yummy ramen food](./sendai20.jpg)
+
 The city layout and planning in Japan is just so different, like you see how different it is online already, but when you're there in person it's really interesting how everything is laid out/side by side when you walk down streets of various sizes. Getting to the ramen shop you go down a decently-sized street in Sendai's standards, and even that is nothing like you would see in North America at all. It's so fascinating something so simple and fundamental and basic in Sendai is just nonexistent in North America. Man Canada fucking sucks.
 
 This was also the first time I rode the bus in Sendai. I might just ride the bus from now on instead of the subway because it's not only cheaper (190 yen to 210 yen), it also takes less time, because most of the walking I do between the station and the university is covered by the bus. The bus ride itself was just a normal ass bus ride nothing crazy. Though it was interesting how you always have to leave from the front of the bus because of how payment works for them.
+
+![Sendai roads are so fucking chill](./sendai21.jpg)
 
 Also got myself bag clips for once, so I can finally cook some rice for myself, maybe for breakfast tomorrow if I wake up early enough, but we'll see.
 
@@ -185,7 +208,11 @@ That evening was the "hanami" but there wasn't really any cherry blossom viewing
 
 Anyway the food there was probably some of the best food I ever had. What the fuck. Someone ordered a pizza at the yakiniku LOL but it was like the second best pizza I ever had???? At a yakiniku???????? Like what the fuck. Also the meat was so fucking good, the fries were so fucking good, the kimchi was epic, the almond jelly was fucking amazinf. I can't believe it. And it was free because all the neurosurgeons basically paid for the meal lololol
 
+![Yakiniku food](./sendai22.jpg)
+
 We DID take an entire massive group picture by the cherry blossom trees after the food, but it was night so it's not the greatest picture. It was really pretty though multiple layers of cherry blossom branches on top of another, and the trees were also lined up side by side as well. Really gorgeous sight honestly.
+
+![Shifuku](./sendai23.jpg)
 
 Some point after someone asked me about if I have a girlfriend in Canada, and then it later on devolved towards the idea of "You should get a girlfriend here in Japan" and "Are you thinking of dating/Why don't you wanna date?" And Honestly at the moment it wasn't that bad, I just said it's complicated over and over until they stopped picking on it, but it's been kind of rotting my brain.
 
@@ -203,6 +230,8 @@ Hopefully I get pictures up soon. Comments should be up April 11 though.
 Comments DID go up this day let me tell you. They did in fact go up. I'm actually really happy about it even though at the time of writing there hasn't been new comments lolol. Hopefully I also get table of contents up for pages like these as well for easier nav.... and also the pictures...
 
 Not much actually happened this day I believe. The majority of the lab was basically knocked out I think from the night before because noone was there. I left a bit early as a result since there wasn't really much to do this day. I wanted to ask about a project the professor was talking about on the bus as we were going to the dinner, but he wasn't there either.
+
+![Cute little entrance](./sendai24.jpg)
 
 I also converted the USD i actually brought now finally, honestly the fact I was able to survive for a week off of like just 150 CAD is pretty impressive in my opinion. Like I had to get home appliances and stuff too, and I still ate out, and it still all fit in 150 CAD the past like 9 or so days. Anyway I lost 10 dollars apparently because the USD JPY was like 143 JPY per dollar? and I exchanged at 140. Oh well
 
@@ -227,6 +256,8 @@ Whatever, anyway I went out for a long time this day. I was craving some eel, bu
 
 After that, I ate at an Izakaya that specialised in eel dishes. I got 2 dishes, a Garlic Harami Bowl, and an Unaju Take. The reason I got 2 dishes was because I failed like crazy getting the Garlic Harami Bowl because I thought it was an eel dish but it was steak... and I'm eating at an eel place... and I'm craving eel... so I HAD to get the Unaju Take. It was kind of a mistake because I was already full by the Garlic Harami Bowl, but I had to get some fucking eel man. The Garlic Harami Bowl was 1980 yen, and the Unaju Take bowl was 1990 yen; both were on the bit of the pricey side, but they were some really bougie dishes I can't lie, and they tasted fucking amazing so like I honestly don't care they could've charged me like 25 bux for each instead really.
 
+![Garlic Harami Don](./sendai25.jpg) ![Unaju Take](./sendai26.jpg)
+
 I did some more window shopping but ultimately didn't really get anything, and then just went back home. I have been slacking like crazy on Anki, so I was thinking of doing some of that, but I just passed out for like 2-3 hours apparently. Woke up and forgot that I have to finish some food that's in my fridge because the best before dates were coming up on them...... so I had to eat EVEN more lol, but it's ok.
 
 A friend gave me a [[Made in Abyss]] mug for my last birthday, and I found out that since I'm in Japan, I could go to the store he got it from, the name of which is Cospa. It was apparently in the building I went to at some point while window shopping, so I'm going to go again April 13 to check out what they got.
@@ -238,10 +269,31 @@ Tried writing a Statement of Purpose but failed finishing it last night, so I'm 
 
 Today I did the household choress as in I kind of barely cleaned my room, and cleaned the kitchen area. After that I went to the building. The building itself was called [EBeanS](https://maps.app.goo.gl/2m2PPFMrdMansVYq8) and it was about like 11 floors of mostly otaku shit, which was kinda epic.
 
+![Horny ass anime figures](./sendai27.jpg) ![Interesting... dolls](./sendai28.jpg) ![Crazy shounen jump mag it's so thick](./sendai29.jpg) ![Insane but epic layout of things in this store](./sendai30.jpg) ![Galaxy Express 999](./sendai31.jpg) ![Made in Abyss the GOAT](./sendai32.jpg) ![Dumbass yuri manga](./sendai33.jpg) ![Frieren](./sendai34.jpg) ![Nanachi Fishing Shirt](./sendai35.jpg) ![Funny ass playstation game merch](./sendai36.jpg)
+
 The biggest highlight for sure though, was finding the last volume of [[Houseki no Kuni]]. If you've seen the [[They is me]] blog post, then you'd probably know how much I love this series. I got both versions because I obviously had to: the normal edition because the cover is ABSOLUTELY gorgeous and pretty, and the special edition, which also has a very beautiful cover, but it's not the same as the normal edition one, it's still a fucking insanely epic cover though. The special edition also came with a massive book of poems which I obviously cannot read at all, but hopefully I can sooner or later. I wanted to find some HnK merch as well... but unfortunately I couldn't find much.
+
+![Finding the HNK volumes](./sendai37.jpg) ![you get pretty cards with the volumes...](./sendai38.jpg) ![Vol 13 and Vol 13 special edition in my hands](./sendai39.jpg) ![Vol 13 and Vol 13 Special Edition in my hands again](./sendai40.jpg) ![Vol 13 and Vol 13 Special Edition but on my laptop in my rental now](./sendai41.jpg) ![Opening the card that came in the special edition volume](./sendai42.jpg) ![The book of poems that came with the special edition](./sendai43.jpg) ![A page in that book of poems in the special edition](./sendai44.jpg) ![Cute and gorgeous Phos card](./sendai45.jpg)
 
 Today was the first time I ate a Monaka ice cream wafer sandwich. It was really good honestly. Man japanese food is just so much better for no reason it's crazy even the random sweets in the fuckin convenience store is so much better... still not as good as a Zunda shake obv but still amazing. 
 
 I also "caught up" on Anki today. 2 hours total of going through shitty cards man. Also I have caught up on quotations because with how Anki works, almost all of them are just going to be reiterated April 14, so it's gonna be a bit before I'm like actually "caught up" and don't have hundreds of reviews to deal with lol
 
 It was raining but I still hung clothes out outside because idgaf, regretting it though because it started raining pretty hard. Oh well
+
+# April 14 2025 JST
+*Written at April 14 12:09 UTC*
+
+Finally got pictures up on this blog post!!!! So many pictures!!!! Can't wait to add more!!!
+
+Today I woke up SO late, somehow I was really tired last night I guess I slept a good like 8 hours or so. I was still falling asleep though at the lab somehow I don't really know how or why...
+
+Some stuff has happened in the lab though which was cool; discussing a project with one of the new students about [[Astrocyte]]s and the lab's use of them for [[Moyamoya Disease]] research, and how a cell line is kind of faulty currently, so the research is to find a possibly better alternative to it.
+
+Alongside that I talked with the professor about a project he had in mind to give me. It has a lot to do with [[Ribonucleic Acid Splicing]] and modelling predictions on gene expressions with splicing results. Basically between these 2 projects I now got a LOT of work to do lolol
+
+After the lab I went to Matsuya. I was told this is like the fast food of Japan, so my expectations were at that level. Let me tell you though in terms of fast food, this was EASILY S tier blowing literally any NA fast food chain out of the fucking water man. First of all it's ACTUALLY fast food, the food gets out in like 10 minutes to you which is crazy. Second of all, the food itself is like miles better than the slop you get from McDonalds and shit. I actually can't believe it. If I would be able to pay for a smaller sizing, this would be an insanely crazy place to go often because it's just insane as a fast food place. The sizing I got was way too much for me lol. The miso soup was definitely some miso soup. Nothing crazy obviously. The eel shop I went to obviously had better soup lol
+
+![Matsuya Food](./sendai46.jpg)
+
+Thank god I got pictures up on this blog post LOL can't wait to keep adding them
