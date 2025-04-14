@@ -1,7 +1,7 @@
 ---
 isObsidianImport: false
 created: "1744337783745"
-lastModified: "1744337783745"
+lastModified: "1744595395355"
 tags:
   - biology
   - research
@@ -18,4 +18,4 @@ During this process "trapping [[Exons]]" can also be exploited by slicing a comb
 
 The splicing occurs by [[Spliceosome]]s binding to the [[Introns]], and fold the Intron to close the Intron on itself in a loop, while simultaneously fusing the 2 [[Exons]] together.
 
-[[Introns]] in this process used to be thought of as useless waste, but use cases were found afterwards.
+[[Introns]] in this process used to be thought of as useless waste, but use cases were found afterwards. Which ones idk
