@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744512435012"
+lastModified: "1744603319886"
 tags:
   - life
   - japan
@@ -129,7 +129,7 @@ I'm shocked that the milk here is actually just so much better than in North Ame
 
 Unfortunately I wasted a decent amount of my day fooling around online, so I ended up not having much time to add more pictures to this. Hopefully I get to it like this week or so.
 
-# April 7 2025
+# April 7 2025 JST
 *Written at April 7 12:32 UTC*
 
 Still had no time to add more pictures today, maybe tomorrow or the day after or the day after...
@@ -144,7 +144,7 @@ Afterwards I went back home, copped a Zunda shake for 380 yen, and a Lawson chik
 
 I was actually in the lab so long that it's almost 10 pm and I still haven't finished my Anki... oh well it probably won't be for as long tomorrow or the day after(?) There's new students coming this week though so idk, gonna have to see
 
-# April 8 2025
+# April 8 2025 JST
 *Written at April 8 23:37 UTC*
 
 Nothing super exciting really happened; today I met the prof again in the lab meeting and also discussed about how I do programming with him and an assistant professor later, and then watched some more PCR experimental process stuff. Was going to watch someone else do something as well, but they had to leave to do clinic work early.
@@ -153,7 +153,7 @@ I tried the [hagi no tsuki](https://www.sanzen.co.jp/english/haginotsuki/index.h
 
 Tried to do more anki when I got home but instead I watched ishowspeed china vods and then passed out lol. Was going to get more home appliances stuff but it was gonna start raining by the time I'd have been done so I just went home instead. I'm writing this the day after's morning if you can't tell lol
 
-# April 9 2025
+# April 9 2025 JST
 *Written at April 9 12:43 UTC*
 
 Reallyyy busy day today I didn't get home until 8 pm. Trying to remember what happened first off... ah watched more E.Coli culturing, and then talked about PCR results analysis, and then watched some insane process of the [[Northern Blot]]. I remember doing Western Blot in a biology class a few years ago, but my memory is barely there for that; watching northern blotting was kind of insane... also saw the production of Agar feed for E.Coli.
@@ -170,7 +170,7 @@ Also got myself bag clips for once, so I can finally cook some rice for myself, 
 
 I also started working on the comments section for my site, and will probably change the sort ordering for pages by last updated instead of created. Maybe both will be done tomorrow. Maybe I'll also finally add pictures to this blog post tomorrow too. We'll see. Tomorrow I'm with the lab until like 7-8 pm so who knows.
 
-# April 10 2025
+# April 10 2025 JST
 *Written at April 10 23:24 UTC*
 
 What a hectic day. New student came in to the lab this day. He's from France and he does look very french; that in itself was quite exciting honestly. After that it was a bunch more lab stuff, did some cell passaging and made my own cell culture plate for [[HEK]] cells, and then I also watched the final process of the [[Northern Blot]] which is such a long process honestly and it seems difficulty to deal with the gel and stuff. After that was further [[Ribonucleic Acid]] extraction from E.Coli cells.
@@ -197,7 +197,7 @@ Ok I don't really want to ramble about this brainrot because it's just really dr
 
 Hopefully I get pictures up soon. Comments should be up April 11 though.
 
-# April 11 2025
+# April 11 2025 JST
 *Written at April 13 2:01 UTC*
 
 Comments DID go up this day let me tell you. They did in fact go up. I'm actually really happy about it even though at the time of writing there hasn't been new comments lolol. Hopefully I also get table of contents up for pages like these as well for easier nav.... and also the pictures...
@@ -210,7 +210,7 @@ After that I think I basically did nothing. I finally got on discord VC for once
 
 Proton works really well too, I'm kind of shocked. I just turned on the steam play toggle thing and I was immediately able to just play Neon White. Weirdly though, the mouse feels like its polling rate is really low for some reason? It's the same mouse I used at home, so I think it's just something with the drivers of this computer currently, but that's an investigation for another time.
 
-# April 12 2025
+# April 12 2025 JST
 *Written at April 13 2:29 UTC*
 
 This morning was hell. The night of April 10 was brainrotting me like crazy. Something about it was just bothering me so much but I couldn't really figure out why. The whole thing of being asked if I have a GF and that I should get one and that I should go to Osaka and whatever the fuck. Like it's not really the issue of them saying all that, but the issue of me not being sure if I'm allowed to respond how I want to when that shit is brought up.
@@ -232,3 +232,16 @@ I did some more window shopping but ultimately didn't really get anything, and t
 A friend gave me a [[Made in Abyss]] mug for my last birthday, and I found out that since I'm in Japan, I could go to the store he got it from, the name of which is Cospa. It was apparently in the building I went to at some point while window shopping, so I'm going to go again April 13 to check out what they got.
 
 Tried writing a Statement of Purpose but failed finishing it last night, so I'm gonna have to do that April 13 as well. Oh well, hopefully though I catch up on Anki and get pictures up on this page soon.
+
+# April 13 2025 JST
+*Written at April 14 2:51 UTC*
+
+Today I did the household choress as in I kind of barely cleaned my room, and cleaned the kitchen area. After that I went to the building. The building itself was called [EBeanS](https://maps.app.goo.gl/2m2PPFMrdMansVYq8) and it was about like 11 floors of mostly otaku shit, which was kinda epic.
+
+The biggest highlight for sure though, was finding the last volume of [[Houseki no Kuni]]. If you've seen the [[They is me]] blog post, then you'd probably know how much I love this series. I got both versions because I obviously had to: the normal edition because the cover is ABSOLUTELY gorgeous and pretty, and the special edition, which also has a very beautiful cover, but it's not the same as the normal edition one, it's still a fucking insanely epic cover though. The special edition also came with a massive book of poems which I obviously cannot read at all, but hopefully I can sooner or later. I wanted to find some HnK merch as well... but unfortunately I couldn't find much.
+
+Today was the first time I ate a Monaka ice cream wafer sandwich. It was really good honestly. Man japanese food is just so much better for no reason it's crazy even the random sweets in the fuckin convenience store is so much better... still not as good as a Zunda shake obv but still amazing. 
+
+I also "caught up" on Anki today. 2 hours total of going through shitty cards man. Also I have caught up on quotations because with how Anki works, almost all of them are just going to be reiterated April 14, so it's gonna be a bit before I'm like actually "caught up" and don't have hundreds of reviews to deal with lol
+
+It was raining but I still hung clothes out outside because idgaf, regretting it though because it started raining pretty hard. Oh well

@@ -4,6 +4,7 @@ import { getCollection } from "astro:content";
 import Default from "../layouts/Default.astro";
 import Comments from "../components/Comments.astro";
 import FileGraph from "../components/FileGraph.astro";
+import TableOfContents from "../components/TableOfContents.astro";
 import type { BasePageInfo, PageLink } from "../utils/pageInfo";
 import { Image } from "astro:assets";
 
@@ -71,7 +72,7 @@ export const getStaticPaths = (async () => {
 const { page, title, backlinks, forwardlinks } = Astro.props;
 
 const render = await page.render();
-const Content = render.Content;
+const { headings, Content } = render;
 const description = page.body.slice(0, 99) + "…";
 
 const meta = {
@@ -97,6 +98,7 @@ const meta = {
         <h2>Created: {render.remarkPluginFrontmatter.created}</h2>
         {render.remarkPluginFrontmatter.lastModified && (<h2>Last Modified: {render.remarkPluginFrontmatter.lastModified}</h2>)}
         {"image" in page.data && page.data.image && (<Image src={page.data.image} alt={page.data.imageAlt} />)}
+        <TableOfContents headings={headings} />
         <Content />
         <br>
         <br>

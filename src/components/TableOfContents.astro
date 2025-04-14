@@ -1,0 +1,79 @@
+---
+import type { MarkdownHeading } from "astro";
+
+type tocEntryType = MarkdownHeading & { children: tocEntryType[] };
+const { headings = [] } = Astro.props as { headings: MarkdownHeading[] };
+
+const tocTree: tocEntryType[] = [];
+const parentHeadings = new Map<number, tocEntryType>();
+headings.forEach(heading => {
+    const entry = {
+        ...heading,
+        children: [],
+    };
+    
+    let parent: tocEntryType | undefined = undefined;
+    let depth = heading.depth;
+    
+    // Find the appropriate parent
+    while (!parent && depth > 1) {
+        depth--;
+        parent = parentHeadings.get(depth);
+    }
+    
+    if (parent)
+        parent.children.push(entry);
+    else
+        tocTree.push(entry);
+    
+    parentHeadings.set(heading.depth, entry);
+});
+
+// Recursive function to render TOC items
+function renderTOCItem (item: tocEntryType): string {
+    const children = item.children.length > 0 ? `<ul>${item.children.map(renderTOCItem).join("")}</ul>` : "";
+    return `<li><a href="#${item.slug}">${item.text}</a>${children}</li>`;
+}
+---
+
+{headings.length > 0 && (
+    <div class="table-of-contents">
+        <h2>Table of Contents</h2>
+        <ul>
+            {tocTree.map(item => <Fragment set:html={renderTOCItem(item)} />)}
+        </ul>
+    </div>
+)}
+
+<style>
+    .table-of-contents {
+        margin: 2rem 0;
+        padding: 1rem;
+        border-radius: 4px;
+        color: var(--analogous1);
+        background-color: var(--code-bg);
+    }
+
+    .table-of-contents h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .table-of-contents ul {
+        list-style-type: none;
+        padding-left: 1rem;
+    }
+
+    .table-of-contents li {
+        margin-bottom: 0.5rem;
+    }
+
+    .table-of-contents a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .table-of-contents a:hover {
+        text-decoration: underline;
+    }
+</style>
