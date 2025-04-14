@@ -123,7 +123,10 @@ const meta = {
 
 <script>
 document.addEventListener("astro:page-load", () => {
-    const backToTopButton = document.getElementById("back-to-top")!;
+    const backToTopButton = document.getElementById("back-to-top");
+    if (!backToTopButton)
+        return;
+    
     backToTopButton.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
@@ -134,9 +137,9 @@ document.addEventListener("astro:page-load", () => {
     // Show/hide the button based on scroll position
     function toggleBackToTopButton () {
         if (window.scrollY > 300) // Arbitrary value for button showing
-            backToTopButton.classList.add("visible");
+            backToTopButton!.classList.add("visible");
         else
-            backToTopButton.classList.remove("visible");
+            backToTopButton!.classList.remove("visible");
     }
     window.addEventListener("scroll", toggleBackToTopButton);
   
