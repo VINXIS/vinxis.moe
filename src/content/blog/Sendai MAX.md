@@ -11,6 +11,7 @@ image: ./sendai.jpg
 imageAlt: Sendai
 ---
 Edits (Not related to new entries to post):
+ - Retrospectively added images to previous days on April 14 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/caa9363bb169ac15dd68a8296a117a13875c0d81)
 
 Wow, I'm actually in Japan.
 
