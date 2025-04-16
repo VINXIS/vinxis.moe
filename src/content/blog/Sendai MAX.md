@@ -298,3 +298,14 @@ After the lab I went to Matsuya. I was told this is like the fast food of Japan,
 ![Matsuya Food](./sendai46.jpg)
 
 Thank god I got pictures up on this blog post LOL can't wait to keep adding them
+# April 15 2025 JST
+*Written at April 15 23:59 UTC*
+
+Projectss projects projects. Projects have finally started for me in the lab which is kind of exciting. One is a bioinformatics project the prof has pitched to me. The other is finding an alternative control cell line for glial cells to observe moyamoya disease. I think I already talked about these actually but yea
+
+There's an "event corner" in the actual hospital itself, and today they were selling Zunda Mochis and Dangos there which was sick. Uhhhh but I didn't get any of the Zunda food there though lol I took a set of 3 variety Dangos. One was walnut, one was red bean, and one was seasame soy sauce. They were all decent, but the walnut one was the only one I'd probably have again willingly, that one was really good. I kind of regret not trying the Zunda Dangos now though lol but they'll be back in like a week
+
+Nothing much else really happened this day. No updates from U of A, and I basically just went to the COOP grocery store after the lab and went home.  I did get Mitarashi Dangos from the COOP store though and those were firee, not as good as walnut IMO.... IMO..... but they were pretty fire. Also had takoyaki and they were good, but they really made me want to try restaurant takoyaki now lol
+
+![Variety Dango](./sendai47.jpg)
+![COOP food](./sendai48.jpg)
