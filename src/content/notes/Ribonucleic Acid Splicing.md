@@ -1,7 +1,7 @@
 ---
 isObsidianImport: false
 created: "1744337783745"
-lastModified: "1744595395355"
+lastModified: "1744864063961"
 tags:
   - biology
   - research
@@ -14,7 +14,7 @@ Parts of the RNA called [[Introns]] are sliced out from the sequences, and other
 
 For [[Eukaryotic]] genes, splicing is required for [[Messenger Ribonucleic Acid]]s to function at all. For [[Prokaryotic]] genes, it's not entirely necessary. In fact, for prokaryotes, splicing is almost always just for [[Non-Coding Ribonucleic Acid]]s and nothing else... usually.
 
-During this process "trapping [[Exons]]" can also be exploited by slicing a combination of Intron-Exon-Intron to create new [[Molecular Gene]]s
+During this process "trapping [[Exons]]" can also be exploited by slicing a combination of Intron-Exon-Intron to create new [[Molecular Gene]]s, this is called "Skipping Exons" and a form of [[Alternative Splicing]]
 
 The splicing occurs by [[Spliceosome]]s binding to the [[Introns]], and fold the Intron to close the Intron on itself in a loop, while simultaneously fusing the 2 [[Exons]] together.
 
