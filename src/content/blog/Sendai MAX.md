@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744850672682"
+lastModified: "1744907386726"
 tags:
   - life
   - japan
@@ -326,3 +326,22 @@ It was completely empty, there was noone else there aside for me, the barista wh
 ![MILLS 2](./sendai51.jpg)
 
 After that I just copped some COOP food, chicken skewers, and then went to sleep pretty much lol
+
+# April 17 2025 JST
+*Written at April 17 16:18 UTC*
+
+Exhausting day at the lab even though I wasn't really doing anything. Really all I was doing today was just constantly researching and learning about [[Ribonucleic Acid Sequencing]] and everything that leads to rMATS to then start on the actual project later, but it feels like I'm not progressing a lot on it, and that it's too slow as a result. It's fine though I think.
+
+I guess tomorrow (friday) I won't be going though because I was notified that the fire inspectors for the apartment may need access to my room during their inspection which is from 10:00 to 16:30. LONG ass time period I won't lie... but it's chill I'll just be in my room I guess
+
+Went to a ramen shop near my house called [Yokoyokoya Sendai](https://maps.app.goo.gl/YJYJUvw2sqRma8fg9). Somehow, like the cafe, there was basically noone there. There was basically a group of 2 people (talking in english too), and the ramen cook, and that's pretty much it. Kinda epic as fuck though that I'm just going to these shops with noone in them and just chilling.
+
+![Ramen restaurant](./sendai52.jpg) ![Tonkotsu Ramen](./sendai53.jpg)
+
+Anyway I basically only ordered the basic ramen option they had in the vending machine thing they have in ramen shops and gave it to the cook, and got the ramen pretty quick honestly. It's like just a basic tonkotsu ramen. It was really fucking good though I honestly drank the whole broth.
+
+Also bought a weighing machine today from Nitori. Found out I've lost like a total of 10 pounds (4.5 kgs) since the start of this month holy fuck. Japan be making me lose that shit fast which is kinda nice, but I was already losing weight since last September so it's honestly kind of scary lol
+
+Nothing else really happened today. I did go to FamilyMart at midnight, and was kind of shocked for some reason that the streets were just dead empty. Like noone was there, no cars were out moving AT ALL, dead silence in the middle of the city. Kind of mind blowing in a way it was cool.
+
+Not going to the lab tomorrow so I've just been up lol, hopefully I can basically feel like I've grasped a very deep dive level of knowledge for all the content I need to understand before I can start doing the research work, because that is honestly quite exciting for me.

@@ -1,10 +1,11 @@
 ---
 isObsidianImport: false
 created: "1744859701629"
-lastModified: "1744859701629"
+lastModified: "1744907386716"
 tags:
   - biology
   - research
+  - transcriptomics
 ---
 Alternative Splicing is when splicing options can occur where it is not solely [[Introns]] being removed from a site in a [[Messenger Ribonucleic Acid]]
 
