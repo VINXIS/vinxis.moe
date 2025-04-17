@@ -309,3 +309,20 @@ Nothing much else really happened this day. No updates from U of A, and I basica
 
 ![Variety Dango](./sendai47.jpg)
 ![COOP food](./sendai48.jpg)
+# April 16 2025 JST
+*Written at April 17 0:35 UTC*
+
+Progresss on projects is happening. Learning a lot about bioinformatics for genes and RNa sequences. Also a lot of cell culturing stuff. Not much else about the lab itself rn aside for just grinding. I did feel like a combination of being really hyperactive alongside being really locked in on the work I was doing somehow. It was like it felt really apparent I was getting really locked in in a way that I never really felt before. Not really sure why tho
+
+I got acceptance for the University of Alberta's Course-based masters for Biomedical Engineering... Currently that's like prio #3 now though. Prio #1 is the masters program here at Tohoku, and then prio #2 is the thesis-based masters in Mechanical Engineering at U of A, cuz it's thesis based and not course based, but yea it's like hmmmmm that's nice I guess. I have to respond by like May 6 though but there's an option to defer it so I'll probably do that
+
+After the lab I went to a cafe I wanted to go to becuase it looked interesting. It's called [MILLS](https://maps.app.goo.gl/D47KeC7L9NPJoWrp6) The picture was making me expect that the front of the shop looks like that, but it doesn't. That picture itself was like 4-5 years old. The new location is in a basement actually, but the vibe is pretty much the same as that picture though honestly. 
+
+![Cafe au lait](./sendai49.jpg)
+
+It was completely empty, there was noone else there aside for me, the barista who was just chillin, and one other person who left shortly after I came in. I ordered a hot cafe au lait and nothing else, and basically was just chilling there for an hour looking at stuff and talked a really tiny bit to the barista. Honestly it was sick as fuck how chill it is I'm gonna go again Friday.
+
+![MILLS 1](./sendai50.jpg) 
+![MILLS 2](./sendai51.jpg)
+
+After that I just copped some COOP food, chicken skewers, and then went to sleep pretty much lol
