@@ -97,7 +97,7 @@ const meta = {
         <h1>{title}</h1>
         <h2>Created: {render.remarkPluginFrontmatter.created}</h2>
         {render.remarkPluginFrontmatter.lastModified && (<h2>Last Modified: {render.remarkPluginFrontmatter.lastModified}</h2>)}
-        {"image" in page.data && page.data.image && (<Image src={page.data.image} alt={page.data.imageAlt} />)}
+        {"image" in page.data && page.data.image && (<Image src={page.data.image} alt={page.data.imageAlt} class="post-headerImage"/>)}
         <TableOfContents headings={headings} />
         <Content />
         <br>
@@ -146,6 +146,16 @@ document.addEventListener("astro:page-load", () => {
   
     // Initial check
     toggleBackToTopButton();
+
+    // For any images in the post, add a click event to open them in a new tab
+    const images = document.querySelectorAll(".post-page img, .post-page p img");
+    images.forEach(image => {
+        image.addEventListener("click", () => {
+            const src = image.getAttribute("src");
+            if (src)
+                window.open(src, "_blank");
+        });
+    });
 });
 </script>
 
@@ -168,9 +178,21 @@ document.addEventListener("astro:page-load", () => {
         text-transform: capitalize;
     }
 
-    .post-page img, .post-page :global(p) :global(img) {
-        max-width: 100%;
+    .post-page :global(p:has(img)) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .post-page img, .post-page :global(p img) {
+        max-width: 25%;
+        cursor: pointer;
         height: auto;
+    }
+
+    .post-headerImage {
+        max-width: 100% !important;
     }
 
     .post-backlinks {

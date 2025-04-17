@@ -52,8 +52,7 @@ After that I went to the Tohokudai Aobayama Campus. This campus of the universit
 
 The main picture of this blog post is from there as well! Very nice campus
 
-![walk through the arterial rode of Tohokudai Aobayama Campus](./sendai3.jpg)
-![Aobayama Campus Garden](./sendai4.jpg)
+![walk through the arterial rode of Tohokudai Aobayama Campus](./sendai3.jpg)![Aobayama Campus Garden](./sendai4.jpg)
 
 I realised I ended up buying some things at Loft tax-free, but I was going to use them in Japan... I completely misunderstood what they were trying to tell me so I messed up pretty bad. I guess I really only have to just keep this receipt and then pay like 13 bucks at customs though. I was considering going back to Loft, but I already troubled them a bunch by accidentally purchasing stuff tax-free, and I can only imagine they either can't do anything, or it'd just be even more extra overhead for them to deal with for no reason...
 
@@ -112,7 +111,7 @@ Regrettably... I can't really check off either which I guess I should've expecte
 
 The cherry blossoms themselves also haven't really blossomed yet, so I guess I decided to do this trip a bit early; though it's weird since I had been constantly hearing that due to global warming, they are blossoming sooner or faster than usual. I guess the news was moreso for the southern part of Japan moreso than the Tohoku region I guess.
 
-![Toshogu Shrine 1](./sendai9.jpg) ![Toshogu Shrine 2](./sendai10.jpg) ![Toshogu Shrine 3](./sendai11.jpg) ![Toshogu Shrine 4](./sendai12.jpg) ![Toshogu Shrine 5](./sendai13.jpg) ![Toshogu Shrine 6](./sendai14.jpg)
+![Toshogu Shrine 1](./sendai9.jpg)![Toshogu Shrine 2](./sendai10.jpg)![Toshogu Shrine 3](./sendai11.jpg)![Toshogu Shrine 4](./sendai12.jpg)![Toshogu Shrine 5](./sendai13.jpg)![Toshogu Shrine 6](./sendai14.jpg)
 
 Either way it was a great trip. It was so absurd yet amazing taking the train, just going one stop over, and then suddenly it's like I'm in a completely different city. The entire neighbourhood and everything near the shrine looked so insanely different than from near the university campus and the city centre that I was kind of taken aback. The Aobayama campus itself didn't look out of place either because of the amount of really tall buildings on that campus. It was really cool. Definitely considering just taking random trains to random stations honestly.
 
