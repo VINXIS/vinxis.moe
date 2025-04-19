@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1744907386726"
+lastModified: "1745063557391"
 tags:
   - life
   - japan
@@ -344,3 +344,29 @@ Also bought a weighing machine today from Nitori. Found out I've lost like a tot
 Nothing else really happened today. I did go to FamilyMart at midnight, and was kind of shocked for some reason that the streets were just dead empty. Like noone was there, no cars were out moving AT ALL, dead silence in the middle of the city. Kind of mind blowing in a way it was cool.
 
 Not going to the lab tomorrow so I've just been up lol, hopefully I can basically feel like I've grasped a very deep dive level of knowledge for all the content I need to understand before I can start doing the research work, because that is honestly quite exciting for me.
+
+# April 18 2025 JST
+*Written at April 19 10:26 UTC*
+
+Fire inspection today. I was planning to stay home all day and not go to the lab, but they ended up inspecting my room at like 10:00 instead of 16:00 (JST) so I was like whatever fuck it I'll go to the lab today too.
+
+You know, I forgot to mention that on April 17 was the main professor's birthday. It was kinda sick as fuck one of the students gave him a Rubik's Cube and he was destroying that shit it was crazy. Also little known secret of mine but I really don't like cake, but the cake they had there was actually so fucking nice I'm not gonna lie it wasn't nauseatingly sweet it was good as fuck.
+
+Anyway when I went to the lab today I got a lot of clarification about one of the project's that I've started working on, discussing with an assistant professor as well as the main professor about it, and further intricacies. So over the weekend and next week I have a pretty good idea on where to go now.
+
+Nothing else really happened, I got a Zunda shake (peak drink), COOP food, and then I actually tried ice cream at a Mini Stop. They say Mini Stop got the best ice cream or some shit. I got a matcha ice cream in a cone, and they give u a spoon u can eat too with it. The ice cream was just fine thuogh honestly it wasn't worth like the 350 yen or whatever that it cost...
+
+# April 19 2025 JST
+*Written at April 19 10:56 UTC*
+
+Today was a sitting inside day. I was contemplating as to whether I would make this day a going to random station and walking around day, or staying at home day, and the latter won. I had """promised""" friends that I would watch stuff they suggested.
+
+First series I watched was [Shadowstone Park](https://www.youtube.com/playlist?list=PLI6HmVcz0NXoK8w682PPy2g-kr8apXhne) which is made by the same person who made Charlie the Unicorn. Good 1.5 hour watch straight on youtube if you're interested. Dialogue is very very tightly packed, and the lore and consequences in the story are quite interesting.
+
+Second series I watched was [Sparkle on Raven](https://www.youtube.com/playlist?list=PLuSEX5dm72SFhpVyM7Bqm456A3XnVrHKu) which is made by SOMEONE idk who the channel is owned by really. Anyway it was also good it's not really about anything it's moreso just focused on maximizing parody and got some good jokes using/focused on  animation/audio/tropes.
+
+After that I was basically just doing nothing. I did Anki in the morning so I was chilling. I went to a ramen shop again today though, and it was probably the best ramen I've had so far honestly. The broth wasn't like just full of oil and shit so it was great to finish up.
+
+![Goated ramen](./sendai54.jpg)
+
+Andd at the end of the day I'm basically just writing yesterday's and this day's blog posts, and then potentially doing something for research projects or something else. I do want to make some music and work on creative stuff though man but I haven't gotten any time lately

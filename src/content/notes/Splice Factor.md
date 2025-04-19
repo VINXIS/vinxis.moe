@@ -6,4 +6,4 @@ tags:
   - biology
   - research
 ---
-Splice factors are [[Protein]]s that regulate [[Spliceosome]]s binding to intron ends. 
+Splice factors are [[Protein]]s that regulate [[Spliceosome]]s binding to the ends of [[Introns]]. 
