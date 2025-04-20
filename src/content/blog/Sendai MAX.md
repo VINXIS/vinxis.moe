@@ -370,3 +370,10 @@ After that I was basically just doing nothing. I did Anki in the morning so I wa
 ![Goated ramen](./sendai54.jpg)
 
 Andd at the end of the day I'm basically just writing yesterday's and this day's blog posts, and then potentially doing something for research projects or something else. I do want to make some music and work on creative stuff though man but I haven't gotten any time lately
+
+# April 20 2025
+*Written at April 20 13:51 UTC*
+
+This day was kind of an entire blur. I cooked for myself today and the rice actually came out nice this time. The ingredients in Japan are honestly better than in Canada or something man it actually tastes so much better somehow. Like I just made myself egg and rice and it was so fucking good.
+
+I really don't remember what else I did today aside for that, study for some projects (A TINY BIT, GETTING DISTRACTED THE REST OF TEH TIME) and getting some snacks from FamilyMart. I wanted to go to the cafe today and maybe hop off some random JR station and walk around, but I was like I should really just study for my projects... Here we are now
