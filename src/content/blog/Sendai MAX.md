@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1745157271055"
+lastModified: "1745372406678"
 tags:
   - life
   - japan
@@ -371,9 +371,37 @@ After that I was basically just doing nothing. I did Anki in the morning so I wa
 
 Andd at the end of the day I'm basically just writing yesterday's and this day's blog posts, and then potentially doing something for research projects or something else. I do want to make some music and work on creative stuff though man but I haven't gotten any time lately
 
-# April 20 2025
+# April 20 2025 JST
 *Written at April 20 13:51 UTC*
 
 This day was kind of an entire blur. I cooked for myself today and the rice actually came out nice this time. The ingredients in Japan are honestly better than in Canada or something man it actually tastes so much better somehow. Like I just made myself egg and rice and it was so fucking good.
 
 I really don't remember what else I did today aside for that, study for some projects (A TINY BIT, GETTING DISTRACTED THE REST OF TEH TIME) and getting some snacks from FamilyMart. I wanted to go to the cafe today and maybe hop off some random JR station and walk around, but I was like I should really just study for my projects... Here we are now
+
+# April 21 2025 JST
+*Written at April 23 01:05 UTC*
+
+Chillin, mostly researched more on the projects I was working on, and it's beeen chill. I'm working with the new french guy for one of them basically, and for the other one I'm doing it myself, but the one I'm doing myself is all just on the computer so it's chill tbh.
+
+I basically just ate the same rice and egg I made myself in the morning. It's so good for no reason man. Ah in the evening I had Matsuya's beef bowl, and it was like 500-600 yen or something, but it was so fucking good like I can't believe this is Japan's level of fast food and in NA it's just shite. They do have shit like McDonalds and stuff obviously but like they aren't "originated from Japan" like how they are "originated from NA".
+
+Also went to hell (Don Quijote) again, and bought stuff. My toothbrush started to just comlpetely break apart into pieces so I had to buy a new one for like 30 bux and it was better than my old toothbrush lol. I also bought lotion because the gel honestly wasn't really moisturizing enough, so I was like whatever let me try buying lotion. Turns out the lotion is so fucking thin too it's LITEARLLY LIKE JUST WATER. It's nothing like Aveeno's products so I'm just stumped honestly don't know what I'd do next. The lotion IS pretty nice though I put it on in the shower after patting myself dry a bit.
+
+Nothing much else happened that day. I bought this bag that had chunks of weird caramel-like candy and it was fucking awful but it was less than a dollar so whatever; i'm definitely not finishing this shit though so idk
+
+# April 22 2025 JST
+*Written at April 23 01:32 UTC*
+
+Meeting with the professor, I got the data so it's time to go to town with it for research lol. Still learning and figuring out how [[Percent Spliced In]] works though, but it will come soon.
+
+Presentation is also almost done; I don't remember if I mentioned this but we are presenting this Thursday for the project lol. It's kinda chill though it doesn't really feel like I have a ton of expectations being laid down on me for the presentation you know, so I feel like it'll be fine regardless of what happens.
+
+Also got a ton more Zunda food because the stall from last tuesday was back up at the hospital. I bought Zunda Dango + Walnut Dango, and Zunda Mochi. Honestly the walnut dangos are better than the zunda dongos, they are probably my favourite kind of dango loll. Both were really good though, same with the mochi too that was nice as hell.
+
+![Walnut + Zunda Dangos](./sendai55.jpg)
+
+Ate some ramen later too from the ramen restaurant I went to myself on April 17. I could finally understand the sign they give you to decide on the strength of various parts of ramen, so I could finally say....... "futsuu ii desu" LMFAO whateverrr, but honestly for some reason that time the ramen tasted EVEN better so like whatever changed for the ramen by just saying mid for everyhting is fine was honestly good as fuck. Didn't take a pic becuase the ramen basically looked the same as before lol, though the pork piece was bigger
+
+<b>I ALSO STARTED DRAWING!!!!</b> I'm gonna try drawing for about 1-2 hours everyday now. The shit is way too ass for me to post it publicly, but hopefully I can get good enough to just start posting them out there sooner than later!!!
+
+I was going to start drawing way sooner, but the nib for my apple pencil went missing. I was also way too lazy to like take everything out of my bag to try to find the nib by just shaking it hoping it fell, so I ended up delaying my start on drawing... lol it's ok though because I finally did it the day before, and started drawing this day, so it's epic
