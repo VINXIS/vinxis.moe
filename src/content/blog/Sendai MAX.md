@@ -202,7 +202,7 @@ Ah before the lab, I had a meeting with professors back at the University of Alb
 
 Ate lunch at the university cafeteria this day, and got a nice bowl of rice and crispy fried fish, and it was like a total of like 250 yen or something. It's kind of crazy how even the most basic of foods tastes so much better than in Canada for so much cheaper man I don't understand how Canada flops like this.
 
-I'm also running out of money; luckily a friend of mine found some bank spots and stuff that can convert usd to yen, so i gotta do that april 11, i also want a zunda shake again SO BAD its fucking gkilling me man
+I'm also running out of money; luckily a friend of mine found some bank spots and stuff that can convert usd to yen, so i gotta do that [april 11](#april-11-2025-jst), i also want a zunda shake again SO BAD its fucking gkilling me man
 
 That evening was the "hanami" but there wasn't really any cherry blossom viewing happening. So basically the entire neurosurgery departments of Sendai rented out an all you can eat yakiniku spot across the city, and there were like hundreds of people there it was crazy. Ironically almost no foreigners though and the foreigners were like in their own little corner lol. It's not like it really mattered that much just amusing. 
 
@@ -222,7 +222,7 @@ Even if I were to try dating women in Japan, I'm not really sure if I could hand
 
 Ok I don't really want to ramble about this brainrot because it's just really drunk people asking me about stuff because they are really drunk, so I'll just end that there. I got home at like around 10 pm? While I was going to the station from the university, I also saw my professor behind me when I turned to go into a 7/11, and he had a massive smile and waved back at me. He's so epic
 
-Hopefully I get pictures up soon. Comments should be up April 11 though.
+Hopefully I get pictures up soon. Comments should be up [April 11](#april-11-2025-jst) though.
 
 # April 11 2025 JST
 *Written at April 13 2:01 UTC*
@@ -242,9 +242,9 @@ Proton works really well too, I'm kind of shocked. I just turned on the steam pl
 # April 12 2025 JST
 *Written at April 13 2:29 UTC*
 
-This morning was hell. The night of April 10 was brainrotting me like crazy. Something about it was just bothering me so much but I couldn't really figure out why. The whole thing of being asked if I have a GF and that I should get one and that I should go to Osaka and whatever the fuck. Like it's not really the issue of them saying all that, but the issue of me not being sure if I'm allowed to respond how I want to when that shit is brought up.
+This morning was hell. The night of [April 10](#april-10-2025-jst) was brainrotting me like crazy. Something about it was just bothering me so much but I couldn't really figure out why. The whole thing of being asked if I have a GF and that I should get one and that I should go to Osaka and whatever the fuck. Like it's not really the issue of them saying all that, but the issue of me not being sure if I'm allowed to respond how I want to when that shit is brought up.
 
-Also I have to contemplate a lot about what to do for Masters. I didn't bring it up for the April 11 day, but basically they said they are chill for me to come as a Mechanical Engineering masters student to their lab September or January; however, I asked them if a double degree situation would be possible, where I would be able to do a dual masters program between Tohoku University and the University of Alberta, and they said the administrative work is not feasible at the current time. Which I get, but it's also very unfortunate and annoying that this is the situation now...
+Also I have to contemplate a lot about what to do for Masters. I didn't bring it up for the [April 11](#april-11-2025-jst) day, but basically they said they are chill for me to come as a Mechanical Engineering masters student to their lab September or January; however, I asked them if a double degree situation would be possible, where I would be able to do a dual masters program between Tohoku University and the University of Alberta, and they said the administrative work is not feasible at the current time. Which I get, but it's also very unfortunate and annoying that this is the situation now...
 
 I REALLY do not want to be stuck in Edmonton for so much longer, and the lab at Tohokudai is so fuckin chill (so far), but the degree at U of A would be really beneficial. I am considering basically 3 options now:
 1. I'm just fucked and I just do the masters at UofA and stay stuck there for more years I guess
@@ -260,9 +260,9 @@ After that, I ate at an Izakaya that specialised in eel dishes. I got 2 dishes, 
 
 I did some more window shopping but ultimately didn't really get anything, and then just went back home. I have been slacking like crazy on Anki, so I was thinking of doing some of that, but I just passed out for like 2-3 hours apparently. Woke up and forgot that I have to finish some food that's in my fridge because the best before dates were coming up on them...... so I had to eat EVEN more lol, but it's ok.
 
-A friend gave me a [[Made in Abyss]] mug for my last birthday, and I found out that since I'm in Japan, I could go to the store he got it from, the name of which is Cospa. It was apparently in the building I went to at some point while window shopping, so I'm going to go again April 13 to check out what they got.
+A friend gave me a [[Made in Abyss]] mug for my last birthday, and I found out that since I'm in Japan, I could go to the store he got it from, the name of which is Cospa. It was apparently in the building I went to at some point while window shopping, so I'm going to go again [April 13](#april-13-2025-jst) to check out what they got.
 
-Tried writing a Statement of Purpose but failed finishing it last night, so I'm gonna have to do that April 13 as well. Oh well, hopefully though I catch up on Anki and get pictures up on this page soon.
+Tried writing a Statement of Purpose but failed finishing it last night, so I'm gonna have to do that [April 13](#april-13-2025-jst) as well. Oh well, hopefully though I catch up on Anki and get pictures up on this page soon.
 
 # April 13 2025 JST
 *Written at April 14 2:51 UTC*
@@ -277,7 +277,7 @@ The biggest highlight for sure though, was finding the last volume of [[Houseki 
 
 Today was the first time I ate a Monaka ice cream wafer sandwich. It was really good honestly. Man japanese food is just so much better for no reason it's crazy even the random sweets in the fuckin convenience store is so much better... still not as good as a Zunda shake obv but still amazing. 
 
-I also "caught up" on Anki today. 2 hours total of going through shitty cards man. Also I have caught up on quotations because with how Anki works, almost all of them are just going to be reiterated April 14, so it's gonna be a bit before I'm like actually "caught up" and don't have hundreds of reviews to deal with lol
+I also "caught up" on Anki today. 2 hours total of going through shitty cards man. Also I have caught up on quotations because with how Anki works, almost all of them are just going to be reiterated [April 14](#april-14-2025-jst), so it's gonna be a bit before I'm like actually "caught up" and don't have hundreds of reviews to deal with lol
 
 It was raining but I still hung clothes out outside because idgaf, regretting it though because it started raining pretty hard. Oh well
 
@@ -350,7 +350,7 @@ Not going to the lab tomorrow so I've just been up lol, hopefully I can basicall
 
 Fire inspection today. I was planning to stay home all day and not go to the lab, but they ended up inspecting my room at like 10:00 instead of 16:00 (JST) so I was like whatever fuck it I'll go to the lab today too.
 
-You know, I forgot to mention that on April 17 was the main professor's birthday. It was kinda sick as fuck one of the students gave him a Rubik's Cube and he was destroying that shit it was crazy. Also little known secret of mine but I really don't like cake, but the cake they had there was actually so fucking nice I'm not gonna lie it wasn't nauseatingly sweet it was good as fuck.
+You know, I forgot to mention that on [April 17](#april-17-2025-jst) was the main professor's birthday. It was kinda sick as fuck one of the students gave him a Rubik's Cube and he was destroying that shit it was crazy. Also little known secret of mine but I really don't like cake, but the cake they had there was actually so fucking nice I'm not gonna lie it wasn't nauseatingly sweet it was good as fuck.
 
 Anyway when I went to the lab today I got a lot of clarification about one of the project's that I've started working on, discussing with an assistant professor as well as the main professor about it, and further intricacies. So over the weekend and next week I have a pretty good idea on where to go now.
 
@@ -400,8 +400,45 @@ Also got a ton more Zunda food because the stall from last tuesday was back up a
 
 ![Walnut + Zunda Dangos](./sendai55.jpg)
 
-Ate some ramen later too from the ramen restaurant I went to myself on April 17. I could finally understand the sign they give you to decide on the strength of various parts of ramen, so I could finally say....... "futsuu ii desu" LMFAO whateverrr, but honestly for some reason that time the ramen tasted EVEN better so like whatever changed for the ramen by just saying mid for everyhting is fine was honestly good as fuck. Didn't take a pic becuase the ramen basically looked the same as before lol, though the pork piece was bigger
+Ate some ramen later too from the ramen restaurant I went to myself on [April 17](#april-17-2025-jst). I could finally understand the sign they give you to decide on the strength of various parts of ramen, so I could finally say....... "futsuu ii desu" LMFAO whateverrr, but honestly for some reason that time the ramen tasted EVEN better so like whatever changed for the ramen by just saying mid for everyhting is fine was honestly good as fuck. Didn't take a pic becuase the ramen basically looked the same as before lol, though the pork piece was bigger
 
 <b>I ALSO STARTED DRAWING!!!!</b> I'm gonna try drawing for about 1-2 hours everyday now. The shit is way too ass for me to post it publicly, but hopefully I can get good enough to just start posting them out there sooner than later!!!
 
 I was going to start drawing way sooner, but the nib for my apple pencil went missing. I was also way too lazy to like take everything out of my bag to try to find the nib by just shaking it hoping it fell, so I ended up delaying my start on drawing... lol it's ok though because I finally did it the day before, and started drawing this day, so it's epic
+
+# April 23 2025 JST
+*Written at April 24 23:52 UTC*
+
+THE ELEVATOR WAS DOWN AT THE UNIVERSITY HOSPITAL but it was fine it was apparently fixed after like an hour or 2 lol. They also have more than one elevator so I'm just saying all that for no reason. Had breakfast from 7/11 because I was kind of running late to university (got out at like 9:20) and it was some good food. Convenience stores when good food.
+
+Also finally tried the [Kinoko no Yama and Takenoko no Sato](https://en.m.wikipedia.org/wiki/Kinoko_no_yama_vs_Takenoko_no_sato). One of the lab members brought it. I ahve to say, I'm on the side of Takenoko no Sato, it just tastes better man. Everyone around me was a Kinoko no Yama believer though unfortunately, oh well.
+
+Making progress in projects as well. Slides basically almost finished for the presentation on the 24th, even though I honestly had just been taking a backseat for the most part since I'm juggling 2 projects at once lol. He's gonna end up doing most of the presentation, but it's not too bad I guess he's been fine spearheading it for the most part, especially considering he needs to present something at the end of his stay here.
+
+Afterwards I went back to the cafe that I went to back at [April 16](#april-16-2025-jst), and ordered a cold cafe au lait this time, with a cheesecake too. Good food and good drinks again. This cafe is really nice man I'm totally making this like a regular visit place for myself; so chill, not many people, the ambience and vibe is sick, and the music taste the guy has is epic. Spent the entire time there drawing to pass the time, and then I went to COOP to get some food and then dipped back home.
+
+![Cold cafe au lait and cheesecake](./sendai56.jpg)
+
+Also tried the BOSS coffee drinks for once. They are SO fucking bad man I don't understand. They taste like those really shitty double shot energy caffeine starbucks drinks or something. I don't really give a shit about caffeine content, but I don't think it actually has a lot of caffeine, but it still tastes as dogshit as those starbucks energy drinks what the fuck man.
+
+Accidentally ate an entire bag of the COOP snacks I bought at teh end, oh well. Can't wait for this weekend since I'll be going to Kusatsu Onsen and Tokyo!!!
+
+# April 24 2025 JST
+*Written at April 25 00:15 UTC*
+
+Presentation happened; it was pretty chill, but I also didn't even do the presentation lol it was all just the other guy I feel bad but he doesn't really mind so idk. For most of the day it was checking the lab's supply of materials we'd need for the project, as well as going into a really clean mice lab. You gotta wear like entire PPE bodysuits and stuff: showercaps, coverings of the feet, everything. It was so exhausting for some reason standing there, it felt like the building was REALLY hot or something and I was getting dizzy and stuff. It's kinda crazy. It was cool tho very interesting area of the hospital.
+
+Most of the lab also went out for Karaage. It was so fuckin good brah I got garlic chicken karaage, and they give you a bowl of rice with vegetables and fried chicken on top. Really fucking good. They also had a map of the world that you could put a sticker on for where you came from. I naturally had to place mine at hell LMAO
+
+![Karaage](./sendai57.jpg)
+![Map of the world in the restaurant](./sendai58.jpg)
+
+Also went for a little walk out later that day. I had to get tickets for the shinkansen tomorrow but I wasn't sure what was the best way to go about it. In the end though I checked the station I'd ahve to transfer on, and it seemed not bad at all actually. Regardless, I bought non-reserved seats this time because I just wasn't really sure exactly; I hope I can still put my carry-on suitcase somewhere though, I believe it should be fine. Last time I took a reserved seat and stuff so I don't know if it might be any different. 
+
+I also have to take a bus later to get to the Kusatsu Onsen, so I hope I don't get fucked there either. I think it'll probably be one of those big busses with space for suitcases and stuff though...... I hope.......
+
+Ate some familymart sushi at night and it was honestly good as fuck. Even the convenience store sushi is better than the fuckass grocery store sushi in Canada man. How could this happen.... anyway I was drawing this night as well (yay for the streak), and I struggled way too hard this time. I was attempting to copy/ref off of [this drawing](https://www.pixiv.net/en/artworks/129169492) (really pretty drawing btw). The first day I was drawing I wasn't really trying to break the reference image down to basic shapes, but this day and the day before I was, and it's REALLY fucking hard man. I made much more progress the day before this, but this one was so fucked I basically got barely any drawing in at teh end after like 1.5 hours.
+
+In the end I basically did laundry and stuff so I'm fully ready for shinkansen, I really clutched it though because the laundry was happening quite late at night and I wasn't really sure if they were going to be dry for the morning lol
+
+Anyway time for Kusatsu Onsen!!!!1
