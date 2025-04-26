@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1745372406678"
+lastModified: "1745647225800"
 tags:
   - life
   - japan
@@ -442,3 +442,35 @@ Ate some familymart sushi at night and it was honestly good as fuck. Even the co
 In the end I basically did laundry and stuff so I'm fully ready for shinkansen, I really clutched it though because the laundry was happening quite late at night and I wasn't really sure if they were going to be dry for the morning lol
 
 Anyway time for Kusatsu Onsen!!!!1
+
+# April 25 2025 JST
+*Written at April 26 04:42 UTC*
+
+Kusatsu Onsen day!!! I didn't end up drawing this day, but it's fine because so much shit was happening this day. First thing I set out to do today was to get some coffee from a "chain" cafe here. I went to Tully's and got iced coffee and a custard french toast thing that they warmed up for me. The custard french toast was honestly really nice, but I inted myself with the black coffe. my canadian ass brain thuoght they'd add the cream and sugar but they didn't, and I didn't realize I add that myself, so I just drank it black. Honestly though it was good black coffee, but it just wasn't what I was expecting so I inted myself. Next time I go to Tully's thuogh I'll be chillin
+
+![Tully's Coffee and Food](./sendai59.jpg)
+
+After that I was shinkansening. Took the shinkansen from Sendai to Ueno, and then a shinkansen from Ueno to Karuizawa. During that time I was trying to work on the projects, but made very little progress. Though I also booked my hotel for the weekend in Tokyo too, so it should be chillin for the most part this weekend. Afterwards I was bussing all the way through Gunma prefecture from Karuizawa to the Kusatsu Onsen, and then walked up a bunch of stairs and high incline to get to our hotel. Funny timing becuase my friends were coming from a completely different route from Tokyo station, and we ended up at Kusatsu Onsen at almost the exact same time LOL. 
+
+![Shinkansen and Ekiben](./sendai60.jpg)
+![Flower Bed in Gunma](./sendai61.jpg) ![Gunma Scenery](./sendai62.jpg) ![Kusatsu Onsen Bus Terminal](./sendai63.jpg) ![Kusatsu Hotel](./sendai64.jpg) ![Inside of Kusatsu Hotel](./sendai65.jpg)
+
+I have to say though that the bus ride through Gunma was fucking surreal. I saw so many things I have dreamt of and envisioned my ideal future setting being like that it just blew my mind. It was making me very sentimental about myself because it's like "wow, it acutally just already fucking exists in this world, and I am being kept away from anything like it for ridiculous reasons". It was just so sad. I hope I get good at drawing sooner or later so I can draw out some of the things I saw. I would've taken pics of what I'm talking about but things were going past too fast in the bus because of how the routing is like there.
+
+Anyway after settling into our room, we went to an open air public onsen a little walk away from our hotel. Oh yea I didn't mention yet but the entire town smells like rotten eggs. It's entirely just because of the fact that there's SO MUCH sulfur in the water though, since the water is super rich in minerals (and sulfur)... hot spring moment loll
+
+Onsen experience was epic as fuck. It was also entirely not what I was expecting. Somehow everything just felt so natural. I was worried about the entire process/transition towards becoming completely naked and around other people, but somehow in that process it just felt so automatic that it was like as if noone was actually naked around us.
+
+Obviously we were all still naked and you COULD see people's genitals and ass and shit but it's like barely noticeable unless you are very actively trying to look at that shit. I think this is mostly because of the fact that when you are in the onsen, you are kind of entirely consumed by the really hot mineral water reducing your blood pressure and heart rate down to very low levels. When I was in the water it was like I was meditating almost, except that sometimes it was a bit hard to breathe with the way my blood pressure and heart were slowing down a lot lol. Also the steam and shit coming out of the water was really sick too
+
+Afterwards we went around the town and looked around at the stuff there. At this time most of the shops were closed out, so the streets weren't super busy or anything. We were able to chill a decent lot at the town centre which has massive water streams flowing downwards to try to cool the water further for use. The smell of rotten eggs from the sulfur there is REALLY strong, but it's sick as hell. Also looked at a shrine and some of my friends decided to pray to it. Quite the chill experience just walking around the town and seeing the stuff around.
+
+![Path to the Open Air Public Onsen](./sendai66.jpg) ![Town Centre](./sendai67.jpg) ![Kusatsu Onsen mascot on manhole cover](./sendai68.jpg) ![Alcohol shop with another Onsen Mascot](./sendai69.jpg) ![One of the shrines](./sendai70.jpg) ![Same shrine but up the stairs](./sendai71.jpg) ![Same shrine but looking downwards](./sendai72.jpg) ![Vending machine + Sakura](./sendai73.jpg)
+
+After that was the greatest moment of Japan so far. The hotel reservation included a 940583250924 course meal for a REALLY expensive looking dinner even though it wasn't even actually expensive. It started off "mid", but then it got better and better, up to the point where it was just straight up some of the best food I had EVER tasted. I actually like almost cried when dessert was brought out and ate the strawberry. Even the fucking strawberry was amazing man fuck
+
+![Sushi](./sendai74.jpg) ![Fish meal and pork meal](./sendai75.jpg) ![Amazing tasting peach drink](./sendai76.jpg) ![Fish and rice](./sendai77.jpg) ![Beef, rice, radish, egg, soup](./sendai78.jpg)
+
+After that, we basically went back to our room. 2 of us went for another bath, but not all of us. I decided to also just stay in the room. After eating that amazing fucking meal, my haed started to hurt, and I still felt a bit disoriented/dizzy from the earlier bath. I decided to try to just go to sleep at this point forward, hoping that I could possibly sleep away the headache.
+
+![Sushi](./sendai79.jpg)
