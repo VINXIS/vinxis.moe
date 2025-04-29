@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1745647225800"
+lastModified: "1745915567972"
 tags:
   - life
   - japan
@@ -474,3 +474,38 @@ After that was the greatest moment of Japan so far. The hotel reservation includ
 After that, we basically went back to our room. 2 of us went for another bath, but not all of us. I decided to also just stay in the room. After eating that amazing fucking meal, my haed started to hurt, and I still felt a bit disoriented/dizzy from the earlier bath. I decided to try to just go to sleep at this point forward, hoping that I could possibly sleep away the headache.
 
 ![Sushi](./sendai79.jpg)
+
+# April 26 2025 JST
+*Written at April 29 06:45 UTC*
+
+So much shit has happened the past few days that I don't remember if I will be able to capture literally everything that's happened since... but oh well here it goes
+
+This morning we were still at the Kusatsu Onsen. Took a dip in the hotel's own onsen instead of the other open air public onsen, and then had green tea with friends back in our room. Afterwards, we had an absolutely amazing breakfast from the hotel's restaurant, the same one that gave an absolutely amazing dinner the day before.
+
+![Onsen Entrance](./sendai80.jpg) ![Window of our room with green tea](./sendai81.jpg) ![Breakfast](./sendai82.jpg)
+
+After that, we checked our from the room, and got a nice sweet snack with some mid black coffee from the hotel. Leaving our bags at the hotel we decided to just walk around and chill in the town. Ate some absolutely epic egg/vanilla ice cream in a cone, and a fried sesame currypan. 
+
+![A nice sweet snack with coffee](./sendai83.jpg) ![Beautiful Plant](./sendai84.jpg) ![The View From The Window](./sendai85.jpg) ![Sesame currypan](./sendai86.jpg) ![Kusatsu Alley](./sendai87.jpg) ![Milk and egg ice cream with caramel](./sendai88.jpg) ![Kusatsu Mascot](./sendai89.jpg) ![Kusatsu Mochi](./sendai90.jpg)
+ 
+After that we went left on a bus and shinkansen'd to Tokyo. My hotel was by Takanawa Gateway station via the Kehin and Yamamote lines, and it was kinda chill af. Got there quite late I think like 5-6 pm or so. I was actually going to visit my cousin because she's vacationing in Japan with her kids, but she already left to Kyoto from Tokyo by the time I was there.
+
+![Japan suburbs from shinkansen window](./sendai91.jpg) ![Platform in Takanawa Gateway](./sendai92.jpg) ![Outside Takanawa Gateway](./sendai93.jpg) ![APA Hotel Room](./sendai94.jpg) ![The inscrutable thing outside Takanawa Gateway](./sendai95.jpg) ![Inside the inscrutable thing](./sendai96.jpg) ![Wholesome robot thing but idk what it actually does](./sendai97.jpg) ![Banner flags outside Takanawa Gateway](./sendai98.jpg)
+
+After checking in and stuff, I met up with my friends again and we went to the BOOKOFF at Omori station. Also funny thing I should note that Omori is probably one of my least favourite games ever. I like almost nothing about that game, but it kind of blew my mind finding out that Omori is just big massive forest in japanese, which was so funny to me considering in headspace ur just generally in a massive forest for the most pat kinda. Since I didn't really learn japanese until recently I had no idea that there was acutally some semblance of thought put into the game honestly...
+
+![Bookoff sign in Omori station](./sendai99.jpg) 
+
+But now for the cooked part... we were going to go for dinner at a restaurant and I don't remember when it was supposed to be for, but it was like for 18:00 or something? Anyway apparently we needed a reservation, but this wasn't the case for the last time my friends went there before, so we went there and they told us it's gonna take like 2 hours to get in which was FUCKED. We booked a reservation anyway there though, and then tried to figure out what to do next...
+
+Before that, we had to reach there via Shibuya Station. Apparently something was happening this day or something, becuase my friends said that there were like 3-4x more people there than usual at that evening. It was crowded as FUCK. Also it was actually the first time I saw litter in Japan LOL like I was kind of shocked that there was litter while trying to get out of the station's area. It was a very surreal experience to have. As we gradually went further and further away from the station though, it felt much more like the Japan I have seen though, much more chill and clean and everything.
+
+![Getting out of Shibuya Station](./sendai100.jpg) ![Reaching the Shibuya Crossing](./sendai101.jpg) ![Still reaching the Shibuya Crossing](./sendai102.jpg) ![Shibuya Crossing at the stop](./sendai103.jpg) ![Shibuya Scramble](./sendai104.jpg) ![Past the crossing even though the crowd is still fucked](./sendai105.jpg) ![GoKart tourism trap](./sendai106.jpg) ![Like 5 minutes away from Shibuya Station](./sendai107.jpg) ![Random chill ass road](./sendai108.jpg) ![Plantmaxxing sidewalk](./sendai109.jpg) ![Random jazz and coffee bar in a tucked away road](./sendai110.jpg) ![Sick graffiti corner](./sendai111.jpg) ![Artery Road](./sendai112.jpg) ![Completely destroyed phone booth](./sendai113.jpg)
+
+Anyway after ordering the reservations we were figuring out a place to chill to get a snack/coffee or something for like the next 2 fucking hours or some shit. Everything was doomed. Shit was either closed, crowded as fuck, or too shitty to go to. In the end we just went to a dumbass fucking Starbucks, and even that was crowded as fuck. Somehow though we got seats for 4 at the last second as someone coincidentally left the shop.
+
+After that we got back tot eh restaurant like around 20:45 or something, it's like super late now and everyone is pretty tired. LUCKILY, we finally got in. It was like a mix Okinawa - Chinese style Izakaya, and it's a really small establishment. Nevertheless there were like at least 100 people there sitting in a fucking 50 square metre restaurant LOL. It was chaotic as FUCK, loud as shit, red light everywhere, can't hear anyone anywhere. The food we ordered was so fucking good though it was amazing as usual sasuga Japan. My friends also drank like 82797239423 litres of ethanol down into their blood stream that night and got quite fuckin drunk.
+
+![FOOD](./sendai114.jpg)![FOOD 2](./sendai115.jpg)![FOOD 3](./sendai116.jpg)![FOOD 4](./sendai117.jpg)![FOOD 5](./sendai118.jpg)
+After that it was sleepy time. Reached my hotel at like midnight lol
+
