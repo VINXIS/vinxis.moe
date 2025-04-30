@@ -507,5 +507,6 @@ Anyway after ordering the reservations we were figuring out a place to chill to 
 After that we got back tot eh restaurant like around 20:45 or something, it's like super late now and everyone is pretty tired. LUCKILY, we finally got in. It was like a mix Okinawa - Chinese style Izakaya, and it's a really small establishment. Nevertheless there were like at least 100 people there sitting in a fucking 50 square metre restaurant LOL. It was chaotic as FUCK, loud as shit, red light everywhere, can't hear anyone anywhere. The food we ordered was so fucking good though it was amazing as usual sasuga Japan. My friends also drank like 82797239423 litres of ethanol down into their blood stream that night and got quite fuckin drunk.
 
 ![FOOD](./sendai114.jpg)![FOOD 2](./sendai115.jpg)![FOOD 3](./sendai116.jpg)![FOOD 4](./sendai117.jpg)![FOOD 5](./sendai118.jpg)
+
 After that it was sleepy time. Reached my hotel at like midnight lol
 
