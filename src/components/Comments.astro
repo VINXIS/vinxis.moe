@@ -114,6 +114,20 @@ document.addEventListener("astro:page-load", () => {
         return element.innerHTML;
     };
 
+    // Function to convert URLs in text to clickable links
+    const linkifyText = (text: string) => {
+        // First escape the HTML to prevent XSS
+        const escapedText = escapeHtml(text);
+        
+        // URL regex pattern
+        const urlPattern = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/gi;
+        
+        // Replace URLs with anchor tags
+        return escapedText.replace(urlPattern, (url) => {
+            return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+        });
+    };
+
     // Get postID from the container
     const commentsContainer = document.querySelector(".comments-container") as HTMLElement | null;
     if (!commentsContainer) throw new Error("Comments container not found");
@@ -204,7 +218,7 @@ document.addEventListener("astro:page-load", () => {
             ${websiteLink}
             <span class="comment-timestamp">${formatDate(comment.timestamp)}</span>
         </div>
-        <div class="comment-body">${escapeHtml(comment.comment)}</div>
+        <div class="comment-body">${linkifyText(comment.comment)}</div>
         <div class="comment-actions">
             ${replyButton}
         </div>
