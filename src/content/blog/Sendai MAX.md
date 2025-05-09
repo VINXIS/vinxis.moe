@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1745915567972"
+lastModified: "1746784709850"
 tags:
   - life
   - japan
@@ -510,3 +510,348 @@ After that we got back tot eh restaurant like around 20:45 or something, it's li
 
 After that it was sleepy time. Reached my hotel at like midnight lol
 
+# April 27 2025 JST
+*Written at May 6 02:57 UTC*
+
+Oh boy... look at that written at date... lol
+
+So much shit happened since, but hopefully I can recall most of the things that had happened. I had such a great time with meeting everyone that I had been wanting to meet for years even.
+
+This was the day of [M3](https://www.m3net.jp/). A convention/event where a shitton of indie musicians in various scales come to sell CDs and stuff. You may or may not know any of these artists, but to give some idea of the scale, musicians and groups as big as Camellia, Nanahira, Hardcore TANOC, Diverse System, e.t.c. come to set up shop for the day. If you don't know any of these names though don't worry about it lol just know it contains a lot of musicians, as well as a lot of well known ones within the "japan electronic music/doujin/non-anime otaku" scene (as best as I could describe it for the layman... at the risk of describing it wrong...)
+
+I also rode the Tokyo Monorail to get there. Very sick ride I highly recommend riding that at least once (though it costs about 5 dollars, which is VERY MUCH on the pricier end for transportation)
+
+![Tokyo Monorail](./sendai119.jpg) ![Lining up to M3](./sendai120.jpg) ![Inside one of the M3 halls](./sendai121.jpg) ![The yard between the 2 halls of M3](./sendai122.jpg)
+
+Honestly though I didn't buy anything lol I like vinyls more than CDs and everyone is just selling CDs. Honestly I should've just bought stuff just to support the artists I like a lot and just give the CDs to my friends so they can keep it but I'll still have the CD rips (since they would rip it) but I'm dumb as hell... wghatever . Though I did want to get a keychain from 1 of the stalls but they only sold that online apparently.
+
+I also met a few friends there that I didn't get to see the day before on [April 26](#april-26-2025-jst) which was cool. Haven't seen some of them ever/for a very long time before this which was really cool.
+
+Afterwards my friends and I from before went to Omori station which is where 2 of us were staying by (not me though), and we basically were trying to plan for lunch. The idea was supposedly that we get lunch at like 15:00 or so after waiting for some other friend to finish checking in.
+
+That friend in question basically got fucked over by check-in apparently at night since he reached Japan at like midnight or so, and the check-in machine and stuff just wasn't working there or something apparently, and had to wait for the next day. He as a result stayed up like all night or something. So when we were trying to make plans with him, we were like ok lets have lunch at like 13:00 or something, and then he was like ok but I gotta check in at 15:00 so hold up, so we decided like 16:00 or something, and then he was like ok I'm coming it's gonna take a long ass time though, and then we kept waiting and there was like absolutely no communication from him because he was busy getting lost by the transportation system or something. I think by that time it was like 17:00 or 18:00 where we were just laughing at how absurd the situation was because he just never showed up and we still didn't eat. AND THEN since I gave him my location, he was like yo I've been trying to get to you guys but everytime I'm there you're somewhere else... and that blew our minds it was so fucking funny because at the time we didn't know he was so dead and exhausted and tired, so his actions of just never responding to us and then suddenly going like "YO I'VE BEEN TRYING TO REACH YOU ALL FROM GOOGLE MAPS" was just so fucking absurd LOL
+
+Anyway here is Omori station:
+
+![Stairs to somewhere...](./sendai123.jpg) ![On the stairs](./sendai124.jpg) ![The view back to where we first found the stairs...](./sendai125.jpg) ![Tiny shrine...](./sendai126.jpg) ![Much bigger shrine at the top of the stairs...](./sendai127.jpg) ![Staircase to a small block of shops](./sendai128.jpg) ![Milpa shopping alley](./sendai129.jpg) ![Just a normal Japan street](./sendai130.jpg) ![A restaurant's koi fish pond](./sendai131.jpg) ![Sidewalk, small gap between 2 buildings](./sendai132.jpg) ![Quiet road with houses 1](./sendai133.jpg) ![Quiet road with houses 2](./sendai134.jpg) ![Quiet road with houses 3: Flower garden](./sendai135.jpg) ![Quiet road with houses 4](./sendai136.jpg) ![A shop outside the quiet roads with houses](./sendai137.jpg) ![Tiny gap between buildings 1](./sendai138.jpg) ![Tiny gap between buildings 2](./sendai139jpg) ![Storefront with house plants](./sendai140.jpg)
+
+This was also the first time I went to an actual game center. I did go in a game center before but that was because I wanted to convert coins into bills/larger denominations, but I found out that the machines there don't actually do that they only do the opposite (bills to coins/smaller denominations) so I left shortly after and got mad at the coins I had.
+
+Also during that time, one of my friends had other lunch plans as he was meeting with the creator of the game osu!, peppy. He used to work on the game with him so they know each other very well. While we were at the game center, we got a message that peppy would be down to meet with us, which was kinda epic. He was also at Omori in the station itself too, so it wasn't too far of a detour just to meet him. But yea he was chill as fuck and I was glad I was able to meet him (alongside the many other people I was able to meet between Apr 26-May 5).
+
+![Entrance to GiGo](./sendai141.jpg) ![Monogatari cabin](./sendai142.jpg) ![KanColle cabin](./sendai143.jpg) ![JoJo Cabin](./sendai144.jpg) ![A bunch of cabins in the game center](./sendai145.jpg) ![EvilMaiMaiSong](./sendai146.jpg) ![Gitadora](./sendai147.jpg)
+
+Anyway after like 50 years, the friend we were supposed to have lunch with finally met up with us. Unfortunately like basically right after, one of my other friends had to leave because he had dinner plans with other people lol, also we ended up basically not having lunch as a result. In any case, we just kept walking around a bit more around Omori station before we basically left at the end back to one of my friend's hotel room.
+
+This was an entirely different insane story now. We sat there for like 2 hours or so I don't remember exactly, but basically we were going to have dinner with a friend that lives in Japan, and he also brought another person in the group chat to plan. Because he ate yakiniku the day before, he was like naw let's eat something else. So we were trying to figure out what teh fuck After like an hour or something and he also brought another person into the group, and then the guy decided to just drink a Strong Zero can and just got drunk as fuck and vanished.
+
+So in the end we basically went back to the yakiniku plan and also brought the guy he brought in too LOL it was good stuff though the food was good and we had a great time
+
+![Yakiniku with friends](./sendai148.jpg)
+
+After that was sleepy time yay. I TOOK 2 DAYS TO WRITE DAY...
+
+# April 28 2025 JST
+*Written at May 8 05:23 UTC*
+
+Last day in Tokyo this weekend. To reiterate from the day before's blog post, 2 of us were staying in a hotel at Omori station, while 1 of us was in Akiba, and I was by Takanawa Gateway. The one at Akiba checked out really early and put their stuff in a random locker in Tokyo. I checked out but toko my suitcase to the Omori station hotel instead for them to hold on to also. The hotel there basically agreed to keep our suitcases for the meantime, and we just went to Mister Donut. I wanted to try the donuts that were in Japan becauseMister Donut in Japan is like basically the Tim Hortons of Canada except if Tim Hortons wasn't like a national icon for the country and shit. Anyway it was infinitely better than Tim Hortons lol... like it wasn't the best donut ever like gourmet donut level, but it's definitely better than the shit u get from Tim Hortons or Dunkin or Krispy Kreme LMAO After getting the normal donut and drink I tried the matcha donut they were selling. It was chill but overpriced. The normal donuts were good enough honestly
+
+![Mister Donut Matcha Donut](./sendai149.jpg)
+
+This day was also the first time I set foot in Akihabara. The Otaku Center as some people call it I guess lol. It was kinda crazy seeing the amount of ads that were there for random anime-adj stuff like gachas and shit (especially fucking gacha games) but yea it wasn't like super mind blowing just kinda funny. The epic thing was to see the Akiba square though that I've seen so many times in anime and shit, but in real life it was kinda Very different
+
+![Fresh off the train at Akihabara](./sendai150.jpg) ![The hall in the station with a bunch fo gacha ads](./sendai151.jpg) ![Right outside Akihabara Station](./sendai152.jpg) ![Walking through Akihabara](./sendai153.jpg) ![Random Azur Lane thing idr](./sendai154.jpg) ![Fare gates in the station](./sendai155.jpg) ![Yostar storefront](./sendai156.jpg) ![Surugaya Entrance](./sendai157.jpg) ![Inside Surugaya](./sendai158.jpg)
+
+After that we went to Shin-Okubo and walked around. The idea was to get lunch at a kebab shop that's there which is apparently goated as hell. it's called EFELIF. Crazy area in Tokyo honestly it's like a KoreaTown but with A LOT of SEA and South Asian people it's really interesting.
+
+Anyway the kebab was fucking amazing. Here's some more pics
+
+![A gachapon machine crying not take capsules](./sendai159.jpg) ![Crazy house 1](./sendai160.jpg) ![Crazy house 2](./sendai161.jpg) ![EFELIF Kebab](./sendai162.jpg) ![Crazy sign about food in that area by the kebab shop](./sendai163.jpg)
+
+After that we decided to walk around for a while, and tried going to some parks and shit (we failed). We went to Shinnanomachi and walked around for a decently long time. Passed by the Meiji Memorial Museum and other stuff which was cool
+
+![Tree canopy walkway 1](./sendai164.jpg) ![Tree canopy walkway 2](./sendai165.jpg) ![A bunch of vending machines covered by a beautiful roof of branches on top of a grid](./sendai166.jpg) ![Meiji Memorial Museum](./sendai167.jpg) ![Uhhh idr](./sendai168.jpg) ![Uhhh idr again](./sendai169.jpg) ![I really dont remember](./sendai170.jpg)
+
+After that we went back to Sendai!!!!!! Yay they all got hotels really close to Sendai, which as a result was close to where I have been staying at. It was pretty much evening/night time when we got settled so there wasn't much left that we did this night.
+
+I told them about God's Given Gift, the Zunda shake. They liked it but they weren't as crazy about the Zunda shake compared to how much I was/ It was good tho
+
+We went to the game center by Sendai Station tho which for some reason had a really old shit ass 2nd gen iidx cabin. Kinda fuckin crazy
+
+![Pop'n Music](./sendai171.jpg) ![2nd gen iidx cabin](./sendai172.jpg) ![Digital Circus Crane](./sendai173.jpg) ![Evil Drink](./sendai174.jpg)
+
+After that, we went to the same eel restaurant/izakaya that I went to on [April 12](#april-12-2025-jst). I didn't know at the time but apparently izakayas just change their menus completely between lunch vs dinner. In any case though, we went in cuz I was talking about how epic the eel place was with my friends. I couldn't believe how good the dinner menu was man holy fuck.
+
+THEY HAD THE BEST CRAFT COLA DRINK EVER DUDE
+
+![Craft Cola](./sendai175.jpg)
+
+LOOOK AT THIS CRAFT COLA MAN IT'S SO GOOD
+
+Anyway here's most of the food at that dinner. It was so fucking good man
+
+![FOOD 1](./sendai176.jpg) ![FOOD 2](./sendai177.jpg) ![FOOD 3](./sendai178.jpg) ![FOOD 4](./sendai179.jpg) ![FOOD 5](./sendai180.jpg) ![FOOD 6](./sendai181.jpg) ![FOOD 7](./sendai182.jpg) ![FOOD 8](./sendai183.jpg) ![FOOD 9](./sendai184.jpg)
+
+So fucking good man
+
+After that my friends went back to one of the hotels and started drinking, and then they all passed out lol. I went back to my room shortly after and slept too lol
+
+# April 29 2025 JST
+*Written at May 8 06:47 UTC*
+
+Chill city day. We basically mostly walked around this day looking at stuff. They wanted to go to Melonbooks (a porn/doujin store) so we went there for a bit. It's legit like just 80% porn and then 20% touhou it's kinda absurd in a way lol. What was legitimately jarring though was someone just having their kid walking through the store. It's kind of crazy because like the porn is everywhere, but they don't really have explicit covers. The ones with explicit covers are in their own section with """curtains""" that are  """covering""" them, idk it was just so bizarre to me that someone just had their kid there even though they were just walking through the shop. Idk where else they would be coming from in that building though...
+
+After that we went to EBeanS, which is basically the hobby shop mall in Sendai. I don't remember if I mentioned this before already but oh well. The building has shit like Cospa, Kikuya, Animate, Lashinbang, e.t.c. There's like 8 floors or something there of just hobby shops. 
+
+After that we had sushi. Legit this was the first time I had sushi in Japan... it was kinda crazy that it took this long to get sushi for me lol. It was good as fuck thuogh had some interesting sushi there and they were all at the very least chill but it was mostly very good stuff
+
+![Pretty sushi mug](./sendai185.jpg) ![Sushi 1](./sendai186.jpg) ![Sushi 2](./sendai187.jpg) ![Sushi 3](./sendai188.jpg) ![Sushi 4](./sendai189.jpg) ![Sushi 5](./sendai190.jpg) ![Sushi 6](./sendai191.jpg) ![Sushi 7](./sendai192.jpg)
+
+After that we took a stroll around the Aobayama Campus. It's the same place I went at [April 2](#april-2-2025-jst) way at the beginning when I was first trying to figure out the way to navigate teh subway and stuff lol. It was as beautiful a campus as ever though even moreso at night. I also showed them a really old like bus stop shelter type thing that clearly isn't used by anyone, but is right there beside the sidewalk, with a really old dusty couch in it LOL
+
+Also went through the path that I took to find the main picture of this blog. It was too scary for my friends to continue walking though so I didn't take a picture of that specific thing again. Oh well
+
+![Green Stairs To Hell](./sendai193.jpg) ![Some small area of the sidewalk u just aren't allowed to walk on](./sendai194.jpg) ![Stairs to Heaven](./sendai195.jpg) ![Stairs to Nowhere](./sendai196.jpg) ![Back at the garden](./sendai197.jpg) ![Path to the main picture for this blog](./sendai198.jpg) ![Small pond shrouded by darkness but illuminated by NIGHT MODE PICTURE](./sendai199.jpg) ![Dusty couch](./sendai200.jpg) ![The old ass shelter the dusty couch was in](./sendai201.jpg)
+
+Lol at how the dusty couch pics are the 200th and 201st pictures in this blog post now. This post is getting quite massive LOL
+
+Anyway after that, we basically took the subway back to Sendai station and chilled for a bit (iirc). We decided that night to just go to an italian izakaya. I am not fucking joking when I say the 2nd and 3rd best pizzas I've ever had (so far) have been in Japan man. The 1st was obviously in Italy lol but holy shit. The pizza I ate today was probably like the third best pizza ever.
+
+![The Izakaya's logo](./sendai202.jpg) ![Pizza menu](./sendai203.jpg) ![FOOD 1](./sendai204.jpg) ![FOOD 2](./sendai205.jpg) ![FOOD 3](./sendai206.jpg) ![FOOD 4](./sendai207.jpg) ![FOOD 5](./sendai208.jpg) ![FOOD 6](./sendai209.jpg) ![FOOD 7](./sendai210.jpg)
+
+And that was basically the end of the day. Oh I forgot to mention that I had one of my friends also help me get a monthly pass that day. Their options were only in 1/3/6 months, and for a specific route only. I paid for 3 months for my route, only to then realize that I'm literally only here for 2 more months, so it probably cost me to get that pass more than it would've for the next 2 months to go back and forth from the university to home lol....... oh well.
+
+I had him come over so I could give him 20k yen back and he also checked out my room. I found out from him that the washroom is actually a bit dated, though it made sense considering the building was constructed in like 2007 or so. He told me that whenever I rent a place for if/when I come back to Japan, there should be bathtub/shower settings that are just there right outside the bathtub/shower room that let's you set up the water amount and temperature and stuff (if the room was made in 2009 or newer). If it's not, I'm getting scammed. Good tip that I felt like I should also write here lol
+
+yea that was basically it. My friends also got the IC cards from here too becuase they don't give Suica here, they give ICSCA cards lol.
+
+# April 30 2025 JST
+*Written at May 8 07:12 UTC*
+
+This day was my first time back at the lab after so long LOL and even then it was only for this day and the next, and for very short times.
+
+Either way I went and gave members of the lab Kusatsu Onsen cookies!! I should've bought a second box though because there clearly weren't enough cookies unfortunately... but yea they looked epic I wish I could try one
+
+![Kusatsu Onsen Cookies 1](./sendai211.jpg) ![Kusatsu Onsen Cookies 2](./sendai212.jpg) ![Kusatsu Onsen Cookies 3](./sendai213.jpg) ![Kusatsu Onsen Cookies 4](./sendai214.jpg)
+
+Anyway I left pretty early from the lab this day because I wanted to chill with my friends more lol especially since I wouldn't see them tomorrow as they would've left while I'd be in the lab that day, and one of them was leaving this day to China.
+
+We went to Zunda Zunda, a cafe that basically just does Zunda stuff. I got the Zunda latte and it was so good man holy shit. I had a Zunda shake after but that was basically the same as the other Zunda shakes I had, but for like 200 yen/2 dollars more.... which is like Wtf. The latte was really good though it was crazy
+
+![Zunda Latte](./sendai215.jpg) 
+
+Afterwards my friend left for China, while the rest of us went to the Sendai City Museum that detailed the VERY extensive history of Sendai lol, it was a pretty chill place nothing mindblowing but it was definitely cool to see the evolution of things like the japanese writing style and how maps evolved throughout time and other stuff too. Most of the text was in japanese though and my japanese is NOWHERE NEAR good enough to read it LOL only been like a month or 2 mann. but yea lots of pictures, so I selected only a few cuz it'd be kinda weird to post a lot of exhibits from the museum personally
+
+![Walking to museum](./sendai216.jpg) ![A path I took a pic of for no reason](./sendai217.jpg) ![River in sendai](./sendai218.jpg) ![Stairway near the museum](./sendai219.jpg) ![Statue I forgot what it says](./sendai220.jpg) ![A timeline shown in the musem](./sendai221.jpg) ![Old buddhist statues](./sendai222.jpg) ![Museum Exhibit 1](./sendai223.jpg) ![Museum Exhibit 2](./sendai224.jpg) ![Museum Exhibit 3](./sendai225.jpg) ![Museum Exhibit 4](./sendai226.jpg) ![Museum Exhibit 5](./sendai227.jpg) ![What Do You Wish For 1](./sendai228.jpg) ![What Do You Wish For 2](./sendai229.jpg) ![Survey with X gender option](./sendai230.jpg) ![Entrance of the museum with Haikyuu](./sendai231.jpg) 
+
+Those sticky notes are really funny. There's a wall at the end of the museum that lets you write something on a sticky note. You're supposed to write "What do you wish for in life the most" or something along those lines iirc. The first one wrote something along the lines of "Getting into Tohokudai" and then crossed it out and wrote "Family" lol, the second one was a good One Piece sticky note.
+
+I also was kinda surprised that they had an other gender option on the survey too that was really cool. A friend of mine also told me that he noticed that there was a gynecology clinic in Sendai or something that was talking about how if you are LGBTQ then don't be afraid to come in which is also really cool. I wasn't expecting that at all honestly because I thought Japan was very socially conservative when it came to LGBTQ situations but yea that's sick
+
+After that we walked all the way up a massive fucking mountain to Sendai castle. It was quite steep honestly but the view was epic up there so nbd. Also coincidentally, one of the people from the lab was also there on their day off which was kind of surprising and funny considering they somehow also decided to check out the castle at the same day. The place in general wasn't super crowded or anything either
+
+![Stairs to nothing](./sendai232.jpg) ![Big stone steps](./sendai233.jpg) ![Massive shrine entrance with vending machines behind it](./sendai234.jpg) ![Statue of Date Masamune](./sendai235.jpg) ![Panorama of the city](./sendai236.jpg) ![Bird Statue](./sendai237.jpg) ![Entrance to the actual shrine](./sendai238.jpg) ![Inscrutable japanese writing](./sendai239.jpg) ![Another shrine](./sendai240.jpg)
+
+After that we decide to walk away from the castle to the other direction. Little did we know that we'd reach the Yaiyagami Zoological Park after walking forever, which was SO far away from the castle it's crazy. Just look it up on google maps, they are actually so far apart from each other LOL. Anyway we decided to have dinner at a famires called Coco's. They had some decent food there, nothing crazy. 
+
+![Famires Food 1](./sendai241.jpg) ![Famires Food 2](./sendai242.jpg) ![Famires Food 3](./sendai243.jpg) ![Famires Food 4](./sendai244.jpg) ![Famires Food 5](./sendai245.jpg)
+
+after that we walked for a while in the neighbourhood around the park and the famires. It was actually so quiet and it was like what 7-8 pm or something? Usually in Canada you can still hear a lot of noise at night because of the sheer quantity of cars still moving around in the city, so even if there was noone outside it'd just be loud all the time. There thought it wasn't even super night time and it was still quiet. It was crazy. We went around after walking through some neighbourhoods and reached a konbini where I got probably the worst food I ate so far: French Toast from FamilyMart. It was just so fucking bad man. But regardless, we walked a bit more to a hill and stopped there for a bit just to look at the view of the city. You honestly couldn't even see the end of the city it was kinda crazy. Such a dense city the same size as my hometown Edmonton, but it just looks so much more bigger and not isolated you know.
+
+![Sendai](./sendai246.jpg)
+
+After that we took the subway back to Sendai station and I had them come over to my house. We basically chilled there for a little while before they both left for the night and I went to sleep.
+
+# May 1 2025 JST
+*Written at May 8 10:34 UTC*
+
+This was probably the most normal day of the entire past 2 weeks. All my friends were gone from Sendai and I basically just went to the lab like usual. I had been working on a visualisation because I was getting a bit confused as to how I would use the data to model [[Alternative Splicing]] events observed to various stressors applied onto [[Messenger Ribonucleic Acid]] strains so that's basically what I was generally spending my time on in the lab, as well as helping figuring out stock/inventory for the other project that my friend was maining currently. For lunch though the lab went to an indian restaurant called RAJ, and the food was RIDICULOUSLY cheap for indian food it was crazy. I got a butter chicken set with rice and it was literally 660 yen in total. AND it was good as fuck man jesus
+
+![Menu](./sendai247.jpg) ![Table](./sendai248.jpg) ![Food 1](./sendai249.jpg) ![Food 2](./sendai250.jpg)
+
+After that I went to Don Quijote with the lab members for a very short period before we all split off. After splitting off I went with 1 of the lab members who told me that he started listening to english rap a lot, so naturally I HAD to tell him about Kendrick Lamar, and he was like damnn ok I'mma hop on (paraphrased obv). After the split off I was just walking around and went into a random book shop to see what they got, but didn't buy anything. I then went into some shopping alleys, and eventually went to a BOOKOFF, to then also not buy anything there.
+
+Afterwards, I went to a FamilyMart, and decided to get French Toast again. I had to know if I was just going crazy or not becuase it was just so bad and I actually just straight up didn't have bad food in Japan upto that point. This time I bought it and went home to microwave to eat it, because it did have heating instructions and shit too so. After heating it though it was still not good, but it wasn't terrible though. It was like acceptable basically but I would never have it again because it just wasn't good man
+
+This day I was also booking my hotel for the upcoming weekend since it is Golden Week. After I booked my hotel at APA, I then googled APA up because a friend of mine online was like "What does APA even mean anyway?" That is when I found out about the absolute insanity about APA lol. The owner is some crazy insane freak who constantly indulges in historical revisionism, and the company has faked earthquake safety data of all things, IN JAPAN>???? like what the fuck is up with this shit
+
+Anyway I already booked it, and it was also too close to the date when I'd be going to Tokyo, so hotels were already super expensive in the first place lol
+
+After that I basically just went to bed
+
+# May 2 2025 JST
+*Written at May 8 2025 10:53 UTC*
+
+Honestly I completely forgot anything that I ate this day... I think I was trying to finish all the remaining food in my apartment before I left, so I ate a bunch of egg and rice this day. Regardless though I did go to the lab this day too to do some work on both of the projects again. Afterwards, I didn't bring my umbrella with me, so I got kinda soaked while trying to get to a konbini so I could just buy some fuckass umbrella there.
+
+Before going to the lab I did some packing, but I had to go home after the lab anyway because I still had to pack toiletries and stuff, but I had to use them before leaving so yea. I also wanted to split my 10k yen bill but honestly I couldn't find a good place or time to, but I wanted to do that before I went to the station since I wanted to get another Zunda shake. Luckily though in Sendai Station there's a (cheaper) Zunda shake stand on the Shinkansen floor, and they also take credit card, so it was actually pretty chill.
+
+I was considering buying tickets to the shinkansen on [May 1](#may-1-2025-jst) but I was like nawww fuck it I'll just chill... only to find out that the tickets were FUCKED. I still got a reserved seat on the Hayabusa (faster line from Sendai to Tokyo), but it was also a seat right at teh front, so the leg space was kinda fuucked
+
+It was chill tho cuz I got to my hotel with ease from the shinkansen and the Ginza subway line. During this time though, the raining only got worse. It was already bad in Sendai, but as time passed, the forecast in Tokyo was just getting even worse. During my time walking outside, my umbrella just completely obliterated itself because the winds were just so fucking strong, so I had to buy another umbrella for like 500 yen real quick LOL.
+
+![Broken umbrella](./sendai251.jpg) 
+
+So now I just had 2 umbrellas, 1 of them being completely broken, only until I met up with 1 of my friends at Akihabara station that told me that it was actually still fixable... so in the end I basically wasted 500 yen for another umbrella that was taking up my Hand Space. It was chill tho I didn't really mind it that much and it was kinda funny as fuck. Anyway I met up with 2 of my friends in total and we just walked around Akihabara. The plan was to have dinner at a conveyer belt sushi place, but the lineup was super long, so we were just killing time. Went to BOOKOFF and Surugaya to look at random stuff, but nothing crazy.
+
+In any case we had dinner that night at the sushi place with another friend I had only met briefly before. The sushi was honestly like Fine/whatever like it wasn't really good but it wasn't terrible or anything. One of my friends was distraught that 1 of the tuna pieces were fucked or something though but it wasn't like absolutely terrible when I had it. 
+
+Afterwards, we all just immediately split off... but something was kind of off with how everything went. I guess the vibes ended up off in the end because everyone's experience with the sushi place was quite varied to the point where I guess some people were uncomfortable in the end. In any case though I did a bit of walking around the city, and then went back to my hotel to sleep.
+
+# May 3 2025 JST
+*Written at May 8 11:45 UTC*
+
+One of my friends that went to the sushi place yesterday kind of cut off from everyone else for the rest of the trip. There were plans that we'd have dinner on May 4, but he decided to just opt out. I tried sending a message asking whats good but no response, so I wasn't really sure what to do... aside for just giving some space...
+
+The entire day didn't really have a plan so I met up with a friend and we went to Yokohama. That reminded me that IT WAS SO HOT this day and honestly the sunscreen might've not been enough. I was told that all of it was turning me into purple quite early on even lol
+
+The idea was to go to a restaurant he knew of in Yokohama after walking around a bit and chilling there before heading back, so at the time we just went with that. We got to Yokohama station from Tokyo on a green car seat which was really nice. It was like 780 yen or something and you just go to the stand on the platform to choose your destination, and then tap your card on the roof wherever you're sitting when you get into the train car itself. 
+
+The area(s) that we went to at least were very hilly/varied in elevation so there was a lot of incline and decline walking that we did. It was also VERY beautiful honestly, these pictures probably can't do it justice. My friends said that it's basically like Tokyo if it was chill and I completely agreed.
+
+![Crazy ass building exterior](./sendai252.jpg) ![Hallway at the main Yokohama Station](./sendai253.jpg) ![Flower garden 1](./sendai254.jpg) ![The view from the flower garden](./sendai255.jpg) ![Flower garden 2](./sendai256.jpg) ![Flower garden 3](./sendai257.jpg) ![Flags that I'm still not sure what they are](./sendai258.jpg) ![Beautiful pathway](./sendai259.jpg) ![Windmill](./sendai260.jpg) ![Another crazy pathway](./sendai261.jpg) ![Random crazy micro courtyard](./sendai262.jpg) ![Insanely beautiful storefront](./sendai263.jpg) ![Dog/pet bar on the side of the road](./sendai264.jpg) ![Random roofed pathway](./sendai265.jpg) 
+
+Anyway we went to the restaurant and it was fucked . the lineup was just FUCKED, so in the end we went back to the main yokohama station and went to a Royal Host famires. I got curry and rice, and it was legit as good as the homemade curry and rice, so like honestly there is basically nothing I miss from Edmonton/Canada that also couldn't just come to Japan. Fuck edmonton and canada man. The dessert was also quite epic iirc it was really good
+
+![Food](./sendai266.jpg) ![Dessert](./sendai267.jpg) 
+
+Afterwards my friend started dying and getting an insane headache so we split ways and reached our own hotels. I grabbed a snack of dried shrimp to nibble on while doing my japanese Anki for the rest of the day, and it was honestly not a great decision. Like it tasted fine, but my jaw was actually fucked it was in so much pain man.
+
+Anyway you may or may not remember the guy who just completely vanished from dinner plans after randomly inviting someone and then drinking a Strong Zero and then just dying completely at [April 27](#april-27-2025-jst)... well I had been contacting him since and told him I'm back in Tokyo again, and suddenly the plan exploded into like a 10 person plan. And this time it was ACTUALLY happening he even reserved it the day of somehow. It was actually crazy because I knew a lot of these people for years but didn't get to meet them until now.
+
+Some of the images below are by my friends
+
+![KOREAN RESTAURANT PARTY 1](./sendai268.jpg) ![KOREAN RESTAURANT PARTY 2](./sendai269.jpg) ![KOREAN RESTAURANT PARTY 3](./sendai270.jpg) ![KOREAN RESTAURANT PARTY 4](./sendai271.jpg) 
+
+Absolutely absurd that this actually happened. I'm actually so grateful I was able to meet people that I wanted to meet for years man holy fuck. Everyone and everything is epic
+
+# May 4 2025 JST
+*Written at May 8 12:38 UTC*
+
+Somehow I'm writing all of these on May 8. Actually crazy.
+
+Anyway my cousin and her husband and kids were coincidentally vacationing in Japan, and were in Tokyo this same weekend. So we hit up at a Komeda's Coffee near Shibuya station to meet up. The food was epic, free bread AND ti was tasty as fuck bread.. it was so good.
+
+![Demolished food at Komedas](./sendai272.jpg) 
+
+After that I was about to go home, but then me and a friend were talking about lunch plans, and I was like wait I can ask this other person to also come through since I hadn't seen him in like almost 10 years.
+
+That person then said they were currently at that very moment in line for a lunch place rn. So we all scrambled and met up at Harajuku at a Spontini. It was actually kinda chill. The pizza was good as fuck, not mind blowing but very good. I can't lie that shit gave me diarrhea later in the day though lol
+
+![CHEESY AS FUCK PIZZA](./sendai273.jpg) 
+
+Harajuku itself was so fucking packed. The Infamous street packed as usual. Honestly a friend of mine showed a picture of it when he went and honestly it wasn't as bad as when he went, but it was still crazy as fuck lol
+
+![Harajuku 1](./sendai274.jpg) ![Harajuku 2](./sendai275.jpg) ![Harajuku 3](./sendai276.jpg) ![Harajuku 4](./sendai277.jpg) ![Harajuku 5](./sendai278.jpg) 
+
+After that we parted ways, and I went to Akihabara with one of my friends to meet with others that I also hadn't met in a while or at all until now. It was quite sick honestly we were just chilling in a Yodobashi and playing with the synths and stuff.
+
+During this time my phone battery was also dying though I wanted to get some juice in it. We tried like 50 billion battery packs and none of them were charging my phone at all... The initial thing we did before Yodobashi was get a new battery pack. My pocket WiFi came with one, but it wouldn't charge my phone becuase I guess its output was only from the USB-A slot, and I had no USB-A cables. 
+
+MY genius head decided to just buy another power bank instead of buying a USB-A to USB-C cable. It was like 2x more mAh so it wasn't the worst idea honestly........ I swear...... but in any case I tried plugging it into my phone and it just wouldn't charge at all for some reason. I was kind of dumbfounded... so when other people also came around to Yodobashi, I tried everyone else's battery packs, and none of them were working.
+
+After we split off with them, I went back to my hotel, and plugged in my charger to the wall and my phone, only to find out it wasn't working there either... so I was kind of dumbfounded. It worked after a while thuogh so I charged as much as I could at the time...
+
+AND THEN AFTER THAT we met up with my friend who was back from China, alongside another friend who I had never met but knew for a very long time. They were really cool to meet and I'll explain why in the next paragraph. We went to a ridiculously cheap restaurant that served amazing food. A fucking skewer of chicken was not even a dollar dude it was fucking insane and it was good food too
+
+![FOOD 1](./sendai279.jpg) ![FOOD 2](./sendai280.jpg) ![FOOD 3](./sendai281.jpg) ![FOOD 4](./sendai282.jpg) ![FOOD 5](./sendai283.jpg) 
+
+Yea meeting them was epic. They wore very feminine clothing like a skirt and all, but sounded masc. One time when they went for a smoke break, there was a woman that talked to them, and she was shocked when they spoke. They also told me about a record shop in Sendai that I could go to, which I definitely will try to go to at some point this month. It was sick meeting them.
+
+After that, it was time to say goodbye. I wasn't going to meet almost any of my friends for probably a very long time again, so we walked all the way back to my shitty hotel, and we hugged and parted ways. Fuuuck man hopefully I can stay in Japan August onward and meet them there though
+
+# May 5 2025 JST
+*Written at May 9 08:27 UTC*
+
+This day my phone was also struggling to charge that morning. It was also my last day at Tokyo which was like ahh fuck cuz imma need that phone for when I travel back to Sendai on the train + shinkansen.
+
+In any case I was thinking of going to Ikebukuro since I hadn't gone there yet at all my entire trip. I checked out, and put my stuff in a locker at Ueno. I was considering buying shinkansen tickets at the time, but I was like nawwww Fuck it ill just buy them later lol
+
+I hit up the friend I met for pizza yesterday if he wanted to go to Ikebukuro, and he was like suree, so he and I were just walking around for most of the day through the streets and malls that were there. SO MANY malls man holy shit.
+
+Before I met him I went through the massive Uniqlo store there, as well as the BOOKOFF too. After we met up we went through PARCO and the massive Animate store there, as well as Sunshine City. The place wasn't that bad when I first got there, but it slowly and gradually got REALLY fucking crowded man. Also interesting was that there was basically an entire floor in Sunshine City of random pokemon shops of various kinds. Like it was basically the entire floor honestly
+
+![Ikebukuro station opposite of where stores are](./sendai284.jpg) ![Ikebukuro Station](./sendai285.jpg) ![Sick jazz poster](./sendai286.jpg) ![Kinda crazy building](./sendai287.jpg) ![Pathway under the JR lines](./sendai288.jpg) ![Insane ass FNaF merch](./sendai289.jpg) ![NGE jewelery at the popup store](./sendai290.jpg) ![The bigass animate building](./sendai291.jpg) ![Massive Detective Conan movie ad](./sendai292.jpg) ![Crayon Shin-chan store](./sendai293.jpg) ![Pokemon 1](./sendai294.jpg) ![Pokemon 2](./sendai295.jpg) ![Pokemon 3](./sendai296.jpg) ![Pokemon 4](./sendai297.jpg) ![Interesting wallpaper of a guy putting a rug in water](./sendai298.jpg) 
+
+Afterwards we ate some bakery stuff that was like fine, but also overpriced for Japan's standards lol, and then we parted ways. At this point I went back to Ueno station and looked up the earliest shinkansen tickets at the time, and it was FUCKED man. I ended up getting a green class ticket on the slower shinkansen line, which isn't the WORST, but man I really should've just booked tickets way earlier instead, oh well again it wasn't the worst.
+
+Anyway, during our time there, I bought myself a sick Eva 3.0+1.0 artbook from the pop-up store that was there in PARCO, as well as a wanted one piece poster for my brother.
+
+![The Goods 1](./sendai299.jpg) ![The Goods 2](./sendai300.jpg) ![The Goods 3](./sendai301.jpg) 
+
+I was considering opening the artbook, but I feel like if I do that, then it'll probably get fucked when I have to go back to dogshit fucking Edmonton at the end of June, so I just left it closed. I can't wait to open it when I go back though. That'll be one of the very very few good things I can provide for myself when I get back.
+
+# May 6 2025 JST
+*Written at May 9 09:06 UTC*
+
+So today was supposed to be my first actual normal day back at the lab........... but I found out that when Golden week holidays happen on a Sunday, then an extra free day is added either at April 30 or May 6....... and Golden Week supposedly was still on lol.
+
+I was really confused as to why the amount of people at the subway and outside weren't that much, so by the time I reached the station I was supposed to get off, I asked my lab members if the lab is even happening, to which they said no, and was also when I found out by them that Golden Week was still on apparently. SO I GUESS I just had a free day today.
+
+I decided to try the Mos Burger and Cafe that I had passed by many times before. I got a normal cheeseburger and cafe au lait. The tomato slice was fucking massive lol like the burger was basically just full of tomato, but it was decent. Like honestly it was still better than fucking McDonalds in NA which sounds like a low bar, but like it was decent as far as fast food burgers go so yea, the cheese wasn't even melted well and it was still better than McDonalds in NA lol
+
+![Cheeseburger and coffee from Mos](./sendai302.jpg) 
+
+After that I was considering going to the record shop my friend told me at dinner on [May 4](#may-4-2025-jst), but by the time I left Mos, the shop still wasn't even open, so I kinda didn't bother and just went home. I did go to COOP after though and got some groceries and a premade meal though.
+
+My phone was starting to get completely fucked though, charging almost never worked for the most part anymore, and I was assuming it was because lint is stuck in the port... but even after trying to remove the lint with a toothbrush and blowing on it and stuff, it was still not charging like 90% of the time. SO basically my solution was...... to get another fucking power bank. But this time, the idea was to get a wireless power bank instead. I honestly didn't even know if they existed or not, but I was like whatever man fuck it, I'll just go and see if they have any.
+
+And they did
+
+so that was kinda chill
+
+The price on that shit was like 6000 yen or something, but I for some reason only paid like 3450 or something iirc? I was very confused as to why I was paying like almost half the price that was on the box, but whatever man. 
+
+In any case, I took it home and tested it out. I tried opening the box as carefully as possible to make sure I didn't comepltely fuck it, in the off chance I could potentially talk to them to return it if it doesn't work. All the wireless chargers said that they are MagSafe or whatever the apple wireless charging magnetic thing was, and that it was compatible with the iPhone lineup, but I have a Google Pixel 6 Pro, so I really wasn't sure if it would work well or not... 
+
+But it's fine, in the end after trying it out it worked out completely fine. So I guess now my charging habit has changed to just putting the power bank on charge, and leaving the phone resting on the power bank Loool
+
+The bad news though... my pocket wifi charging also started to get really finnicky... it only worked like 50% of the time or something when trying to charge it, and it started making me worried honestly because it's not like I can wirelessly charge that, and also I literally need that to use my phone or laptop like AT ALL, EVER. So that was concerning, luckily I was able to RNG enough to make it work for the most part so it wasn't the worst thing ever.
+
+In any case, I had decided to try to catch up on all of my blog entries this day, but as you can tell from these written at dates... that did NOT happen. I honestly don't even remember what I was doing on the computer the entire day lol, I do know that I caught back up on Anki or something because my Anki started exploding. Especially because the discharge from the phone's part being fucked kind of made me lose a day, to where the next day was a full 200 reviews, but I think at this point I had caught up. I don't remember exactly though.
+
+These days though, I spent a lot of time shoving the random toothbrush (that I stole from APA) into the ports in hopes that the bristles will wiggle whatever lint is there in the ports (if at all).
+
+# May 7 2025 JST
+*Written at May 9 09:24 UTC*
+
+Now this was my actual first normal day. Wake up, do Anki for a while, get ready, go to the lab, leave the lab, maybe go somewhere, and then chill at home. The usual routine, and honestly quite a pleasant routine. Almost no stress, and I honestly have not had a SINGLE bad day since I have been in Japan lol. Even with my phone and pocket wifi acting weird on charging it's chill
+
+For my research, I was kind of confused as to how I should model it so that the alternative splicing data it's fed will output the predicted stressor more effectively, so before I had left for Tokyo, I basically had created a visualisation that shows the entire length for each stressor with all the events in like a "timeline" graph of sorts (trying my best to explain this to the average not knower). So then I showed it to the professor, who was also back from his trip back from Egypt, I thought he was coming back at like May 10 lol, but yea. Anyway he was like Damn this vis is actually crazy u shuold make this like a full fledged thing by adding like a few extra stuff, and then we can just make a paper on this and publish it and everything. So that was sick.
+
+Honestly work like this is like very low effort for me, so I'm kinda chilling even more and cruising now as a result lmaoo
+
+Anyway, after the lab, I went to Mos again and got another kind of burger. This one was the "vegetable burger" which is litearlly teh same burger but replace cheese with lettuce lmfao. It honestly was better though but idk if it's cuz their output there is inconsistent or something, or if the lettuce was just a better choice compared to the cheese. 
+
+![Burger and Iced Coffee](./sendai303.jpg) 
+
+In any case, I still wanted some food at the time, so I basically went to FamilyMart and copped some dogshit food. I also noticed.... that there was literally concealer like RIGHT THERE.... and honestly I will take concealer and use it as foundation I don't give a shit, AND HONESTLY it was a shade that is WAY too light for my skin colour....... but I didn't give a fuck because tehre was literally no risk involved buying makeup from fucking FamilyMart lol I could just self checkout it all without worrying about what the cashier would be assuming at all about me because I'm buying makeup. So I just fuckin bought it. Honestly it's a fucking waste of money but I really don't give a shit man I had to it was right there
+
+I don't really remember what else happened this day. I think my mind was also blown by someone talking about how they are "antiprofic" which is like???????? what the fuck are you talking about!!!!! That was the first time I heard of profic, and being antiprofic is just being antific man what the fuck are you talking abouttt. In any case it was kinda insane seeing that, like I can understand talking about antishipping or whatever becuase it's like sure it is weird when people make their entire thing just doing really weird ass ships from media, but anti/profic is like ?????? lol ok man
+
+Anyway at some point I passed out to sleep lol
+
+# May 8 2025 JST
+*Written at May 9 09:39 UTC*
+
+SO 2 others and I were supposed to follow one of the PhD neurosurgeon students to a mice MRI room, and apparently that was supposed to be like very early in the morning, but I thought it was just some shit we do at like 12 or something. So I came to the lab late, and I was like "well it should be fine since nothing's happening till later anyway" ONLY TO THEN FIND OUT that they were deadass waiting for me for 2 WHOLE HOURS......... AHHHHHHH FUUUCKKKK, but it was chill I guess lol. I got food from 7/11 but left it there to eat after checkout out the MRI room.
+
+It was very interesting to watch honestly. They have a small scale MRI for mice, but the magnetic strength is much stronger. Supposedly, human MRIs usually have a strength of 3-4 Teslas, but these mice MRIs take about 7 Teslas. The reason is because the resolution required for getting vascular images of mice MRIs needs to be much higher because of how small the arteries and everything are compared to humans. Any higher though and it would add too much noise from other places of the body that they are definitely not interested in.
+
+The PhD student was also telling me from before from [May 1](#may-1-2025-jst) how he was listening to rap. He was also listening to Kendrick Lamar since LOL I saw on his phone that the latest song he was listening to was just straight up "Not Like Us". In any case, I told him about a bunch more rappers, and then I also gave him a link to RateYourMusic LMAO, I was like yea you can find a lot of rap albums here since he loves rap. We also talked about random stuff and about the Japanese language as well. I then found out that I was deadass there for like 3 hours, and my rice ball and banana milk definitely aren't cold anymore...... so I hurried back and quickly ate that food lol.
+
+Afterwards though I stayed pretty late honestly, because I was like fuck it, I'll literally just write my blog entries at the lab for the rest of the day, so I was there all the way until like 5 or 6 pm or something. Most of the lab members had already gone home by then LOL so I was just sitting there typing like mad for a bunch of days on this post there
+
+It's chill though because I did catch up, which is nice.
+
+Afterwards, I went to a book store called Tsutaya, which was a really sick bookstore actually. They had a corner for like an artist showcase which was really cool, as well as a playstation "pop-up" if we wanna call it a pop-up lol, it was like a table with random playstation merch which was pretty nice merch all things considered, but yea.
+
+![Zundamon book](./sendai304.jpg) ![Ape Escape Towel Things](./sendai305.jpg) ![Ape Escape Embroidered Sticker](./sendai306.jpg) ![Artist Showcase 1](./sendai307.jpg) ![Artist Showcase 2](./sendai308.jpg) ![Artist Showcase 3](./sendai309.jpg) ![Artbook I want to buy](./sendai310.jpg) 
+
+I might buy that artbook later, I'm still considering..... it's like 2700 yen or something so I think it might be worth. It seems very interesting since it's like a combination of artbook and also PSD shenanigans so yea
+
+After that I basically just went back home, and continued writing more of this blog post. The absolute worst thing happened though, the laptop's keyboard suddenly decided to stop accepting like any of my inputs... I started panicking because after both my phone and pocket wifi fucking up their charging over the course of like the past week, my keyboard now for some reason was also just fucking up too... So I hurried and tried to pull out teh mech kb I brought with me to Japan and connected it. At the very least, it seemed to have worked with the mech kb, and when I press caps lock the light literally showed up on the laptop keyboard too, so I had no idea what was going on. After doing like a full reset (or attempting to... idk if it actually fully reset) though it started working back to normal. My favourite Made in Abyss wooden mug's handle just completely broke off clean though...
+
+After all that I actually got mad as fuck. It was like the first time after a month+ which is kind of crazy because before Japan I was generally quite emotional about a lot of things, so a month of not being angry at anything at all feels like an insane eternity honestly LOL
+
+But yea after all that I just decided fuck this and went to sleep
