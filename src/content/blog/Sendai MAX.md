@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1746784709850"
+lastModified: "1746842403967"
 tags:
   - life
   - japan
@@ -855,3 +855,20 @@ After that I basically just went back home, and continued writing more of this b
 After all that I actually got mad as fuck. It was like the first time after a month+ which is kind of crazy because before Japan I was generally quite emotional about a lot of things, so a month of not being angry at anything at all feels like an insane eternity honestly LOL
 
 But yea after all that I just decided fuck this and went to sleep
+
+# May 9 2025 JST
+*Written at May 10 01:49 UTC*
+
+Now that I'm caught up to all this I can finally draw and stuff again because it takes like no time to write the entry for the previous day (usually)
+
+Anyway this day was pretty chill. I woke up quite late again so I just copped food from 7/11 again and ate it at the lab. It was just some salmon onigiri and iced coffee basically. Nothing particularly special happened this day, in fact basically no work was being done in general lololol everyone was kinda chilling, since one of the projects is basically waiting on materials to be shipped to the lab now. I did start the groundwork for rewriting the visualisation site for the other project though which was nice. 
+
+Went to the same karaage place I went at [April 24](#april-24-2025-jst) with 2 other lab members. This time I ordered like a set plate instead of the usual karaage in bowl they give, and it was very good. Both meals I've had there was very good so far. They also use halal chicken which was interesting considering everyone working there seemed like they were japanese. Did they convert to Islam or something?
+
+![Karaage](./sendai311.jpg)
+
+After that I decided to just work more on the rewrite, and then left the lab at like 1630 or something I don't remember exactly. I had to shit REALLYYYY bad so I basically rushed back home and let it all out and showered and everything. I hadn't gone to MILLS in a while, last times were [April 16](#april-16-2025-jst) and [April 23](#april-23-2025-jst), so I basically stayed there and got the cold cafe au lait and cheesecake slice I did last time. To my surprise I found out that there's actually more than 1 person that runs the cafe. I don't know why, but for some reason I thought it was just 1 guy that runs it. Maybe it's cuz the traffic there is generally very low? Because when I went this time there was noone at the cafe again. There were a decent amount of people at April 23, but there was also basically noone at April 16 either so idk. But yea that did surprise me a bit. It's such a good cafe though in my opinion the vibes are impeccable.
+
+After that I went to COOP grocery store again because I ran out of Pocari Sweat, and that's where I can easily get the big bottles for really cheap. I saw they were selling these really weird ass sandwiches and they were on sale too (lol 3 dollars to 2 dollars) so I was like whatever lemme try one. It was Fine like it really wasn't amazing but that was definitely a sandwich that exists and was decent so that was chill.
+
+I also found out that the port for my pocket wifi isn't actually fucked, it was just teh cord that they gave me that was fucked. Once I started using a different cord that I luckily had (it's mini-USB), it was charging with no issues at all again lol, my phone is still fucked for charging though I had to do the wireless charging method overnight
