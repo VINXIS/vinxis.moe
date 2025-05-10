@@ -865,6 +865,8 @@ Anyway this day was pretty chill. I woke up quite late again so I just copped fo
 
 Went to the same karaage place I went at [April 24](#april-24-2025-jst) with 2 other lab members. This time I ordered like a set plate instead of the usual karaage in bowl they give, and it was very good. Both meals I've had there was very good so far. They also use halal chicken which was interesting considering everyone working there seemed like they were japanese. Did they convert to Islam or something?
 
+They also gave us free seaweed on our way out this time LOL that was random as hell but it was cool. I think the owner of the store knows one of the lab members I went with today.
+
 ![Karaage](./sendai311.jpg)
 
 After that I decided to just work more on the rewrite, and then left the lab at like 1630 or something I don't remember exactly. I had to shit REALLYYYY bad so I basically rushed back home and let it all out and showered and everything. I hadn't gone to MILLS in a while, last times were [April 16](#april-16-2025-jst) and [April 23](#april-23-2025-jst), so I basically stayed there and got the cold cafe au lait and cheesecake slice I did last time. To my surprise I found out that there's actually more than 1 person that runs the cafe. I don't know why, but for some reason I thought it was just 1 guy that runs it. Maybe it's cuz the traffic there is generally very low? Because when I went this time there was noone at the cafe again. There were a decent amount of people at April 23, but there was also basically noone at April 16 either so idk. But yea that did surprise me a bit. It's such a good cafe though in my opinion the vibes are impeccable.
