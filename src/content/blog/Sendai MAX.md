@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1746935152493"
+lastModified: "1746971944783"
 tags:
   - life
   - japan
@@ -919,3 +919,22 @@ Afterwards I was looking more in the history of JR as a whole. They were initial
 Either way though, it's not like its the worst situation altogether. They are still building lines in the Honshu island, and generating significant profits in this island still. Though.... Hokkaido is just fucked it seems, which is really sad to see. In the 1980s they closed so many lines there too it's like holy fuck. By the way things are going there Hokkaido is probably deserted within a decade or 2...
 
 Oh well, despite the flaws and what could have been better in hindsight... Japan is still pretty much on top, or one of the ones on top in transport and everything...
+
+# May 11 2025 JST
+*Written at May 11 13:49 UTC*
+
+It's like around 23 JST here? I decided I should probably write these the day of instead of the day after to save some more time.
+
+Speaking of which, today I didn't get to draw either. It should be fine though becuase I think I am basically guaranteed to resume drawing starting tomorrow I think.
+
+This morning I went to Tully's Coffee and sat there to write the blog post for yesterday. I was also talking a bunch with friends about the dynamics being played in the consumption of art. I was sitting there for like a good few hours I think. Oh yea I did have the laundry running back home while I was out too in order to just get them hung and dried by tomorrow morning.
+
+But yea I was at Tully's Coffee until like lunch time basically, so I just went straight to Matsuya and got a normal beef rice bowl for like 460 yen or whatever and it was good stuff. LITERALLY the moment I walked into Matsuya after making the order on the kiosk, they had the food made. How the fuck? And it was all hot and fresh too it was fucking insane. Peak fast food LOL
+
+I also went back to Tsutaya, and I bought the book I was considering buying at [May 8](#may-8-2025-jst), alongside another artbook that they added since to the store that was really pretty (the funny whale one).
+
+![Artboooks](./sendai336.jpg)
+
+After that I was gonna draw when I got home but I got distracted by the art consumption conversation again and then just started watching YT vids since [a friend of mine just uploaded it today](https://www.youtube.com/watch?v=uRb5T2WeBP0) (check it out btw its a TF2 funny clip montage vid) and then I passed out for like 2 hours. Then I went to COOP Miyagi cuz I was like damn I have no milk OR pocari sweat, so I went and copped some alongside some shitty junk food snacks and a cake that was just calling for me.
+
+I was gonna start drawing after that.... but my apple pencil and ipad were like basically 0 battery. So I was like damn, and basically did nothing aside for search up random stuff about city planning and public transport and shit again because Edmonton just pisses me off so much, and now I'm going to sleep lol gn
