@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1746842403967"
+lastModified: "1746935152493"
 tags:
   - life
   - japan
@@ -874,3 +874,48 @@ After that I decided to just work more on the rewrite, and then left the lab at 
 After that I went to COOP grocery store again because I ran out of Pocari Sweat, and that's where I can easily get the big bottles for really cheap. I saw they were selling these really weird ass sandwiches and they were on sale too (lol 3 dollars to 2 dollars) so I was like whatever lemme try one. It was Fine like it really wasn't amazing but that was definitely a sandwich that exists and was decent so that was chill.
 
 I also found out that the port for my pocket wifi isn't actually fucked, it was just teh cord that they gave me that was fucked. Once I started using a different cord that I luckily had (it's mini-USB), it was charging with no issues at all again lol, my phone is still fucked for charging though I had to do the wireless charging method overnight
+
+# May 10 2025 JST
+*Written at May 11 01:43 UTC*
+
+Unfortunately.... I didn't start drawing, BUT this day I finally did what I've been wanting to do which was to fuck off to a random ass JR station and just walk around. Before that though, I also finally had time to mop my room for once. My floor was fucking shining when I was done with it man holy shit. Washing it is also chill u just take off most of the dust/lint off the microfiber attachment for the mop and then throw it in the washer-dryer for like 10 minutes. Much better than using a swiffer mop with 328929232 sheets actually it's really nice. Shit also has a velcro back to it to connect to the handle.
+
+The handle kind of sucks though because u lock the height of the handle by turning it, no lock mechanism or anything... so basically whenever u turn the mop around on the floor there's like a chance ur loosening it up and then at some point itll just start collapsing lol
+
+Anyway after that I also did a bit of laundry cleaning the bed sheets and pillow covers, and then I fucked off to a random JR station.
+
+I decided to take the Senzan line because the stations on that line looked like they were the most obscure. The line goes through a mountainous + foresty area that connects Sendai to a smaller city more inland of Japan (and also just in a different prefecture I think). So I got off at Kunimi Station, and then just started walking around the area.
+
+There was a random dead end after like a row of houses of various types (not just single family), and they were all also like separated a decent distance from other houses by road, so I just turned back and then started walking towards Kuzuoka Station from there. During that walk I had walked passed a MASSIVE cemetary, and supposedly there were a lot of buddhist temples nearby as well, but I didn't really see them. After the cemetary there was a MASSIVE garden, and it was also right beside the Kuzuoka station. I couldn't tell if I was allowed to go in or not though so I didn't go in it.
+
+I thought Kunimi station was small (though Toshogu station when I went there at [April 5](#april-5-2025-jst) was smaller than Kunimi), but Kuzuoka was like an actually tiny as fuck station. There weren't even like any gates at all, just a place to tap with no barrier of entry or anything. That was kind of absurd to me because people could just get off between really empty stations this way without paying... I mean imo that's chill and honestly probably not a big deal for JR anyway considering the amount of people that use these stations is literally trivial it seems (Kuzuoka station transports only like 400 people a day or something).
+
+There were also no bugs during my entire walk, it was only when I got to Kuzuoka station when I saw them at all. I have to say though those bugs were MASSIVE, and also I couldn't tell if they were mosquitoes or not, but they weren't fucking with me so I guess not? Also when they flew it legit just looked like they were just moving around T-posing or something, they looked really fucking funny and absurd by the T-pose and their sheer size LOL
+
+![View outside Senzan line train](./sendai312.jpg) ![Kunimi Station](./sendai313.jpg) ![Outside Kunimi Station](./sendai314.jpg) ![A board with just 1 sole missing poster](./sendai315.jpg) ![Community garden or something](./sendai316.jpg) ![Road with insane vegetation around it](./sendai317.jpg) ![Dead end with random really old platform or something](./sendai318.jpg) ![Random road](./sendai319.jpg) ![Shrine a bit away from Kunimi Station](./sendai320.jpg) ![Random ass fucking bus stop in the middle of nowhere](./sendai321.jpg) ![2 times and it isn't even running](./sendai322.jpg) ![Map of the cemetary](./sendai323.jpg) ![Directions to a bunch of temples I guess](./sendai324.jpg) ![A small red flower plant amongst a sea of tall trees](./sendai325.jpg) ![Big cemetary stone](./sendai326.jpg) ![Massive garden](./sendai327.jpg) ![Train line](./sendai328.jpg) ![A beautiful house](./sendai329.jpg) ![Foggy view](./sendai330.jpg) ![Konbini with a 3 dollar random ass can](./sendai331.jpg) ![Kuzuoka Station](./sendai332.jpg) 
+
+Anyway I went home, I was craving some ramen so I went tot he epic place for ramen again and it was epicc af, guy remembered I just want "futsuu" LMAO. I also did get cabbage this time for like only 50 yen more and it was really good
+
+![Ramen with cabbage](./sendai333.jpg) 
+
+After that I was basically chilling at home. Went to the konbini for snacks a few times but nothing else really. I started looking up random stations because I was curious as to how empty these can actually get, and apparently they have a term for this called [Hikyou Stations](https://en.wikipedia.org/wiki/Hiky%C5%8D_station) with the Iida line specifically being very famous for it, but that's way too far from me so I can't really check it out unfortunately.
+
+Afterwards I started thinking about my hometown Edmonton's infrastructure again, because it's like damn Japan can just let these really infrequently used stations still run without much issue, AND THEN I NOTICED THAT THE SCALE OF CITIES IN NA IS JUST FUCKED DUDE? Look at the comparison of Edmonton and Sendai here. They are literally teh same scale of length.
+
+![Sendai](./sendai334.png) ![Edmonton](./sendai335.png)  
+
+Roughly the same length scale in both images.
+
+The picture in Sendai is like a significant portion of the city being captured within that image. There are more than like 15 stations in this image.
+
+The picture of Edmonton is NOT EVEN LIKE A QUARTER of the city. THERE'S A TOTAL OF LIKE 1 STATION IN THE IMAGE.
+
+Edmonton is like just fucked. People there would never be okay with increasing the general population density here at least in my lifespan. We are so far back in the race that it's not even a consideration that could be possible right now...
+
+Regardless though I had an idea where I could suggest making the train jingles for the Edmonton LRT, so I sent them an email asking about it. I even said I could do it all for free, and even possibly work on the implementation of automating them for the LRT lines. We'll see if they ever respond though. I think it would be a really good thing to have even for the little infrastructure that exists there in Edmonton. 
+
+Afterwards I was looking more in the history of JR as a whole. They were initially a government owned facility that then split into various private companies. I wanted to find out why they felt like they need to, and I found quite literally no convincing reason why. Any changes they needed to make could have been done while they were still government owned. The idea of developing and leasing corporate projects, as well as real-estate and housing planning based on station locations could have been done by the government. The debt could have honestly been easily managed as a result (for example: like how they literally did that with the private corps instead). And also they did a shitton of union busting, and massive layoffs for workers (25% of the workforce) which is just insane to me.
+
+Either way though, it's not like its the worst situation altogether. They are still building lines in the Honshu island, and generating significant profits in this island still. Though.... Hokkaido is just fucked it seems, which is really sad to see. In the 1980s they closed so many lines there too it's like holy fuck. By the way things are going there Hokkaido is probably deserted within a decade or 2...
+
+Oh well, despite the flaws and what could have been better in hindsight... Japan is still pretty much on top, or one of the ones on top in transport and everything...
