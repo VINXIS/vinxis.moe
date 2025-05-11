@@ -938,3 +938,5 @@ I also went back to Tsutaya, and I bought the book I was considering buying at [
 After that I was gonna draw when I got home but I got distracted by the art consumption conversation again and then just started watching YT vids since [a friend of mine just uploaded it today](https://www.youtube.com/watch?v=uRb5T2WeBP0) (check it out btw its a TF2 funny clip montage vid) and then I passed out for like 2 hours. Then I went to COOP Miyagi cuz I was like damn I have no milk OR pocari sweat, so I went and copped some alongside some shitty junk food snacks and a cake that was just calling for me.
 
 I was gonna start drawing after that.... but my apple pencil and ipad were like basically 0 battery. So I was like damn, and basically did nothing aside for search up random stuff about city planning and public transport and shit again because Edmonton just pisses me off so much, and now I'm going to sleep lol gn
+
+I should probably have also worked on the website research project lol
