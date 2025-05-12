@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1746971944783"
+lastModified: "1747054021839"
 tags:
   - life
   - japan
@@ -955,4 +955,3 @@ After the lab I went to Menya Togashi for ramen again, the same one I went to at
 Honestly I think the best ramen I've been having is at Yokoyokoya though after the first time it was just so much better after I was able to say futsuu LMAO it's so good and so cheap. Also I prefer the first ramen I had from Menya Togashi before this one, but it was still nbd
 
 CJ The X also uploaded a new vid today and [it's a really good fuckin vid](https://www.youtube.com/watch?v=d5mO-obJdTQ). I was gonna start my drawing streak today after finishing watching it.... but........ I got diarrhea like twice tonight, so I'm just going to sleep early because I really don't wanna deal with more of this, which makes me really sad because I wanted to start drawing again today man. Oh well
-
