@@ -365,7 +365,7 @@ First series I watched was [Shadowstone Park](https://www.youtube.com/playlist?l
 
 Second series I watched was [Sparkle on Raven](https://www.youtube.com/playlist?list=PLuSEX5dm72SFhpVyM7Bqm456A3XnVrHKu) which is made by SOMEONE idk who the channel is owned by really. Anyway it was also good it's not really about anything it's moreso just focused on maximizing parody and got some good jokes using/focused on  animation/audio/tropes.
 
-After that I was basically just doing nothing. I did Anki in the morning so I was chilling. I went to a ramen shop again today though, and it was probably the best ramen I've had so far honestly. The broth wasn't like just full of oil and shit so it was great to finish up.
+After that I was basically just doing nothing. I did Anki in the morning so I was chilling. I went to a ramen shop called Menya Togashi today though, and it was probably the best ramen I've had so far honestly. The broth wasn't like just full of oil and shit so it was great to finish up.
 
 ![Goated ramen](./sendai54.jpg)
 
@@ -940,3 +940,19 @@ After that I was gonna draw when I got home but I got distracted by the art cons
 I was gonna start drawing after that.... but my apple pencil and ipad were like basically 0 battery. So I was like damn, and basically did nothing aside for search up random stuff about city planning and public transport and shit again because Edmonton just pisses me off so much, and now I'm going to sleep lol gn
 
 I should probably have also worked on the website research project lol
+
+# May 12 2025 JST
+*Written at May 12 12:33 UTC*
+
+I wanted to get to uni early today but I DIDN'T AGAINNN oh well. It's not like there's anything I have to do at the uni itself. When I was there I was basically working on my code rewrite nonstop that I completely forgot that time was passing, and it was suddenly like 1730 lol
+
+I mean it's fine tho since I got a decent lot of that rewrite done today. It's almost back at the same position it was at before I started the rewrite which is nice. I do have a presentation next week though on this exact thing so I'd like to get a decent lot of it done by then... hopefully
+
+After the lab I went to Menya Togashi for ramen again, the same one I went to at [April 19](#april-19-2025-jst). I got the black spicy ramen with a decent lot of noodle. Massive fuckin bowl it is. It's also pretty nice.
+
+![Spicy Ramen](./sendai337.jpg)
+
+Honestly I think the best ramen I've been having is at Yokoyokoya though after the first time it was just so much better after I was able to say futsuu LMAO it's so good and so cheap. Also I prefer the first ramen I had from Menya Togashi before this one, but it was still nbd
+
+CJ The X also uploaded a new vid today and [it's a really good fuckin vid](https://www.youtube.com/watch?v=d5mO-obJdTQ). I was gonna start my drawing streak today after finishing watching it.... but........ I got diarrhea like twice tonight, so I'm just going to sleep early because I really don't wanna deal with more of this, which makes me really sad because I wanted to start drawing again today man. Oh well
+
