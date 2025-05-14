@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747054021839"
+lastModified: "1747227666519"
 tags:
   - life
   - japan
@@ -955,3 +955,25 @@ After the lab I went to Menya Togashi for ramen again, the same one I went to at
 Honestly I think the best ramen I've been having is at Yokoyokoya though after the first time it was just so much better after I was able to say futsuu LMAO it's so good and so cheap. Also I prefer the first ramen I had from Menya Togashi before this one, but it was still nbd
 
 CJ The X also uploaded a new vid today and [it's a really good fuckin vid](https://www.youtube.com/watch?v=d5mO-obJdTQ). I was gonna start my drawing streak today after finishing watching it.... but........ I got diarrhea like twice tonight, so I'm just going to sleep early because I really don't wanna deal with more of this, which makes me really sad because I wanted to start drawing again today man. Oh well
+
+# May 13 2025 JST
+*Written at May 14 12:30 UTC*
+
+I forgot to write the entry for this day, I've just gotten so caught up in the project that I bascially have given myself way less time for everything else lately loll I DID DRAW TODAY THOUGH after like 3 whole weeks of not doing it holy shitt
+
+I didn't do anything particularly interesting though anyway. I basically went to the lab, and did a bunch of work there, and then went back home. A bit earlier than usual becuase honestly my towel kind of smelled and I feel like it got on me when I used it that morning.
+
+I bought a pack of 3 twist donuts at familymart for like half a fucking dollar and they tasted better than Tim Hortons donuts lol
+
+yea nothing else too exciting though.
+
+# May 14 2025 JST
+*Written at May 12:57 UTC*
+
+I've been letting the project basically consume my entire time lolol. I was planning to cook some rice today when I got home but I mean its already 22:00 here so it's kinda gg
+
+I was also at the lab for a decently long time today. Yesterday I wasted a bunch of time because of a dumbass bug with the HTML canvas scaling, and today it felt like my progress was actually quite slow in getting things done, despite basically doing nothing but working on the site. I got a rice ball and iced caffe latte from 7/11 in the morning, but by the time I was about to leave I could feel the fatigue hit me like a fucking truck, so I probably got quite hungry again. Man the grocery store has good as fuck food though fuck
+
+![COOP Meal](./sendai338.jpg)
+
+When I got home I did the laundry ONCE again, and then went to COOP to grab a quick meal for like 4 bucks lol and Pocari Sweat the goat. After that I let the site consume all my time again, and now I basically have no time to draw.... FUUUck oh well I will make sure to come back home not late and not spend a bunch of time working on this site again. I also haven't done all the anki for today either so I'll just do that until I pass out tonight I suppose.
