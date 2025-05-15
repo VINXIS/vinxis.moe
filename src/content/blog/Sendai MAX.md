@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747227666519"
+lastModified: "1747306942614"
 tags:
   - life
   - japan
@@ -977,3 +977,14 @@ I was also at the lab for a decently long time today. Yesterday I wasted a bunch
 ![COOP Meal](./sendai338.jpg)
 
 When I got home I did the laundry ONCE again, and then went to COOP to grab a quick meal for like 4 bucks lol and Pocari Sweat the goat. After that I let the site consume all my time again, and now I basically have no time to draw.... FUUUck oh well I will make sure to come back home not late and not spend a bunch of time working on this site again. I also haven't done all the anki for today either so I'll just do that until I pass out tonight I suppose.
+
+# May 15 2025 JST
+*Written at May 15 10:56 UTC*
+
+Had an insane headache this morning so I popped a tylenol and slept for like 5 more hours or something until it was like 12 or 13:00. So obviously as a result I basically didn't go to the lab today. After I got up my head was much better, though the lingering effects were still there. I basically took advantage of the time and cooked myself some rice, and made myself a good meal with egg rice and seaweed.
+
+After that I tried to force myself to finish Anki, but I literally did not finish it until like 19:00 lolll, I wanted to draw and work more on the site tonight but oh well. I got to do some drawing, but there's basically no time left for me to work more on the site, becuase I'm actually trying to sleep earlier now. I think it'd be better if I spent my time Anki-ing and drawing earlier in the day instead of after the lab now that the site is basically taking up a lot of my time, and I basically lose track of time too when I'm working on it.
+
+That's the current plan at least, but I know the lab is going to be doing some karaoke tomorrow which will be fun, but concerning for my sleep schedule LOL. Either way it's not a big deal though because it's going to be a Friday tomorrow. I'm also going to be presenting next Thursday, so hopefully I can finish most of the stuff I talked about with my prof before then. Even Tuesday would be ideal since that's when the group meetings usually happen. 
+
+Either way drawing seems to be back on schedule at least (for the most part). I gotta learn how to do perspective and get better at drawing basic shapes though man
