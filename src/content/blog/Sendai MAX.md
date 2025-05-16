@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747306942614"
+lastModified: "1747402003091"
 tags:
   - life
   - japan
@@ -988,3 +988,32 @@ After that I tried to force myself to finish Anki, but I literally did not finis
 That's the current plan at least, but I know the lab is going to be doing some karaoke tomorrow which will be fun, but concerning for my sleep schedule LOL. Either way it's not a big deal though because it's going to be a Friday tomorrow. I'm also going to be presenting next Thursday, so hopefully I can finish most of the stuff I talked about with my prof before then. Even Tuesday would be ideal since that's when the group meetings usually happen. 
 
 Either way drawing seems to be back on schedule at least (for the most part). I gotta learn how to do perspective and get better at drawing basic shapes though man
+
+# May 16 2025 JST
+*Written at May 16 12:45 UTC*
+
+Right so I absolutely was not able to draw today. But it's fine because a shitton of stuff happened today. I am pretty close to the next step for my research project, I just need to figure out some optimisation tricks, and finish implementing some graph types. Violin plots are so deceptively hard to make from scratch, and I'm only doing this for the interactivity since you don't get that with python's matplotlib lol.
+
+It's very difficult though because I have had to restrain my parameters to reduce the size of the data stored in the browser by a fifth and a half, and it still lags half the time. It's like an array the size of 400k objects so yea lol, hopefully I get it done this weekend though because fuck going outside in this upcoming weather. Constant rain tomorrow and then like 30 C the next day.
+
+Ahh I also forgot to ask my friend about applications and scholarships at the lab today, but it's fine I'll just ask on Monday. I did get the presentation board fixed with my laptop since at tuesday it was fucking up and I couldn't show it on the screen so that was also nice. Next tuesday should be chill, but hopefully I don't get fucked on thursday when my actual presentation happens lol
+
+I kind of want to add japanese to both my presentation and website because it'll be like completely inscrutable otherwise for like 80% of the people at the presentation, but I don't really know if I'll have the time for that.. we'll see though
+
+Around like 1600 or so 3 other lab partners and I went to karaoke and it was fuckin crazy. It was a [Karaoke ManekiNeko](https://www.karaokemanekineko.jp/) on a 4th floor, and they kept blasting [this song](https://www.youtube.com/watch?v=jF-l42n9nio) in the hallway/cashier of the place, and now it's just stuck in my fucking head now it's sticking harder than the shitty fuckin Donki song man WHAT the fuck they put crack in the melody for no reason.
+
+But yea it was kinda pricey so only thing I drank was basically like a mango jasmine jelly soft drink thing which was like not good but it wasn't terrible or anything just overpriced. My standards of pricing have gotten so fucked in Japan man. Anyway we were there for like a good 3-4 hours I think? Sang a bunch of JP and English songs and it was an epic time. I kept accidentally picking songs that were just insanely hard to sing though LMAO fuck
+
+![Creepy Nutz Karaoke](./sendai339.jpg)
+
+After that we ate a soba noodle shop, and I ordered just their basic thing for 890 yen. I unfortunately didn't take a pic before I mixed it all up and shit, but I think those were the best noodles I had so far? I think if it was a little less oily it would totally have been worth the price to go there everyday for lunch for 890 yen dude what the hell. I'm 100% not doing that though LOL but yea those noodles tasted fucking great.
+
+![Destroyed Soba Noodle Bowl](./sendai340.jpg)
+
+After that we copped taiyaki from a taiyaki stand nearby too. I got custard taiyaki and burnt the shit out of my tongue, but it was very good taiyaki. Not as good as Zunda taikyaki, but still very good
+
+![Custard Taiyaki](./sendai341.jpg)
+
+After that I walked all the way back home. There was a small low roof alleyway I found as I was walking by, so I walked through there as part of my route back home. I always wanted to primarily walk through these kinds of alleys so I'm glad I finally found one with A LOT OF STUFF TO POTENTIALLY GO TO, very cool stuff. I got home at around like 2100 and I'm basically dead so I'm just gonna do Anki until I pass out in bed. I'm pretty much done today's Anki anyway so that's chill, just sad I didn't get time to draw today
+
+ ![Walk home 1](./sendai342.jpg) ![Walk home 2](./sendai343.jpg) ![Walk home 3](./sendai344.jpg) ![Walk home 4](./sendai345.jpg) ![Walk home 5](./sendai346.jpg) ![Walk home 6](./sendai347.jpg)
