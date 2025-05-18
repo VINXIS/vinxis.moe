@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747402003091"
+lastModified: "1747534289209"
 tags:
   - life
   - japan
@@ -1017,3 +1017,18 @@ After that we copped taiyaki from a taiyaki stand nearby too. I got custard taiy
 After that I walked all the way back home. There was a small low roof alleyway I found as I was walking by, so I walked through there as part of my route back home. I always wanted to primarily walk through these kinds of alleys so I'm glad I finally found one with A LOT OF STUFF TO POTENTIALLY GO TO, very cool stuff. I got home at around like 2100 and I'm basically dead so I'm just gonna do Anki until I pass out in bed. I'm pretty much done today's Anki anyway so that's chill, just sad I didn't get time to draw today
 
  ![Walk home 1](./sendai342.jpg) ![Walk home 2](./sendai343.jpg) ![Walk home 3](./sendai344.jpg) ![Walk home 4](./sendai345.jpg) ![Walk home 5](./sendai346.jpg) ![Walk home 6](./sendai347.jpg)
+
+# May 17 2025
+*Written at May 18 01:35 UTC*
+
+Completely inscrutable day. After finishing writing [May 16's](#may-16-2025-jst) entry, I immediately decided to just go and trim all my body hair entirely instead of going to sleep... so the sleep schedule fix plan was kind of thrown COMPLETELY out the window. My trimmer stopped working like 3/4 into 1 leg though, so I was like whatever fuck it and just charged it overnight and just went to sleep. Finished it all in the morning but I also had insane diarrhea in the morning (maybe because of the soba noodles? idk) at the same time which was CRAZY work. I lived though so it's chill
+
+I also went to Sendai station this day, mostly because I was already outside to get stuff like toilet paper and batteries and shit, but I was like fuck it zunda shake time. There was a Palestine demonstration happening by the station surprisingly actually. Very cool to see. It was also raining so they were really out there I guess loll
+
+![Zunda shake and Palestine Demonstration](./sendai348.jpg)
+
+But I just did my usual shopping of just getting groceries and toilet paper and whatever at familymart and coop and shit and then went back home. I actually ate so much random food this day beucase I cooked a massive bowl of rice and egg, and then got a meal from COOP and some other food too, so I really went and stuffed myself this day lol. I got this banana chocolate waffle thing and it was so mid honestly I kinda regret getting it but it's whatever
+
+Also finally caught up on Anki because the day before I couldn't finish all the reviewing. I also drew today, but it was just practicing drawing lines. Before I was drawing basic shapes over and over again but I was like damn I need to learn how to make a line in the first place honestly. 
+
+That's pretty much all that happened this day though. At Sendai station I was contemplating going to the garden by the cemetery but I decided otherwise to just get back home. I didn't give myself any time to work on the research project though unfortunately...
