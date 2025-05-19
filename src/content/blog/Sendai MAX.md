@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747534289209"
+lastModified: "1747656660783"
 tags:
   - life
   - japan
@@ -1018,7 +1018,7 @@ After that I walked all the way back home. There was a small low roof alleyway I
 
  ![Walk home 1](./sendai342.jpg) ![Walk home 2](./sendai343.jpg) ![Walk home 3](./sendai344.jpg) ![Walk home 4](./sendai345.jpg) ![Walk home 5](./sendai346.jpg) ![Walk home 6](./sendai347.jpg)
 
-# May 17 2025
+# May 17 2025 JST
 *Written at May 18 01:35 UTC*
 
 Completely inscrutable day. After finishing writing [May 16's](#may-16-2025-jst) entry, I immediately decided to just go and trim all my body hair entirely instead of going to sleep... so the sleep schedule fix plan was kind of thrown COMPLETELY out the window. My trimmer stopped working like 3/4 into 1 leg though, so I was like whatever fuck it and just charged it overnight and just went to sleep. Finished it all in the morning but I also had insane diarrhea in the morning (maybe because of the soba noodles? idk) at the same time which was CRAZY work. I lived though so it's chill
@@ -1032,3 +1032,10 @@ But I just did my usual shopping of just getting groceries and toilet paper and 
 Also finally caught up on Anki because the day before I couldn't finish all the reviewing. I also drew today, but it was just practicing drawing lines. Before I was drawing basic shapes over and over again but I was like damn I need to learn how to make a line in the first place honestly. 
 
 That's pretty much all that happened this day though. At Sendai station I was contemplating going to the garden by the cemetery but I decided otherwise to just get back home. I didn't give myself any time to work on the research project though unfortunately...
+
+# May 18 2025 JST
+*Written at May 19 12:04 UTC*
+
+Actually crazy day. I ate SO MUCH food this day like it wasn't even good food or anything just random food from FamilyMart and also the food I had cooked before to gradually finish it. Somehow though I locked in and drew a bunch of random lines and shit, finished all my Anki, and then also deadass worked on the research project site for like 10 hours straight or something. I rewrote the entire state management system, and then basically finished like 80% of the project that was left straight up in 1 sitting it was actually crazy. I treated myself to some ramen from the epic place (Yokoyokoya) and it was epic
+
+Nothing really much else to say about this day if I recall correctly. I barely went outside aside for FamilyMart and ramen, and I was busy being locked in all day lol
