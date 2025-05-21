@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747656660783"
+lastModified: "1747819106938"
 tags:
   - life
   - japan
@@ -1039,3 +1039,34 @@ That's pretty much all that happened this day though. At Sendai station I was co
 Actually crazy day. I ate SO MUCH food this day like it wasn't even good food or anything just random food from FamilyMart and also the food I had cooked before to gradually finish it. Somehow though I locked in and drew a bunch of random lines and shit, finished all my Anki, and then also deadass worked on the research project site for like 10 hours straight or something. I rewrote the entire state management system, and then basically finished like 80% of the project that was left straight up in 1 sitting it was actually crazy. I treated myself to some ramen from the epic place (Yokoyokoya) and it was epic
 
 Nothing really much else to say about this day if I recall correctly. I barely went outside aside for FamilyMart and ramen, and I was busy being locked in all day lol
+
+# May 19 2025 JST
+*Written at May 21 08:57 UTC*
+
+Been trying to battle with my sleep schedule, while also getting super locked in with the research project, that I kind of lost track of things. I think I gained like 2 kgs over the course of the weekend, but that could just be cuz of weight fluctuations and shit so it's probably fine. I think nothing really happened this day though, I basically just was working on the resaerch stuff all day LOL
+
+I did notice at night though that the new sign they put up for the Tohoku University Hospital now has LEDs and shit for the night which is pretty sick. I don't think people can read the small text regardless though when they are driving, but I guess it works for when people are walking, though I don't think it's for anyone who is just passing by so idk
+
+![Glowing sign for Tohoku University Hospital](./sendai349.jpg)
+
+I also have been throwing email after email at the University of Alberta to try to get a dual degree setup working or something so I can be in masters at Tohoku University as well as the University of Alberta. 
+
+# May 20 2025 JST
+*Written at May 21 09:03 UTC*
+
+Today was a LOT of progress actually on my research work. I also started thinking about the fact that I'm presenting on thursday lollll. I also hadn't really sent the stuff for the MEXT application yet to my dad so I was planning to do that the evening of this day. 
+
+Either way I wanted to leave early this day because the day before I was deadass at the lab from like 9 to 19 getting consumed by the research project lool; so basically I left at around 14 this day back home. 
+
+Though I wanted to grab some lunch at a new place this time though, so I decided to get curry at the nearest place when I searched for curry at the time, which was at [Moritatsu](https://maps.app.goo.gl/HFTrdVPvbpqK8Esk8). I ordered chicken thigh curry, and it was like 1280 yen, so I was like damn, this is fucking expensive for Japan's standards, this better be good as fuck.
+
+Little did I know that the serving is just ABSOLUTELY FUCKING MASSIVE
+
+![MASSIVE PLATE OF FOOD](./sendai350.jpg)
+
+THAT IS 5 CHICKEN THIGHS IN A ROW DUDE..... WHAT?
+Somehow I ate it all, but I legit thought I was going to die with the amount of food I just ate dude WHAT THE FUCK? That was deadass so much fucking food. It was also quite good too I was very happy. Definitely worth the 1280 yen for its size, but I also definitely wanted a smaller plate LMFAO
+
+After that I guess I went into a food coma, even though I was planning to get some shit done at home. I was completely passed out thuogh so it was kinda fuckin doomed. I didn't get to draw this day, and I also didn't finish Anki. I basically started and finished working on my presentation after I got up from passing out for a while though at least, which was nice. I have to start practising rehearsing the presentation though now.
+
+Man that plate literally killed me
