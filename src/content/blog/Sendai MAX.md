@@ -1070,3 +1070,30 @@ Somehow I ate it all, but I legit thought I was going to die with the amount of 
 After that I guess I went into a food coma, even though I was planning to get some shit done at home. I was completely passed out thuogh so it was kinda fuckin doomed. I didn't get to draw this day, and I also didn't finish Anki. I basically started and finished working on my presentation after I got up from passing out for a while though at least, which was nice. I have to start practising rehearsing the presentation though now.
 
 Man that plate literally killed me
+
+# May 21 2025 JST
+*Written at May 23 02:13 UTC*
+
+Not much really happened this day , though a decent lot of progress was done in the lab for the research work. It was also basically the first day where I started using the super beefy computer that they have in the lab that they use to run their scripts on massive data sets of RNA sequences. It's a real nice computer, someone also left a bocchi the rock keychain USB on the computer lol it was a real nice keychain though not gonna lie
+
+I don't think I did anything else special that day though because I was just working and thinking about the presentation that was gonna happen tomorrow lol, someone brought belgian chocolate to the lab which was nice tho.
+
+I talk a lot about food in this blog post LOL but the food here is honestly just so fucking good compared to Canada man I don't knoww, not only that but transportation in general and everything is just so nice so it's easy to just go anywhere to chill it's fucking sick.
+
+# May 22 2025 JST
+*Written at May 23 02:26 UTC*
+
+Today I presented the project; a solid 20 minute presentation that I can't tell if people understood or not, but the people who were supposed to understand understood it so it's fine I guess. Lots of decent questions and everything so that was chill. It was interesting seeing some certain social dynamics play out.... but won't delve too much on that until things are certain IRL lol
+
+Anyway it went well I think so it's chill. I was told good presentation and stuff by people randomly which was nice. This was like at around 10:00 and honestly I didn't wanna work on the project for most of this day so I just decided to chill around and do nothing for the most part, but eventually I ended up working on the project more. I feel like I'm doing too much everyday for the project though so I'm trying to scale it back somehow... workaholicism and shittt
+
+Anyway the lab planned a yakiniku at 18:00 so I was there until then just chilling. Afterwards the 2 of us took a bus there while everyone else just had a bike so they just biked there while we bussed there and the bus was like a dollar lol. The gloriousness of actual options of how you move around for once
+
+Ate so much beef it's crazy. Probably ate like every part that existed. I didn't really have a picture for when we started eating but it was good. Also had some "kinda raw" beef sushi which was also very nice. All good food. It was actually kinda expensive though (IN JAPAN STANDARDS) like 4000 yen each person so like 40 bux, which is probably like pretty much on the much higher end of what I've been generally paying in Japan lately lol
+
+![Demolished yakiniku food](./sendai351.jpg)
+![Beef Sushi](./sendai352.jpg)
+
+Anyway I found it really funny when we for some reason started talking about drugs that they were like Zomgg drugsss while at the same time taking massive gulps of alcohol like alcohol IN MY opinion honestly is just infinitely worse than doing something like LSD or Salvia honestly like at the very least ur not destroying ur entire body by chugging ethanol down into ur bloodstream that has severe consequences that are known to everyone, unlike psychedelics and shit that have been shown to not really do this. idk bruh, like marijuana is kinda shit cuz it can cause psychosis and schizophrenia and also the high sucks ass but yea idk whatever mann
+
+After that I walked home and passed out. I forgot to do anki this day mann and I also didn't draw this day either but oh well
