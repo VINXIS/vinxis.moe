@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1747997935067"
+lastModified: "1748152518308"
 tags:
   - life
   - japan
@@ -1097,3 +1097,27 @@ Ate so much beef it's crazy. Probably ate like every part that existed. I didn't
 Anyway I found it really funny when we for some reason started talking about drugs that they were like Zomgg drugsss while at the same time taking massive gulps of alcohol like alcohol IN MY opinion honestly is just infinitely worse than doing something like LSD or Salvia honestly like at the very least ur not destroying ur entire body by chugging ethanol down into ur bloodstream that has severe consequences that are known to everyone, unlike psychedelics and shit that have been shown to not really do this. idk bruh, like marijuana is kinda shit cuz it can cause psychosis and schizophrenia and also the high sucks ass but yea idk whatever mann
 
 After that I walked home and passed out. I forgot to do anki this day mann and I also didn't draw this day either but oh well
+
+# May 23 2025 JST
+*Written at May 25 03:58 UTC*
+
+EVILLL day today first off I had diarrhea like twice and it was so epic that I just decided to not go to the lab this day. I basically decided though that since I'm owned I'd just go around places, so I went to Komeda's Coffee and chilled there for a while. I wrote the previous day's entry there, and I got the breakfast selection with some iced coffee, and a coffee jelly parfait.
+
+![Coffee Jelly Parfait](./sendai353.jpg)
+
+I forgot what else I copped but I was just walking around a lot, I think I went to Matsuya though and copped their curry cuz I wanted to see how that fared compared to their other shit. Honestly it's mid as fuck, the beef bowl they give for cheaper is much better. It did come out fast as fuck like usual though lol. I did go again and get a beef bowl later in the day too after I had diarrhea AGAIN
+
+When I was back home I found out from my friend of a new thing Google is putting out called Firebase Studio. It's literally actual vibe coding it's kind of crazy, so I tried to make the things I've been wanting to make but just haven't had the motivation and/or couldn't be assed to work on them.
+
+Well after like a few hours I was like fuck this man, it felt like the most insane tedium I had experienced in a long while, and then near the end when I wanted to go get dinner at Matsuya it just crashed completely. I was like holy shit man whatever . But the food I got at Matsuya was good tho. My friend was having a GREAT time with Firebase studio though and honestly the fact that he started to make things as a result of it is really good imo I am glad that that is happening from that at least.
+
+After that I was contemplating just playing Blue Prince, and then another friend just instantly brainwormed me by saying a specific thing while he was talking about his experience with Blue Prince and I just bought it immediaetly and played it until I went to sleep LOL
+
+# May 24 2025 JST
+*Written at May 25 05:48 UTC*
+
+I decided to only play Blue Prince all day LOL. Also """""beat""""" the game and played some more. I actually just played all day I went to sleep after too lol
+
+I did get ramen though from the goat place Yokoyokoya, but yea nothing really happened this day. Blue Prince is a pretty damn good game tho i cant lie
+
+![Ramen](./sendai354.jpg)
