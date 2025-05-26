@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748152518308"
+lastModified: "1748221187685"
 tags:
   - life
   - japan
@@ -1121,3 +1121,16 @@ I decided to only play Blue Prince all day LOL. Also """""beat""""" the game and
 I did get ramen though from the goat place Yokoyokoya, but yea nothing really happened this day. Blue Prince is a pretty damn good game tho i cant lie
 
 ![Ramen](./sendai354.jpg)
+
+# May 25 2025 JST
+*Written at May 26 00:49 UTC*
+
+Lots of stuff was done today, and by lots of stuff, I just mean general living stuff. I was able to do a full deep clean of the entire room for once (man the previous tenants and the rental company themselves miss spots to clean which is fucking insane), and laundry and everything.
+
+I also went grocery shopping but Imma be honest I just ate all the shit I bought that day too Fucvk, was supposed to be for at least the next 3 days or so but it's chill I can just walk there easily unlike Fuckinggg Canada
+
+Played a little bit more of Blue Prince but i wanted to be productive today. Unfortunately after I ate all that bullshit I bought I had like a food coma for a good 1-2 hours so I lost a decent amount of my day that I had left after cleaning and playing a bit... BUT it's chill cuz I still got the Anki done for once (it's catch up time I guess) although that itself took much longer than usual lol, and also got the previous days added onto this page.
+
+Also I didn't take a pic but the grocery store had eel this day for the premade food sets they make. It was so fuckin good the eel and rice and the seasoning they added to it. I also bought some takoyaki (which I had actually bought before but I don't remember when exactly) and it was just fine like before, though I wanted to save it for later but I just ate it at teh same time. Same with the bag of donuts and crisps I bought. OH WELLL
+
+Anyway things are back on schedule, the 1 day i spent playing Blue Prince didn't really falter any of my routine at all which is very nice.
