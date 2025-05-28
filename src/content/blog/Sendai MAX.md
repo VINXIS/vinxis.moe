@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748221187685"
+lastModified: "1748423357086"
 tags:
   - life
   - japan
@@ -1134,3 +1134,29 @@ Played a little bit more of Blue Prince but i wanted to be productive today. Unf
 Also I didn't take a pic but the grocery store had eel this day for the premade food sets they make. It was so fuckin good the eel and rice and the seasoning they added to it. I also bought some takoyaki (which I had actually bought before but I don't remember when exactly) and it was just fine like before, though I wanted to save it for later but I just ate it at teh same time. Same with the bag of donuts and crisps I bought. OH WELLL
 
 Anyway things are back on schedule, the 1 day i spent playing Blue Prince didn't really falter any of my routine at all which is very nice.
+
+# May 26 2025 JST
+*Written at May 28 08:11 UTC*
+
+Today I found out the prof isn't at the lab for the week, which kindd of halts my current progress for the most part on the research project, since I have a kind of fundamental design problem I wanted cleared up. On the other side though, I basically started considering taking this week "mostly" off and just chilling and playing Blue Prince and going to random places instead.
+
+Anyway after the lab today I went to Mos Burger cuz I wanted to try a different burger on their menu, so I got a burger with like 3 patties in it and a melon soda and fries as a whole combo meal to see what it'd be all about... honestly it was mid as fuck the burger kind of tasted like nothing and the melon soda was way too fizzy and the fries were so whatever; honestly afterwards I went to the taiyaki stand right beside and got a custard taiyaki just to feel somethin, and that was pretty fuckin good tbh
+
+![Mos Burgor](./sendai355.jpg) ![Taiyaki](./sendai356.jpg)
+
+Anyway I decided this evening that I'll basically go to the lab tuesday and thursday this week; other 2 days I'll be chillin n shit in general. All of my Anki lately has also just been 200 reviews a day since I missed those 2 specific days... which I mean is fine it makes Anki take like 40 minutes instead of 1.5 hours, but damn no new words for me lately I guess I also did do the research presentation last week Thursday anyway and I am like technically "ahead of schedule" for the research project progress so it should be fine I think
+
+# May 27 2025 JST
+*Written at May 28 09:02 UTC*
+
+This morning I met the guy who I was initially linked up with by my aunt to potentially study in Japan for Graduate Studies. Basically my aunt did her PhD from Tohoku University, and she visited Edmonton (my home hell land) and suggested to my parents that I should go study here since I was initially having no luck at the University of Alberta. From there she had me link up with a friend she knew from here who is now an Associate Professor in a Materials Engineering lab from what I understand, and that's how things ended up to where I am now in Japan today LOL
+
+Anyway we met and chatted a bunch about life in Japan and my potential prospects in general of what's possibly going to happen later this year and stuff. He was also telling me abuot the things he liked and doesn't like about the happenings in Japan. Apparently the financial squeeze is really hitting because the CPI of Japan over the past like 5 years or so has been outpacing the changes in wages and the performance of JPY; though honestly it's still not as bad as Canada's financial situation, but it is there for sure which is tough, but it seems like Japan is dealing with it much better than Canada right now even so it's not the worst for sure I think
+
+Anyway I think I legit got like no work done today for the research project. I basically implemented the new design but didn't push it fully or anything because I wanted full confirmation that this change would be fine for the project. 
+
+Also I don't think I mentioned this before, but apparently I forgot to send an update to the professors at the University of Alberta that the departments have given me an offer for the MSc program there... I had emailed them as soon as I saw that they were asking for an update and that I apparently hadn't sent one earlier this month... but I still haven't heard back from them, no congratulations or anything lmao oh well
+
+I was just reminded of it again because this day I had emailed the prof at this lab since he was gone out, asking him about the things that are basically blocking my progress currently for the research project since I'm not fully sure
+
+Rest of this day though was just me playing Blue Prince LMAO man this game has a really fucking well designed feeding rate of the narrative, AND the narrative is fucking good. I do wish the actual game part of the game was better though but holy fuck I'm enjoying it a lot
