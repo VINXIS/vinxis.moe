@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748423357086"
+lastModified: "1748525131524"
 tags:
   - life
   - japan
@@ -1160,3 +1160,17 @@ Also I don't think I mentioned this before, but apparently I forgot to send an u
 I was just reminded of it again because this day I had emailed the prof at this lab since he was gone out, asking him about the things that are basically blocking my progress currently for the research project since I'm not fully sure
 
 Rest of this day though was just me playing Blue Prince LMAO man this game has a really fucking well designed feeding rate of the narrative, AND the narrative is fucking good. I do wish the actual game part of the game was better though but holy fuck I'm enjoying it a lot
+
+# May 28 2025 JST
+*Written at May 29 13:20 UTC*
+
+Very uneventful day for the most part. Just did the usual, go to lab, oh there was a very interesting presentation actually about using red light to activate cell death, and potentially using this for patients with specific cancerous brain tumors. Very cool and interesting. Anyway went to the lab, left kind of early, went to Matsuya and tried their curry rice again except this time with beef and onions and it was kinda better but not amazing still, got a taiyaki, went to Matsukiyo for body soap, went to COOP for food goodies, and then went home and ate a bunch of shit and played Blue Prince all day
+
+I am contemplating on if I should go to the lab tomorrow or not. I could technically work on a part of the research project I had been neglecting because it'd be kind of annoying and tedious to work on it right now, but also I could go to random train stops tomorrow and chillmaxx which would be really nice. I could also just do that on the weekend both days instead though, and honestly who is to say that I won't just end up playing Blue Prince all day tomorrow if I don't go...
+
+So not sure. I do wanna say though Blue Prince is quite good, but there's things that make it pretty fuckin annoying because it's very often me going Oh there's this thing I can do but then I just get fucked over because the game for some reason is a roguelike when IT REALLY DOESN'T NEED TO BE THERE HAS BEEN NO JUSTIFICATION FOR IT TO BE A ROGUELIKE STILL, but whatever because I do keep stumbling into other random stuff that I go "ok I will entertain this thing" too so it's not terrible or anything, just not good that it does that.
+
+But yea nothing really crazy today. We'll see if I end up going to the lab tomorrow or not.
+
+
+I haven't been drawing lately...
