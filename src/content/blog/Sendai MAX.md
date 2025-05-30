@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748525131524"
+lastModified: "1748611073602"
 tags:
   - life
   - japan
@@ -1170,7 +1170,27 @@ I am contemplating on if I should go to the lab tomorrow or not. I could technic
 
 So not sure. I do wanna say though Blue Prince is quite good, but there's things that make it pretty fuckin annoying because it's very often me going Oh there's this thing I can do but then I just get fucked over because the game for some reason is a roguelike when IT REALLY DOESN'T NEED TO BE THERE HAS BEEN NO JUSTIFICATION FOR IT TO BE A ROGUELIKE STILL, but whatever because I do keep stumbling into other random stuff that I go "ok I will entertain this thing" too so it's not terrible or anything, just not good that it does that.
 
-But yea nothing really crazy today. We'll see if I end up going to the lab tomorrow or not.
+But yea nothing really crazy today. We'll see if I end up going to the lab on friday or not.
 
 
 I haven't been drawing lately...
+
+# May 29 2025 JST
+*Written at May 30 12:43 UTC*
+
+Uhh I seemed to have mixed up the dates... basically everyhting I wrote for May 28 is for this day LOL because the presentation happened May 29 and I was contemplating if I shuold go to the lab May 30...
+
+But I mean that's fine I guess because on May 28 I did fuck all just ate ramen in the middle and nothin else really. Ah the ramen shop was very crowded compared to usually thuogh that day which was odd. Also I did cook rice so I've been eating rice and egg everyday since too, but yea nothing else really happened on May 28 lol.
+
+I don't really have anything to add for May 29 that I had before... thuogh Blue Prince is a fucker man I was thinking about that experience again in May 29 and it was pretty annoying as fuck honestly, but it's ok because its good again.
+
+# May 30 2025 JST
+*Written at May 30 13:07 UTC*
+
+So I did end up deciding to go to the lab today because I realized there is something I could work on, so I decided to try and lock in. I basically just locked in the entire time I was there until like 14:00 or so, and then I left. It was a very cloudy day and it was going to rain so I took my umbrella with me, but by the time I was leaving there was no rain still so whateverrrrr
+
+I basically went straight home no epic food that I copped from anywhere. I did get an eclair from 7/11 though. I was shocked that shit had actually snapping chocolate on it it's crazy. It was good stuff. Just played Blue Prince for the rest of the day this day too lol
+
+![7/11 eclair](./sendai357.jpg)
+
+Anyway.... we'll find out if I go outside tomorrow I guess. It'll be raining all saturday though so idk. Also my shower drain has been smelling really bad lately for some reason, so I need to inspect and fix/clean that too before I do anything, alongside laundry. Yeaa we'll see
