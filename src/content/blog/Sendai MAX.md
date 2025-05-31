@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748611073602"
+lastModified: "1748694213857"
 tags:
   - life
   - japan
@@ -1194,3 +1194,12 @@ I basically went straight home no epic food that I copped from anywhere. I did g
 ![7/11 eclair](./sendai357.jpg)
 
 Anyway.... we'll find out if I go outside tomorrow I guess. It'll be raining all saturday though so idk. Also my shower drain has been smelling really bad lately for some reason, so I need to inspect and fix/clean that too before I do anything, alongside laundry. Yeaa we'll see
+
+# May 31 2025 JST
+*Written at May 31 12:13 UTC*
+
+Wow so I didn't go outside today, and that was a good fucking idea cuz it was raining like crazy today honestly; probably the harshest its rained during my time here so far.
+
+Regardless though, I was able to get teh shower drain cleaned completely. Mission success. It did make my room smell like the smell of sulfur kind of for a decent while but ti rapidly dissipated especially since I turned the kitchenette exhaust on. Very nice. Also got laundry machine cleaner too for tomorrow/monday which is nice.
+
+I ate a bunch of random bullshit today which was not good LOL like a lot of random bullshit like random snacks from COOP and FamilyMart, and also beef bowl from Matsuya, and rice and egg from my fridge. Lots of bullshit. I am planning to actually go outside tomorrow though because it shouldn't be raining anymore so that should be nice. I'll have some nice pictures for tomorrow yayy
