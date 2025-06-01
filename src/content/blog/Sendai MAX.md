@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748694213857"
+lastModified: "1748780517988"
 tags:
   - life
   - japan
@@ -1203,3 +1203,28 @@ Wow so I didn't go outside today, and that was a good fucking idea cuz it was ra
 Regardless though, I was able to get teh shower drain cleaned completely. Mission success. It did make my room smell like the smell of sulfur kind of for a decent while but ti rapidly dissipated especially since I turned the kitchenette exhaust on. Very nice. Also got laundry machine cleaner too for tomorrow/monday which is nice.
 
 I ate a bunch of random bullshit today which was not good LOL like a lot of random bullshit like random snacks from COOP and FamilyMart, and also beef bowl from Matsuya, and rice and egg from my fridge. Lots of bullshit. I am planning to actually go outside tomorrow though because it shouldn't be raining anymore so that should be nice. I'll have some nice pictures for tomorrow yayy
+
+# June 1 2025 JST
+*Written at June 1 11:17 UTC*
+
+Wow I went outside today, and that was a good fucking idea cuz the staircase I saw today was kinda crazy honestly; probably also the most exhausted I have been so far going somewhere in Japan LOL
+
+I went to [Mogasaki/Dainenjiyama](https://maps.app.goo.gl/wA9jfFo371Tew9gz7) today. Unfortunately I didn't explore all of it today becasue the road was kind of flooded from yesterday's rain, but what I did explore was epic. The shitton of massive steps at the temple is an insane trek but it was so sick with the tree canopy above them. Then the walkways that were at the top, as well as the date clan graveyard were very cool to see.
+
+![Front of Dainenji Temple Gate](./sendai358.jpg) ![Map of Mogasaki](./sendai359.jpg) ![THE STAIRS OF DEATH](./sendai360.jpg) ![Some small pathway in the middle of the stairs](./sendai361.jpg) ![MORE STAIRS OF DEATH](./sendai362.jpg) ![The Top Of The Stairs](./sendai363.jpg) ![The stuff that's there at the top](./sendai364.jpg) ![Sign](./sendai365.jpg) ![Closed garden](./sendai366.jpg) ![Closed Shrine entrance](./sendai367.jpg) ![View to the distant cityscape](./sendai368.jpg) ![Entrance to the Date clan graves](./sendai369.jpg) ![Sign talking about the graves](./sendai370.jpg) ![More cityscape view](./sendai371.jpg) ![Even more cityscape view](./sendai372.jpg) ![Beautiful forestry walkways](./sendai373.jpg) ![Going down the stairs](./sendai374.jpg) ![The view from the gate](./sendai375.jpg) ![Chillin Crow](./sendai376.jpg) ![Chillin dog](./sendai377.jpg) ![Another chillin crow](./sendai378.jpg)
+
+Needless to say though those stairs were actually exhausting as fuck I had never gotten that exhausted since a long ass time ago honestly holy shit. It was really good though had a good time today.
+
+Afterwards I went back home to finish playing Undertale. That game stands the test of time honestly it's really good. Honestly the fact that the way routes are documented on the internet is interesting though. Considering true pacifist is technically still possible on the first run, but it's just that you have to keep playing, so it's like neutral until you just keep playing. In my opinion that is different from neutral and from true pacifist but it's not really documented like that at all which is weird to me.
+
+But yea I was just thinking about In Stars and Time (isat) and OMORI after and how they are just so much worse as games in comparison. Honestly the dialogue in Undertale is just so good, and the combat is very varied, naturally, and also with the surprises Toby adds into the game's combat; and random flavour shit isn't just added extraneously to waste your time.
+
+Like in comparison and for example, in OMORI you can work part time in some place(s), and it's just padded to shit. You don't REALLY have any reason to believe that it's JUST padded to shit or if any of it matters at all. The part time job ITSELF is some bullshit padding too BUT YOU ALSO DON'T KNOW THAT EITHER. It's just insane time wasting. It has absolutely no effect on the game at all yet it's there with an ambiguous state of how much it'd actually matter later (not at all) and it takes a shitton of your time away considering there's many of them. It's so stupid.
+
+Undertale gaps in comparison in not wasting your time with random bullshit that doesn't matter
+
+Anyway I'm hyped for Deltarune this week. Will be exciting.
+
+Then I played Blue Prince for some more time and did less stuff than I wanted in the game but whatever.
+
+Back to the lab tomorrow. Might leave early and walk around in some random place though in the afternoon, but not sure yet.
