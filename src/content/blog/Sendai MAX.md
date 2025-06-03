@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748780517988"
+lastModified: "1748956850916"
 tags:
   - life
   - japan
@@ -1228,3 +1228,31 @@ Anyway I'm hyped for Deltarune this week. Will be exciting.
 Then I played Blue Prince for some more time and did less stuff than I wanted in the game but whatever.
 
 Back to the lab tomorrow. Might leave early and walk around in some random place though in the afternoon, but not sure yet.
+
+# June 2 2025 JST
+*Written at June 3 11:18 UTC*
+
+Today was the first time I was sure that I felt an earthquake. There was one other time before that I couldn't tell if it was an earthquake or not because it was like very very light shaking in very long strides of the ground, but this time it was 100% an earthquake.
+
+![Earthquake radar](./sendai379.png)
+
+It wasn't super scary or anything though honestly I thought there was like a massive vehicle that was driving by or some weird shit for a second before I realised naw it's actually just an earthquake. Everyone was chill though noone was freaking out or anything
+
+Other than that though it was a very uneventful day. Prof wasn't back at the lab yet so I didn't really have much that I was doing aside for just giving myself busywork in the meantime kind of. At home I basically just played more Blue Prince and ate the rice and egg mix I always make for myself and chilled.
+
+# June 3 2025 JST
+*Written at June 3 13:13 UTC*
+
+Got some massive onigiris for lunch with a friend from the lab. They usually go to this shop that give out MASSIVE fuckin onigiris and its crazy. I got 2 really big onigiris and they were both very good. God damnn
+
+![Onigiris](./sendai380.jpg)
+
+It was also such great weather today. It was raining but with no wind and it wasn't hot at all. The rain also wasn't too much either, if it was a bit less it would honestly have been perfect.
+
+![Rain 1](./sendai381.jpg) ![Rain 2](./sendai382.jpg)
+
+Very cool stuff. Honestly I didn't do anything very interesting throughout the day though. The prof was back so I can finally move forward with the project work though which is very nice. Also the applications for Tohoku University have finally opened, so I need to actually work on filling that in too. At home I was just playing Blue Prince for the most part again.
+
+I might stop playing it though because honestly the amount of progress made in that game at this point for me is like not much compared to the amount of time I've been spending on it now. I also got better things to do with my time lately now that this is the last month I'm here (go around to places, continue drawing for once, eat at more restaurants) All in all very epic game tho
+
+Also deltarune is out soon holy shitt so basically tomorrow is the only time until next week where I'll just be going to a new place or something, maybe I'll just go to MILLS though idk I haven't been there in a while (last time was [May 9](#may-9-2025-jst) so it's legit been almost a month loll
