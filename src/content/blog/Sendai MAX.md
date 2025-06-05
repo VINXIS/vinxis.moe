@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1748956850916"
+lastModified: "1749128790159"
 tags:
   - life
   - japan
@@ -1256,3 +1256,48 @@ Very cool stuff. Honestly I didn't do anything very interesting throughout the d
 I might stop playing it though because honestly the amount of progress made in that game at this point for me is like not much compared to the amount of time I've been spending on it now. I also got better things to do with my time lately now that this is the last month I'm here (go around to places, continue drawing for once, eat at more restaurants) All in all very epic game tho
 
 Also deltarune is out soon holy shitt so basically tomorrow is the only time until next week where I'll just be going to a new place or something, maybe I'll just go to MILLS though idk I haven't been there in a while (last time was [May 9](#may-9-2025-jst) so it's legit been almost a month loll
+
+# June 4 2025 JST
+*Written at June 5 12:34 UTC*
+
+I did NOT go to MILLS, BUT I did go to a bunch of other places anyway. After sitting at the lab trying to get some stuff done I left at around 14:00 and walked to Zunda Zunda cafe and got the Zunda Parfait there.
+
+I swear to god it was probably the best thing I've had in Japan so far. I'm probably going to go again after I finish playing Deltarune over the weekend to try their black coffee cuz I heard from a friend that got it there that it was basically the best black coffee they had.
+
+![Zunda Parfait](./sendai383.jpg)
+
+For the most part I was just walking around going through the massive amount of space Sendai has given for commerce and shopping for malls. Also Tsutaya had a JOJO showcase up for the new part I think which was cool
+
+![Outskirts of Kokubuncho](./sendai384.jpg) ![Taiyaki prices](./sendai385.jpg) ![Underpass](./sendai386.jpg) ![Mural in the underpass](./sendai387.jpg) ![Pretty art book at Tsutaya](./sendai388.jpg) ![Jojo](./sendai389.jpg)
+
+You know exactly what I did after. THAT'S RIGHT I STILL DIDN'T GO HOME YET ACTUALLY I went to some random soba place that I already forgot the name of. Honestly it wasn't a great soba place and the food I got was like not great but it was nice to try some new shit really easily.
+
+![Soba](./sendai390.jpg)
+
+After that though I basically went home and played Blue Prince all day lol. I also didn't finish anki this day unfortunately but it's ok I will resume Anki friday
+
+# June 5 2025 JST
+*Written at June 5 12:43 UTC*
+
+Today I applied to Tohokudai. Their applications were finally open... UNFORTUNATELY FOR THE PROGRAM they aren't taking October 2025 students, only April 2026 students. It's fine though, I had my dad apply me for MEXT through the Calgary embassy in Canada so it should be fine it'll probably line up with the scholarship.
+
+I was very unproductive at the lab today though.
+
+For obvious reasons.
+
+Deltarune is FINALLY OUT MAN AFTER LIKE 234859734298524 YEARS OF WAITING CHAPTERS 3 AND 4 ARE OUT
+
+but I still have to play chapters 1 and 2 Augh
+
+So I have decided I AM NOT GOING TO THE LAB TOMORROW I MUST PLAY DELTARUNE IMMEDIATELY I AM SORRY THE ENTIRE WORLD COULD IMPLODE ON ITS WEIGHT RN BUT I HAVE TO GET THROUGH THE GAME AS SOON AS POSSIBLE
+
+All I finished today so far was Chapter 1, but I had good progress. It was like a good 3? hours of time that it took, but IIRC chapter 2 was like fucking 7 hours or something, and chapter 3 is also apparently about the same amount of time so I'm just like fuck I need to lock in man
+
+I'm locking in tomorrow.
+
+This begs the question if I stay up tonight to catch up on Anki or not... probably should and then sleep, and then I'll play Deltarune all day tomorrow, but idk I don't want to destroy my sleep schedule for anki lol
+
+For food thuogh I had ramen at Yokoyokoya and got food at COOP and chilled the rest of the time playing a bit of Blue Prince and then Deltarune Ch 1 lol
+
+Tomorrow is eid but yea
+
