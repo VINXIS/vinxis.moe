@@ -1301,3 +1301,34 @@ For food thuogh I had ramen at Yokoyokoya and got food at COOP and chilled the r
 
 Tomorrow is eid but yea
 
+# June 6 2025 JST
+*Written at June 9 12:33 UTC*
+
+Deltarune.
+
+# June 7 2025 JST
+*Written at June 9 12:33 UTC*
+
+Deltarune.
+
+# June 8 2025 JST
+*Written at June 9 12:33 UTC*
+
+DELTARUNE HOLY FUCKING SHIT DELTARUNE? DELTARUNE DELTARUNE DELTARUNE DELTARUNE
+
+Game of the decade
+
+# June 9 2025 JST
+*Written at June 9 12:33 UTC*
+
+Ok after being an insane hermit playing and watching and talking about Deltarune 24/7 with friends I finally shaved the beard that was growing over the weekend, and went to the lab today.
+
+I bought bananas from COOP over the weekend and I was gonna start eating them today... but when I took them out they peeled the wrong fucking way and all of them basically broke open, so I had to eat all 4 bananas that were there at once.
+
+Uhh needless to say... this might have been a bad idea? I went to the lab and my head started hurting like FUCKING CRAZY for some reason. I left at 14:00 still though like usual for myself, but I did want to stay longer. When I got to the subway station nausea started building up for me too... which was like a fucking death wish in Japan man no fucking bag and vomiting in the train would be the worst fucking shit to ever happen to me right now.
+
+LUCKILY I survived all the way to my apartment. I did end up vomiting but it wasn't much and I am like completely fine after... so I guess the bananas were doing some fucked up shit or something to me lol crazy
+
+The rest of the day I just watched a friend play Deltarune Chapter 3 and the insane ass boss. Man that shit took me 3 hours, but to my defence I'm using  a fuckass laptop keypad and my items and shit were all cooked AND I play 0 bullet hells. The minimum time it took my friends was like 40 minutes and they were prepped to shit and not playing on a dumbass laptop keyboard with a table that isn't well adjusted with their back hurting, so honestly I take this as a decent feat for myself whtaever . That fight is SO GOOD thuogh holy shit and probably one of the best songs from Toby Fox too oh my fucking god play deltarune already if u ahvent yet
+
+Meeting tomorrow but I barely have anything done so uhh whatever
