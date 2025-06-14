@@ -1332,3 +1332,66 @@ LUCKILY I survived all the way to my apartment. I did end up vomiting but it was
 The rest of the day I just watched a friend play Deltarune Chapter 3 and the insane ass boss. Man that shit took me 3 hours, but to my defence I'm using  a fuckass laptop keypad and my items and shit were all cooked AND I play 0 bullet hells. The minimum time it took my friends was like 40 minutes and they were prepped to shit and not playing on a dumbass laptop keyboard with a table that isn't well adjusted with their back hurting, so honestly I take this as a decent feat for myself whtaever . That fight is SO GOOD thuogh holy shit and probably one of the best songs from Toby Fox too oh my fucking god play deltarune already if u ahvent yet
 
 Meeting tomorrow but I barely have anything done so uhh whatever
+
+# June 10 2025 JST
+*Written at June 14 01:41 UTC*
+
+Today was the first day it hit me that I'm actually leaving soon, and there's barely any time left for me in Japan now, so I'm trying to wonder what to do. A lot of my free time I'm still dedicating to thinking about Deltarune, but I'm thinking of going to places still for the remaining 2 weekends I have, just don't know where since there's still so many places in Sendai I didn't visit still..
+
+Anyway today I went back to the onigiri shop by the university today. I went by myself and it was interesting because my japanese is still very weak, but I could still make out some form of conversation with the shop owners there. They are pretty wholesome I talked about how I was from Canada and stuff and I'm still learning japanese and I've been here for like 3 months now basically. 
+
+I got the bigass onigiri. It got veggies and fish
+
+![Onigiri](./sendai391.jpg) ![Onigiri 2](./sendai392.jpg)
+
+actually so fuckin massive that's basically all I ate this day LOL
+
+I went home with the onigiri and just watched a friend play deltarune for the rest of the day basically. Not much research work being done lately lololol
+
+# June 11 2025 JST
+*Written at June 14 02:00 UTC*
+
+Just another chill day where I go to the lab and come back. Today was a Zunda shake day so I copped a warabimochi zunda shake and just chilled at home for the rest of it. At night I wanted to eat some ramen but both ramen shops near me were full as fuck so I basically just walked around a bit and then just got a chicken rice ball from the konbini to eat later. Here's some pics. Might go walking here again this weekend it was sick
+
+![Shintera 1](./sendai393.jpg) ![Shintera 2](./sendai394.jpg) ![Shintera 3](./sendai395.jpg) ![Shintera 4](./sendai396.jpg) ![Shintera 5](./sendai397.jpg) 
+Oh yea at the konbini they were selling moomin branded food or something which was kinda funny to me for no particular reason. It was kinda cool
+
+![Moomin](./sendai398.jpg)
+
+# June 12 2025 JST
+*Written at June 14 02:09 UTC*
+
+I went to the onigiri shop again today with other people from the lab. Basically everyone started going to this onigiri shop because one person in the lab knows a lot about the rice/onigiri shops here since they really love rice, AND the shop makes good af onigiri and the shopowners are pretty epic. But yea this time it was 3 of us (1 of them being the OG goer) and we got onigiris. I got a medium sized one this time cuz I wanted to eat other stuff later today but yea good as usual
+
+![Inside the onigiri shop](./sendai399.jpg) ![My Onigiri On A Stand](./sendai400.jpg)
+
+Today I decided to also start scraping the fuck out of the Deltarune site cuz Toby Fox apparently has shit on the fuckin site as an ARG or some shit which is just insanity. So basically with a couple or so friends I've been just searching and lurking through it
+
+I also FINALLY went to MILLS again after so long. It's been like what a month or something now? Fuck man I need to go at least 1 more time lol.
+
+I got a coffee jelly this time from here (alongside caramel milk). The caramel milk was chill but nothing amazing. That fucking coffee jelly though was actually the best coffee jelly I've had in Japan so far. It was actually so fuckin good man. My mother and brother are coming to Japan at the last week I'm here for, and I'm definitely taking them to MILLS cuz it's so nice
+
+![Caramel Milk and Coffee Jelly](./sendai401.jpg)
+
+Chillin
+
+# July 13 2025 JST
+*Written at June 14 02:21 UTC*
+
+Today I ACTUALLY did some work on the project for once. I actuallyyy did something for once. I had been slacking so hard cuz of Deltarune that I just had not done anything for at least a week or so now LMAO.
+
+It's chill though I basically was able to just breakthrough a decent roadblock I was on in the project and just make a shitton of progress in a couple hours so honestly nbd. I'm actually just chilling.
+
+I was REALLY fucking tired today though cuz I was up until like 2 am yesterday cuz of the fucking Deltarune site man. Somehow though I managed to get through the day at the lab all the way until like 18:00 which is crazy in hindsight, WHILE also getting work done for once today. How the fuck did that happen
+
+There's 2 people that are leaving the lab (and Japan) this weekend, so the lab hosted a farewell party at a pizza restaurant. Pretty nice pizza from there, it wasn't as mind blowing as the other 2 times I've had pizza in Japan but it was still good tbh. I probably shuold've asked for more cheese on mine though for it to be really epic but it was good
+
+![Pizza](./sendai402.jpg)
+
+This is basically hitting me hard though in that I really have such little time left in Sendai now. I'm basically never going to be seeing those 2 friends anymore and I'm going to not see the rest for AT LEAST a year or so. Everything in Japan has been so great and it ending already is making me freak out just a little lol, i really dont like Canada man
+
+whatever though
+
+I've been replaying a specific fight in Deltarune at home because it's honestly so fun. I can't believe there's actually a challenging fight in Deltarune that is also fun as fuck. RPGSlop games really need to learn man Fucking hell
+
+anyway time to figure out what I'm doing for this entire weekend
