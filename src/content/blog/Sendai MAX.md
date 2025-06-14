@@ -1375,7 +1375,7 @@ I got a coffee jelly this time from here (alongside caramel milk). The caramel m
 
 Chillin
 
-# July 13 2025 JST
+# June 13 2025 JST
 *Written at June 14 02:21 UTC*
 
 Today I ACTUALLY did some work on the project for once. I actuallyyy did something for once. I had been slacking so hard cuz of Deltarune that I just had not done anything for at least a week or so now LMAO.
