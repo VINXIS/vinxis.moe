@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1750170896866"
+lastModified: "1750171028752"
 tags:
   - life
   - japan
@@ -12,7 +12,7 @@ imageAlt: Sendai
 ---
 Edits (Not related to new entries to post):
  - Retrospectively added images to previous days on April 14 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/caa9363bb169ac15dd68a8296a117a13875c0d81)
- - Added a link to Idumo in a previous entry. See edit here
+ - Added a link to Idumo in a previous entry on June 17 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/2b2ab414c0a3e8b72207c5503d4033cfa3e51e51)
 
 Wow, I'm actually in Japan.
 
