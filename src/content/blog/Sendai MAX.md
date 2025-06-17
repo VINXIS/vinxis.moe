@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1749128790159"
+lastModified: "1750170896866"
 tags:
   - life
   - japan
@@ -12,6 +12,7 @@ imageAlt: Sendai
 ---
 Edits (Not related to new entries to post):
  - Retrospectively added images to previous days on April 14 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/caa9363bb169ac15dd68a8296a117a13875c0d81)
+ - Added a link to Idumo in a previous entry. See edit here
 
 Wow, I'm actually in Japan.
 
@@ -254,7 +255,7 @@ In order of preference, I guess it's just 2 > 3 >= 1. 3 sounds like an insane ha
 
 Whatever, anyway I went out for a long time this day. I was craving some eel, but before that I also needed to get cream, so I went window shopping for a long time. They have SO MUCH lotion here, but no cream... in the end I went to hell (Don Quijote) and I found some moisturising gel, which sounded quite interesting. I found out it's like even lighter than lotion later though, but honestly considering my skin is not really that oily or dry, I figured I should try it. The reason I used cream before was because it lasted super long, but it wasn't like much better than lotion in the first place for me.
 
-After that, I ate at an Izakaya that specialised in eel dishes. I got 2 dishes, a Garlic Harami Bowl, and an Unaju Take. The reason I got 2 dishes was because I failed like crazy getting the Garlic Harami Bowl because I thought it was an eel dish but it was steak... and I'm eating at an eel place... and I'm craving eel... so I HAD to get the Unaju Take. It was kind of a mistake because I was already full by the Garlic Harami Bowl, but I had to get some fucking eel man. The Garlic Harami Bowl was 1980 yen, and the Unaju Take bowl was 1990 yen; both were on the bit of the pricey side, but they were some really bougie dishes I can't lie, and they tasted fucking amazing so like I honestly don't care they could've charged me like 25 bux for each instead really.
+After that, I ate at an Izakaya called [Idumo](https://maps.app.goo.gl/pVuuXhhdHgGn2x5A8) that specialised in eel dishes. I got 2 dishes, a Garlic Harami Bowl, and an Unaju Take. The reason I got 2 dishes was because I failed like crazy getting the Garlic Harami Bowl because I thought it was an eel dish but it was steak... and I'm eating at an eel place... and I'm craving eel... so I HAD to get the Unaju Take. It was kind of a mistake because I was already full by the Garlic Harami Bowl, but I had to get some fucking eel man. The Garlic Harami Bowl was 1980 yen, and the Unaju Take bowl was 1990 yen; both were on the bit of the pricey side, but they were some really bougie dishes I can't lie, and they tasted fucking amazing so like I honestly don't care they could've charged me like 25 bux for each instead really.
 
 ![Garlic Harami Don](./sendai25.jpg) ![Unaju Take](./sendai26.jpg)
 
@@ -1395,3 +1396,86 @@ whatever though
 I've been replaying a specific fight in Deltarune at home because it's honestly so fun. I can't believe there's actually a challenging fight in Deltarune that is also fun as fuck. RPGSlop games really need to learn man Fucking hell
 
 anyway time to figure out what I'm doing for this entire weekend
+
+# June 14 2025 JST
+*Written at June 17 11:45 UTC*
+
+Ok this was fucking insanity. I was trying to figure out what I wanted to do today but I ended up just only going to Tully's Coffee and getting some mid coffee and I sat there doing basically nothing. After that I just went to Yokoyokoya and ate ramen and then went back home. It was also progressively raining like a fuck so I decided to just stay home it sucked major ass I can't lie
+
+That's when a friend told me that he was coming for a family funeral thing on Sunday, and asked to meet up at night. It was so random but epic as fuck so I was like sure man. Most of the day basically went normally until then where I was just doing shit on my computer lol. I randomly got the idea to make an indie game heardle cuz I said that jokingly and was shocked that none existed, so must of my free time (now that Deltarune is over) is being spent on that I guess
+
+Anyway at night I met up with my friend, and another guy came along with us and we chilled at Handaya for a bit while eating food. Apparently the other guy deadass hitchhiked with my friend and his cousins from like around Tokyo to Sendai which was so fuckin crazy to me. Deadass randomly decided to just come to Sendai by hitchhiking it was epic as fuck LOL blew my fuckin mind
+
+I accidentally got a massive ass miso onigiri from Handaya so I kinda ate too much there but it was chill
+
+![Handaya](./sendai403.jpg)
+
+After that we went to my friend's mom's bar. It's located like right beside a masjid in itsutsubashi, like deadass the same building basically and it's just a masjid and my friend's mom's bar its crazy.
+
+It was so fuckin wild, the bar is like super maximalist and loaded with stuff like CDs and shit everywhere it was super epic. The lighting was also pretty chill too. His mom is also epic as fuck she's like really in the know about the people in Sendai, especially with the foreigners (conveniently with the masjid beside). She also gave us a ton of snacks and kept refilling my glass of coca cola.
+
+I have to say, the fucking coca cola here fucking tastes better than in NA too man how the fuck does that even work? How is even the fucking coca cola better here? I don't drink soft drinks often so I'm not the harbinger of truth on this shit, but god damn bruh
+
+But anyway we talked a shitton in general about random shit. We talked about random shit so hard it suddenly became like 2 am. I could feel myself gradually losing my consciousness too cuz I was getting so tired and sleepy LOL.
+
+![HAVIN A DRINK](./sendai404.jpg) ![The bar](./sendai405.jpg) ![Box...](./sendai406.jpg) ![RANDOM PIZZA SPAWNED](./sendai407.jpg)
+
+I actually lost track of time though I honestly wanted to fix my sleep schedule but it was so fucked I think i went to sleep at like 3 am LMAO. By the time I left the guy who hitchhiked was like actually passed the fuck out drunk on a chair outside LOL it was crazy. Hope he's doing well since though that was an epic time
+
+# June 15 2025 JST
+*Written at June 17 13:35 UTC*
+
+I think I woke up at like 10 am or something, that was the latest I've woken up during my time in Japan man. Anyway my friend from yesterday and I planned to go to Yokoyokoya for some epic ramen today too even though I did go yesterday and I also ate probably the most amount of calories in a day I ever had but that ramen is epic as fuck and I'm chilling with a friend I've known for years so yea. This also used to be his go to place for ramen when he used to live in Sendai too
+
+Went to Matsukiyo to get body wash rq and we met up there basically, and then walked to through Sendai station to get to that ramen shop.
+
+Oh yea he told me the strat for this kind of ramen where you should get rice with it straight up, so that's basically what we got this time around. I did NOT expect it to go that hard like holy shit  it's so fucking good. The broth with the rice was actually fucking majestic next time I come here I'm totally getting it with rice
+
+![Ramen with rice](./sendai408.jpg)
+
+That actually blew my mind man that works way too well. I was fuckin missing out bruh insane
+
+He had to leave pretty quickly for another funeral event that was happening so I went to COOP after this and got a few grocery stuff (snacks and drinks Rofl) and then went back home basically for the rest of the day until another friend came to Sendai later today. 
+
+Basically this friend came to check out live concerts with someone else and decided to make a pit stop at Sendai to check out the city, but I was basically waiting for them to come through for the evening for dinner. They were flying straight from Osaka to Sendai's airport, and we planned to have dinner at like 19:00 or so.
+
+Well once we met up we went to Idumo, the eel izakaya I went to 2 times in April (last time was [April 28](#april-28-2025-jst)) and man the kraft cola is still the fuckin best man. Good ass meal in general but man I literally can't get enough of the kraft cola they serve here it's fuckin nice
+
+![KRAFT COLA](./sendai409.jpg) ![Yumys](./sendai410.jpg) ![Eel rice set](./sendai411.jpg)
+
+After eating I took them to get Zunda shakes since they hadn't tried it yet since, and then we just walked around Sendai station for a bit until we headed to Don Quijote to look at some shit and also Yodobashi too. The whiplash they experienced after not going to either stores in so long was interesting honestly lol I honestly forgot what it was like to be in both of these stores the first time because I've deadass just gotten used to them now. It is really bizarre how both ofn these stores are setup LOL but its chill
+
+After that they were going to karaoke and I needed to get some actual sleep so we decided to part ways there. I got so cooked this weekend man my sleep schedule is just comepltely shitted on the bed. Oh well maybe I can just fix it throughout the week LOL
+
+# June 16 2025 JST
+*Written at June 17 14:15 UTC*
+
+My friend from yesterday messaged me asking if I wanted some Tim Tams (australian chocolate) from them and I was like damn sure. I woke up late as shit today though but I copped them anyway before I headed to the lab.
+
+Honestly at the lab today I was doing fuckall aside for staring at my code for making the indie game heardle thing, NOT EVEN the code for my research project LMAO oh well; the sleep deprivation was hitting like fucking crazy though I actually couldn't even look at my code at all today honestly it was just so fucked. I decided to just head back home at 14:00 which is like usual I guess, and hit up Matsuya for a quick beef bowl, but once I got home I deadass just passed out until like 19:00 or something I think, and even then I just ended up doing nothing for the rest of the day either. 
+
+This weekend hit me so fucking hard though that I was still somehow able to sleep at like 23:00 though which was nice.
+
+Oh yea my lab mates also told me that they are basically setting up a farewell party this thursday, and it honesly sounds stacked as hell LOL, karaoke and then dinner and then a sauna bath type shit all in one evening man god damn, I'm looking forward to it though hopefully im not tired
+
+# June 17 2025 JST
+*Written at June 17 14:18 UTC*
+
+Ok so today it hit me like a fucking truck that I still have rice and oil and eggs in my fucking apartment, and I need to get it all finished by the end of this week..... so I basically decided I'm getting ramen like just one more time, and hitting up the cafe one more time, and that's it.
+
+The rest of the week I guess is going to be me eating the fucking remaining rice and eggs in this apartment before it's the 23rd and I have to go to Tokyo to go around Japan with my mom and brother lol, not that I'm complaining though cuz I do enjoy the meal
+
+Meeting today and it's basically the last meeting I'm having here... god damn bruh oh well, I will be working with the prof remotely in the meantime though, but hopefully I'll be back from April next year.... it'd be nice,
+
+Even today I was just staring at the god damn indie game heardle code LOOOOOL, I mean whatever though it's not like I'm behind schedule on anything really, and I honestly do want this little side project to be out soon so it'd be nice to just work on this rn
+
+Also this day was HOT AS FUCK? Look at this shit
+
+![Sendai Weather](./sendai412.png)
+
+This shit is so fucking hot man even Google is freaking out. 35 C and tomorrow is also going to be fucked up too. maaaan i'm not built for this shit I can say that much, honestly felt like I was getting a heat stroke when I was walking to uni today
+
+Anyway at the lab I went with some friends to use the fluorescence microscope to look at some [[Astrocyte]] samples, and it was sick as fuck. They were using 2 biomarkers to mark them and some of the pictures they were taking were really cool. I didn't have my phone with me at the time so I didn't take a pic, but trust me it was sick
+
+After that I went home and basically cooked myself 3 glasses of rice, and ate basically 4 eggs and 2 bowls of rice. This shit is gonna make me so fuckin fat or something man but it is what it is this shit gotta get finished this week. I do have to say though it's kind of absurd that there's ltiaerlly only been one entire day when I gained weight in Japan, which was literally only this past Saturday... for almost the rest of the entire time I've been here I've just been losing more and more weight lol, idk how this is happening I was losing weight before I came to Japan too, but it only got faster here. Dunno it's fucking crazy though. I got myself checked by the doctor before too and there were no issues so I can only imagine it's fine, but man what the hell
+
