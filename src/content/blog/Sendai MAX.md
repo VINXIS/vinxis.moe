@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1750171028752"
+lastModified: "1750482004167"
 tags:
   - life
   - japan
@@ -1479,3 +1479,51 @@ Anyway at the lab I went with some friends to use the fluorescence microscope to
 
 After that I went home and basically cooked myself 3 glasses of rice, and ate basically 4 eggs and 2 bowls of rice. This shit is gonna make me so fuckin fat or something man but it is what it is this shit gotta get finished this week. I do have to say though it's kind of absurd that there's ltiaerlly only been one entire day when I gained weight in Japan, which was literally only this past Saturday... for almost the rest of the entire time I've been here I've just been losing more and more weight lol, idk how this is happening I was losing weight before I came to Japan too, but it only got faster here. Dunno it's fucking crazy though. I got myself checked by the doctor before too and there were no issues so I can only imagine it's fine, but man what the hell
 
+# June 18 2025 JST
+*Written at June 21 03:19 UTC*
+
+Legit hot as fuck this day too like it was really hot the day before but it was still fucking death this day too I don't know man it's so fuckin crazy. In a way it's nice that I'm going back to Canada at the worst of the heat cuz this is actual death. The humidity is like way higher here than it is in Edmonton so
+
+Nothing particularly crazy happened today though I went to yokoyoko and got ramen with rice (i'm like 100% getting rice from now on... for the very few times I have left to go there), and went home and ate my bullshit rice and eggs to get this shit done arleady. I think by saturday they should be done though.
+
+There was also this bug that showed up in my apartment. It was actually really pretty, and honestly the bug was chill as fuck it let me do whatever the fuck to it it was crazy. Anyway I fuckin yeeted its ass out the room so it can fly not in my room, and it was a pretty big bug too which I really didn't want flying around my shit esp. when im eating and sleeping man
+
+![Bug](./sendai413.jpg)
+
+Yeaaaa
+
+# June 19 2025 JST
+*Written at June 21 03:29 UTC*
+
+Epic day today. They gave me a farewell party this day after the lab which was really nice. I wasn't really productive for shit this day though I kinda just sat there doing nothing. These days I've also just been really tired like I usually end up like dozing off and passing out for a little bit throughout the day in bursts and I don't really know what to do about it cuz I still wanna wake up as early as possible but the act of going to and coming back from the lab makes me naturally stay up longer at night so idk.
+
+Anyway after the lab we went to karaoke at a pretty big manekineko. Also it was my first time seeing a parking lot for a strip-mall type layout in Japan it was fucking crazy actually. Like it wasn't really as big as NA parking lots because the car park markings were still very tightly put together and stuff, but it was very big still. Actually blew my mind and it was kind of nostalgic for a little bit? Like I forgot that this is the shit that just barely exists at all in Japan but is littered EVERYWHERE in Canada like a fucking virus. Crazy stuff.
+
+![Inside of the manekineko](./sendai414.jpg) ![Inside of the manekineko 2](./sendai415.jpg) ![FE!N](./sendai416.jpg)
+
+After that we had some real good ass ramen. We went to another parking lot from this parking lot it was actually so crazy man it was like I was back in Canada LOL where in order to get anywhere ur just going from a barren parking lot to another barren parking lot. The ramen was really good though the dumplings were also really yummy and the rice was really goodd I forgot the name of the place tho
+
+![Yummys](./sendai417.jpg) ![Rice](./sendai418.jpg) ![Ramen](./sendai419.jpg)
+
+I think this broth was more oily than usual but I still drank it all anyway lolol. We were joking about how I'm gonna get fat but then I actually realized I have legit lost like fucking 10 kgs over the course of my stay in Japan. ACTUALLY fucking insane dude and it's not like I'm stopping myself from eating random shit man it's so crazy. Fuck Canada
+
+After that we went to an Onsen way out of the city. Like this was straight up outside the city. I think it was still technically considered inside Sendai's Aoba ward? But I wasn't really sure because it was mostly just nature around us aside for the bigass highway lolol. There is a JR station that stops at the area we went to though so yea.
+
+Great onsen though it was quite different from the ones at Kusatsu cuz it was built like a swimming pool place but without a swimming pool just baths to sit in at various temperatures and also various massage baths. It was also a massive building and the parking lot was also massive. The inside was built like it was for a fuckin gym or something like a MOVATI building, but it just had baths, resting/chilling places, manga cafe, internet cafe, and food. It was so insane crazy ass building it was sick as hell (inside it, specifically)
+
+![Parking lot](./sendai420.jpg) ![Crazy times](./sendai421.jpg) ![Onsen entrance](./sendai422.jpg) ![LoveLive popup in the onsen](./sendai423.jpg) ![SUPER FATTY SOFT SERVE](./sendai424.jpg) ![Some condensed milk covered strawberry sweet that looks insanely good and fatty](./sendai425.jpg) ![Onsen entrance with a ghost phone](./sendai426.jpg)
+
+That soft serve was actually so fucked up and stressful to eat actually it was melting so fast and it just started fucking dripping on the carpet and I was just dying trying to fucking eat it. We used like fuckingg 7 wet towels or something and I had to wash my hands a shitton after eating it it was so fucked but it was good as fuck so shit maybe it was worth LOL
+
+After that they drove me back home and I think I basically just deadass passed out in bed. I THINK I brushed my teeth but I don't remember.
+
+# June 20 2025 JST
+*Written at June 21 04:50 UTC*
+
+When I brushed my teeth this morning, I noticed my gums were just completely FUCKED. The gums around my molars on the upper jaw were just completely fucked I could feel it immediately when I woke up with my tongue, and it was just bleeding like crazy when I was brushing. Actually insane gingivitis overnight or something man.
+
+Anyway this friday was like the last actual day I go to the lab because on monday I'm basically just coming and going after dropping off stuff to people and giving gifts. I'm not seeing one of them on monday either since he'd be shinkansening back from Tokyo in the afternoon and I'm definitely leaving before then to Tokyo. It was pretty chill though we talked about kakigori and hair and stuff. Also talked to the prof for plans on the project I'm working on for the rest of July while I'm back in Canada too.
+
+Afterwards I went and got Yokoyoko ramen and basically passed out at home. Idk why I was just so tired and basically passed out between 16:00-19:00 or something... oh well. Today was also the last 10kyen bill I had that I converted to 1kyen bills. All in all I basically have ended up using like around 700 USD in JPY cash(?) this entire past 3 months so far, which is honestly fucking insanely low, but friends and stuff have paid a lot of thing for me which I'm really grateful for (though I need to get back to paying them back whenever I get back home in July), and I think this remaining week is going to become really expensive.
+
+I don't remember if I talked about this already but my mom and my brother are coming to Japan on monday, and we are basically just going to random places throughot Japan each day until the 29th lol. I really don't know how this is gonna work and they are probably gonna be completely fucked by the end, but oh well LOL. One day in each city is insanity but whatever, I havent been to Kyoto/Osaka still and we are also going to Hakone so I'll still probably be enjoying it
