@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1750482004167"
+lastModified: "1751440652769"
 tags:
   - life
   - japan
@@ -1527,3 +1527,266 @@ Anyway this friday was like the last actual day I go to the lab because on monda
 Afterwards I went and got Yokoyoko ramen and basically passed out at home. Idk why I was just so tired and basically passed out between 16:00-19:00 or something... oh well. Today was also the last 10kyen bill I had that I converted to 1kyen bills. All in all I basically have ended up using like around 700 USD in JPY cash(?) this entire past 3 months so far, which is honestly fucking insanely low, but friends and stuff have paid a lot of thing for me which I'm really grateful for (though I need to get back to paying them back whenever I get back home in July), and I think this remaining week is going to become really expensive.
 
 I don't remember if I talked about this already but my mom and my brother are coming to Japan on monday, and we are basically just going to random places throughot Japan each day until the 29th lol. I really don't know how this is gonna work and they are probably gonna be completely fucked by the end, but oh well LOL. One day in each city is insanity but whatever, I havent been to Kyoto/Osaka still and we are also going to Hakone so I'll still probably be enjoying it
+
+# Post-Edmonton Writing Notice
+Everything below is being written back "home" in Edmonton. Things were way too hectic for me to be able to ever sit down and write any of this while in Japan. Hopefully I remember everything since
+
+# June 21 2025 JST
+*Written at June 30 18:59 UTC*
+
+I was SUPPOSEDDDDD to do packing and shit, BUUUUUUUUUUUUUUUUUT it was a fuckin saturday I don't give a shit... though I did wipe the floor and did clean some stuff though. I also for some reason never listened to [this CDs/Sasuke Haraguchi mix](https://youtu.be/DZOaEM7J4tA) but it's SO fucking insane I listened to the entire thin the entire day it's so genius man
+
+Otherwise nothing crazy really happened this day tbh, I will say though I was thinking about how this trip this coming week was still going to work. Like 1 city per day so we're like basically almost always in transit. It was gonna be fuckin insanity probably
+
+# June 22 2025 JST
+*Written at June 30 19:19 UTC*
+
+Busy as fuck day. I tried cleaning up all the trash that was still left in my room this day, and then I did a bunch of laundry, and then I did more cleaning of the surfaces and stuff, and then uhhhh yea
+
+I was tying to figure out what to give the lab as a farewell gift from me. In the end I decided to give a card alongside Oreo packs and chocolates and small cute little shiba inu stickers. I thought I took a picture of the stickers but I guess not...
+
+I did find this very cute card that I'm keeping for myself though LOL, really cool artist too
+
+![Cute card](./sendai427.jpg)
+
+I just walked around some stores for a while one last time though, because this was basically the last day I was going to be able to do it. Just looking at all the pop-up shops and everything, getting some zunda taiyaki, Fuck man i'm gonna miss sendai so much
+
+![Crazy fucking miku drawings](./sendai428.jpg) ![Cute card](./sendai427.jpg)
+![Crazy fucking miku drawings](./sendai428.jpg) ![Zunda taiyaki](./sendai430.jpg)
+
+I also wanted to go to Yokoyokoya for ramen one last time but...
+![Shop's closed](./sendai431.jpg)
+
+SUCH UNLUCKY TIMING MAN I CAN'T SAY FAREWELL TO THEM oh well
+
+and then I basically went home and actually packed most of the shit in my apartment and then went to sleep yay
+
+# June 23 2025 JST
+*Written at July 1 02:13 UTC*
+
+Last day at the lab. I stayed for like a couple hours though cuz I had to take the train real soon. Before that I had to fuckin put my carry-on in a locker at Sendai station so I could just not go home after the lab and just go straight on a shinkansen to Tokyo. But yea it was chill I talked to a bunch of the people in the lab for one last time and also talked about the project more. They seemed to really like the oreos and the shiba inu stickers so that's nice.
+
+I also went to the onigiri shop one last time after the lab and talked to them about how I'm basically leaving today LMAO. Love them they are very nice. Also got a zunda shake on my way back to the station to hop on the shinkansen. 
+
+![Onigiri in shinkansen](./sendai432.jpg)
+
+Anyway I shinkansen'd to Tokyo and then NRT Express'd to NRT and met my brother and mom there. From there they had ALREADY lost a carry-on bag so I waited for them for a while to find it while I stood around with the other luggage. Basically there's 2 big suitcases and 3 carry-on suitcases that we have currently...
+
+........and so we took the skyliner to Nippori, and then a train from Nippori to Akihabara, and then a train from Akihabara to Iidabashi. Trying to follow google maps kinda fucked us over tho like honestly google maps told us where the back of the fucking hotel was so we were so confused where the hotel was when we got to the street, only to realize it's literally on the other side. Sioo fuckin stupid. 
+
+Anyway we also had TeamLabs scheduled for like 19:30 or something, and going from Iidabashi to Toyosu was kind of fuckin aids and we were definitely going to be late for the schedule, and so they already got stressed as shit LMAO who woulda thought. Anyway I guess we just took a cab there and paid like 50 CAD, but it was fine they really didn't care I guess that we were too late I suppose.
+
+TeamLabs was amazing though the Forest and Water sections specifically, especially the water section was fucking sick. The rest of teamlabs tokyo really didn't compare to water to be completely honest but just water itself was so worth it
+
+![Teamlabs 1](./sendai433.jpg) ![Teamlabs 2](./sendai434.jpg) ![Teamlabs 3](./sendai435.jpg) ![Teamlabs 4](./sendai436.jpg) ![Teamlabs 5](./sendai437.jpg) ![Teamlabs 6](./sendai438.jpg) ![Teamlabs 7](./sendai439.jpg)
+
+It was pretty fucking great. We got pocari sweat after from the konbini and just went to sleep in the hotel after.
+
+# June 24 2025 JST
+*Written at July 1 02:44 UTC*
+
+So first thing we did after waking up is check out and store the baggage and shit, then we just went to Komeda's Coffee at Shibuya and had their minds blown with how good and cheap the food is here lol, and then we walked around Shibuya and looked at random stores.
+
+I also made the mistake of giving my mom my really shitty blood pressure monitor that u just put on the wrist and its very inaccurate, and it said her blood pressure was through the roof or something. She also ended up forgetting blood pressure meds at home in Canada, so we ended up spending a bunch of time going to random pharmacies and failing to ask them about clinics and if they have blood pressure meds. We also went to 1 in google maps and it was like some random male urology specialist clinic????????? But uhh after that we just bought an actual bp monitor and some random cholesterol supplements I guess LOL and then after that showed high but not super high blood pressure she was like fuck it let's just not look anymore
+
+After that we went to Ikebukuro to the Pokemon Center in Sunshine City, and my brother copped a bunch of stuff, and also got a bunch of piplup stuff for my sister there.
+
+Basically only went there for that tho after that we went the fuck back to the hotel to get the bags, and then went to Shinjuku to take a bus from there to Hakone. Great ride I THINK i saw Mt. Fuji during the bus ride but I couldn't tell. It was raining the entire time there and very cloudy so idk
+
+![Insane view](./sendai440.jpg) ![Crazy coffee shop in Gotemba](./sendai441.jpg) ![Path to](./sendai442.jpg) ![Random place on Hakone mountain](./sendai443.jpg) ![Night time](./sendai444.jpg)
+
+The hotel was fine the rooms were like very dated but they were massive rooms with a hot spring and stuff. I didn't go this night though I just wore a yukata and went to sleep on the futon. It's so funny the room is like a normal ass hotel room and then there's a tatami room inside the room with just a futon it was so bizarre but it was cool
+
+![Hotel room](./sendai445.jpg)
+
+# June 25 2025 JST
+*Written at July 2 03:34 UTC*
+
+Early in the morning I went to the hot spring and the outside bath in the onsen is really nice. After that we went tot he botanical garden but it was raining like crazy so we got soaked wet to shit. The moment we finished looking at the botanical garden though the rain stopped. fucking insanity coincidence but it was amazing
+
+![Path outside the hotel](./sendai446.jpg) ![Botanical Garden Entrance](./sendai447.jpg) ![The inside of the beginning of the botanical garden](./sendai448.jpg)![Path in the garden](./sendai449.jpg) ![Crazy view in the garden](./sendai450.jpg) ![Another crazy view](./sendai451.jpg) ![And another crazy view](./sendai452.jpg) ![Note about the soil here](./sendai453.jpg) ![Another path in the garden](./sendai454.jpg)
+
+After that we checked out and missed our bus so we had to wait like 20 mins for the next bus cuz this is kinda the middle of nowhere, and then we shinkansen'd from odawara to kyoto. From there it was a bus ride to our hotel. This hotel we went to was the best one it had an ACTUAL japanese shower room for once, though I ddn't really realize at the time that after we leave this hotel it'd be the last time I'm probably going to have access to one for at least a VERY long time... but it was great
+
+![Bathroom](./sendai455.jpg)
+
+So after that we basically tried to decide what to do next, and we decided to eat some Wagyu beef for once, and then go to the Fushimi Inari shrine at night after. Great fucking decisions we made honestly both were really good.
+
+The wagyu beef set that they were giving were like ~40 dollars for each person or something and it was so fucking good man holy shit the food and sauces were so fucking good it was beautiful
+![Wagyu](./sendai456.jpg)
+
+After that we chilled for a little more at the hotel and then went to the shrine...
+
+I'll let the images speak for themselves, but I will say the station being decorated with the shrine stuff was pretty cool too. First pic is from the station
+
+![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 2](./sendai462.jpg) ![Fushimi Inari 1](./sendai460.jpg)
+![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 2](./sendai462.jpg) ![Fushimi Inari 1](./sendai460.jpg)
+![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 2](./sendai462.jpg) ![Fushimi Inari 1](./sendai460.jpg)
+![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 3](./sendai462.jpg) ![Fushimi Inari 4](./sendai463.jpg) ![Fushimi Inari 5](./sendai464.jpg) ![Fushimi Inari 6](./sendai465.jpg) ![Fushimi Inari 7](./sendai466.jpg) ![Fushimi Inari 8](./sendai467.jpg) ![Fushimi Inari 9](./sendai468.jpg)
+
+Anyway none of us were able to get to the top because my mom got way too tired and we head back in the middle of the hike. Really long hike though and I wanted to go to the top, but it's ok I guess... next time I come back to Kyoto it'll happen
+
+# June 26 2025 JST
+*Written at July 2 04:37 UTC*
+ 
+Early in the morning we went to the Arashiyama Bamboo Forest. Guess what happened though...................... it started raining literally when we were there LOL The door to most of it was also closed off until 9 am and we were there way before cuz we weren't gonna check out rn. In any case it was sick though the bamboos were massive as hell even for the little we did see
+
+![Bamboo Forest 1](./sendai469.jpg) ![Bamboo Forest 2](./sendai470.jpg) ![Bamboo Forest 3](./sendai471.jpg)
+
+Anyway we had to leave pronto because my brother has wanted to go to a Kirby Cafe for decades and he was able to book a spot this day at like 15:00 or something(?) so we had to get goin. Took a 1 hour train ride to Osaka from Kyoto and it was honestly a REALLY nice train it was crazy. Didn't take the shinkansen cuz honestly it was way too expensive for a 10 mins vs 1 hour trip I can't lie man
+
+I kinda trolled with this hotel pick cuz it was at Nipponbashi right by an entrance to Dotonbori lol ................................................... so it was like kinda jank but it was a really good position for access to places so. 
+
+Anyway my mom started randomly wanting to go to a clinic again and started complaining how we couldn't find one in Tokyo even though we literally stopped after we got the BP monitor cuz she didn't wanna bother. But whatever anyway we went to Namba and chilled around there for a bit, and looked for a clinic around... and actually found one but we decided to go after the Kirby cafe cuz of the booked timing shit.
+
+Anyway Namba not having like any sitting places was kinda fucked up both my brother and mom were getting pretty fucking tired now and there was no place to sit in the mall for some reason? It was really bizarre but whatever.
+
+From there we took a simple train to the Kirby Cafe and got a bit lost cuz there's like 238952349 malls and then the elevators don't go on every floor for some fuckin reason, but somehow we made it to the 9th floor on the mall that we wanted to go in.
+
+The kirby cafe itself was fuckin amazing though the food was so good and they made it look so cute too
+
+![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
+![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
+![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
+![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
+![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 3](./sendai474.jpg)
+![Kirby Cafe 4](./sendai475.jpg) ![Kirby Cafe 5](./sendai476.jpg) ![Kirby Cafe 6](./sendai477.jpg) ![Kirby Cafe 7](./sendai478.jpg) ![Kirby Cafe 8](./sendai479.jpg)
+
+After that my mom and I went to the clinic while my brother stayed around to shop. The clinic cost like 120 dollars for the visit cuz no insurance applied or anything (until back to Edmonton ofc). and the meds cost like 18 bux or something it was chill.
+
+After that we basically went back to the hotel for a little bit, and then went to Dotonbori. I did want to try takoyaki in Osaka still but since we were going to Dotonbori it was kinda fucked cuz its Dotonbori and all the food stands are gonna be so whatever since its all so crowded...
+
+Dotonbori like actually fried my brain walking there man it was so crowded (worse than Shibuya/Harajuku) and I had never seen that much trash in Japan before lol, also we got takoyaki from one of the stands and it was just fine man it was fine it wasn't great but whatever. Also this reminded me that throughout the trip I had a sore under my lip and anytime food touched it it would be so fuckin painful but it was fine cuz the good food still tasted amazing lol
+
+At Dotonbori though we went to a random cafe cuz my brother wanted coffee. It was a pretty sick place tho check out the french toast
+
+![French toast](./sendai480.jpg)
+
+After the takoyaki tho I passed out lol
+
+# June 27 2025 JST
+*Written at July 2 05:45 UTC*
+
+Woke up and we headed to the Osaka Aquarium. Before that though we went to a cafe in Nipponbashi Station which I think was quite literally called Nipponbashi cafe. It wasn't great thuogh the whole thing smelled like cigs cuz they allowed smoking in Most of the cafe and the food was like fine
+
+Aquarium was really sick though, a decent portion of it was 1 really massive tank but it was all quite sick. Here's pics
+![Osaka Aquarium 1](./sendai481.jpg)
+![Osaka Aquarium 2](./sendai482.jpg)
+![Osaka Aquarium 3](./sendai483.jpg)
+![Osaka Aquarium 4](./sendai484.jpg)
+![Osaka Aquarium 5](./sendai485.jpg)
+![Osaka Aquarium 6](./sendai486.jpg)
+![Osaka Aquarium 7](./sendai487.jpg)
+![Osaka Aquarium 8](./sendai488.jpg)
+![Osaka Aquarium 9](./sendai489.jpg)
+![Osaka Aquarium 10](./sendai490.jpg)
+![Osaka Aquarium 11](./sendai491.jpg)
+![Osaka Aquarium 12](./sendai492.jpg)
+![Osaka Aquarium 13](./sendai493.jpg)
+![Osaka Aquarium 14](./sendai494.jpg)
+![Osaka Aquarium 15](./sendai495.jpg)
+![Osaka Aquarium 16](./sendai496.jpg)
+![Osaka Aquarium 17](./sendai497.jpg)
+![Osaka Aquarium 18](./sendai498.jpg)
+![Osaka Aquarium 19](./sendai499.jpg)
+![Osaka Aquarium 20](./sendai500.jpg)
+![Osaka Aquarium 21](./sendai501.jpg)
+![Osaka Aquarium 22](./sendai502.jpg)
+![Osaka Aquarium 23](./sendai503.jpg)
+![Osaka Aquarium 24](./sendai504.jpg)
+![Osaka Aquarium 25](./sendai505.jpg)
+![Osaka Aquarium 26](./sendai506.jpg)
+![Osaka Aquarium 27](./sendai507.jpg)
+![Osaka Aquarium 28](./sendai508.jpg)
+![Osaka Aquarium 29](./sendai509.jpg)
+![Osaka Aquarium 30](./sendai510.jpg)
+![Osaka Aquarium 31](./sendai511.jpg)
+![Osaka Aquarium 32](./sendai512.jpg)
+![Osaka Aquarium 33](./sendai513.jpg)
+![Osaka Aquarium 34](./sendai514.jpg)
+![Osaka Aquarium 35](./sendai515.jpg)
+
+There was also an exhibit about plastic and climate change that were really good so I'm showing those as well
+
+![Plastic / Climate Change Info 1](./sendai516.jpg) ![Plastic / Climate Change Info 2](./sendai517.jpg) ![Plastic / Climate Change Info 3](./sendai518.jpg)
+
+There was one more exhibit after this that was REALLY pretty but I didn't really take much pics, ASIDE FOR the really funny [[Houseki no Kuni]] ref for me specifically lmao (live rock)
+
+![Pretty Exhibit 1](./sendai519.jpg)
+![Pretty Exhibit 2](./sendai520.jpg)
+![Pretty Exhibit 3](./sendai521.jpg)
+![Pretty Exhibit 4](./sendai522.jpg)
+![Pretty Exhibit 5](./sendai523.jpg)
+![Pretty Exhibit 6](./sendai524.jpg)
+
+After that, we took the VERY LONG TRIP from Osaka, ALLLLLLL THE WAYYY TO SENDAI. That basically involves taking the entire trip of the shinkansen between Osaka and Tokyo, and then the shinkansen between Tokyo and Sendai. Good stuff though it was nice. My mom wanted to try taking a picture of Mt. Fuji but I think even though it was sunny where the shinkansen was going, there were clouds in the distance that probably covered the mountain entirely so unlucky
+
+For night we went to an italian izakaya, and they were very respectful and polite there, but uhhhh the food ordering was so fucked especially with the added language barrier stuff. They forgot a baguette and a dish said it came with rice but it didn't, and the food was good but honestly not worth the price. The price was legit like 80 something dollars for the 3 of us. All in all probably the most disappointing experience in Japan so far but the food was still good so it's like fuck man
+
+After that we went to sleep. This was basically the last day I would be sleeping in my room in Sendai now..... Fuck man I'm gonna miss this place. I didn't even get to say farewell to the people at Yokoyokoya today either. So sad
+
+Oh well.
+# June 28 2025 JST
+*Written at July 2 06:23 UTC*
+
+My brother and mom are basically in the hotel right across the street from my house so basically after I got ready I just went to their room and then checked out and brought the bags to my room. In total there's legit 3 massive suitcases and 3 carry-on bags now lol, kinda fuckin insane but it is a lot of luggage.
+
+Before packing though we went to Zuihoden. My mom got really tired on the stairs up to it and I almost thought we weren't gonna go in but luckily my mom made it up and we did go in. It's a pretty small place though it's mostly funerals and small houses that were held by the Date family which were very cool to see. I'd post pictures but I'm way too lazy to edit them that I have to because of reasons so I'm sorryyyy no pics.....
+
+After that though we just went to Mos Burger and got burgers and shit. They were pretty good and pretty cheap as usual. I got a shrimp burger this time and it was nice.
+
+AND THEN it was packing hell for a decent lot. For the most part my brother and mom did a lot of the packing, while I cleaned most of the remaining of the room. Especially the washroom because I really didn't clean it often enough man. It's fine though we made it in a decent amount of time to Sendai station to get some tickets. They were all so fucking booked though we basically had to wait until a Komachi train with like 3 random seats was found like an hour or something from now. 
+
+During that time I returned the key to LiveMax. It was like a building with NOTHING aside for Livemax on the second floor which was so bizarre. It was a chill office place tho with like 2 people there and as I walked back to the elevator I turned around and they were just fully bowing while I was leaving I was surprised but it was cool. On the way back to the station I got a zunda shake and 2 taiyakis (zunda and custard) and then just waited for the shinkansen back to Tokyo. 
+
+Before that we had to stop at Ueno to put at least 2 of the suitcases in lockers because the haul was so much. It was so fucked though because I wanted to find lockers that were near KS/Skyliner trains, but that fucking part of the station was literally completely separated from the shinkansen/JR lines and we had to walk outside so we spent a bunch of time getting fucking lost instead lol, but its fine we found really good lockers right by the gates to Skyliner and put 2 massive suitcases in. THANK GOD bruh, then we just trained to Iidabashi from Ueno lol
+
+The hotel was basically the same as the one before at Iidabashi, the room was much bigger this time though which was nice. After that we went to a random italian restaurant again... even though it was a terrible idea last time... but I can't lie the food here was FUCKING amazing and it was cheap just like usual Japan style it was so good. Also insanely amazing cheesecake man what the fuck
+
+![Pasta](./sendai525.jpg) ![Cheesecake](./sendai526.jpg)
+
+We were supposed to get back early enough to try to return the shit my brother bought at Shibuya from the One Piece store but we got to Tokyo too late so all we did was eat food and just walk around Iidabashi for a bit. We were so fucking tired though I completely passed out lol, didn't charge SHIT that night
+
+# June 29 2025 JST
+*Written at July 2 07:00 UTC*
+
+My mom and brother were so fucking exhausted at this point, and it was pretty obvious but I won't really go into details how lol. Anyway we first went to Shibuya to try to return the shorts and whatever my brother bought there, but they said no returns sorry LOL. It was fine thuogh I guess he could just sell it.
+
+Oh yea before that we went to Komedas again and ordered coffee jelly this time since they never tried it still. It was pretty good, as usual for Komeda Coffee thuogh so it wasn't amazing or top tier. I honestly think MILLS had the best coffee jelly during my time in Japan that shit was actually like mind blowingly good man fuck
+
+After that thuogh, it was pretty much over. It was time to get ready to leave.
+
+We checked out the hotel.
+We took our bags to Ueno.
+We took the Skyliner to the airport.
+We then spent like a fucking hour trying to shuffle stuff around so that none of the suitcases were over 50 lbs lol.
+We then went through baggage claim and the gates.
+And left.
+
+Goodbye Japan.
+
+# June 29 2025 PST
+*Written at July 2 07:10 UTC*
+
+15 CAD FOR A FUCKING SANDWICH EQUIVALENT TO THE TRIANGLE KONBINI SANDWICHES FOR LIKE 2-3 BUX?????? FUCK THIS COUNTRY
+
+# June 30 - July 2 2025 MDT
+*Written at 07:11 UTC*
+
+Well. That pretty much concludes this blog post. I'll post these remaining pictures that were taken between June 29-30 JST from my flight from Vancouver to Edmonton
+
+![Plane ride](./sendai527.jpg)
+ ![Warning.](./sendai528.jpg)
+
+My phone was completely dead and my carryon was completely stored away for my flight between Japan and Vancouver unfortunately, so I sat there doing fuck all for a good 8 hours (aside for sleeping). 
+
+Once I got back, the withdrawal hit immediately. I honestly feel much worse than I initially did already in Canada now that I know how much better living in Japan just FEELS compared to living in Canada.
+
+At the very least, the food at home is as good as the food I generally ate in Japan.
+
+Hopefully I go back soon, and/or just leave Canada sooner than later...
+A total of 528 images on this post! Pretty impressive that I was able to write all of this.
+
+Just thinking about the past 3 months while I write this final bit at fucking 1 am in Edmonton time... it's honestly kind of depressing...
+...
+That's all for this post.
