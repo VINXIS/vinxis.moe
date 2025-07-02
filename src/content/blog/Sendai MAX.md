@@ -1,7 +1,7 @@
 ---
 title: Sendai MAX
 created: "1743663047298"
-lastModified: "1751440652769"
+lastModified: "1751498811157"
 tags:
   - life
   - japan
@@ -1555,6 +1555,7 @@ I just walked around some stores for a while one last time though, because this 
 ![Crazy fucking miku drawings](./sendai428.jpg) ![Zunda taiyaki](./sendai430.jpg)
 
 I also wanted to go to Yokoyokoya for ramen one last time but...
+
 ![Shop's closed](./sendai431.jpg)
 
 SUCH UNLUCKY TIMING MAN I CAN'T SAY FAREWELL TO THEM oh well
@@ -1619,10 +1620,18 @@ After that we chilled for a little more at the hotel and then went to the shrine
 
 I'll let the images speak for themselves, but I will say the station being decorated with the shrine stuff was pretty cool too. First pic is from the station
 
-![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 2](./sendai462.jpg) ![Fushimi Inari 1](./sendai460.jpg)
-![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 2](./sendai462.jpg) ![Fushimi Inari 1](./sendai460.jpg)
-![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 2](./sendai462.jpg) ![Fushimi Inari 1](./sendai460.jpg)
-![Fushimi Inari Shrine station](./sendai457.jpg) ![Fushimi Inari ](./sendai458.jpg) ![Entrance to shrine ](./sendai459.jpg) ![Fushimi Inari 1](./sendai460.jpg) ![Fushimi Inari 2](./sendai461.jpg) ![Fushimi Inari 3](./sendai462.jpg) ![Fushimi Inari 4](./sendai463.jpg) ![Fushimi Inari 5](./sendai464.jpg) ![Fushimi Inari 6](./sendai465.jpg) ![Fushimi Inari 7](./sendai466.jpg) ![Fushimi Inari 8](./sendai467.jpg) ![Fushimi Inari 9](./sendai468.jpg)
+![Fushimi Inari Shrine Station](./sendai457.jpg)
+![Fushimi Inari Shrine 1](./sendai458.jpg)
+![Fushimi Inari Shrine 2](./sendai459.jpg)
+![Fushimi Inari Shrine 3](./sendai460.jpg)
+![Fushimi Inari Shrine 4](./sendai461.jpg)
+![Fushimi Inari Shrine 5](./sendai462.jpg)
+![Fushimi Inari Shrine 6](./sendai463.jpg)
+![Fushimi Inari Shrine 7](./sendai464.jpg)
+![Fushimi Inari Shrine 8](./sendai465.jpg)
+![Fushimi Inari Shrine 9](./sendai466.jpg)
+![Fushimi Inari Shrine 10](./sendai467.jpg)
+![Fushimi Inari Shrine 11](./sendai468.jpg)
 
 Anyway none of us were able to get to the top because my mom got way too tired and we head back in the middle of the hike. Really long hike though and I wanted to go to the top, but it's ok I guess... next time I come back to Kyoto it'll happen
 
@@ -1645,12 +1654,14 @@ From there we took a simple train to the Kirby Cafe and got a bit lost cuz there
 
 The kirby cafe itself was fuckin amazing though the food was so good and they made it look so cute too
 
-![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
-![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
-![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
-![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 1](./sendai472.jpg)
-![Kirby Cafe 1](./sendai472.jpg) ![Kirby Cafe 2](./sendai473.jpg) ![Kirby Cafe 3](./sendai474.jpg)
-![Kirby Cafe 4](./sendai475.jpg) ![Kirby Cafe 5](./sendai476.jpg) ![Kirby Cafe 6](./sendai477.jpg) ![Kirby Cafe 7](./sendai478.jpg) ![Kirby Cafe 8](./sendai479.jpg)
+![Kirby Cafe 1](./sendai472.jpg)
+![Kirby Cafe 2](./sendai473.jpg)
+![Kirby Cafe 3](./sendai474.jpg)
+![Kirby Cafe 4](./sendai475.jpg)
+![Kirby Cafe 5](./sendai476.jpg)
+![Kirby Cafe 6](./sendai477.jpg)
+![Kirby Cafe 7](./sendai478.jpg)
+![Kirby Cafe 8](./sendai479.jpg)
 
 After that my mom and I went to the clinic while my brother stayed around to shop. The clinic cost like 120 dollars for the visit cuz no insurance applied or anything (until back to Edmonton ofc). and the meds cost like 18 bux or something it was chill.
 
