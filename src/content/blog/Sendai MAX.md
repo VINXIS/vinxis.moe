@@ -13,7 +13,7 @@ imageAlt: Sendai
 Edits (Not related to new entries to post):
  - Retrospectively added images to previous days on April 14 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/caa9363bb169ac15dd68a8296a117a13875c0d81)
  - Added a link to Idumo in a previous entry on June 17 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/2b2ab414c0a3e8b72207c5503d4033cfa3e51e51)
- - Formatting and duplicate image fixes on June 22, 25, 26 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/4d11771c70b84053cdd67fd015c1273b9df4b504)
+ - Formatting and duplicate image fixes for June 22, 25, 26 JST on July 3 JST. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/4d11771c70b84053cdd67fd015c1273b9df4b504)
 
 Wow, I'm actually in Japan.
 
