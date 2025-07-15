@@ -47,6 +47,16 @@ const apple = (id: string): SongLink => ({
 // Updated songs array using the functions
 export const songs: Song[] = [
     {
+        title: "gaburyu - サモンセンス (VINXIS Remix)",
+        year: 2025,
+        genre: "Electronic",
+        length: "4:25",
+        links: [
+            youtube("wM7yrojcxp0"),
+            soundcloud("gaburyu-vinxis-remix"),
+        ],
+    },
+    {
         title: "上昇の旅 ～ The Ascending Journey",
         year: 2022,
         genre: "Artcore",
