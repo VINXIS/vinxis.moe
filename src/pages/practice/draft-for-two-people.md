@@ -5,6 +5,8 @@ date: 1755659072542
 ---
 <span style="color:red;">THIS IS ALL FRESH OFF THE PEN AND PAPER. ALSO uhhh the name's are just random letters rn because of reasons</span>
 
+Also the colours don't mean anything aside for just differentiating them more easily
+
 ---
 
 A partly cloudy day. The sun peeks and leaves as the time passes. The wind breezes as it lays with its eyes closed. The grass is just tall enough to cover it from normal view.
@@ -17,7 +19,7 @@ It lays, and takes in its surroundings. Not a thought or care about anything in 
 
 Though, it is short-lived. Someone comes near. It knows who is coming just by the gait, but says nothing.
 
-"Heeeey <span style="color: #009d36;">x</span>," <span style="color: #009d36;">y</span> shouts, as she comes near.
+"Heeeey <span style="color: #009d36;">x</span>," <span style="color: #b8860b;">y</span> shouts, as she comes near.
 
 <span style="color: #009d36;">x</span> doesn't respond.
 
@@ -29,11 +31,11 @@ Although it wasn't sleeping, it pretends to be half awake, grunting while conjur
 
 "ehhhh... don't wanna right now"
 
-"Why nott!!!! Everyone's playinng!!!!! Even <span style="color: #009d36;">z</span> is playing..."
+"Why nott!!!! Everyone's playinng!!!!! Even <span style="color: #8b4513;">z</span> is playing..."
 
 "Okay but Idon'twannastopannoyingme..."
 
-"Come onn we haven't been able to play with everyone in soooo longgg" <span style="color: #009d36;">y</span> insists. It is true, it is quite the once in a lifetime the entire group is willing to play 1 single thing.
+"Come onn we haven't been able to play with everyone in soooo longgg" <span style="color: #b8860b;">y</span> insists. It is true, it is quite the once in a lifetime the entire group is willing to play 1 single thing.
 
 "I don't care!! Why did you guys pick noww...? When I just wanna sleep...? Everyone just hates me"
 
@@ -45,15 +47,15 @@ Although it wasn't sleeping, it pretends to be half awake, grunting while conjur
 
 "Shut up you keep none of your promises and you're annoying GO AWAYY"
 
-"nnn...," <span style="color: #009d36;">y</span> is about to start crying.
+"nnn...," <span style="color: #b8860b;">y</span> is about to start crying.
 
 "...What? Why are you crying?" <span style="color: #009d36;">x</span> is slightly startled. Not the usual sight for sure, "...what the heck? Are you okay?"
 
-<span style="color: #009d36;">y</span> doesn't respond, as she tries to hold her tears back.
+<span style="color: #b8860b;">y</span> doesn't respond, as she tries to hold her tears back.
 
-<span style="color: #009d36;">x</span>, concerned, slowly gets up to try to face <span style="color: #009d36;">y</span>, "...Um... okay well... I'll come play hide and seek..."
+<span style="color: #009d36;">x</span>, concerned, slowly gets up to try to face <span style="color: #b8860b;">y</span>, "...Um... okay well... I'll come play hide and seek..."
 
-<span style="color: #009d36;">y</span> doesn't exactly feel a lot much better, but she says "sniff... really?"
+<span style="color: #b8860b;">y</span> doesn't exactly feel a lot much better, but she says "sniff... really?"
 
 "Yes... ugh so stupid"
 
@@ -61,7 +63,7 @@ Although it wasn't sleeping, it pretends to be half awake, grunting while conjur
 
 "...whatever, sure sorry"
 
-They walk back without talking; the only sound between them is the seldom sniffling of <span style="color: #009d36;">y</span>'s, gradually decreasing as they walk back to the villa. <span style="color: #009d36;">x</span> was quite far away from the area, so they were walking back for a good few minutes. The plains are massive, but the defining line is clear by the environment. By the time the reach the shaded area from the massive coniferous trees surrounding the villa, <span style="color: #009d36;">y</span>'s sniffling had stopped entirely.
+They walk back without talking; the only sound between them is the seldom sniffling of <span style="color: #b8860b;">y</span>'s, gradually decreasing as they walk back to the villa. <span style="color: #009d36;">x</span> was quite far away from the area, so they were walking back for a good few minutes. The plains are massive, but the defining line is clear by the environment. By the time the reach the shaded area from the massive coniferous trees surrounding the villa, <span style="color: #b8860b;">y</span>'s sniffling had stopped entirely.
 
 The heart of the young soul is weak, and will succumb to anything. 
 
@@ -69,9 +71,9 @@ The shade is great at keeping the villa area cool. The sun only truly shines for
 
 At some point in the villa they reach the group. A few are overjoyed, while a few are annoyed.
 
-"Oh man why is he back?" <span style="color: #009d36;">z</span> says, "I don't wanna *actually* play hide and seek..."
+"Oh man why is he back?" <span style="color: #8b4513;">z</span> says, "I don't wanna *actually* play hide and seek..."
 
-"Sucks for you girl, guess you gotta play now", says <span style="color: #009d36;">a</span>.
+"Sucks for you girl, guess you gotta play now", says <span style="color: #4682b4;">a</span>.
 
 "Okay...but so do you..."
 
@@ -81,25 +83,25 @@ At some point in the villa they reach the group. A few are overjoyed, while a fe
 
 "I'm NOT doing THAT???"
 
-"Everyoneee stop itt... let's just play already I'm boored," says <span style="color: #009d36;">b</span>, who is visibly irritated because they had to wait for what feels like eons to a child.
+"Everyoneee stop itt... let's just play already I'm boored," says <span style="color: #9932cc;">b</span>, who is visibly irritated because they had to wait for what feels like eons to a child.
 
-"Okay... who's it?" says <span style="color: #009d36;">a</span>
+"Okay... who's it?" says <span style="color: #4682b4;">a</span>
 
-"Just choose yourself... *you* are the chosen one!!" says <span style="color: #009d36;">z</span>
+"Just choose yourself... *you* are the chosen one!!" says <span style="color: #8b4513;">z</span>
 
 "What?!"
 
-"Stop fighting!! Let's just go with <span style="color: #009d36;">a</span> as the one who's it..." <span style="color: #009d36;">y</span> interjects. Her face is still a bit puffy from the crying she was trying so desparately to hold earlier.
+"Stop fighting!! Let's just go with <span style="color: #4682b4;">a</span> as the one who's it..." <span style="color: #b8860b;">y</span> interjects. Her face is still a bit puffy from the crying she was trying so desparately to hold earlier.
 
-"Hey are you okay? Did <span style="color: #009d36;">x</span> hit you?" <span style="color: #009d36;">z</span> says, "i don't like you all..."
+"Hey are you okay? Did <span style="color: #009d36;">x</span> hit you?" <span style="color: #8b4513;">z</span> says, "i don't like you all..."
 
-"I did not... what the heck? She just starte-" <span style="color: #009d36;">x</span> tries to defend itself before <span style="color: #009d36;">y</span> interjects, "I'M OKAY. LET'S JUST PLAYY..."
+"I did not... what the heck? She just starte-" <span style="color: #009d36;">x</span> tries to defend itself before <span style="color: #b8860b;">y</span> interjects, "I'M OKAY. LET'S JUST PLAYY..."
 
-Everyone is quiet for a few seconds before <span style="color: #009d36;">a</span> says, "Okay.... okay I'll start counting now to 60 because that's a full minute if some of you forgot! Again everyone, you can hide in the forest, but you can't hide in the plains grass that's not fai-"
+Everyone is quiet for a few seconds before <span style="color: #4682b4;">a</span> says, "Okay.... okay I'll start counting now to 60 because that's a full minute if some of you forgot! Again everyone, you can hide in the forest, but you can't hide in the plains grass that's not fai-"
 
 "WE KNOWWW LET'S GO!!!!!" a few of them say.
 
-And after what felt like forever to everyone... they all run away to their own little worlds to start the game of hide and seek. <span style="color: #009d36;">x</span> looks back at <span style="color: #009d36;">a</span> as she has her eyes closed facing the wall of a neighbour's little house. It thinks about how long it's going to have to hide, as <span style="color: #009d36;">a</span> doesn't particularly have the greatest skills for finding them...
+And after what felt like forever to everyone... they all run away to their own little worlds to start the game of hide and seek. <span style="color: #009d36;">x</span> looks back at <span style="color: #4682b4;">a</span> as she has her eyes closed facing the wall of a neighbour's little house. It thinks about how long it's going to have to hide, as <span style="color: #4682b4;">a</span> doesn't particularly have the greatest skills for finding them...
 
 Hide and seek never really finishes, because it's almost impossible for everyone to be found. The group at full capacity is a lofty 50 kids. Might as well be the entire villa's child population. With that, the entire villa is up for grabs as a hiding spot, as well as the forest, and the forest is *vast*. While it's full of solely rows and rows of massively tall trees, the rows themselves go on for what feels like forever.
 
@@ -107,7 +109,7 @@ Fortunately, some of these kids are born with some "superior" defects... some of
 
 ...
 
-Unfortunately for this game, <span style="color: #009d36;">a</span> has none of those... in fact, her eyes are so INCREDIBLY weak that she could be considered blind. <span style="color: #009d36;">y</span> wasn't really thinking much when she just agreed and went along with <span style="color: #009d36;">z</span>'s taunts towards <span style="color: #009d36;">a</span>.
+Unfortunately for this game, <span style="color: #4682b4;">a</span> has none of those... in fact, her eyes are so INCREDIBLY weak that she could be considered blind. <span style="color: #b8860b;">y</span> wasn't really thinking much when she just agreed and went along with <span style="color: #8b4513;">z</span>'s taunts towards <span style="color: #4682b4;">a</span>.
 
 They're not really thinking much about it in general though since they know what to expect. It's no wonder why the game is quite polarizing with the kids. <span style="color: #009d36;">x</span> itself is groaning at the idea as to how long it's going to be hiding now...
 
@@ -127,7 +129,7 @@ The forest was still quite dense... but there are buildings. A lot of worn down,
 
 In the distance, it hears footsteps of dead branches.
 
-"...OHHHHH MANNNN ARE YOU SERIOUS?" <span style="color: #009d36;">z</span> exclaims from a distance.
+"...OHHHHH MANNNN ARE YOU SERIOUS?" <span style="color: #8b4513;">z</span> exclaims from a distance.
 
 "...What...?" <span style="color: #009d36;">x</span> responds
 
@@ -149,13 +151,13 @@ In the distance, it hears footsteps of dead branches.
 
 "YOU are the annoying one here. Whatever you suck. See you later... you boys smell anyway"
 
-"Hey WHAT? YOU suck man" but <span style="color: #009d36;">z</span> already ran off, not hearing it at all.
+"Hey WHAT? YOU suck man" but <span style="color: #8b4513;">z</span> already ran off, not hearing it at all.
 
 Irritated by that, <span style="color: #009d36;">x</span> decides to charge directly into one of the fallen buildings. Immediately after getting into one though, it hears a chunk of metal and steel fall to the ground from the upper side of the building. The irritation immediately was replaced with fright, but nevertheless, it decided to walk around the building.
 
 It sees a long hallway with its floor covered in grass as the entire part of the building is flipped upside down. It notices signs and symbols that it has never recognized. It also noticed some random lights flashing here and there. Some of the doors seem to have an oscillating glowing yellow circle by them. As it kept walking, it reached an L corner of the hall only to be greeted with a natural dead-end, as a massive tree grew in the middle of the hallway, its trunk blocking the path compeltely.
 
-Right beside it though, was a room that was somehow right side up. There was also a circle of light beside it that was different from the rest. It didn't oscillate, and it wasn't yellow... it couldn't really tell what colour it was... it was a more "deeper" colour than usual. <span style="color: #009d36;">y</span> or <span style="color: #009d36;">a</span> would know, since they can apparently see more colours... but well... it can't really ask either of them right now.
+Right beside it though, was a room that was somehow right side up. There was also a circle of light beside it that was different from the rest. It didn't oscillate, and it wasn't yellow... it couldn't really tell what colour it was... it was a more "deeper" colour than usual. <span style="color: #b8860b;">y</span> or <span style="color: #4682b4;">a</span> would know, since they can apparently see more colours... but well... it can't really ask either of them right now.
 
 Curious getting the best of it however, it decides to try to open the door. There's a handle built in the door itself to slide, and it slide quite easily. When it opens the door however, it is greeted with a very blocked opening to the room. It supposedly connected to a room, but the building that room was in was shifted up. The opening to the room is quite small as a result needing to jump into the hole.
 
@@ -207,7 +209,7 @@ The old man is talking.
 
 "Protect us better. You can protect us while still telling us don't be so fucking insidious about this, and using the excuse you told my grandparents for this is fucking disgusting."
 
-"Listen.... <span style="color: #009d36;">c</span>... you have to understand by now. You're an adult. There are so many reasons that you can figure out yourself as to why I can't just tell you. Think. Think for AT LEAST 2 SECONDS."
+"Listen.... <span style="color: #dc143c;">c</span>... you have to understand by now. You're an adult. There are so many reasons that you can figure out yourself as to why I can't just tell you. Think. Think for AT LEAST 2 SECONDS."
 
 "I DON'T UNDERSTAND"
 
@@ -241,7 +243,7 @@ Minutes pass of nothing but various rates of breathing. As the minutes pass, the
 
 "Sorry. I should not have lost my control in front of you."
 
-"It's alright <span style="color: #009d36;">c</span>. I know it's tough."
+"It's alright <span style="color: #dc143c;">c</span>. I know it's tough."
 
 As <span style="color: #009d36;">x</span> had expected, dad said nothing.
 
@@ -263,37 +265,37 @@ For <span style="color: #009d36;">x</span> at least.
 
 Leaving the house, it ran to where the usual group meets in the villa, and luckily saw the usual scenario. It was about to say hello alongside something about yesterday, but was immediately interrupted before even given the chance.
 
-"HEY! Why did you disappear all day? You know we were allowed to just come back together after hide and seek was done right?" <span style="color: #009d36;">d</span> says.
+"HEY! Why did you disappear all day? You know we were allowed to just come back together after hide and seek was done right?" <span style="color: #ff8c00;">d</span> says.
 
 "I... I didn't disappear..." <span style="color: #009d36;">x</span> says, struggling to find the right words to say what happened.
 
-"Are you.... okay?" says <span style="color: #009d36;">a</span>
+"Are you.... okay?" says <span style="color: #4682b4;">a</span>
 
 "...Yes, I think I feel just fine..."
 
-"<span style="color: #009d36;">x</span> doesn't wanna play with us anymore, I always knew it..." said <span style="color: #009d36;">z</span>.
+"<span style="color: #009d36;">x</span> doesn't wanna play with us anymore, I always knew it..." said <span style="color: #8b4513;">z</span>.
 
 "hey.. WHAT?"
 
-"Come on <span style="color: #009d36;">z</span> they didn't do it on purpose. You know this," said <span style="color: #009d36;">d</span>.
+"Come on <span style="color: #8b4513;">z</span> they didn't do it on purpose. You know this," said <span style="color: #ff8c00;">d</span>.
 
-"WHY do I always have to get lectured by the older kids. It's always me," <span style="color: #009d36;">z</span> retaliates.
+"WHY do I always have to get lectured by the older kids. It's always me," <span style="color: #8b4513;">z</span> retaliates.
 
-"Come on, <span style="color: #009d36;">z</span>, do you want ice cream or something?"
+"Come on, <span style="color: #8b4513;">z</span>, do you want ice cream or something?"
 
 "Oh YES!!!!"
 
-<span style="color: #009d36;">z</span> and <span style="color: #009d36;">d</span> then immediately left together to get some. 
+<span style="color: #8b4513;">z</span> and <span style="color: #ff8c00;">d</span> then immediately left together to get some. 
 
-Always so hard to interact with <span style="color: #009d36;">z</span>, <span style="color: #009d36;">x</span> thought. 
+Always so hard to interact with <span style="color: #8b4513;">z</span>, <span style="color: #009d36;">x</span> thought. 
 
-"Does... does <span style="color: #009d36;">z</span> hate me?" <span style="color: #009d36;">x</span> asks <span style="color: #009d36;">a</span>.
+"Does... does <span style="color: #8b4513;">z</span> hate me?" <span style="color: #009d36;">x</span> asks <span style="color: #4682b4;">a</span>.
 
 "No... she doesn't hate you. Don't worry <span style="color: #009d36;">x</span>. You did nothing wrong. You're a good boy."
 
 "Hey, we aren't that much different in age!"
 
-<span style="color: #009d36;">a</span> giggles, "sorry sorry, I just like saying it. I want to be a mom when I grow up."
+<span style="color: #4682b4;">a</span> giggles, "sorry sorry, I just like saying it. I want to be a mom when I grow up."
 
 "Wow... let me come to the wedding!"
 
@@ -343,11 +345,11 @@ No luck.
 
 Disappointed, <span style="color: #009d36;">x</span> decides to just go back, cross the villa, and lay in the plains. It's already exhausted anyway, a kid can only do so much thinking about its own existence, especially when it doesn't even know what happened.
 
-However, it ran across <span style="color: #009d36;">y</span> in the villa.
+However, it ran across <span style="color: #b8860b;">y</span> in the villa.
 
-"Hiii!!! Wanna play?" <span style="color: #009d36;">y</span> is excited to see <span style="color: #009d36;">x</span> again after what feels like so long for her.
+"Hiii!!! Wanna play?" <span style="color: #b8860b;">y</span> is excited to see <span style="color: #009d36;">x</span> again after what feels like so long for her.
 
-"Hey <span style="color: #009d36;">y</span>... sorry I don't really wanna play or anything."
+"Hey <span style="color: #b8860b;">y</span>... sorry I don't really wanna play or anything."
 
 "Whaaat? That's too bad."
 
@@ -363,9 +365,9 @@ However, it ran across <span style="color: #009d36;">y</span> in the villa.
 
 "Bye!"
 
-She runs away... to the forest... <span style="color: #009d36;">x</span> doesn't realize anything weird about that for a few seconds, until it remembers that <span style="color: #009d36;">y</span> almost never goes to the forest by herself. One time, a tree had almost fell on her when she was by herself, and she was so scared since then she cried for hours while getting back home, and even at home she was devastated. She decided that day to never go to the forest alone after that.
+She runs away... to the forest... <span style="color: #009d36;">x</span> doesn't realize anything weird about that for a few seconds, until it remembers that <span style="color: #b8860b;">y</span> almost never goes to the forest by herself. One time, a tree had almost fell on her when she was by herself, and she was so scared since then she cried for hours while getting back home, and even at home she was devastated. She decided that day to never go to the forest alone after that.
 
-<span style="color: #009d36;">x</span> was a bit worried... it wasn't too worried because in it's head nothing in the forest is really dangerous, without realizing the irony... but it was too fixated on the unexpected behaviour of <span style="color: #009d36;">y</span>'s to think about it. 
+<span style="color: #009d36;">x</span> was a bit worried... it wasn't too worried because in it's head nothing in the forest is really dangerous, without realizing the irony... but it was too fixated on the unexpected behaviour of <span style="color: #b8860b;">y</span>'s to think about it. 
 
 ...
 
