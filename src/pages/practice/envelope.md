@@ -2,6 +2,7 @@
 layout: "../../layouts/Practice.astro"
 title: "Envelope"
 date: 1647496800000
+ultraHidden: false
 ---
 A door.. all there really was in front of me was just a door. It was a bit far, and I couldn’t exactly tell that it was a door, but it had the dark silhouette of one at the very least.
 

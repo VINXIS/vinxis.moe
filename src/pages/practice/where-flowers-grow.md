@@ -2,6 +2,7 @@
 layout: "../../layouts/Practice.astro"
 title: "Where Flowers Grow"
 date: 1642748400000
+ultraHidden: false
 ---
 As a child, Rose loved flowers. All which Rose ever knew of were flowers. Unbeknownst to her parents, Rose would undertake a strong fascination to her name and spend all of her free time immersing herself into the world of flowers.
 

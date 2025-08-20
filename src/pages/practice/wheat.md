@@ -2,6 +2,7 @@
 layout: "../../layouts/Practice.astro"
 title: "Wheat"
 date: 1741369871000
+ultraHidden: false
 ---
 
 A clear, bright sunny day. An hour after sunrise, the sun shines and illuminates the bedroom with a glistening orange glow. One wakes up, and sees the wall shining by the sunlight, with the dust in the air visible through the path between the window and the wall. Another stays sleeping.

@@ -3,7 +3,10 @@ import Default from "../../layouts/Default.astro";
 
 const markdownFiles = await Astro.glob("./*.md");
 
-const sortedByNewest = markdownFiles.sort((a, b) => b.frontmatter.date - a.frontmatter.date);
+// Filter out files with ultraHidden: true
+const visibleFiles = markdownFiles.filter(file => !file.frontmatter.ultraHidden);
+
+const sortedByNewest = visibleFiles.sort((a, b) => b.frontmatter.date - a.frontmatter.date);
 
 function formatDate (timestamp: number) {
     const date = new Date(timestamp);

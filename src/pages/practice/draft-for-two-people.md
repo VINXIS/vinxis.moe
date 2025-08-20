@@ -2,6 +2,7 @@
 layout: ../../layouts/Practice.astro
 title: Draft -1
 date: 1755659072542
+ultraHidden: true
 ---
 <span style="color:red;">THIS IS ALL FRESH OFF THE PEN AND PAPER. ALSO uhhh the name's are just random letters rn because of reasons</span>
 
