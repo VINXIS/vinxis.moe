@@ -39,6 +39,7 @@ const { frontmatter } = Astro.props;
     </head>
     <body>
         <main>
+            <a href="/practice" class="back-button">← Back to Practice Sessions</a>
             <h1>{frontmatter.title}</h1>
             <small>{new Date(frontmatter.date).toLocaleString()}</small>
             <slot />
@@ -53,5 +54,21 @@ const { frontmatter } = Astro.props;
         color: #222222;
         margin: 40px;
         line-height: 1.5;
+    }
+    
+    .back-button {
+        display: inline-block;
+        text-decoration: none;
+        color: #666;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
+    }
+    
+    .back-button:hover {
+        color: #222;
+        border-bottom-color: #222;
     }
 </style>
