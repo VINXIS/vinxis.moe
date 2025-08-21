@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
+import Analytics from "@vercel/analytics/astro";
 import NavigationBar from "../components/NavigationBar.astro";
 import Flashlight from "../components/Flashlight.astro";
 import "../styles/main.css";
@@ -66,6 +67,7 @@ const { meta } = Astro.props as { meta: MetaProps };
             title="VINXIS - Posts"
             href={new URL("rss_posts.xml", Astro.site)}
         />
+        <Analytics />
         <ViewTransitions />
     </head>
     <body>
