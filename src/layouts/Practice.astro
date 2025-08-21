@@ -1,5 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
+import Analytics from "@vercel/analytics/astro";
 ---
 
 
@@ -36,6 +37,7 @@ const { frontmatter } = Astro.props;
             title="VINXIS - Posts"
             href={new URL("rss_posts.xml", Astro.site)}
         />
+        <Analytics />
     </head>
     <body>
         <main>
