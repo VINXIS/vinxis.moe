@@ -1,7 +1,8 @@
+import { glob } from "astro/loaders";
 import { z, defineCollection } from "astro:content";
 
 const blog = defineCollection({
-    type: "content",
+    loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/blog" }),
     schema: ({ image }) => z.object({
         title: z.string(),
         tags: z.array(z.string()),
@@ -13,7 +14,7 @@ const blog = defineCollection({
 });
 
 const notes = defineCollection({
-    type: "content",
+    loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/notes" }),
     schema: z.object({
         tags: z.array(z.string()).optional(),
         isObsidianImport: z.boolean().optional(),
@@ -23,7 +24,7 @@ const notes = defineCollection({
 });
 
 const posts = defineCollection({
-    type: "content",
+    loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/posts" }),
     schema: z.object({
         tags: z.array(z.string()).optional(),
         created: z.string(),

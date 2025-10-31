@@ -2,7 +2,7 @@ import type { CollectionKey } from "astro:content";
 
 export interface BasePageInfo {
     name: string;
-    slug: string;
+    id: string;
     collection: CollectionKey;
 }
 

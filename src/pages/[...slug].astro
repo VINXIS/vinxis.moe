@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Default from "../layouts/Default.astro";
 import Comments from "../components/Comments.astro";
 import FileGraph from "../components/FileGraph.astro";
@@ -22,45 +22,45 @@ export const getStaticPaths = (async () => {
         let backlinks: BasePageInfo[] = [];
         if (page.collection === "notes") { // These will only exist for notes
             pages.forEach(targetPage => {
-                if (targetPage.slug === page.slug)
+                if (targetPage.id === page.id)
                     return;
 
                 // Regex matching for internal/wikilinks
                 if (!targetPage.body)
                     return;
                 targetPage.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
-                    const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
-                    if (slug === page.slug)
+                    const id = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
+                    if (id === page.id)
                         backlinks.push({
-                            slug: `/${targetPage.collection}/${targetPage.slug}`,
+                            id: `/${targetPage.collection}/${targetPage.id}`,
                             name: `${targetPage.collection} - ${"title" in targetPage.data && targetPage.data.title ? targetPage.data.title : targetPage.id.replace(/\.[^/\\.]*$/, "")}`,
                             collection: targetPage.collection,
                         });
                     return _;
                 });
             });
-            backlinks = backlinks.filter((backlink, index, self) => self.findIndex(t => t.slug === backlink.slug) === index);
+            backlinks = backlinks.filter((backlink, index, self) => self.findIndex(t => t.id === backlink.id) === index);
         }
 
         let forwardlinks: PageLink[] = [];
         // Regex matching for internal/wikilinks
         if (page.body)
             page.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
-                const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
-                const targetPage = pages.find(target => target.slug === slug); // Find the page it goes to (it may also not exist yet)
-                if (!targetPage || targetPage.slug !== page.slug)
+                const id = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
+                const targetPage = pages.find(target => target.id === id); // Find the page it goes to (it may also not exist yet)
+                if (!targetPage || targetPage.id !== page.id)
                     forwardlinks.push({
-                        slug: `/${targetPage?.collection}/${slug}`,
+                        id: `/${targetPage?.collection}/${id}`,
                         name: targetPage ? `${targetPage.collection} - ${"title" in targetPage.data && targetPage.data.title ? targetPage.data.title : targetPage.id.replace(/\.[^/\\.]*$/, "")}` : link,
                         collection: targetPage?.collection,
                     });
                 return _;
             });
-        forwardlinks = forwardlinks.filter((forwardlink, index, self) => self.findIndex(t => t.slug === forwardlink.slug) === index);
+        forwardlinks = forwardlinks.filter((forwardlink, index, self) => self.findIndex(t => t.id === forwardlink.id) === index);
 
         return {
             params: {
-                slug: `/${page.collection}/${page.slug}`,
+                slug: `/${page.collection}/${page.id}`,
             },
             props: {
                 title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`,
@@ -74,8 +74,8 @@ export const getStaticPaths = (async () => {
 
 const { page, title, backlinks, forwardlinks } = Astro.props;
 
-const render = await page.render();
-const { headings, Content } = render;
+const renderRes = await render(page);
+const { headings, Content } = renderRes;
 const description = page.body ? page.body.slice(0, 99) + "…" : "";
 
 const meta = {
@@ -98,8 +98,8 @@ const meta = {
 <Default meta={meta}>
     <div class="page post-page">
         <h1>{title}</h1>
-        <h2>Created: {render.remarkPluginFrontmatter.created}</h2>
-        {render.remarkPluginFrontmatter.lastModified && (<h2>Last Modified: {render.remarkPluginFrontmatter.lastModified}</h2>)}
+        <h2>Created: {renderRes.remarkPluginFrontmatter.created}</h2>
+        {renderRes.remarkPluginFrontmatter.lastModified && (<h2>Last Modified: {renderRes.remarkPluginFrontmatter.lastModified}</h2>)}
         {"image" in page.data && page.data.image && (<Image src={page.data.image} alt={page.data.imageAlt} class="post-headerImage"/>)}
         <TableOfContents headings={headings} />
         <Content />
@@ -111,14 +111,14 @@ const meta = {
                 <h2>Pages referencing this page:</h2>
                 <div class="post-backlinks">
                     {backlinks.map(backlink => (
-                        <a class="post-backlink" href={backlink.slug}>{backlink.name}</a>
+                        <a class="post-backlink" href={backlink.id}>{backlink.name}</a>
                     ))}
                 </div>
             </div>
         }
         { page.collection !== "notes" && (<Comments />)}
     </div>
-    <FileGraph elementStyle="position: absolute; top:10rem; right:5rem;" centralFile={{slug: page.slug, name: title }} backlinks={backlinks} forwardlinks={forwardlinks} />
+    <FileGraph elementStyle="position: absolute; top:10rem; right:5rem;" centralFile={{id: page.id, name: title }} backlinks={backlinks} forwardlinks={forwardlinks} />
     <button id="back-to-top" aria-label="Back to top">
         Back to top ↑
     </button>

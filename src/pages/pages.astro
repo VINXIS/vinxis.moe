@@ -18,7 +18,7 @@ const meta = {
     twitterImage: "https://vinxis.moe/metaImage.png",
 };
 
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import type { PageInfo } from "../utils/pageInfo";
 
 const blog = await getCollection("blog");
@@ -28,7 +28,7 @@ const posts = await getCollection("posts");
 const pages = await Promise.all([...blog, ...notes, ...posts].map(async page => {
     return {
         page,
-        render: await page.render(),
+        render: await render(page),
     };
 }));
 pages.sort((a, b) => {
@@ -46,38 +46,38 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
 const pageInfos: PageInfo[] = pages.map(page => {
     return {
         name: `${page.page.collection} - ${"title" in page.page.data && page.page.data.title ? page.page.data.title : page.page.id.replace(/\.[^/\\.]*$/, "")}`,
-        slug: page.page.slug,
+        id: page.page.id,
         collection: page.page.collection,
         internalLinks: [],
     };
 });
 pageInfos.forEach(pageInfo => {
-    const { page } = pages.find(p => p.page.slug === pageInfo.slug)!;
+    const { page } = pages.find(p => p.page.id === pageInfo.id)!;
     if (!page.body)
         return;
     page.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
-        const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
-        let targetPage = pageInfos.find(target => target.slug === slug); // Find the page it goes to (it may also not exist yet)
+        const id = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
+        let targetPage = pageInfos.find(target => target.id === id); // Find the page it goes to (it may also not exist yet)
         if (!targetPage) {
             targetPage = {
                 name: link,
-                slug,
+                id,
                 collection: undefined,
                 internalLinks: [],
             };
             pageInfos.push(targetPage);
         }
-        if (targetPage.slug !== pageInfo.slug)
+        if (targetPage.id !== pageInfo.id)
             pageInfo.internalLinks.push({
                 name: targetPage.name,
-                slug: `${targetPage.collection}/${targetPage.slug}`,
+                id: `${targetPage.collection}/${targetPage.id}`,
                 collection: targetPage.collection,
             });
         return _;
     });
 });
 pageInfos.forEach(pageInfo => {
-    pageInfo.slug = `${pageInfo.collection}/${pageInfo.slug}`;
+    pageInfo.id = `${pageInfo.collection}/${pageInfo.id}`;
 });
 ---
 <Default meta={meta}>
@@ -131,7 +131,7 @@ pageInfos.forEach(pageInfo => {
             {
                 pages.map((page) => {
                     return (
-                        <a href={page.page.collection + "/" + page.page.slug} style={`color:var(--${page.page.collection}); height:100px;`}>
+                        <a href={page.page.collection + "/" + page.page.id} style={`color:var(--${page.page.collection}); height:100px;`}>
                             <div style="display:flex; justify-content:space-between; gap:1rem;">
                                 <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title={page.render.remarkPluginFrontmatter.title}>{page.render.remarkPluginFrontmatter.title}</h2>
                                 <h2>{page.page.collection}</h2>
@@ -184,7 +184,7 @@ document.addEventListener("astro:page-load", async () => {
     let filteredPages = await Promise.all([...pages].map(async page => {
         return {
             page,
-            render: await page.render(),
+            render: await render(page),
         };
     }));
 
@@ -205,13 +205,13 @@ document.addEventListener("astro:page-load", async () => {
         }).map(async page => {
             return {
                 page,
-                render: await page.render(),
+                render: await render(page),
             };
         }));
         filteredPages.sort(sortMethods[currentSort]);
 
         document.getElementById("search-list").innerHTML = filteredPages.map(page => {
-            return `<a href="${page.page.collection}/${page.page.slug}" style="color:var(--${page.page.collection}); height:100px;">
+            return `<a href="${page.page.collection}/${page.page.id}" style="color:var(--${page.page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between; gap:1rem;">
                     <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.render.remarkPluginFrontmatter.title}>${page.render.remarkPluginFrontmatter.title}</h2>
                     <h2>${page.page.collection}</h2>

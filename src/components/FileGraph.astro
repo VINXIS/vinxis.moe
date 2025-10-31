@@ -27,23 +27,23 @@ if ("centralFile" in props) {
     centralFile.name = centralFile.name.replace(/^(blog|notes|posts) - /g, "");
 
     forwardlinks = props.forwardlinks.map<PageLink>(forwardlink => ({
-        slug: forwardlink.slug,
+        id: forwardlink.id,
         name: forwardlink.name.replace(/^(blog|notes|posts) - /g, ""),
         collection: forwardlink.collection,
     }));
     backlinks = props.backlinks.map<BasePageInfo>(backlink => ({
-        slug: backlink.slug,
+        id: backlink.id,
         name: backlink.name.replace(/^(blog|notes|posts) - /g, ""),
         collection: backlink.collection,
-    })).filter(backlink => forwardlinks.findIndex(forwardlink => forwardlink.slug === backlink.slug) === -1);
+    })).filter(backlink => forwardlinks.findIndex(forwardlink => forwardlink.id === backlink.id) === -1);
 } else
     files = props.files.map<PageInfo>(file => ({
         name: file.name.replace(/^(blog|notes|posts) - /g, ""),
-        slug: file.slug,
+        id: file.id,
         collection: file.collection,
         internalLinks: file.internalLinks.map<PageLink>(link => ({
             name: link.name.replace(/^(blog|notes|posts) - /g, ""),
-            slug: link.slug,
+            id: link.id,
             collection: link.collection,
         })),
     }));
@@ -130,22 +130,22 @@ if ("centralFile" in props) {
 
             if (centralFile) {
                 nodes = [
-                    { id: centralFile.slug, label: centralFile.name, group: "main" },
-                    ...forwardlinks.map(forwardlink => ({ id: forwardlink.slug, label: forwardlink.name, group: forwardlink.collection })),
-                    ...backlinks.map(backlink => ({ id: backlink.slug, label: backlink.name, group: backlink.collection })),
+                    { id: centralFile.id, label: centralFile.name, group: "main" },
+                    ...forwardlinks.map(forwardlink => ({ id: forwardlink.id, label: forwardlink.name, group: forwardlink.collection })),
+                    ...backlinks.map(backlink => ({ id: backlink.id, label: backlink.name, group: backlink.collection })),
                 ]; 
                 links = [
-                    ...forwardlinks.map(forwardlink => ({ source: centralFile.slug, target: forwardlink.slug })),
-                    ...backlinks.map(backlink => ({ source: backlink.slug, target: centralFile.slug })),
+                    ...forwardlinks.map(forwardlink => ({ source: centralFile.id, target: forwardlink.id })),
+                    ...backlinks.map(backlink => ({ source: backlink.id, target: centralFile.id })),
                 ];
             } else
                 for (const file of files) {
-                    if (!nodes.find(node => node.id === file.slug))
-                        nodes.push({ id: file.slug, label: file.name, group: file.collection });
+                    if (!nodes.find(node => node.id === file.id))
+                        nodes.push({ id: file.id, label: file.name, group: file.collection });
                     for (const link of file.internalLinks) {
-                        if (!nodes.find(node => node.id === link.slug))
-                            nodes.push({ id: link.slug, label: link.name, group: link.collection });
-                        links.push({ source: file.slug, target: link.slug });
+                        if (!nodes.find(node => node.id === link.id))
+                            nodes.push({ id: link.id, label: link.name, group: link.collection });
+                        links.push({ source: file.id, target: link.id });
                     }
                 }
 

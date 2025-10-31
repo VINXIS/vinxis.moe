@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
 import rss from "@astrojs/rss";
 
 export const GET: APIRoute = async ({ site, params }) => {
@@ -19,8 +19,8 @@ export const GET: APIRoute = async ({ site, params }) => {
             return {
                 title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`,
                 description: `${"image" in page.data && page.data.image ? `<img src="${site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}" alt="${page.data.imageAlt}" /><br />` : ""}${page.body?.slice(0, 99) || ""}...`,
-                link: `${site ?? "https://vinxis.moe/"}${page.collection}/${page.slug}`,
-                pubDate: (await page.render()).remarkPluginFrontmatter.created,
+                link: `${site ?? "https://vinxis.moe/"}${page.collection}/${page.id}`,
+                pubDate: (await render(page)).remarkPluginFrontmatter.created,
             };
         })),
         customData: `<language>en-us</language>`,
