@@ -26,6 +26,8 @@ export const getStaticPaths = (async () => {
                     return;
 
                 // Regex matching for internal/wikilinks
+                if (!targetPage.body)
+                    return;
                 targetPage.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
                     const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
                     if (slug === page.slug)
@@ -42,17 +44,18 @@ export const getStaticPaths = (async () => {
 
         let forwardlinks: PageLink[] = [];
         // Regex matching for internal/wikilinks
-        page.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
-            const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
-            const targetPage = pages.find(target => target.slug === slug); // Find the page it goes to (it may also not exist yet)
-            if (!targetPage || targetPage.slug !== page.slug)
-                forwardlinks.push({
-                    slug: `/${targetPage?.collection}/${slug}`,
-                    name: targetPage ? `${targetPage.collection} - ${"title" in targetPage.data && targetPage.data.title ? targetPage.data.title : targetPage.id.replace(/\.[^/\\.]*$/, "")}` : link,
-                    collection: targetPage?.collection,
-                });
-            return _;
-        });
+        if (page.body)
+            page.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
+                const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
+                const targetPage = pages.find(target => target.slug === slug); // Find the page it goes to (it may also not exist yet)
+                if (!targetPage || targetPage.slug !== page.slug)
+                    forwardlinks.push({
+                        slug: `/${targetPage?.collection}/${slug}`,
+                        name: targetPage ? `${targetPage.collection} - ${"title" in targetPage.data && targetPage.data.title ? targetPage.data.title : targetPage.id.replace(/\.[^/\\.]*$/, "")}` : link,
+                        collection: targetPage?.collection,
+                    });
+                return _;
+            });
         forwardlinks = forwardlinks.filter((forwardlink, index, self) => self.findIndex(t => t.slug === forwardlink.slug) === index);
 
         return {

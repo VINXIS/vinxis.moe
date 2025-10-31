@@ -53,6 +53,8 @@ const pageInfos: PageInfo[] = pages.map(page => {
 });
 pageInfos.forEach(pageInfo => {
     const { page } = pages.find(p => p.page.slug === pageInfo.slug)!;
+    if (!page.body)
+        return;
     page.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
         const slug = link.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase();
         let targetPage = pageInfos.find(target => target.slug === slug); // Find the page it goes to (it may also not exist yet)
@@ -162,29 +164,23 @@ pageInfos.forEach(pageInfo => {
     <span slot="hidden" class="hidden hidden-search-info" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
 </Default>
 
-<script>
-import { getCollection } from "astro:content";
+<script data-pages={JSON.stringify(pages)}>
 import damerauLevenshteinDistance from "../utils/levenshtein";
 
 document.addEventListener("astro:page-load", async () => {
 
     const sortMethods = {
-        "modified-desc": (a: any, b: any) => new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime(),
-        "modified-asc": (a: any, b: any) => new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime(),
-        "created-desc": (a: any, b: any) => new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime(),
-        "created-asc": (a: any, b: any) => new Date(a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.created).getTime(),
-        "title-asc": (a: any, b: any) => a.page.id.localeCompare(b.page.id),
-        "title-desc": (a: any, b: any) => b.page.id.localeCompare(a.page.id),
-    } as const;
-    type SortMethod = keyof typeof sortMethods;
+        "modified-desc": (a, b) => new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime(),
+        "modified-asc": (a, b) => new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime(),
+        "created-desc": (a, b) => new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime(),
+        "created-asc": (a, b) => new Date(a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.created).getTime(),
+        "title-asc": (a, b) => a.page.id.localeCompare(b.page.id),
+        "title-desc": (a, b) => b.page.id.localeCompare(a.page.id),
+    };
 
     const distanceCompare = damerauLevenshteinDistance(1);
 
-    const blog = await getCollection("blog");
-    const notes = await getCollection("notes");
-    const posts = await getCollection("posts");
-
-    const pages = [...blog, ...notes, ...posts];
+    const pages = JSON.parse(document.currentScript.getAttribute("data-pages"));
     let filteredPages = await Promise.all([...pages].map(async page => {
         return {
             page,
@@ -194,16 +190,16 @@ document.addEventListener("astro:page-load", async () => {
 
     let search = "";
     let searchTags = "";
-    let currentSort: SortMethod = "modified-desc";
+    let currentSort = "modified-desc";
 
     async function updateList () {
         filteredPages = await Promise.all(pages.filter(page => {
-            if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
-            if (searchTags.length > 0 && !page.data.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
+            if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word) => distanceCompare(word.toLowerCase(), search))) return false;
+            if (searchTags.length > 0 && !page.data.tags?.some((tag) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
 
-            if (!(document.getElementById("blog")! as HTMLInputElement).checked && page.collection === "blog") return false;
-            if (!(document.getElementById("notes")! as HTMLInputElement).checked && page.collection === "notes") return false;
-            if (!(document.getElementById("posts")! as HTMLInputElement).checked && page.collection === "posts") return false;
+            if (!(document.getElementById("blog")).checked && page.collection === "blog") return false;
+            if (!(document.getElementById("notes")).checked && page.collection === "notes") return false;
+            if (!(document.getElementById("posts")).checked && page.collection === "posts") return false;
 
             return true;
         }).map(async page => {
@@ -214,14 +210,14 @@ document.addEventListener("astro:page-load", async () => {
         }));
         filteredPages.sort(sortMethods[currentSort]);
 
-        document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
+        document.getElementById("search-list").innerHTML = filteredPages.map(page => {
             return `<a href="${page.page.collection}/${page.page.slug}" style="color:var(--${page.page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between; gap:1rem;">
                     <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.render.remarkPluginFrontmatter.title}>${page.render.remarkPluginFrontmatter.title}</h2>
                     <h2>${page.page.collection}</h2>
                 </div>
                 <div style="display:flex; gap:1rem;">
-                    ${[...new Set((page.render.remarkPluginFrontmatter.tags ?? []) as string[])].map((tag: string) => {
+                    ${[...new Set((page.render.remarkPluginFrontmatter.tags ?? []))].map((tag) => {
         return `<div>#${tag}</div>`;
     }).join("")}
                 </div>
@@ -232,36 +228,36 @@ document.addEventListener("astro:page-load", async () => {
             </a>`;
         }).join("");
     }
-    document.getElementById("search")!.addEventListener("input", event => {
-        search = (event.target as HTMLInputElement).value.toLowerCase();
+    document.getElementById("search").addEventListener("input", event => {
+        search = event.target.value.toLowerCase();
         updateList().catch(console.error);
     });
-    document.getElementById("search")!.addEventListener("click", e => e.stopPropagation());
+    document.getElementById("search").addEventListener("click", e => e.stopPropagation());
 
     ["blog", "notes", "posts"].forEach(type => {
-        document.getElementById(type)!.addEventListener ("change", () => updateList().catch(console.error));
-        document.getElementById(type)!.addEventListener("click", (e) => e.stopPropagation());
+        document.getElementById(type).addEventListener ("change", () => updateList().catch(console.error));
+        document.getElementById(type).addEventListener("click", (e) => e.stopPropagation());
     });
 
-    document.getElementById("sort-select")!.addEventListener("change", event => {
-        currentSort = (event.target as HTMLSelectElement).value as SortMethod;
+    document.getElementById("sort-select").addEventListener("change", event => {
+        currentSort = event.target.value;
         updateList().catch(console.error);
     });
-    document.getElementById("sort-select")!.addEventListener("click", e => e.stopPropagation());
+    document.getElementById("sort-select").addEventListener("click", e => e.stopPropagation());
 
-    document.getElementById("search-tags")!.addEventListener("input", event => {
-        searchTags = (event.target as HTMLInputElement).value.toLowerCase();
+    document.getElementById("search-tags").addEventListener("input", event => {
+        searchTags = event.target.value.toLowerCase();
         if (searchTags[0] === "#")
             searchTags = searchTags.slice(1);
         
         updateList().catch(console.error);
     });
-    document.getElementById("search-tags")!.addEventListener("click", e => e.stopPropagation());
+    document.getElementById("search-tags").addEventListener("click", e => e.stopPropagation());
 
     document.querySelectorAll(".search-tag").forEach(tag => {
         tag.addEventListener("click", event => {
-            searchTags = (event.target as HTMLElement).textContent!.slice(1).toLowerCase();
-            (document.getElementById("search-tags")! as HTMLInputElement).value = searchTags;
+            searchTags = event.target.textContent.slice(1).toLowerCase();
+            (document.getElementById("search-tags")).value = searchTags;
             updateList().catch(console.error);
         });
     });
