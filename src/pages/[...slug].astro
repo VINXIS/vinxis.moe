@@ -76,7 +76,7 @@ const { page, title, backlinks, forwardlinks } = Astro.props;
 
 const render = await page.render();
 const { headings, Content } = render;
-const description = page.body.slice(0, 99) + "…";
+const description = page.body ? page.body.slice(0, 99) + "…" : "";
 
 const meta = {
     title, 

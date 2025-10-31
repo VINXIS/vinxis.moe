@@ -18,7 +18,7 @@ export const GET: APIRoute = async ({ site, params }) => {
         items: await Promise.all(pages.map(async (page) => {
             return {
                 title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`,
-                description: `${"image" in page.data && page.data.image ? `<img src="${site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}" alt="${page.data.imageAlt}" /><br />` : ""}${page.body.slice(0, 99)}…`,
+                description: `${"image" in page.data && page.data.image ? `<img src="${site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}" alt="${page.data.imageAlt}" /><br />` : ""}${page.body?.slice(0, 99) || ""}...`,
                 link: `${site ?? "https://vinxis.moe/"}${page.collection}/${page.slug}`,
                 pubDate: (await page.render()).remarkPluginFrontmatter.created,
             };
