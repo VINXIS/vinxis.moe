@@ -5,6 +5,12 @@
     import onImg from "../images/light/on.svg";
     import offImg from "../images/light/off.svg";
 
+    // Preload toggle icons to avoid empty flash at the first click of flashlight toggle
+    [onImg.src, offImg.src].forEach((src) => {
+        const img = new Image();
+        img.src = src;
+    });
+
     const flashlight = document.getElementById("flashlight")!;
     const flashlightToggle = document.getElementById("flashlight-toggle")!;  
 
@@ -62,11 +68,9 @@
     // Update the flashlight toggle
     flashlightToggle.style.background = `url(${disabled ? offImg.src : onImg.src})`;
     flashlightToggle.addEventListener("click", () => {
-        requestAnimationFrame(() => {
-            disabled = !disabled;
-            gray = 0;
-            flashlightToggle.style.background = `url(${disabled ? offImg.src : onImg.src})`;
-        });
+        disabled = !disabled;
+        gray = 0;
+        flashlightToggle.style.background = `url(${disabled ? offImg.src : onImg.src})`;
     });
 </script>
 <noscript>
