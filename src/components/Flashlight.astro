@@ -62,9 +62,11 @@
     // Update the flashlight toggle
     flashlightToggle.style.background = `url(${disabled ? offImg.src : onImg.src})`;
     flashlightToggle.addEventListener("click", () => {
-        disabled = !disabled;
-        gray = 0;
-        flashlightToggle.style.background = `url(${disabled ? offImg.src : onImg.src})`;
+        requestAnimationFrame(() => {
+            disabled = !disabled;
+            gray = 0;
+            flashlightToggle.style.background = `url(${disabled ? offImg.src : onImg.src})`;
+        });
     });
 </script>
 <noscript>
