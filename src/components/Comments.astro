@@ -167,100 +167,70 @@ document.addEventListener("astro:page-load", () => {
     const replyIDInput = document.getElementById("replyID") as HTMLInputElement | null;
     const ownerSection = document.querySelector(".owner-section") as HTMLElement | null;
     const cancelReplyBtn = document.getElementById("cancel-reply") as HTMLButtonElement | null;
-    if (
-        !commentForm ||
-        !usernameInput ||
-        !websiteInput ||
-        !replyToContainer ||
-        !replyToName ||
-        !replyContent ||
-        !replyIDInput ||
-        !ownerSection ||
-        !cancelReplyBtn
-    )
-        throw new Error("One or more elements not found");
 
-    // Persisting username and website in localStorage so people don't need to readd them every time
-    const STORAGE_KEY = "vinxis-comments-user";
-    const persistUserIdentity = () => {
-        if (typeof localStorage === "undefined")
+    // Handle reply button click
+    const handleReplyClick = (event: Event) => {
+        if (
+            !replyIDInput ||
+            !replyToContainer ||
+            !replyToName ||
+            !replyContent ||
+            !commentForm
+        )
             return;
-        const userData = {
-            username: usernameInput.value.trim(),
-            website: websiteInput.value.trim(),
-        };
-        if (!userData.username && !userData.website) {
-            localStorage.removeItem(STORAGE_KEY);
-            return;
-        }
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(userData));
-    };
-    const restoreUserIdentity = () => {
-        if (typeof localStorage === "undefined")
-            return;
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (!raw)
-            return;
-        try {
-            const saved = JSON.parse(raw) as { username?: string; website?: string };
-            if (saved.username)
-                usernameInput.value = saved.username;
-            if (saved.website)
-                websiteInput.value = saved.website;
-        } catch (error) {
-            console.warn("Failed to parse saved comment user data", error);
-            localStorage.removeItem(STORAGE_KEY);
-        }
-    };
 
-    // Init, restore on load and then persist on input
-    restoreUserIdentity();
-    usernameInput.addEventListener("input", persistUserIdentity);
-    websiteInput.addEventListener("input", persistUserIdentity);
+        const commentId = (event.currentTarget as HTMLButtonElement).getAttribute("data-id");
+        const commentName = (event.currentTarget as HTMLButtonElement).getAttribute("data-name");
+        if (!commentId || !commentName)
+            return;
+
+        replyIDInput.value = commentId;
+        replyToName.textContent = commentName;
+        replyContent.textContent = (event.currentTarget as HTMLButtonElement).closest(".comment")?.querySelector(".comment-body")?.textContent || "";
+        replyToContainer.style.display = "block";
+
+        // Scroll to comment form
+        commentForm.scrollIntoView({ behavior: "smooth" });
+        document.getElementById("comment")?.focus();
+    };
 
     // Load comments
     const loadComments = async () => {
         try {
-        commentsList!.innerHTML =
-        "<div class=\"loading\">Loading comments...</div>";
+            commentsList!.innerHTML = "<div class=\"loading\">Loading comments...</div>";
 
-        const response = await fetch(
-            `https://vinxis-comments.oykxf2.workers.dev?postID=${postID}`
-        );
-        const data = await response.json();
+            const response = await fetch(`https://vinxis-comments.oykxf2.workers.dev?postID=${postID}`);
+            const data = await response.json();
 
-        if (!data.comments || data.comments.length === 0) {
-        commentsList!.innerHTML =
-            "<div class=\"no-comments\">No comments yet. Be the first to comment!</div>";
-        return;
-        }
-
-        let commentsHtml = "";
-
-        data.comments.forEach((comment: Comment) => {
-            commentsHtml += renderComment(comment);
-
-            // Add replies if any
-            if (comment.replies && comment.replies.length > 0) {
-                commentsHtml += "<div class=\"replies\">";
-                comment.replies.sort((a: Comment, b: Comment) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
-                comment.replies.forEach((reply) => {
-                    commentsHtml += renderComment(reply, true);
-                });
-                commentsHtml += "</div>";
+            if (!data.comments || data.comments.length === 0) {
+                commentsList!.innerHTML = "<div class=\"no-comments\">No comments yet. Be the first to comment!</div>";
+                return;
             }
-        });
 
-        commentsList!.innerHTML = commentsHtml;
+            let commentsHtml = "";
 
-        // Add event listeners to reply buttons
-        document.querySelectorAll(".reply-button").forEach((button) => {
-            button.addEventListener("click", handleReplyClick);
-        });
+            data.comments.forEach((comment: Comment) => {
+                commentsHtml += renderComment(comment);
+
+                // Add replies if any
+                if (comment.replies && comment.replies.length > 0) {
+                    commentsHtml += "<div class=\"replies\">";
+                    comment.replies.sort((a: Comment, b: Comment) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
+                    comment.replies.forEach((reply) => {
+                        commentsHtml += renderComment(reply, true);
+                    });
+                    commentsHtml += "</div>";
+                }
+            });
+
+            commentsList!.innerHTML = commentsHtml;
+
+            // Add event listeners to reply buttons
+            if (postID)
+                document.querySelectorAll(".reply-button").forEach((button) => button.addEventListener("click", handleReplyClick));
         } catch (error) {
             console.error("Error loading comments:", error);
-        commentsList!.innerHTML =
-        "<div class=\"error\">Failed to load comments. Please try again later.</div>";
+            commentsList!.innerHTML = "<div class=\"error\">Failed to load comments. Please try again later.</div>";
         }
     };
 
@@ -273,7 +243,7 @@ document.addEventListener("astro:page-load", () => {
         const websiteLink = comment.website
             ? `<a href="${escapeHtml(comment.website)}" target="_blank" rel="noopener noreferrer" class="comment-website">Website</a>`
             : "";
-        const replyButton = isReply
+        const replyButton = isReply && postID
             ? ""
             : `<button class="reply-button" data-id="${comment.ID}" data-name="${escapeHtml(username)}">Reply</button>`;
         const postHref = !postID ? buildPostHref(comment.postID) : null;
@@ -298,132 +268,6 @@ document.addEventListener("astro:page-load", () => {
     `;
     };
 
-    // Handle reply button click
-    const handleReplyClick = (event: Event) => {
-        const commentId = (event.currentTarget as HTMLButtonElement).getAttribute("data-id");
-        const commentName = (event.currentTarget as HTMLButtonElement).getAttribute("data-name");
-        if (!commentId || !commentName)
-            return;
-
-        replyIDInput.value = commentId;
-        replyToName.textContent = commentName;
-        replyContent.textContent = (event.currentTarget as HTMLButtonElement).closest(".comment")?.querySelector(".comment-body")?.textContent || "";
-        replyToContainer.style.display = "block";
-
-        // Scroll to comment form
-        commentForm.scrollIntoView({ behavior: "smooth" });
-        document.getElementById("comment")?.focus();
-    };
-
-    // Cancel reply
-    cancelReplyBtn.addEventListener("click", () => {
-        replyIDInput.value = "";
-        replyToContainer.style.display = "none";
-    });
-
-    // If user types "vnxs", show owner section
-    let pressedKeys = new Set<string>();
-    document.addEventListener("keydown", (event) => {
-        if (pressedKeys.has(event.key))
-            return;
-        if (event.key === "CapsLock")
-            pressedKeys = new Set<string>();
-        if (pressedKeys.has(event.key.toUpperCase()) || pressedKeys.has(event.key.toLowerCase())) {
-            pressedKeys.delete(event.key.toUpperCase());
-            pressedKeys.delete(event.key.toLowerCase());
-        }
-        pressedKeys.add(event.key);
-        if (
-            (pressedKeys.has("v") || pressedKeys.has("V")) &&
-            (pressedKeys.has("n") || pressedKeys.has("N")) &&
-            (pressedKeys.has("x") || pressedKeys.has("X")) &&
-            (pressedKeys.has("s") || pressedKeys.has("S"))
-        ) {
-            ownerSection.style.display = "block";
-            pressedKeys.clear();
-        }
-    });
-    document.addEventListener("keyup", (event) => {
-        pressedKeys.delete(event.key);
-    });
-
-    // Handle form submission
-    commentForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-
-        const formData = new FormData(commentForm);
-        const comment = formData.get("comment");
-
-        if (!comment || comment.toString().trim() === "") {
-            alert("Comment cannot be empty");
-            return;
-        }
-
-        try {
-            const submitBtn = commentForm.querySelector("button[type=\"submit\"]") as HTMLButtonElement | null;
-            if (submitBtn) {
-                submitBtn.disabled = true;
-                submitBtn.textContent = "Posting...";
-            }
-
-            const payload = {
-                postID,
-                comment: comment.toString().trim(),
-                username: formData.get("username") || null,
-                website: formData.get("website") || null,
-                replyID: formData.get("replyID") || null,
-                password: formData.get("password") || null,
-            };
-
-            const response = await fetch(
-                "https://vinxis-comments.oykxf2.workers.dev",
-                {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(payload),
-                }
-            );
-
-            const result = await response.json();
-            persistUserIdentity();
-
-            if (response.ok) {
-                // Reset form
-                commentForm.reset();
-                restoreUserIdentity();
-                replyIDInput.value = "";
-                replyToContainer.style.display = "none";
-                ownerSection.style.display = "none";
-
-                // Reload comments
-                await loadComments();
-
-                // Scroll to the newly added comment if it's a reply
-                if (payload.replyID) {
-                    const parentComment = document.getElementById(
-                        `comment-${payload.replyID}`
-                    );
-                    if (parentComment) {
-                        parentComment.scrollIntoView({ behavior: "smooth" });
-                    }
-                }
-            } else {
-                alert(`Error: ${result.error || "Failed to post comment"}`);
-            }
-        } catch (error) {
-            console.error("Error posting comment:", error);
-            alert("Failed to post comment. Please try again later.");
-        } finally {
-            const submitBtn = commentForm.querySelector("button[type=\"submit\"]") as HTMLButtonElement | null;
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Post Comment";
-            }
-        }
-    });
-
     // Load comments on page load
     loadComments()
         .then(() => {
@@ -437,6 +281,165 @@ document.addEventListener("astro:page-load", () => {
             commentsList!.innerHTML =
                 "<div class=\"error\">Failed to load comments. Please try again later.</div>";
         });
+
+    if (
+        commentForm &&
+        usernameInput &&
+        websiteInput &&
+        replyToContainer &&
+        replyToName &&
+        replyContent &&
+        replyIDInput &&
+        ownerSection &&
+        cancelReplyBtn
+    ) {
+        // Persisting username and website in localStorage so people don't need to readd them every time
+        const STORAGE_KEY = "vinxis-comments-user";
+        const persistUserIdentity = () => {
+            if (typeof localStorage === "undefined")
+                return;
+            const userData = {
+                username: usernameInput.value.trim(),
+                website: websiteInput.value.trim(),
+            };
+            if (!userData.username && !userData.website) {
+                localStorage.removeItem(STORAGE_KEY);
+                return;
+            }
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(userData));
+        };
+        const restoreUserIdentity = () => {
+            if (typeof localStorage === "undefined")
+                return;
+            const raw = localStorage.getItem(STORAGE_KEY);
+            if (!raw)
+                return;
+            try {
+                const saved = JSON.parse(raw) as { username?: string; website?: string };
+                if (saved.username)
+                    usernameInput.value = saved.username;
+                if (saved.website)
+                    websiteInput.value = saved.website;
+            } catch (error) {
+                console.warn("Failed to parse saved comment user data", error);
+                localStorage.removeItem(STORAGE_KEY);
+            }
+        };
+
+        // Init, restore on load and then persist on input
+        restoreUserIdentity();
+        usernameInput.addEventListener("input", persistUserIdentity);
+        websiteInput.addEventListener("input", persistUserIdentity);
+
+        // Cancel reply
+        cancelReplyBtn.addEventListener("click", () => {
+            replyIDInput.value = "";
+            replyToContainer.style.display = "none";
+        });
+
+        // If user types "vnxs", show owner section
+        let pressedKeys = new Set<string>();
+        document.addEventListener("keydown", (event) => {
+            if (pressedKeys.has(event.key))
+                return;
+            if (event.key === "CapsLock")
+                pressedKeys = new Set<string>();
+            if (pressedKeys.has(event.key.toUpperCase()) || pressedKeys.has(event.key.toLowerCase())) {
+                pressedKeys.delete(event.key.toUpperCase());
+                pressedKeys.delete(event.key.toLowerCase());
+            }
+            pressedKeys.add(event.key);
+            if (
+                (pressedKeys.has("v") || pressedKeys.has("V")) &&
+                (pressedKeys.has("n") || pressedKeys.has("N")) &&
+                (pressedKeys.has("x") || pressedKeys.has("X")) &&
+                (pressedKeys.has("s") || pressedKeys.has("S"))
+            ) {
+                ownerSection.style.display = "block";
+                pressedKeys.clear();
+            }
+        });
+        document.addEventListener("keyup", (event) => {
+            pressedKeys.delete(event.key);
+        });
+
+        // Handle form submission
+        commentForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(commentForm);
+            const comment = formData.get("comment");
+
+            if (!comment || comment.toString().trim() === "") {
+                alert("Comment cannot be empty");
+                return;
+            }
+
+            try {
+                const submitBtn = commentForm.querySelector("button[type=\"submit\"]") as HTMLButtonElement | null;
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = "Posting...";
+                }
+
+                const payload = {
+                    postID,
+                    comment: comment.toString().trim(),
+                    username: formData.get("username") || null,
+                    website: formData.get("website") || null,
+                    replyID: formData.get("replyID") || null,
+                    password: formData.get("password") || null,
+                };
+
+                const response = await fetch(
+                    "https://vinxis-comments.oykxf2.workers.dev",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(payload),
+                    }
+                );
+
+                const result = await response.json();
+                persistUserIdentity();
+
+                if (response.ok) {
+                    // Reset form
+                    commentForm.reset();
+                    restoreUserIdentity();
+                    replyIDInput.value = "";
+                    replyToContainer.style.display = "none";
+                    ownerSection.style.display = "none";
+
+                    // Reload comments
+                    await loadComments();
+
+                    // Scroll to the newly added comment if it's a reply
+                    if (payload.replyID) {
+                        const parentComment = document.getElementById(
+                            `comment-${payload.replyID}`
+                        );
+                        if (parentComment) {
+                            parentComment.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }
+                } else {
+                    alert(`Error: ${result.error || "Failed to post comment"}`);
+                }
+            } catch (error) {
+                console.error("Error posting comment:", error);
+                alert("Failed to post comment. Please try again later.");
+            } finally {
+                const submitBtn = commentForm.querySelector("button[type=\"submit\"]") as HTMLButtonElement | null;
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Post Comment";
+                }
+            }
+        });
+    }
 });
 </script>
 
