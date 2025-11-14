@@ -1,9 +1,10 @@
 ---
 interface Props {
   postID?: string;
+  showForm?: boolean;
 }
 
-let { postID } = Astro.props;
+let { postID, showForm = true } = Astro.props;
 
 // Determine postID from URL if not provided as prop
 if (!postID) {
@@ -18,7 +19,7 @@ if (!postID) {
         throw new Error("Invalid post ID");
 
     if (postID === "comments")
-        postID = "global";
+        postID = "";
 }
 
 // The client-side script handles fetching and displaying comments
@@ -31,55 +32,57 @@ if (!postID) {
     <div class="loading">Loading comments...</div>
     </div>
 
-    <div class="comment-form-container">
-        <h3>Leave a comment</h3>
-        <form id="comment-form" class="comment-form">
-            <div class="form-group">
-                <label for="username">Name (optional)</label>
-                <input
-                    type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Anonymous"
-                    maxlength="50"
-                />
+    {showForm && (
+        <div class="comment-form-container">
+            <h3>Leave a comment</h3>
+            <form id="comment-form" class="comment-form">
+                <div class="form-group">
+                    <label for="username">Name (optional)</label>
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Anonymous"
+                        maxlength="50"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website (optional)</label>
+                    <input
+                        type="url"
+                        id="website"
+                        name="website"
+                        placeholder="https://example.com"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" required maxlength="4000" rows="4"
+                    ></textarea>
+                </div>
+
+                <input type="hidden" id="replyID" name="replyID" value="" />
+                <input type="hidden" id="postID" name="postID" value={postID} />
+
+                <div class="form-group owner-section" style="display: none;">
+                    <label for="password">Owner Password (if owner)</label>
+                    <input type="password" id="password" name="password" />
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Post Comment</button>
+                </div>
+            </form>
+
+            <div id="reply-to-container" style="display: none;">
+                <p>Replying to: <span id="reply-to-name"></span></p>
+                <p id="reply-content"></p>
+                <button type="button" id="cancel-reply">Cancel Reply</button>
             </div>
-
-            <div class="form-group">
-                <label for="website">Website (optional)</label>
-                <input
-                    type="url"
-                    id="website"
-                    name="website"
-                    placeholder="https://example.com"
-                />
-            </div>
-
-            <div class="form-group">
-                <label for="comment">Comment</label>
-                <textarea id="comment" name="comment" required maxlength="4000" rows="4"
-                ></textarea>
-            </div>
-
-            <input type="hidden" id="replyID" name="replyID" value="" />
-            <input type="hidden" id="postID" name="postID" value={postID} />
-
-            <div class="form-group owner-section" style="display: none;">
-                <label for="password">Owner Password (if owner)</label>
-                <input type="password" id="password" name="password" />
-            </div>
-
-            <div class="form-buttons">
-                <button type="submit">Post Comment</button>
-            </div>
-        </form>
-
-        <div id="reply-to-container" style="display: none;">
-            <p>Replying to: <span id="reply-to-name"></span></p>
-            <p id="reply-content"></p>
-            <button type="button" id="cancel-reply">Cancel Reply</button>
         </div>
-    </div>
+    )}
 </div>
 
 <script>
@@ -139,6 +142,14 @@ document.addEventListener("astro:page-load", () => {
         return escapedText.replace(urlPattern, (url) => {
             return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
         });
+    };
+
+    const buildPostHref = (slug: string | null) => {
+        const trimmed = slug?.trim();
+        if (!trimmed)
+            return null;
+        const normalized = trimmed.replace(/^\/+/, "");
+        return `/${encodeURI(normalized)}`;
     };
 
     // Get postID from the container
@@ -265,6 +276,10 @@ document.addEventListener("astro:page-load", () => {
         const replyButton = isReply
             ? ""
             : `<button class="reply-button" data-id="${comment.ID}" data-name="${escapeHtml(username)}">Reply</button>`;
+        const postHref = !postID ? buildPostHref(comment.postID) : null;
+        const postLink = !postID
+            ? `<a class="comment-post-link" href="${postHref}">${escapeHtml(comment.postID)}</a>`
+            : "";
 
         return `
         <div class="comment ${isReply ? "reply" : ""}" id="comment-${comment.ID}">
@@ -272,6 +287,7 @@ document.addEventListener("astro:page-load", () => {
             <span class="comment-username">${escapeHtml(username)}</span>
             ${ownerTag}
             ${websiteLink}
+            ${postLink}
             <span class="comment-timestamp">${formatDate(comment.timestamp)}</span>
         </div>
         <div class="comment-body">${linkifyText(comment.comment)}</div>
@@ -474,6 +490,12 @@ document.addEventListener("astro:page-load", () => {
     font-size: 0.8rem;
     color: var(--secondary);
   }
+
+    .comment-post-link {
+        font-size: 0.8rem;
+        color: var(--secondary);
+        text-decoration: underline;
+    }
 
   .comment-timestamp {
     color: var(--neutral);
