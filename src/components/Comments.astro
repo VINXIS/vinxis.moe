@@ -135,6 +135,8 @@ document.addEventListener("astro:page-load", () => {
     const postID = commentsContainer.getAttribute("data-post-id");
     const commentsList = document.getElementById("comments-list") as HTMLElement | null;
     const commentForm = document.getElementById("comment-form") as HTMLFormElement | null;
+    const usernameInput = document.getElementById("username") as HTMLInputElement | null;
+    const websiteInput = document.getElementById("website") as HTMLInputElement | null;
     const replyToContainer = document.getElementById("reply-to-container") as HTMLElement | null;
     const replyToName = document.getElementById("reply-to-name") as HTMLElement | null;
     const replyContent = document.getElementById("reply-content") as HTMLElement | null;
@@ -143,6 +145,8 @@ document.addEventListener("astro:page-load", () => {
     const cancelReplyBtn = document.getElementById("cancel-reply") as HTMLButtonElement | null;
     if (
         !commentForm ||
+        !usernameInput ||
+        !websiteInput ||
         !replyToContainer ||
         !replyToName ||
         !replyContent ||
@@ -151,6 +155,44 @@ document.addEventListener("astro:page-load", () => {
         !cancelReplyBtn
     )
         throw new Error("One or more elements not found");
+
+    // Persisting username and website in localStorage so people don't need to readd them every time
+    const STORAGE_KEY = "vinxis-comments-user";
+    const persistUserIdentity = () => {
+        if (typeof localStorage === "undefined")
+            return;
+        const userData = {
+            username: usernameInput.value.trim(),
+            website: websiteInput.value.trim(),
+        };
+        if (!userData.username && !userData.website) {
+            localStorage.removeItem(STORAGE_KEY);
+            return;
+        }
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(userData));
+    };
+    const restoreUserIdentity = () => {
+        if (typeof localStorage === "undefined")
+            return;
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw)
+            return;
+        try {
+            const saved = JSON.parse(raw) as { username?: string; website?: string };
+            if (saved.username)
+                usernameInput.value = saved.username;
+            if (saved.website)
+                websiteInput.value = saved.website;
+        } catch (error) {
+            console.warn("Failed to parse saved comment user data", error);
+            localStorage.removeItem(STORAGE_KEY);
+        }
+    };
+
+    // Init, restore on load and then persist on input
+    restoreUserIdentity();
+    usernameInput.addEventListener("input", persistUserIdentity);
+    websiteInput.addEventListener("input", persistUserIdentity);
 
     // Load comments
     const loadComments = async () => {
@@ -316,10 +358,12 @@ document.addEventListener("astro:page-load", () => {
             );
 
             const result = await response.json();
+            persistUserIdentity();
 
             if (response.ok) {
                 // Reset form
                 commentForm.reset();
+                restoreUserIdentity();
                 replyIDInput.value = "";
                 replyToContainer.style.display = "none";
                 ownerSection.style.display = "none";
