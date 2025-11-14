@@ -100,9 +100,17 @@ document.addEventListener("astro:page-load", () => {
     const locale = navigator.language || "en-US";
     const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const formatDate = (dateString: string) => {
-        const date = new Date(dateString);
+        let date = new Date(dateString);
         if (Number.isNaN(date.getTime()))
             return dateString;
+        date = new Date(Date.UTC(
+            date.getFullYear(),
+            date.getMonth(),
+            date.getDate(),
+            date.getHours(),
+            date.getMinutes(),
+            date.getSeconds()
+        ));
         return date.toLocaleString(locale, {
             year: "numeric",
             month: "2-digit",
