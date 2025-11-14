@@ -177,6 +177,7 @@ document.addEventListener("astro:page-load", () => {
             // Add replies if any
             if (comment.replies && comment.replies.length > 0) {
                 commentsHtml += "<div class=\"replies\">";
+                comment.replies.sort((a: Comment, b: Comment) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
                 comment.replies.forEach((reply) => {
                     commentsHtml += renderComment(reply, true);
                 });
