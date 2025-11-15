@@ -31,6 +31,7 @@ if (!postID) {
     <!-- Comments will be loaded here -->
     <div class="loading">Loading comments...</div>
     </div>
+    <div class="comments-pagination" id="comments-pagination" aria-live="polite"></div>
 
     {showForm && (
         <div class="comment-form-container">
@@ -97,6 +98,18 @@ document.addEventListener("astro:page-load", () => {
         isOwner: boolean;
         replyID: number | null;
         replies?: Comment[];
+    }
+
+    interface PaginationMeta {
+        total: number;
+        page: number;
+        pageSize: number;
+        totalPages: number;
+    }
+
+    interface CommentsResponse {
+        comments: Comment[];
+        pagination?: PaginationMeta;
     }
 
     // Helper functions
@@ -167,6 +180,20 @@ document.addEventListener("astro:page-load", () => {
     const replyIDInput = document.getElementById("replyID") as HTMLInputElement | null;
     const ownerSection = document.querySelector(".owner-section") as HTMLElement | null;
     const cancelReplyBtn = document.getElementById("cancel-reply") as HTMLButtonElement | null;
+    const paginationContainer = document.getElementById("comments-pagination") as HTMLElement | null;
+    const COMMENTS_ENDPOINT = "https://vinxis-comments.oykxf2.workers.dev";
+    const trimmedPostID = (postID ?? "").trim();
+    const hasPostFilter = trimmedPostID.length > 0;
+    let currentPage = 1;
+    let totalPages = 1;
+
+    const buildCommentsUrl = (pageNumber: number) => {
+        const params = new URLSearchParams();
+        if (hasPostFilter)
+            params.set("postID", trimmedPostID);
+        params.set("page", pageNumber.toString());
+        return `${COMMENTS_ENDPOINT}?${params.toString()}`;
+    };
 
     // Handle reply button click
     const handleReplyClick = (event: Event) => {
@@ -194,13 +221,35 @@ document.addEventListener("astro:page-load", () => {
         document.getElementById("comment")?.focus();
     };
 
-    // Load comments
-    const loadComments = async () => {
-        try {
-            commentsList!.innerHTML = "<div class=\"loading\">Loading comments...</div>";
+    const renderPaginationControls = () => {
+        if (!paginationContainer)
+            return;
 
-            const response = await fetch(`https://vinxis-comments.oykxf2.workers.dev?postID=${postID}`);
-            const data = await response.json();
+        if (totalPages <= 1) {
+            paginationContainer.innerHTML = "";
+            paginationContainer.style.display = "none";
+            return;
+        }
+
+        paginationContainer.style.display = "flex";
+        paginationContainer.innerHTML = `
+            <button class="pagination-button" data-action="prev" ${currentPage === 1 ? "disabled" : ""}>Previous</button>
+            <span class="pagination-info">Page ${currentPage} of ${totalPages}</span>
+            <button class="pagination-button" data-action="next" ${currentPage === totalPages ? "disabled" : ""}>Next</button>
+        `;
+    };
+
+    const loadComments = async (pageNumber = 1) => {
+        try {
+            if (commentsList)
+                commentsList.innerHTML = "<div class=\"loading\">Loading comments...</div>";
+
+            const response = await fetch(buildCommentsUrl(pageNumber));
+            const data = await response.json() as CommentsResponse;
+
+            currentPage = data.pagination?.page ?? pageNumber;
+            totalPages = data.pagination?.totalPages ?? 1;
+            renderPaginationControls();
 
             if (!data.comments || data.comments.length === 0) {
                 commentsList!.innerHTML = "<div class=\"no-comments\">No comments yet. Be the first to comment!</div>";
@@ -212,7 +261,6 @@ document.addEventListener("astro:page-load", () => {
             data.comments.forEach((comment: Comment) => {
                 commentsHtml += renderComment(comment);
 
-                // Add replies if any
                 if (comment.replies && comment.replies.length > 0) {
                     commentsHtml += "<div class=\"replies\">";
                     comment.replies.sort((a: Comment, b: Comment) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
@@ -225,14 +273,28 @@ document.addEventListener("astro:page-load", () => {
 
             commentsList!.innerHTML = commentsHtml;
 
-            // Add event listeners to reply buttons
             if (postID)
                 document.querySelectorAll(".reply-button").forEach((button) => button.addEventListener("click", handleReplyClick));
         } catch (error) {
             console.error("Error loading comments:", error);
             commentsList!.innerHTML = "<div class=\"error\">Failed to load comments. Please try again later.</div>";
+            totalPages = 1;
+            renderPaginationControls();
         }
     };
+
+    paginationContainer?.addEventListener("click", (event) => {
+        const target = event.target as HTMLElement;
+        if (!(target instanceof HTMLButtonElement))
+            return;
+
+        const action = target.getAttribute("data-action");
+        if (action === "prev" && currentPage > 1) {
+            loadComments(currentPage - 1).catch((error) => console.error("Pagination load failed", error));
+        } else if (action === "next" && totalPages && currentPage < totalPages) {
+            loadComments(currentPage + 1).catch((error) => console.error("Pagination load failed", error));
+        }
+    });
 
     // Render a single comment
     const renderComment = (comment: Comment, isReply = false) => {
@@ -392,7 +454,7 @@ document.addEventListener("astro:page-load", () => {
                 };
 
                 const response = await fetch(
-                    "https://vinxis-comments.oykxf2.workers.dev",
+                    COMMENTS_ENDPOINT,
                     {
                         method: "POST",
                         headers: {
@@ -414,7 +476,7 @@ document.addEventListener("astro:page-load", () => {
                     ownerSection.style.display = "none";
 
                     // Reload comments
-                    await loadComments();
+                    await loadComments(1);
 
                     // Scroll to the newly added comment if it's a reply
                     if (payload.replyID) {
@@ -526,6 +588,32 @@ document.addEventListener("astro:page-load", () => {
   .error {
     color: var(--analogous2);
   }
+
+    .comments-pagination {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .pagination-button {
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 0.4rem 0.8rem;
+        cursor: pointer;
+    }
+
+    .pagination-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    .pagination-info {
+        font-size: 0.9rem;
+    }
 
   .comment-form-container {
     margin-top: 2rem;
