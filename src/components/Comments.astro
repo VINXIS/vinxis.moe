@@ -234,7 +234,7 @@ document.addEventListener("astro:page-load", () => {
         paginationContainer.style.display = "flex";
         paginationContainer.innerHTML = `
             <button class="pagination-button" data-action="prev" ${currentPage === 1 ? "disabled" : ""}>Previous</button>
-            <span class="pagination-info">Page ${currentPage} of ${totalPages}</span>
+            <span class="pagination-info">${currentPage} of ${totalPages}</span>
             <button class="pagination-button" data-action="next" ${currentPage === totalPages ? "disabled" : ""}>Next</button>
         `;
     };
@@ -263,7 +263,6 @@ document.addEventListener("astro:page-load", () => {
 
                 if (comment.replies && comment.replies.length > 0) {
                     commentsHtml += "<div class=\"replies\">";
-                    comment.replies.sort((a: Comment, b: Comment) => new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime());
                     comment.replies.forEach((reply) => {
                         commentsHtml += renderComment(reply, true);
                     });
