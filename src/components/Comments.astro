@@ -209,14 +209,35 @@ document.addEventListener("astro:page-load", () => {
     let currentMode: CommentMode = storedMode === "flat" ? "flat" : "threaded";
 
     const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+    const COMMENT_HASH_REGEX = /^#comment-(\d+)$/i;
+
+    const getCommentIdFromHash = () => {
+        const match = window.location.hash.match(COMMENT_HASH_REGEX);
+        if (!match)
+            return null;
+        const parsed = Number(match[1]);
+        return Number.isFinite(parsed) ? parsed : null;
+    };
+
+    const updateHashForComment = (commentId: number) => {
+        if (!Number.isFinite(commentId))
+            return;
+        const targetHash = `#comment-${commentId}`;
+        if (window.location.hash === targetHash)
+            return;
+        history.replaceState(null, "", targetHash);
+    };
 
     // Builds the comments API URL
-    const buildCommentsUrl = (pageNumber: number) => {
+    const buildCommentsUrl = (pageNumber: number, options: { commentID?: number | null } = {}) => {
         const params = new URLSearchParams();
         if (hasPostFilter)
             params.set("postID", trimmedPostID);
-        params.set("page", Math.max(1, Math.floor(pageNumber)).toString());
         params.set("mode", currentMode);
+        if (options.commentID && Number.isFinite(options.commentID))
+            params.set("commentID", String(options.commentID));
+        else
+            params.set("page", Math.max(1, Math.floor(pageNumber)).toString());
         return `${COMMENTS_ENDPOINT}?${params.toString()}`;
     };
 
@@ -228,7 +249,34 @@ document.addEventListener("astro:page-load", () => {
         element.classList.add("comment-highlight");
         if (scroll)
             element.scrollIntoView({ behavior: "smooth", block: "center" });
-        window.setTimeout(() => element.classList.remove("comment-highlight"), 4000);
+        window.setTimeout(() => element.classList.remove("comment-highlight"), 2400);
+    };
+
+    const focusIfPresent = (commentId: number) => {
+        if (!Number.isFinite(commentId))
+            return false;
+        const element = document.getElementById(`comment-${commentId}`);
+        if (!element)
+            return false;
+        highlightComment(commentId, true);
+        pendingHighlightId = null;
+        return true;
+    };
+
+    const ensureCommentVisible = async (commentId: number) => {
+        if (!Number.isFinite(commentId))
+            return;
+        if (focusIfPresent(commentId))
+            return;
+        pendingHighlightId = commentId;
+        await loadComments(1, { commentID: commentId, skipGuard: true, disableAutoStep: true });
+    };
+
+    const handleHashNavigation = () => {
+        const hashCommentId = getCommentIdFromHash();
+        if (hashCommentId === null)
+            return;
+        ensureCommentVisible(hashCommentId).catch((error) => console.error("Failed to navigate to comment", error));
     };
 
     // Updates the view when toggling between modes
@@ -294,6 +342,24 @@ document.addEventListener("astro:page-load", () => {
         document.getElementById("comment")?.focus();
     };
 
+    commentsList?.addEventListener("click", (event) => {
+        const link = (event.target as HTMLElement).closest<HTMLAnchorElement>(".comment-link, .comment-parent-link");
+        if (!link)
+            return;
+        const hashValue = link.hash || link.getAttribute("href") || "";
+        const match = hashValue.match(COMMENT_HASH_REGEX);
+        if (!match)
+            return;
+        const commentId = Number(match[1]);
+        if (!Number.isFinite(commentId))
+            return;
+        const targetHash = `#comment-${commentId}`;
+        if (window.location.hash === targetHash) {
+            event.preventDefault();
+            ensureCommentVisible(commentId).catch((error) => console.error("Failed to focus comment", error));
+        }
+    });
+
     // Renders the pagination controls (or hides them if not needed)
     const renderPaginationControls = () => {
         if (!paginationContainer)
@@ -332,12 +398,17 @@ document.addEventListener("astro:page-load", () => {
         `;
     };
 
-    const loadComments = async (pageNumber = 1, options: { skipGuard?: boolean; disableAutoStep?: boolean } = {}) => {
+    const loadComments = async (
+        pageNumber = 1,
+        options: { skipGuard?: boolean; disableAutoStep?: boolean; commentID?: number } = {}
+    ) => {
         if (isLoading && !options.skipGuard)
             return;
 
+        const targetingComment = typeof options.commentID === "number" && Number.isFinite(options.commentID);
         const targetPage = Math.max(1, Math.floor(pageNumber));
-        currentPage = targetPage;
+        if (!targetingComment)
+            currentPage = targetPage;
         isLoading = true;
         renderPaginationControls();
         updateViewToggle();
@@ -345,7 +416,14 @@ document.addEventListener("astro:page-load", () => {
         commentsList.innerHTML = "<div class=\"loading\">Loading comments...</div>";
 
         try {
-            const response = await fetch(buildCommentsUrl(targetPage));
+            const response = await fetch(buildCommentsUrl(targetPage, targetingComment ? { commentID: options.commentID ?? null } : undefined));
+            if (response.status === 404 && targetingComment) {
+                commentsList.innerHTML = `<div class="error">Comment not found. It's probably for a different page? Check <a href="/comments#comment-${options.commentID}">the comments page</a>.</div>`;
+                totalPages = 1;
+                hasPaginationInfo = false;
+                pendingHighlightId = null;
+                return;
+            }
             if (!response.ok)
                 throw new Error(`Failed to load comments (${response.status})`);
             const data = await response.json() as CommentsResponse;
@@ -353,21 +431,27 @@ document.addEventListener("astro:page-load", () => {
             if (data.mode === "flat" || data.mode === "threaded")
                 currentMode = data.mode;
 
-            currentPage = data.pagination?.page ?? targetPage;
+            currentPage = data.pagination?.page ?? (targetingComment ? currentPage : targetPage);
             totalPages = Math.max(1, data.pagination?.totalPages ?? 1);
             hasPaginationInfo = true;
 
-            if (!data.comments || data.comments.length === 0) {
-                if (currentPage > 1 && !options.disableAutoStep)
+            const commentsPayload = data.comments ?? [];
+            if (commentsPayload.length === 0) {
+                const canAutoStep = currentPage > 1 && !targetingComment && !options.disableAutoStep;
+                if (canAutoStep)
                     return await loadComments(currentPage - 1, { skipGuard: true, disableAutoStep: true });
-                commentsList.innerHTML = "<div class=\"no-comments\">No comments yet. Be the first to comment!</div>";
+                commentsList.innerHTML = targetingComment
+                    ? `<div class="error">Comment not found. It's probably for a different page? Check <a href="/comments#comment-${options.commentID}">the comments page</a>.</div>`
+                    : "<div class=\"no-comments\">No comments yet. Be the first to comment!</div>";
+                if (targetingComment)
+                    pendingHighlightId = null;
                 return;
             }
 
             if (currentMode === "flat")
-                renderFlatList(data.comments);
+                renderFlatList(commentsPayload);
             else
-                renderThreadedList(data.comments);
+                renderThreadedList(commentsPayload);
 
             if (postID)
                 document.querySelectorAll(".reply-button").forEach((button) => button.addEventListener("click", handleReplyClick));
@@ -451,6 +535,7 @@ document.addEventListener("astro:page-load", () => {
         const ownerTag = isOwner
             ? "<span class=\"comment-owner\">[OWNER]</span>"
             : "";
+        const commentLink = `<a class="comment-link" href="#comment-${comment.ID}" aria-label="Link to comment #${comment.ID}">#${comment.ID}</a>`;
         const websiteLink = comment.website
             ? `<a href="${escapeHtml(comment.website)}" target="_blank" rel="noopener noreferrer" class="comment-website">Website</a>`
             : "";
@@ -467,6 +552,9 @@ document.addEventListener("astro:page-load", () => {
         const replyLabel = comment.replyID && currentMode === "flat"
             ? "<span class=\"comment-reply-label\">Reply</span>"
             : "";
+        const parentLink = comment.replyID
+            ? `<a class="comment-parent-link" href="#comment-${comment.replyID}" aria-label="Jump to parent comment">&larr; #${comment.replyID}</a>`
+            : "";
         const classList = ["comment"];
         if (isReply)
             classList.push("reply");
@@ -474,9 +562,11 @@ document.addEventListener("astro:page-load", () => {
         return `
             <div class="${classList.join(" ")}" id="comment-${comment.ID}">
                 <div class="comment-header">
+                    ${commentLink}
                     <span class="comment-username">${escapeHtml(username)}</span>
                     ${ownerTag}
                     ${replyLabel}
+                    ${parentLink}
                     ${websiteLink}
                     ${postLink}
                     <span class="comment-timestamp">${formatDate(comment.timestamp)}</span>
@@ -489,13 +579,26 @@ document.addEventListener("astro:page-load", () => {
         `;
     };
 
-    // Initialize and load comments on page load
+    // Initialize the UI and shit
     updateViewToggle();
     renderPaginationControls();
-    loadComments().catch((error) => {
+
+    // Load comments on page load
+    const initialHashCommentId = getCommentIdFromHash();
+    let initialLoad: Promise<void>;
+    if (initialHashCommentId !== null) {
+        pendingHighlightId = initialHashCommentId;
+        initialLoad = loadComments(1, { commentID: initialHashCommentId, skipGuard: true, disableAutoStep: true });
+    } else {
+        initialLoad = loadComments();
+    }
+    initialLoad.catch((error) => {
         console.error("Error loading comments:", error);
         commentsList.innerHTML = "<div class=\"error\">Failed to load comments. Please try again later.</div>";
     });
+
+    // When comments are clicked/posted, handle navigation to comment and hash
+    window.addEventListener("hashchange", handleHashNavigation);
 
     if (
         commentForm &&
@@ -628,8 +731,10 @@ document.addEventListener("astro:page-load", () => {
                         if (Number.isFinite(rawId))
                             highlightId = rawId;
                     }
-                    if (highlightId !== null)
+                    if (highlightId !== null) {
                         pendingHighlightId = highlightId;
+                        updateHashForComment(highlightId);
+                    }
 
                     // Reset form
                     commentForm.reset();
@@ -728,6 +833,27 @@ document.addEventListener("astro:page-load", () => {
         flex-wrap: wrap;
         gap: 0.5rem;
         margin-bottom: 0.5rem;
+    }
+
+    .comment-link {
+        font-size: 0.8rem;
+        color: var(--neutral);
+        text-decoration: none;
+        margin-right: 0.35rem;
+    }
+
+    .comment-link:hover {
+        color: var(--secondary);
+    }
+
+    .comment-parent-link {
+        font-size: 0.75rem;
+        color: var(--secondary);
+        text-decoration: none;
+    }
+
+    .comment-parent-link:hover {
+        text-decoration: underline;
     }
 
     .comment-username {
