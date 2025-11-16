@@ -164,100 +164,108 @@ pageInfos.forEach(pageInfo => {
     <span slot="hidden" class="hidden hidden-search-info" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
 </Default>
 
-<script is:inline data-pages={JSON.stringify(pages)}>
+<script type="application/json" id="page-data" set:html={JSON.stringify(pages.map(page => page.page))}></script>
+<script>
 import damerauLevenshteinDistance from "../utils/levenshtein";
 
 document.addEventListener("astro:page-load", async () => {
 
     const sortMethods = {
-        "modified-desc": (a, b) => new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime(),
-        "modified-asc": (a, b) => new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime(),
-        "created-desc": (a, b) => new Date(b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.created).getTime(),
-        "created-asc": (a, b) => new Date(a.render.remarkPluginFrontmatter.created).getTime() - new Date(b.render.remarkPluginFrontmatter.created).getTime(),
-        "title-asc": (a, b) => a.page.id.localeCompare(b.page.id),
-        "title-desc": (a, b) => b.page.id.localeCompare(a.page.id),
+        "modified-desc": (a: any, b: any) => new Date(b.rendered.metadata.frontmatter.lastModified ?? b.rendered.metadata.frontmatter.created).getTime() - new Date(a.rendered.metadata.frontmatter.lastModified ?? a.rendered.metadata.frontmatter.created).getTime(),
+        "modified-asc": (a: any, b: any) => new Date(a.rendered.metadata.frontmatter.lastModified ?? a.rendered.metadata.frontmatter.created).getTime() - new Date(b.rendered.metadata.frontmatter.lastModified ?? b.rendered.metadata.frontmatter.created).getTime(),
+        "created-desc": (a: any, b: any) => new Date(b.rendered.metadata.frontmatter.created).getTime() - new Date(a.rendered.metadata.frontmatter.created).getTime(),
+        "created-asc": (a: any, b: any) => new Date(a.rendered.metadata.frontmatter.created).getTime() - new Date(b.rendered.metadata.frontmatter.created).getTime(),
+        "title-asc": (a: any, b: any) => a.id.localeCompare(b.id),
+        "title-desc": (a: any, b: any) => b.id.localeCompare(a.id),
     };
+    type SortMethod = keyof typeof sortMethods;
 
     const distanceCompare = damerauLevenshteinDistance(1);
 
-    const pages = JSON.parse(document.currentScript.getAttribute("data-pages"));
-    let filteredPages = await Promise.all([...pages].map(async page => {
-        return {
-            page,
-            render: await render(page),
+    // Bullshit ass Astro typing
+    type page = {
+        id: string;
+        rendered: {
+            metadata: {
+                frontmatter: {
+                    title: string;
+                    created: string;
+                    lastModified?: string;
+                    tags: string[];
+                };
+            };
         };
-    }));
+        collection: string;
+    }
+    const pages: page[] = JSON.parse(document.getElementById("page-data")?.textContent || "[]");
+    let filteredPages = [...pages];
 
     let search = "";
     let searchTags = "";
-    let currentSort = "modified-desc";
+    let currentSort: SortMethod = "modified-desc";
 
     async function updateList () {
-        filteredPages = await Promise.all(pages.filter(page => {
-            if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word) => distanceCompare(word.toLowerCase(), search))) return false;
-            if (searchTags.length > 0 && !page.data.tags?.some((tag) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
+        console.log("before", filteredPages);
+        filteredPages = pages.filter((page) => {
+            if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
+            if (searchTags.length > 0 && !page.rendered.metadata.frontmatter.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
 
-            if (!(document.getElementById("blog")).checked && page.collection === "blog") return false;
-            if (!(document.getElementById("notes")).checked && page.collection === "notes") return false;
-            if (!(document.getElementById("posts")).checked && page.collection === "posts") return false;
+            if (!(document.getElementById("blog")! as HTMLInputElement).checked && page.collection === "blog") return false;
+            if (!(document.getElementById("notes")! as HTMLInputElement).checked && page.collection === "notes") return false;
+            if (!(document.getElementById("posts")! as HTMLInputElement).checked && page.collection === "posts") return false;
 
             return true;
-        }).map(async page => {
-            return {
-                page,
-                render: await render(page),
-            };
-        }));
+        });
+        console.log("after", filteredPages);
         filteredPages.sort(sortMethods[currentSort]);
 
-        document.getElementById("search-list").innerHTML = filteredPages.map(page => {
-            return `<a href="${page.page.collection}/${page.page.id}" style="color:var(--${page.page.collection}); height:100px;">
+        document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
+            return `<a href="${page.collection}/${page.id}" style="color:var(--${page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between; gap:1rem;">
-                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.render.remarkPluginFrontmatter.title}>${page.render.remarkPluginFrontmatter.title}</h2>
-                    <h2>${page.page.collection}</h2>
+                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.rendered.metadata.frontmatter.title}>${page.rendered.metadata.frontmatter.title}</h2>
+                    <h2>${page.collection}</h2>
                 </div>
                 <div style="display:flex; gap:1rem;">
-                    ${[...new Set((page.render.remarkPluginFrontmatter.tags ?? []))].map((tag) => {
-        return `<div>#${tag}</div>`;
-    }).join("")}
+                    ${[...new Set((page.rendered.metadata.frontmatter.tags ?? []))].map((tag) => `<div>#${tag}</div>`).join("")}
                 </div>
                 <div>
-                    <div>Created: ${page.render.remarkPluginFrontmatter.created}</div>
-                    <div>Last modified: ${page.render.remarkPluginFrontmatter.lastModified ?? "N/A"}</div>
+                    <div>Created: ${page.rendered.metadata.frontmatter.created}</div>
+                    <div>Last modified: ${page.rendered.metadata.frontmatter.lastModified ?? "N/A"}</div>
                 </div>
             </a>`;
         }).join("");
     }
-    document.getElementById("search").addEventListener("input", event => {
-        search = event.target.value.toLowerCase();
+    document.getElementById("search")!.addEventListener("input", event => {
+        search = (event.target as HTMLInputElement).value.toLowerCase();
         updateList().catch(console.error);
     });
-    document.getElementById("search").addEventListener("click", e => e.stopPropagation());
+    document.getElementById("search")!.addEventListener("click", e => e.stopPropagation());
 
     ["blog", "notes", "posts"].forEach(type => {
-        document.getElementById(type).addEventListener ("change", () => updateList().catch(console.error));
-        document.getElementById(type).addEventListener("click", (e) => e.stopPropagation());
+        const typeElement = document.getElementById(type)!;
+        typeElement.addEventListener ("change", () => updateList().catch(console.error));
+        typeElement.addEventListener("click", (e) => e.stopPropagation());
     });
 
-    document.getElementById("sort-select").addEventListener("change", event => {
-        currentSort = event.target.value;
+    document.getElementById("sort-select")!.addEventListener("change", event => {
+        currentSort = (event.target as HTMLSelectElement).value as SortMethod;
         updateList().catch(console.error);
     });
-    document.getElementById("sort-select").addEventListener("click", e => e.stopPropagation());
+    document.getElementById("sort-select")!.addEventListener("click", e => e.stopPropagation());
 
-    document.getElementById("search-tags").addEventListener("input", event => {
-        searchTags = event.target.value.toLowerCase();
+    document.getElementById("search-tags")!.addEventListener("input", event => {
+        searchTags = (event.target as HTMLInputElement).value.toLowerCase();
         if (searchTags[0] === "#")
             searchTags = searchTags.slice(1);
         
         updateList().catch(console.error);
     });
-    document.getElementById("search-tags").addEventListener("click", e => e.stopPropagation());
+    document.getElementById("search-tags")!.addEventListener("click", e => e.stopPropagation());
 
     document.querySelectorAll(".search-tag").forEach(tag => {
         tag.addEventListener("click", event => {
-            searchTags = event.target.textContent.slice(1).toLowerCase();
-            (document.getElementById("search-tags")).value = searchTags;
+            searchTags = (event.target as HTMLElement).textContent!.slice(1).toLowerCase();
+            (document.getElementById("search-tags") as HTMLInputElement).value = searchTags;
             updateList().catch(console.error);
         });
     });
