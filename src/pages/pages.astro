@@ -164,7 +164,7 @@ pageInfos.forEach(pageInfo => {
     <span slot="hidden" class="hidden hidden-search-info" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
 </Default>
 
-<script type="application/json" id="page-data" set:html={JSON.stringify(pages.map(page => page.page))}></script>
+<script is:inline type="application/json" id="page-data" set:html={JSON.stringify(pages.map(page => page.page))}></script>
 <script>
 import damerauLevenshteinDistance from "../utils/levenshtein";
 
