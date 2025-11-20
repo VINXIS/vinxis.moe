@@ -1,7 +1,9 @@
 ---
 isObsidianImport: true
 created: Tue Feb 14 2023 13:53:13 GMT-0700 (Mountain Standard Time)
-lastModified: Tue Feb 14 2023 14:28:01 GMT-0700 (Mountain Standard Time)
+lastModified: "1763667558311"
+tags:
+  - polymers
 ---
 High molecular weight substances with chain-like molecules that have atoms linked covalently
 
