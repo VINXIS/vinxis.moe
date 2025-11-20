@@ -1,12 +1,12 @@
 ---
 isObsidianImport: false
 created: "1743988136869"
-lastModified: "1744167834284"
+lastModified: "1763667361994"
 tags:
   - biology
   - research
 ---
-[[Cell]] stress occurs when the cell experiences errors in function due to various factors, ranging from cytotoxic substances to adverse environments. The responses to stress by cells depends on the type and intensity of the stresses provided onto the cells. They can be categorised as such<sup>[1]</sup>:
+[[Cell]] stress occurs when the cell experiences errors in function due to various factors, ranging from cytotoxic substances to adverse environments. The responses to stress by cells depends on the type and intensity of the stresses provided onto the cells. They can be categorised as such[^1]:
 - [[Heat Shock Response]]
 - [[Unfolded Protein Response]]
 - [[DNA Damage Response]]
@@ -21,5 +21,4 @@ The purpose is in order to see their efficacy depending on certain adjustments m
 Common types of cellular stress experiments are:
 1. 
 
-References:
-[1] https://doi.org/10.1155/2010/214074
+[^1]:  https://doi.org/10.1155/2010/214074

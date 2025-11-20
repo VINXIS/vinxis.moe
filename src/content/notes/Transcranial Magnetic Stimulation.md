@@ -1,7 +1,7 @@
 ---
 isObsidianImport: false
 created: "1733624727834"
-lastModified: "1734027275237"
+lastModified: "1763667439669"
 tags:
   - tms
   - neurology
@@ -17,7 +17,7 @@ There are 2 primary types of TMS:
 	1. <1Hz is known to inhibit neurons firing in the cerebral cortex.
 	2. >1Hz is known to provoke neurons firing in the cerebral cortex. 
 
-## Diagnostics<sup>[1]</sup>
+## Diagnostics[^1]
 ### Excitation
 Typical diagnostic use of TMS in terms of cortical excitation is via recording the [[Motor Evoked Potential]] (MEP). [[Electromyography]] signals are collected from MEPs that are induced by TMS, and can as a result be shown any irregularities in MEP readings.
 
@@ -26,5 +26,4 @@ Typical diagnostic use of TMS in terms of cortical excitation is via recording t
 ### Depression
 Typical diagnostic use of TMS in terms of cortical depression is via recording the [[Cortical Silent Period]] (CSP). This is typically shown as a lack of EMG activity after TMS is applied.
 
-References:
-[1] https://doi.org/10.1016/j.clinph.2012.01.010
+[^1]: https://doi.org/10.1016/j.clinph.2012.01.010

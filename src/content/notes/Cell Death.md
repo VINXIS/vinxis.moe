@@ -1,7 +1,7 @@
 ---
 isObsidianImport: false
 created: "1744083009570"
-lastModified: "1744083009570"
+lastModified: "1763667307827"
 tags:
   - biology
   - research
@@ -11,8 +11,7 @@ tags:
 2. [[Autophagic Cell Death]] - Type II
 3. [[Necrosis]] - Type III
 Further types include:
-- Mitotic Catastrophe<sup>[1]</sup>
-- Ferroptosis<sup>[1]</sup>
+- Mitotic Catastrophe[^1]
+- Ferroptosis[^1]
 
-References:
-[1] https://doi.org/10.1101/cshperspect.a006080
+[^1]: https://doi.org/10.1101/cshperspect.a006080

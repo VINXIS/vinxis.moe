@@ -1,7 +1,7 @@
 ---
 isObsidianImport: false
 created: "1744859701629"
-lastModified: "1744907386716"
+lastModified: "1763667267059"
 tags:
   - biology
   - research
@@ -23,7 +23,6 @@ where E is Exon and I is Intron.
 
 Various [[Splice Factor]]s can cause massive changes to the alternative splicing that occurs during the [[Ribonucleic Acid Splicing]] stage
 
-Examples as images<sup>1</sup>: ![[RNA Alternative Splicing Figure.png]]
+Examples as images[^1]: ![[RNA Alternative Splicing Figure.png]]
 
-References:
-[1] doi.org/10.1161/CIRCRESAHA.115.307872
+[^1]: doi.org/10.1161/CIRCRESAHA.115.307872
