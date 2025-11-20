@@ -44,12 +44,14 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
 <Default meta={meta}>
     <div class="page">
         <h1 class="about-header">
-            <Image
-                class="about-logo"
-                src={vinxisOrange}
-                alt="VINXIS Logo"
-            />
-            <span class="about-name" id="name">Omar Kamal</span>
+            <a href="https://github.com/Latex4000/website/pull/23#issuecomment-3547875481" target="_blank" title="Hidden Selfie">
+                <Image
+                    class="about-logo"
+                    src={vinxisOrange}
+                    alt="VINXIS Logo"
+                />
+                <span class="about-name" id="name">Omar Kamal</span>
+            </a>
         </h1>
         <Webring />
         <div id="statuscafe">
@@ -380,6 +382,14 @@ document.addEventListener("astro:page-load", () => {
     justify-content: center;
 }
 
+.about-header a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about-logo {
     height: 4rem;
     width: auto;
@@ -396,11 +406,11 @@ document.addEventListener("astro:page-load", () => {
     position: absolute;
 }
 
-.about-header:hover .about-name {
+.about-header a:hover .about-name {
     color: transparent;
 }
 
-.about-header:hover .about-name::before {
+.about-header a:hover .about-name::before {
     color: var(--primary);
 }
 
