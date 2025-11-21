@@ -247,7 +247,7 @@ button:hover {
     text-decoration: dashed underline;
 }
 
-.small-text {
+.small-text, small {
     font-size: 0.75rem;
     color: var(--analogous1);
 }
