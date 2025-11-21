@@ -214,6 +214,7 @@ Highly recommend getting these if u touch a computer
 
 ### Web Development
 - [Next](https://nextjs.org) - Good server-based framework (not good for static/beginners) <small>- Oct 25 2024</small>
+  - **NOTE:** Next is made by Vercel, and [the CEO is a shithead AND zionist](https://web.archive.org/web/20251002233635/https://nitter.net/rauchg/status/1972669025525158031). Frankly I still use Vercel's free hosting since it's basically leeching off of them but I SUGGEST NOT USING NEXT SERIOUSLY, AND DO NOT PAY FOR THEIR SERVICES!!! Consider the other 2 below <small>- Nov 21 2025</small>
   - [Nuxt](https://nuxtjs.org) - Vue version of Next and sexier <small>- Oct 25 2024</small>
   - [SvelteKit](https://kit.svelte.dev) - Svelte version of Next and also sexier <small>- Oct 25 2024</small>
 - [Astro](https://astro.build) - Good static framework (not good for server-side/beginners) <small>- Oct 25 2024</small>
@@ -221,6 +222,7 @@ Highly recommend getting these if u touch a computer
   - [Nekoweb](https://nekoweb.org/) - Neocities 2.0 <small>- Oct 25 2024</small>
   - [GitHub Pages](https://pages.github.com) - If ur just looking for free web hosting this is probably the simplest and most reliable <small>- Oct 25 2024</small>
   - [Vercel](https://vercel.com) - Can host sites that arent static <small>- Oct 25 2024</small>
+    - **NOTE:** [Vercel's CEO is a shithead ANDzionist](https://web.archive.org/web/20251002233635/https://nitter.net/rauchg/status/1972669025525158031), DO NOT PAY FOR THEIR SERVICES!!! Personally I think using their free tier is still completely fine tho since thats effectively just leeching off them <small>- Nov 21 2025</small>
   - [Netlify](https://www.netlify.com) - Can also host sites that arent static <small>- Oct 25 2024</small>
 - [Hugo](https://gohugo.io) - Static site generator <small>- Oct 25 2024</small>
   - [Jekyll](https://jekyllrb.com) - Another static site generator <small>- Oct 25 2024</small>
