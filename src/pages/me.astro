@@ -58,6 +58,13 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
             <h3>Latest status.cafe:</h3>
             <div id="statuscafe-username">...</div>
             <div id="statuscafe-content">Loading...</div>
+            <noscript>
+                <style>
+                    #statuscafe {
+                        display: none;
+                    }
+                </style>
+            </noscript>
         </div>
         <div class="about-sections" id="drag-container">
             <div draggable="true" class="draggable">
