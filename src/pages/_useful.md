@@ -1,18 +1,84 @@
 <small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 21 2025</small>
 <br>
-<br>
-<br>
 
 ## Swiss Army Knives
 Highly recommend getting these if u touch a computer
 - [ShareX](https://getsharex.com) - Windows-only Screenshot, capture, record, sharing, on screen editing, automation, and more **!!!!!!!!!!** <small>- Oct 25 2024</small>
   - [SnapX](https://github.com/SnapXL/SnapX) - A [hard fork](https://producingoss.com/en/forks.html) of ShareX that is compatible with Linux and MacOS (ShareX is Windows only); still in very early development and I have not tried it yet, but it is likely that this is probably better than ShareX very soon... but I haven't used it so YMMV <small>- Nov 21 2025</small>
+- [Everything](https://www.voidtools.com) - Instant file search on Windows **SUPER USEFUL** <small>- Nov 21 2025</small>
 - [Bitwarden](https://bitwarden.com) - Super simple, streamlined, free, and open source password manager that works and syncs cross-platform <small>- Oct 25 2024</small>
   - If ur good with computers, can also be self hosted <small>- Oct 25 2024</small>
 - [ActivityWatch](https://activitywatch.net) - Automated time tracker that fully runs locally, and is highly customizable to track ur computer use however way u want to <small>- Oct 25 2024</small>
 - [RapidTables](https://www.rapidtables.com) - Exhaustive set of tools for web, day to day online tasks, math, science, engineering, misc. calculators, converters, and more <small>- Oct 25 2024</small>
   - [Knowledge Walls](https://tools.knowledgewalls.com/) - Similar to RapidTables, but with tools more focused towards files and programming <small>- Oct 25 2024</small>
 - [cryptii](https://cryptii.com) - Modular encoding, decoding, or conversion of text, numbers, and data online <small>- Oct 25 2024</small>
+<br>
+<br>
+<br>
+
+## Entertaining Websites
+### Web Art
+- [corru.observer](https://corru.observer) <small>- Nov 21 2025</small>
+- [Homestuck](https://www.homestuck.com) <small>- Nov 21 2025</small>
+- [GODHEAD](https://spicyyeti.com/GODHEAD/ACT_1/prologue/1.html) <small>- Nov 21 2025</small>
+- [17776](https://www.sbnation.com/a/17776-football) <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### Interactive Websites
+- [A Soft Murmur](https://asoftmurmur.com) - Customizable ambient sound mixer <small>- Nov 21 2025</small>
+- [Radio Garden](https://radio.garden) - Explore live radio by rotating the globe <small>- Nov 21 2025</small>
+- [Every Noise at Once](https://everynoise.com) - A map of music genres and artists **SUPER USEFUL** <small>- Nov 21 2025</small>
+- [WindowSwap](https://window-swap.com) - View video clips of other people's window views from around the world <small>- Nov 21 2025</small>
+- [Our World of Text](https://www.ourworldoftext.com) - Massive online anonymous canvas to write bullshit in <small>- Nov 21 2025</small>
+  - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site <small>- Nov 21 2025</small>
+- [Hacker Typer](https://hackertyper.net) - Fake hacking simulator <small>- Nov 21 2025</small>
+- [The Useless Web](https://theuselessweb.com) - Takes you to a random useless website <small>- Nov 21 2025</small>
+- [Wiki-Map](https://wiki-map.com/) - A map with geolocated wikipedia links <small>- Nov 21 2025</small>
+- [Kialo](https://kialo.com) - Debate platform of shitass arguments on any side structured nicely to give yourself the worst brainrot on <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### Fun Collectives / Personal sites
+- [𝙻ΛƬΣX 4000](https://nonacademic.net) - My collective!!! <small>- Nov 21 2025</small>
+- [100rabbits](https://100r.ca/site/projects.html) - Art and tech duo that live on a boat <small>- Nov 21 2025</small>
+- [Tildeverse](https://tildeverse.net) - Directory of tilde servers tgat u can get an account on and join the community <small>- Nov 21 2025</small>
+  - [Tilde.club](https://tilde.club) - One of the most popular tilde servers <small>- Nov 21 2025</small>
+- [Neocities](https://neocities.org) - Free web hosting service that aims to revive the spirit of GeoCities <small>- Nov 21 2025</small>
+- [Nekoweb](https://nekoweb.org/) - Neocities 2.0 <small>- Oct 25 2024</small>
+- [imput.net](https://imput.net/) - Duo/collective who made cobalt.tools and other cool stuff <small>- Nov 21 2025</small>
+<br>
+<br>
+<br>
+
+## Gaming
+### Platforms/Stores
+- [Steam](https://store.steampowered.com) - PC gaming platform, p much de facto for many ppl <small>- Nov 21 2025</small>
+  - [SteamDB](https://steamdb.info/) - Database site for stats on Steam and games on Steam <small>- Nov 21 2025</small>
+- [itch.io](https://itch.io) - Platform with basically all indie games and smaller creators and epic <small>- Nov 21 2025</small>
+- [Game Jolt](https://gamejolt.com) - Another platform with basically all indie games and smaller creators <small>- Nov 21 2025</small>
+- [GOG](https://www.gog.com) - DRM-free game store; has a lot of older games <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### Resource for Games
+- [PCGamingWiki](https://pcgamingwiki.com) - Wiki for fixing and optimizing PC games <small>- Nov 21 2025</small>
+- [Playnite](https://playnite.link) - Open source video game library manager with support for multiple platforms (Steam, GOG, Epic, e.t.c.) <small>- Nov 21 2025</small>
+  - [Lutris](https://lutris.net) - Open source gaming platform for Linux that helps you install and manage games from different sources (Steam, GOG, emulators, e.t.c.) <small>- Nov 21 2025</small>
+- [ProtonDB](https://www.protondb.com) - Database of how well Windows games run on Linux (incl. SteamOS) (via Proton) <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### Game Development
+- [Godot Engine](https://godotengine.org) - Free and open source game engine <small>- Nov 21 2025</small>
+- [Unity](https://unity.com) - Popular game engine <small>- Nov 21 2025</small>
+- [Unreal Engine](https://www.unrealengine.com) - Another popular game engine <small>- Nov 21 2025</small>
+- [Tiled](https://www.mapeditor.org) - 2D tile map editor <small>- Nov 21 2025</small>
+- [Bfxr](https://www.bfxr.net) - Retro sound effect generator <small>- Nov 21 2025</small>
+- [Aseprite](https://www.aseprite.org) - Pixel art and animation tool <small>- Nov 21 2025</small>
+- [RPG Maker](https://www.rpgmakerweb.com) - RPG making software <small>- Nov 21 2025</small>
+- [GameMaker](https://gamemaker.io/) - Another game making software <small>- Nov 21 2025</small>
+- [Twine](https://twinery.org) - Interactive/Hypertext game making software <small>- Nov 21 2025</small>
 <br>
 <br>
 <br>
@@ -31,8 +97,11 @@ Highly recommend getting these if u touch a computer
 ### Editing
 - [ffmpeg](https://ffmpeg.org) - A super robust command line tool to record, convert and stream audio and video. **SUPER USEFUL** for editing and converting media files <small>- Oct 25 2024</small>
   - [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/index.html) - A tool to help Normal people to use ffmpeg; again, ffmpeg is **SUPER USEFUL** <small>- Oct 25 2024</small>
+  - [Handbrake](https://handbrake.fr) - Basically a GUI for ffmpeg that is pretty good for basic video conversion and compression <small>- Nov 21 2025</small>
 - [ExifTool](https://exiftool.org) - Metadata editor <small>- Oct 25 2024</small>
+- [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Professional video editing software (free version is very capable) <small>- Nov 21 2025</small>
 - [Tenacity](https://tenacityaudio.org) - Non-spyware Audacity <small>- Oct 25 2024</small>
+  - [Audacity](https://www.audacityteam.org) - Original Audacity which is a very streamlined audio editing and recording tool; spyware owned for a while now <small>- Nov 21 2025</small>
 - [Avidemux](https://avidemux.sourceforge.net/) - Simple video editor that's good for quick cutting/clipping <small>- Oct 25 2024</small>
 - [OBS](https://obsproject.com/) - Open Broadcaster Software, THE go to for streaming or recording **SUPER USEFUL** <small>- Oct 25 2024</small>
 - [Ableton Live](https://www.ableton.com) - Digital Audio Workstation (DAW), in other words, music production software (this is the one I use) **SUPER USEFUL** <small>- Oct 25 2024</small>
@@ -41,6 +110,7 @@ Highly recommend getting these if u touch a computer
 - [LovelyComposer](https://1oogames.itch.io/lovely-composer) - Chiptune music creation tool inspired by Mario Paint Composer <small>- Oct 25 2024</small>
 - [Furnace](https://github.com/tildearrow/furnace/releases) - Super robust chiptune music creation tool <small>- Oct 25 2024</small>
   - [FamiStudio](https://famistudio.org/) - NES-focused music creation tool, more user-friendly and easier to get into (especially if u dont code or know what the fuck GitHub is) <small>- Oct 25 2024</small>
+- [Bfxr](https://www.bfxr.net) - Retro sound effect generator <small>- Nov 21 2025</small>
 <br>
 <br>
 
@@ -184,6 +254,40 @@ Highly recommend getting these if u touch a computer
 <br>
 <br>
 
+## Computer Utilities
+### File Management / Storage
+- [Everything](https://www.voidtools.com) - Instant file search on Windows **SUPER USEFUL** <small>- Nov 21 2025</small>
+- [7-Zip](https://www.7-zip.org) - Free and open source file archiver with various archiving options **SUPER USEFUL** <small>- Nov 21 2025</small>
+- [Syncthing](https://syncthing.net) - Open source file synchronization program u can use between ur devices (pc, mac, phones, e.t.c.) that works over LAN or internet <small>- Nov 21 2025</small>
+- [WizTree](https://www.diskanalyzer.com/) - Super fast disk space analyzer for Windows <small>- Nov 21 2025</small>
+  - [WinDirStat](https://windirstat.net/) - Another disk space analyzer but slower but also its the one I used mostly <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### Resource Monitoring
+- [Process Hacker/System Informer](https://systeminformer.sourceforge.io/) - Advanced process viewer and system monitor for Windows <small>- Nov 21 2025</small>
+- [HWMonitor](https://www.cpuid.com/softwares/hwmonitor.html) - Hardware monitoring tool for Windows <small>- Nov 21 2025</small>
+- [Speccy](https://www.ccleaner.com/speccy) - Detailed system information tool for Windows <small>- Nov 21 2025</small>
+- [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/) - HDD/SSD health monitoring tool for Windows <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### System Maintenance / Optimization
+- [Bulk Crap Uninstaller](https://www.bcuninstaller.com/) - Very good tool for uninstalling bullshit from Windows <small>- Nov 21 2025</small>
+  - [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater) - Script to remove bloatware from Windows 10 <small>- Nov 21 2025</small>
+  - [Win11Debloat](https://github.com/Raphire/Win11Debloat) - Script to remove bloatware from Windows 11 <small>- Nov 21 2025</small>
+- [Ninite](https://ninite.com) - Omega installer/updater for random stuff on Windows <small>- Nov 21 2025</small>
+<br>
+<br>
+
+### System Tools
+- [Rufus](https://rufus.ie) - Create bootable USB drives from ISO files **SUPER USEFUL** <small>- Nov 21 2025</small>
+- [PowerToys](https://github.com/microsoft/PowerToys) - Really good collection of utilities by Microsoft for Windows that are for some reason not just in Windows OS from the start <small>- Nov 21 2025</small>
+- [AutoHotkey](https://www.autohotkey.com) - Automation scripting language for Windows to create keybinds and shit <small>- Nov 21 2025</small>
+<br>
+<br>
+<br>
+
 ## Programming
 ### Editors
 - [Visual Studio Code](https://code.visualstudio.com) - Easiest code editor to get into with a lot of tooling and extensions **SUPER USEFUL** <small>- Oct 25 2024</small>
@@ -195,6 +299,7 @@ Highly recommend getting these if u touch a computer
 <br>
 
 ### Coding Resources
+- [Regex101](https://regex101.com) - Online regex tester and debugger **SUPER USEFUL** <small>- Nov 21 2025</small>
 - [DevDocs](https://devdocs.io) - Documentation for pretty much every coding language and framework <small>- Oct 25 2024</small>
 - [Learn X in Y Minutes](https://learnxinyminutes.com) - Quick reference for coding languages <small>- Oct 25 2024</small>
 - [MDN Web Docs](https://developer.mozilla.org) - Web development documentation <small>- Oct 25 2024</small>
@@ -214,7 +319,7 @@ Highly recommend getting these if u touch a computer
 
 ### Web Development
 - [Next](https://nextjs.org) - Good server-based framework (not good for static/beginners) <small>- Oct 25 2024</small>
-  - **NOTE:** Next is made by Vercel, and [the CEO is a shithead AND zionist](https://web.archive.org/web/20251002233635/https://nitter.net/rauchg/status/1972669025525158031). Frankly I still use Vercel's free hosting since it's basically leeching off of them but I SUGGEST NOT USING NEXT SERIOUSLY, AND DO NOT PAY FOR THEIR SERVICES!!! Consider the other 2 below <small>- Nov 21 2025</small>
+  - **NOTE:** Next is made by Vercel, and [the CEO is a shithead AND zionist](http://archive.today/nJbVp). Frankly I still use Vercel's free hosting since it's basically leeching off of them but I SUGGEST NOT USING NEXT SERIOUSLY, AND DO NOT PAY FOR THEIR SERVICES!!! Consider the other 2 below (or Astro if you are just making a static site!) <small>- Nov 21 2025</small>
   - [Nuxt](https://nuxtjs.org) - Vue version of Next and sexier <small>- Oct 25 2024</small>
   - [SvelteKit](https://kit.svelte.dev) - Svelte version of Next and also sexier <small>- Oct 25 2024</small>
 - [Astro](https://astro.build) - Good static framework (not good for server-side/beginners) <small>- Oct 25 2024</small>
@@ -222,7 +327,7 @@ Highly recommend getting these if u touch a computer
   - [Nekoweb](https://nekoweb.org/) - Neocities 2.0 <small>- Oct 25 2024</small>
   - [GitHub Pages](https://pages.github.com) - If ur just looking for free web hosting this is probably the simplest and most reliable <small>- Oct 25 2024</small>
   - [Vercel](https://vercel.com) - Can host sites that arent static <small>- Oct 25 2024</small>
-    - **NOTE:** [Vercel's CEO is a shithead ANDzionist](https://web.archive.org/web/20251002233635/https://nitter.net/rauchg/status/1972669025525158031), DO NOT PAY FOR THEIR SERVICES!!! Personally I think using their free tier is still completely fine tho since thats effectively just leeching off them <small>- Nov 21 2025</small>
+    - **NOTE:** [Vercel's CEO is a shithead AND zionist](http://archive.today/nJbVp), DO NOT PAY FOR THEIR SERVICES!!! Personally I think using their free tier is still completely fine tho since thats effectively just leeching off them <small>- Nov 21 2025</small>
   - [Netlify](https://www.netlify.com) - Can also host sites that arent static <small>- Oct 25 2024</small>
 - [Hugo](https://gohugo.io) - Static site generator <small>- Oct 25 2024</small>
   - [Jekyll](https://jekyllrb.com) - Another static site generator <small>- Oct 25 2024</small>
@@ -290,16 +395,6 @@ Highly recommend getting these if u touch a computer
 ### Drugs
 - [PsychonautWiki](https://psychonautwiki.org) - Relatively robust drug wiki <small>- Oct 27 2024</small>
 - [The Drug Classroom](https://www.youtube.com/@TheDrugClassroom/videos) - Dead YT channel project but still contains a shitton of useful centralized information if you want to understand the pharmacokinetics/pharmacodynamics and chemistry of the drugs u might wanna take <small>- Oct 27 2024</small>
-<br>
-<br>
-<br>
-
-## Random Shit (aka Unorganized aka Miscellaneous)
-- [Our World of Text](https://www.ourworldoftext.com) - Massive online anonymous canvas to write bullshit in <small>- Oct 25 2024</small>
-  - [Your World of Text](https://www.yourworldoftext.com) - Original version of the site <small>- Oct 25 2024</small>
-- [Hacker Typer](https://hackertyper.net) - Fake hacking simulator <small>- Oct 25 2024</small>
-- [Itch.io](https://itch.io) - Indie game marketplace <small>- Oct 25 2024</small>
-- [Wiki-Map](https://wiki-map.com/) - A map with geolocated wikipedia links <small>- Dec 13 2024</small>
 <br>
 <br>
 <br>
