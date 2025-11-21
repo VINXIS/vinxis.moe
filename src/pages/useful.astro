@@ -1,6 +1,7 @@
 ---
+import TableOfContents from "../components/TableOfContents.astro";
 import Default from "../layouts/Default.astro";
-import { Content } from "./_useful.md";
+import { Content, getHeadings } from "./_useful.md";
 
 const meta = {
     title: "Useful Content",
@@ -24,6 +25,7 @@ const meta = {
         <h1>
             Useful Content
         </h1>
+        <TableOfContents headings={getHeadings()} />
         <Content />
     </div>
 </Default>
