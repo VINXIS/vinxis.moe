@@ -1,4 +1,4 @@
-<small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 21 2025</small>
+<small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 23 2025</small>
 <br>
 
 ## Swiss Army Knives
@@ -98,6 +98,8 @@ Highly recommend getting these if u touch a computer
 - [ffmpeg](https://ffmpeg.org) - A super robust command line tool to record, convert and stream audio and video. **SUPER USEFUL** for editing and converting media files <small>- Oct 25 2024</small>
   - [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/index.html) - A tool to help Normal people to use ffmpeg; again, ffmpeg is **SUPER USEFUL** <small>- Oct 25 2024</small>
   - [Handbrake](https://handbrake.fr) - Basically a GUI for ffmpeg that is pretty good for basic video conversion and compression <small>- Nov 21 2025</small>
+- [G-MEH](https://g-meh.com/library) - Extensive library of VSTs, DAWs and plugins for audio editing and music production **SUPER USEFUL** <small>- Nov 23 2025</small>
+  - **HIGHLY SUGGEST** looking at this if you want to make music!!! <small>- Nov 23 2025</small>
 - [ExifTool](https://exiftool.org) - Metadata editor <small>- Oct 25 2024</small>
 - [DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) - Professional video editing software (free version is very capable) <small>- Nov 21 2025</small>
 - [Tenacity](https://tenacityaudio.org) - Non-spyware Audacity <small>- Oct 25 2024</small>
