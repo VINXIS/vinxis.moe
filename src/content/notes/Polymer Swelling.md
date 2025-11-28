@@ -1,10 +1,11 @@
 ---
 isObsidianImport: false
 created: "1763669436394"
-lastModified: "1763670047732"
+lastModified: "1764308897182"
 tags:
   - polymers
   - materials
+  - mechanics
 ---
 Polymer swelling is the process in which a [[Polymer]] is exposed to a solvent, and absorbed into the [[Polymer Network]], functionally mixing the 2 into a lattice, and effectively increasing the polymer's volume. Basically the solvent goes into the empty space that is left within the network of tangled strands
 
@@ -16,7 +17,7 @@ It functions generally off of 3 assumptions[^1]:
 2. The mixing can be described by the [[Flory-Huggins Theory]] $\Delta G_{mix}$
 	- **Promotes** swelling
 	- [[Entropy]] increases with a more complex final lattice by mixing the solvent and polymer
-3. The deformation can be described by the [[Affine-Deformation Model]] $\Delta G_{el}$
+3. The deformation can be described by the [[Affine Network Model]] $\Delta G_{el}$
 	- **Resists** swelling
 	- [[Entropy]] decreases as the polymer strands become "untangled" by stretching
 
