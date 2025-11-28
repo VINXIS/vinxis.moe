@@ -1,11 +1,11 @@
-<small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 23 2025</small>
+<small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 28 2025</small>
 <br>
 
 ## Swiss Army Knives
 Highly recommend getting these if u touch a computer
 - [ShareX](https://getsharex.com) - Windows-only Screenshot, capture, record, sharing, on screen editing, automation, and more **!!!!!!!!!!** <small>- Oct 25 2024</small>
   - [SnapX](https://github.com/SnapXL/SnapX) - A [hard fork](https://producingoss.com/en/forks.html) of ShareX that is compatible with Linux and MacOS (ShareX is Windows only); still in very early development and I have not tried it yet, but it is likely that this is probably better than ShareX very soon... but I haven't used it so YMMV <small>- Nov 21 2025</small>
-- [Everything](https://www.voidtools.com) - Instant file search on Windows **SUPER USEFUL** <small>- Nov 21 2025</small>
+- [Everything](https://www.voidtools.com) - Instant file search on Windows <small>- Nov 28 2025</small>
 - [Bitwarden](https://bitwarden.com) - Super simple, streamlined, free, and open source password manager that works and syncs cross-platform <small>- Oct 25 2024</small>
   - If ur good with computers, can also be self hosted <small>- Oct 25 2024</small>
 - [ActivityWatch](https://activitywatch.net) - Automated time tracker that fully runs locally, and is highly customizable to track ur computer use however way u want to <small>- Oct 25 2024</small>
