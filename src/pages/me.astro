@@ -82,6 +82,8 @@ const age = (Math.round(multiplier * ((Date.now() - birthDate) / 31557600000 - 2
                     <h3>Latest status.cafe:</h3>
                     <div id="statuscafe-username">...</div>
                     <div id="statuscafe-content">Loading...</div>
+                    <br>
+                    <br>
                     <noscript>
                         <style>
                             #statuscafe {
@@ -416,10 +418,6 @@ document.addEventListener("astro:page-load", () => {
 
 .about-header a:hover .about-name::before {
     color: var(--primary);
-}
-
-#statuscafe {
-    margin: 20px 0;
 }
 
 .about-sections {
