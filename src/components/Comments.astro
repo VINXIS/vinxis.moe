@@ -165,7 +165,7 @@ document.addEventListener("astro:page-load", () => {
         const urlPattern = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/gi;
         
         // Replace URLs with anchor tags
-        return escapedText.replace(urlPattern, (url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
+        return escapedText.replace(urlPattern, (url) => `<a href="${url}" target="_blank">${url}</a>`);
     };
 
     const buildPostHref = (slug: string | null) => {
@@ -537,7 +537,7 @@ document.addEventListener("astro:page-load", () => {
             : "";
         const commentLink = `<a class="comment-link" href="#comment-${comment.ID}" aria-label="Link to comment #${comment.ID}">#${comment.ID}</a>`;
         const websiteLink = comment.website
-            ? `<a href="${escapeHtml(comment.website)}" target="_blank" rel="noopener noreferrer" class="comment-website">Website</a>`
+            ? `<a href="${escapeHtml(comment.website)}" target="_blank" class="comment-website">Website</a>`
             : "";
         const allowReply = Boolean(postID);
         const replyButton = isReply && allowReply
