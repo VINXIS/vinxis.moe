@@ -1,0 +1,478 @@
+---
+import Default from "../layouts/Default.astro";
+
+const meta = {
+    title: "Feed",
+    ogTitle: "Feed",
+    ogDescription: "RSS feed updates that I follow",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "Feed",
+    twitterDescription: "RSS feed updates that I follow",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+---
+
+<Default meta={meta}>
+    <div class="page">
+        <h1>Feed</h1>
+        <p><small>Latest updates from RSS feeds I follow</small></p>
+        <div class="search-section">
+            <input type="text" id="feed-search" placeholder="Search titles, descriptions, sources..." autocomplete="off" />
+            <div class="feed-types" id="feed-toggle-list"></div>
+            <div class="feed-actions">
+                <button type="button" id="feed-select-all">Select all</button>
+                <button type="button" id="feed-clear-all">Clear all</button>
+                <button type="button" id="refresh-feeds">Refresh feeds</button>
+            </div>
+        </div>
+        
+        <div id="loading">Loading feeds... <br> This may take up to a few minutes...</div>
+        <div id="feed-container" class="feed-container"></div>
+    </div>
+</Default>
+
+<script>
+    const WORKER_URL = "https://rss-fetch.oykxf2.workers.dev";
+    
+    const RSS_FEEDS = [
+        "https://vinxis.moe/rss.xml",
+        "https://nonacademic.net/rss.xml",
+        "https://jkap.io/feed/",
+        "https://www.youtube.com/feeds/videos.xml?channel_id=UC9ecwl3FTG66jIKA9JRDtmg",
+        "https://www.nature.com/nmat.rss",
+        "https://www.nature.com/nbt.rss",
+        "https://status.cafe/feed.atom",
+        "https://corru.works/feed.xml",
+        "https://github.com/ActivityWatch/activitywatch/releases.atom",
+        "https://sammi.sh/rss.xml",
+        "https://www.them.us/feed/rss",
+        "https://www.kenklippenstein.com/feed",
+        "https://obsidian.md/feed.xml",
+        "https://msx.horse/rss.xml",
+        "https://theorb.substack.com/feed",
+    ];
+
+    interface FeedItem {
+        title: string;
+        link: string;
+        pubDate: Date;
+        description?: string;
+        plainDescription?: string;
+        source: string;
+        sourceUrl: string;
+        author?: string;
+    }
+
+    function stripHTML (html: string): string {
+        const tmp = document.createElement("div");
+        tmp.innerHTML = html;
+        return tmp.textContent || tmp.innerText || "";
+    }
+
+    function formatDate (date: Date): string {
+        const now = new Date();
+        const diffMs = now.getTime() - date.getTime();
+        const diffMins = Math.floor(diffMs / 60000);
+        const diffHours = Math.floor(diffMs / 3600000);
+        const diffDays = Math.floor(diffMs / 86400000);
+
+        if (diffMins < 60) {
+            return diffMins <= 1 ? "just now" : `${diffMins} minutes ago`;
+        } else if (diffHours < 24) {
+            return diffHours === 1 ? "1 hour ago" : `${diffHours} hours ago`;
+        } else if (diffDays < 7) {
+            return diffDays === 1 ? "1 day ago" : `${diffDays} days ago`;
+        } else {
+            return new Intl.DateTimeFormat("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+            }).format(date);
+        }
+    }
+
+    function parseDateString (value?: string | null): Date | null {
+        if (!value)
+            return null;
+        const parsed = new Date(value);
+        return Number.isNaN(parsed.getTime()) ? null : parsed;
+    }
+
+    function getFallbackDate (doc: Document): Date | null {
+        const fallbackText = doc.querySelector("channel > lastBuildDate, feed > updated")?.textContent?.trim();
+        return parseDateString(fallbackText);
+    }
+
+    function getItemTimestamp (item: FeedItem): number {
+        if (!(item.pubDate instanceof Date))
+            return 0;
+        const time = item.pubDate.getTime();
+        return Number.isNaN(time) ? 0 : time;
+    }
+
+    function createSeparator (): HTMLSpanElement {
+        const separator = document.createElement("span");
+        separator.textContent = "•";
+        return separator;
+    }
+
+    function createFeedItemElement (item: FeedItem): HTMLElement {
+        const article = document.createElement("article");
+        
+        const header = document.createElement("div");
+        
+        const h2 = document.createElement("h2");
+        const link = document.createElement("a");
+        link.href = item.link;
+        link.target = "_blank";
+        link.textContent = item.title;
+        h2.appendChild(link);
+        header.appendChild(h2);
+        
+        const meta = document.createElement("div");
+        meta.className = "feed-meta";
+        
+        const sourceLink = document.createElement("a");
+        sourceLink.href = item.sourceUrl;
+        sourceLink.target = "_blank";
+        sourceLink.textContent = item.source;
+        meta.appendChild(sourceLink);
+
+        if (item.author) {
+            meta.appendChild(createSeparator());
+            const authorSpan = document.createElement("span");
+            authorSpan.textContent = `by ${item.author}`;
+            meta.appendChild(authorSpan);
+        }
+
+        meta.appendChild(createSeparator());
+        const date = document.createElement("time");
+        date.setAttribute("datetime", item.pubDate.toISOString());
+        date.textContent = formatDate(item.pubDate);
+        meta.appendChild(date);
+        
+        header.appendChild(meta);
+        article.appendChild(header);
+        
+        const descriptionSource = item.plainDescription ?? (item.description ? stripHTML(item.description) : "");
+        if (descriptionSource) {
+            const desc = document.createElement("div");
+            const truncated = descriptionSource.slice(0, 250) + (descriptionSource.length > 250 ? "..." : "");
+            desc.textContent = truncated;
+            article.appendChild(desc);
+        }
+
+        const footer = document.createElement("div");
+        const readMore = document.createElement("a");
+        readMore.href = item.link;
+        readMore.target = "_blank";
+        readMore.textContent = "Read more →";
+        footer.appendChild(readMore);
+        article.appendChild(footer);
+        
+        return article;
+    }
+
+    function slugify (text: string): string {
+        return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    }
+
+    async function parseFeed (url: string): Promise<FeedItem[]> {
+        try {
+            const proxyUrl = `${WORKER_URL}?url=${encodeURIComponent(url)}`;
+            const response = await fetch(proxyUrl);
+            
+            if (!response.ok) {
+                console.error(`Failed to fetch feed ${url}: ${response.status}`);
+                return [];
+            }
+            
+            const text = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(text, "text/xml");
+            
+            const feedTitle = doc.querySelector("channel > title, feed > title")?.textContent.trim() || url;
+            const fallbackDate = getFallbackDate(doc);
+            
+            const items: FeedItem[] = [];
+            
+            const rssItems = doc.querySelectorAll("item");
+            rssItems.forEach(item => {
+                const title = item.querySelector("title")?.textContent.trim() || "Untitled";
+                const link = item.querySelector("link")?.textContent.trim() || "";
+                const pubDate =
+                    parseDateString(item.querySelector("pubDate")?.textContent.trim())
+                    || parseDateString(item.querySelector("dc\\:date")?.textContent.trim())
+                    || fallbackDate
+                    || new Date();
+                const description = item.querySelector("description")?.textContent.trim() || "";
+                const author = item.querySelector("author, creator, dc\\:creator")?.textContent.trim() || "";
+                const plainDescription = description ? stripHTML(description) : "";
+                
+                items.push({
+                    title,
+                    link,
+                    pubDate,
+                    description,
+                    plainDescription,
+                    source: feedTitle,
+                    sourceUrl: url,
+                    author,
+                });
+            });
+            
+            const atomEntries = doc.querySelectorAll("entry");
+            atomEntries.forEach(entry => {
+                const title = entry.querySelector("title")?.textContent.trim() || "Untitled";
+                const link = entry.querySelector("link")?.getAttribute("href") || "";
+                const pubDate =
+                    parseDateString(entry.querySelector("published")?.textContent.trim())
+                    || parseDateString(entry.querySelector("updated")?.textContent.trim())
+                    || fallbackDate
+                    || new Date();
+                const description = entry.querySelector("summary, content")?.textContent.trim() || "";
+                const author = entry.querySelector("author > name")?.textContent.trim() || "";
+                const plainDescription = description ? stripHTML(description) : "";
+                
+                items.push({
+                    title,
+                    link,
+                    pubDate,
+                    description,
+                    plainDescription,
+                    source: feedTitle,
+                    sourceUrl: url,
+                    author,
+                });
+            });
+            
+            return items;
+        } catch (error) {
+            console.error(`Error fetching feed ${url}:`, error);
+            return [];
+        }
+    }
+
+    document.addEventListener("astro:page-load", () => {
+        const loadingEl = document.getElementById("loading");
+        const containerEl = document.getElementById("feed-container");
+        const toggleList = document.getElementById("feed-toggle-list");
+        const searchInput = document.getElementById("feed-search") as HTMLInputElement | null;
+        const selectAllBtn = document.getElementById("feed-select-all") as HTMLButtonElement | null;
+        const clearAllBtn = document.getElementById("feed-clear-all") as HTMLButtonElement | null;
+        const refreshBtn = document.getElementById("refresh-feeds") as HTMLButtonElement | null;
+
+        if (!loadingEl || !containerEl || !toggleList) return;
+
+        const state: { items: FeedItem[]; searchTerm: string } = {
+            items: [],
+            searchTerm: "",
+        };
+
+        function setLoading (isLoading: boolean) {
+            if (!loadingEl) return;
+
+            if (isLoading) {
+                loadingEl.innerHTML = "Loading feeds...<br>This may take up to a few minutes...";
+                loadingEl.style.display = "block";
+            } else {
+                loadingEl.style.display = "none";
+            }
+            if (refreshBtn) {
+                refreshBtn.disabled = isLoading;
+            }
+        }
+
+        function renderItems (items: FeedItem[]) {
+            if (!containerEl) return;
+
+            containerEl.innerHTML = "";
+            if (items.length === 0) {
+                containerEl.innerHTML = "<p class=\"no-items\">No feed items match your filters.</p>";
+                return;
+            }
+            const orderedItems = [...items].sort((a, b) => getItemTimestamp(b) - getItemTimestamp(a));
+            const fragment = document.createDocumentFragment();
+            orderedItems.forEach(item => fragment.appendChild(createFeedItemElement(item)));
+            containerEl.appendChild(fragment);
+        }
+
+        function getSelectedSources () {
+            if (!toggleList)
+                return { 
+                    selected: new Set<string>(),
+                    hasCheckboxes: false,
+                    hasSelection: false,
+                };
+            const checkboxes = toggleList.querySelectorAll<HTMLInputElement>("input[type=\"checkbox\"]");
+            const selected = new Set<string>();
+            checkboxes.forEach(box => {
+                if (box.checked && box.dataset.source)
+                    selected.add(box.dataset.source);
+            });
+            return {
+                selected,
+                hasCheckboxes: checkboxes.length > 0,
+                hasSelection: Array.from(checkboxes).some(box => box.checked),
+            };
+        }
+
+        function applyFilters () {
+            const searchTerm = state.searchTerm.trim().toLowerCase();
+            const { selected, hasCheckboxes, hasSelection } = getSelectedSources();
+            const filtered = state.items.filter(item => {
+                const matchesSource = hasCheckboxes ? (hasSelection ? selected.has(item.source) : false) : true;
+                const descriptionText = item.plainDescription?.toLowerCase() || "";
+                const matchesSearch = !searchTerm
+                    || item.title.toLowerCase().includes(searchTerm)
+                    || descriptionText.includes(searchTerm)
+                    || item.source.toLowerCase().includes(searchTerm)
+                    || (item.author && item.author.toLowerCase().includes(searchTerm));
+                return matchesSource && matchesSearch;
+            });
+            renderItems(filtered);
+        }
+
+        function buildToggleList () {
+            if (!toggleList) return;
+
+            const sources = [...new Set(state.items.map(item => item.source))].sort((a, b) => a.localeCompare(b));
+            toggleList.innerHTML = "";
+            sources.forEach(source => {
+                const wrapper = document.createElement("div");
+
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                const id = `feed-toggle-${slugify(source)}`;
+                checkbox.id = id;
+                checkbox.checked = true;
+                checkbox.dataset.source = source;
+
+                const label = document.createElement("label");
+                label.setAttribute("for", id);
+                label.textContent = source;
+
+                wrapper.appendChild(checkbox);
+                wrapper.appendChild(label);
+                toggleList.appendChild(wrapper);
+            });
+        }
+
+        async function loadFeeds () {
+            if (!containerEl) return;
+
+            setLoading(true);
+            containerEl.innerHTML = "";
+            const allFeeds = await Promise.all(RSS_FEEDS.map(parseFeed));
+            const combinedItems = allFeeds.flat();
+            combinedItems.sort((a, b) => getItemTimestamp(b) - getItemTimestamp(a));
+            state.items = combinedItems;
+            buildToggleList();
+            applyFilters();
+            setLoading(false);
+        }
+
+        searchInput?.addEventListener("input", event => {
+            state.searchTerm = (event.target as HTMLInputElement).value;
+            applyFilters();
+        });
+
+        toggleList.addEventListener("change", event => {
+            if ((event.target as HTMLElement).tagName.toLowerCase() === "input") {
+                applyFilters();
+            }
+        });
+
+        selectAllBtn?.addEventListener("click", () => {
+            toggleList.querySelectorAll<HTMLInputElement>("input[type=\"checkbox\"]").forEach(box => {
+                box.checked = true;
+            });
+            applyFilters();
+        });
+
+        clearAllBtn?.addEventListener("click", () => {
+            toggleList.querySelectorAll<HTMLInputElement>("input[type=\"checkbox\"]").forEach(box => {
+                box.checked = false;
+            });
+            applyFilters();
+        });
+
+        refreshBtn?.addEventListener("click", () => {
+            loadFeeds().catch(console.error);
+        });
+
+        loadFeeds().catch(error => {
+            console.error("Error loading feeds:", error);
+            loadingEl.textContent = "Error loading feeds. Please try again later.";
+            if (refreshBtn) refreshBtn.disabled = false;
+        });
+    });
+</script>
+
+<style>
+    .search-section {
+        margin-bottom: 2rem;
+    }
+
+    #feed-search {
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        padding: 5px 0;
+        color: var(--primary);
+        font-size: 1rem;
+    }
+
+    #feed-search::placeholder {
+        color: var(--primary);
+    }
+
+    .feed-types {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .feed-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .feed-actions button {
+        background-color: var(--secondary);
+        padding: 0.35rem 0.85rem;
+    }
+
+    .feed-actions button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .feed-actions button:hover:not(:disabled) {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .feed-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .feed-container :global(.feed-meta) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .feed-container :global(.no-items) {
+        padding: 2rem;
+    }
+</style>
