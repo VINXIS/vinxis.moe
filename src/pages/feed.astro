@@ -196,22 +196,22 @@ const meta = {
             const parser = new DOMParser();
             const doc = parser.parseFromString(text, "text/xml");
             
-            const feedTitle = doc.querySelector("channel > title, feed > title")?.textContent.trim() || url;
+            const feedTitle = doc.querySelector("channel > title, feed > title")?.textContent?.trim() || url;
             const fallbackDate = getFallbackDate(doc);
             
             const items: FeedItem[] = [];
             
             const rssItems = doc.querySelectorAll("item");
             rssItems.forEach(item => {
-                const title = item.querySelector("title")?.textContent.trim() || "Untitled";
-                const link = item.querySelector("link")?.textContent.trim() || "";
+                const title = item.querySelector("title")?.textContent?.trim() || "Untitled";
+                const link = item.querySelector("link")?.textContent?.trim() || "";
                 const pubDate =
-                    parseDateString(item.querySelector("pubDate")?.textContent.trim())
-                    || parseDateString(item.querySelector("dc\\:date")?.textContent.trim())
+                    parseDateString(item.querySelector("pubDate")?.textContent?.trim())
+                    || parseDateString(item.querySelector("dc\\:date")?.textContent?.trim())
                     || fallbackDate
                     || new Date();
-                const description = item.querySelector("description")?.textContent.trim() || "";
-                const author = item.querySelector("author, creator, dc\\:creator")?.textContent.trim() || "";
+                const description = item.querySelector("description")?.textContent?.trim() || "";
+                const author = item.querySelector("author, creator, dc\\:creator")?.textContent?.trim() || "";
                 const plainDescription = description ? stripHTML(description) : "";
                 
                 items.push({
@@ -228,15 +228,15 @@ const meta = {
             
             const atomEntries = doc.querySelectorAll("entry");
             atomEntries.forEach(entry => {
-                const title = entry.querySelector("title")?.textContent.trim() || "Untitled";
+                const title = entry.querySelector("title")?.textContent?.trim() || "Untitled";
                 const link = entry.querySelector("link")?.getAttribute("href") || "";
                 const pubDate =
-                    parseDateString(entry.querySelector("published")?.textContent.trim())
-                    || parseDateString(entry.querySelector("updated")?.textContent.trim())
+                    parseDateString(entry.querySelector("published")?.textContent?.trim())
+                    || parseDateString(entry.querySelector("updated")?.textContent?.trim())
                     || fallbackDate
                     || new Date();
-                const description = entry.querySelector("summary, content")?.textContent.trim() || "";
-                const author = entry.querySelector("author > name")?.textContent.trim() || "";
+                const description = entry.querySelector("summary, content")?.textContent?.trim() || "";
+                const author = entry.querySelector("author > name")?.textContent?.trim() || "";
                 const plainDescription = description ? stripHTML(description) : "";
                 
                 items.push({
