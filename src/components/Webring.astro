@@ -1,21 +1,33 @@
-<div class="webring">
-    <a href="https://nonacademic.net" title="L4K">L4K</a>
-    <div class="webringButtons">
-        <a href="https://nonacademic.net/ring?action=prev&amp;from=VINXIS" id="latex4000Prev" title="Previous">←</a>
-        <a href="https://nonacademic.net/ring?action=rand&amp;from=VINXIS" id="latex4000Random" title="Random">Random</a>
-        <a href="https://nonacademic.net/ring?action=next&amp;from=VINXIS" id="latex4000Next" title="Next">→</a>
+---
+// Get a prop that is `horizontal: boolean` to determine layout
+const { horizontal = false } = Astro.props;
+---
+<div class={horizontal ? "webring-horizontal" : undefined}>
+    <div class="webring">
+        <a href="https://nonacademic.net" title="L4K">L4K</a>
+        <div class="webringButtons">
+            <a href="https://nonacademic.net/ring?action=prev&amp;from=VINXIS" id="latex4000Prev" title="Previous">←</a>
+            <a href="https://nonacademic.net/ring?action=rand&amp;from=VINXIS" id="latex4000Random" title="Random">Random</a>
+            <a href="https://nonacademic.net/ring?action=next&amp;from=VINXIS" id="latex4000Next" title="Next">→</a>
+        </div>
     </div>
-</div>
-<div class="webring">
-    <a href="https://staydown.money/" title="SDMC">SDMC</a>
-    <div class="webringButtons">
-        <a href="https://staydown.money/wr?prev=https://vinxis.moe/" id="sdmcPrev" title="Previous">←</a>
-        <a href="https://staydown.money/wr?random=https://vinxis.moe/" id="sdmcRandom" title="Random">Random</a>
-        <a href="https://staydown.money/wr?next=https://vinxis.moe/" id="sdmcNext" title="Next">→</a>
+    <div class="webring">
+        <a href="https://staydown.money/" title="SDMC">SDMC</a>
+        <div class="webringButtons">
+            <a href="https://staydown.money/wr?prev=https://vinxis.moe/" id="sdmcPrev" title="Previous">←</a>
+            <a href="https://staydown.money/wr?random=https://vinxis.moe/" id="sdmcRandom" title="Random">Random</a>
+            <a href="https://staydown.money/wr?next=https://vinxis.moe/" id="sdmcNext" title="Next">→</a>
+        </div>
     </div>
 </div>
 
 <style>
+    .webring-horizontal {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
     .webring {
         display: flex;
         align-items: center;
