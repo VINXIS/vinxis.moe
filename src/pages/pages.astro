@@ -94,7 +94,7 @@ pageInfos.forEach(pageInfo => {
             <div class="page-types">
                 <input type="checkbox" id="blog" checked />
                 <label for="blog">Blog</label>
-                <input type="checkbox" id="notes" checked />
+                <input type="checkbox" id="notes" />
                 <label for="notes">Notes</label>
                 <input type="checkbox" id="posts" checked />
                 <label for="posts">Posts</label>
@@ -129,7 +129,7 @@ pageInfos.forEach(pageInfo => {
         <br>
         <div id="search-list">
             {
-                pages.map((page) => {
+                pages.filter(page => page.page.collection !== "notes").map((page) => {
                     return (
                         <a href={page.page.collection + "/" + page.page.id} style={`color:var(--${page.page.collection}); height:100px;`}>
                             <div style="display:flex; justify-content:space-between; gap:1rem;">
@@ -205,7 +205,6 @@ document.addEventListener("astro:page-load", async () => {
     let currentSort: SortMethod = "modified-desc";
 
     async function updateList () {
-        console.log("before", filteredPages);
         filteredPages = pages.filter((page) => {
             if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
             if (searchTags.length > 0 && !page.rendered.metadata.frontmatter.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
@@ -216,7 +215,6 @@ document.addEventListener("astro:page-load", async () => {
 
             return true;
         });
-        console.log("after", filteredPages);
         filteredPages.sort(sortMethods[currentSort]);
 
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
@@ -235,6 +233,7 @@ document.addEventListener("astro:page-load", async () => {
             </a>`;
         }).join("");
     }
+
     document.getElementById("search")!.addEventListener("input", event => {
         search = (event.target as HTMLInputElement).value.toLowerCase();
         updateList().catch(console.error);
@@ -261,7 +260,6 @@ document.addEventListener("astro:page-load", async () => {
         updateList().catch(console.error);
     });
     document.getElementById("search-tags")!.addEventListener("click", e => e.stopPropagation());
-
     document.querySelectorAll(".search-tag").forEach(tag => {
         tag.addEventListener("click", event => {
             searchTags = (event.target as HTMLElement).textContent!.slice(1).toLowerCase();
