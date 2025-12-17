@@ -223,6 +223,11 @@ document.addEventListener("astro:page-load", () => {
         }
     }
 
+    .post-page a, .post-page code {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
     .post-page, .post-page :global(details) {
         display: flex;
         flex-direction: column;
