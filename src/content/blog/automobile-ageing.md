@@ -1,13 +1,15 @@
 ---
 title: The Automobile Wants You Dead And The Hype On Ageing Reversal
 created: "1765947287138"
-lastModified: "1765947287138"
+lastModified: "1765947491101"
 tags:
   - life
 image: ./road.png
 imageAlt: Random road near Edmonton
 ---
-<small>I just want to preface that I don't actually like the word grifter it's actually kind of a useless fucking word but I use it a bit here because I am ANGYYYYY!!!! Also wanna know another useless word? Hypocrisy. Want to know another? Integrity. Another? Morality. Ok this is for another post tbh (maybe idk i kinda dont feel like talking about this)</small>
+<small>I just want to preface that I don't actually like the word grifter it's actually kind of a useless fucking word but I use it a bit here because I am ANGYYYYY!!!! Also wanna know another useless word? Hypocrisy. Want to know another? Integrity. Another? Morality. Ok this is for another post tbh (maybe idk i kinda dont feel like talking about this)
+
+Also I use aging and ageing interchangeably cuz it doesnt matter</small>
 
 # Our State On Roads
 
