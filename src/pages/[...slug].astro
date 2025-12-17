@@ -223,7 +223,7 @@ document.addEventListener("astro:page-load", () => {
         }
     }
 
-    .post-page a, .post-page code {
+    .post-page :global(a), .post-page :global(code) {
         overflow-wrap: anywhere;
         word-break: break-word;
     }
@@ -234,7 +234,7 @@ document.addEventListener("astro:page-load", () => {
         gap: 2ch;
     }
 
-    .post-page h1, .post-backlink {
+    .post-page :global(h1), .post-backlink {
         text-transform: capitalize;
     }
 
@@ -245,7 +245,7 @@ document.addEventListener("astro:page-load", () => {
         flex-wrap: wrap;
     }
 
-    .post-page img, .post-page :global(p img) {
+    .post-page :global(img), .post-page :global(p img) {
         max-width: 33%;
         cursor: pointer;
         height: auto;
