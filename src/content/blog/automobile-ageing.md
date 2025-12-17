@@ -1,7 +1,7 @@
 ---
 title: The Automobile Wants You Dead And The Hype On Ageing Reversal
 created: "1765947287138"
-lastModified: "1765947491101"
+lastModified: "1765949187959"
 tags:
   - life
 image: ./road.png
@@ -58,15 +58,15 @@ Also fuck off calling aging "either a hardware problem or a software problem" Di
 
 # Crossroads
 
-LITERALLY within A MONTH of little old me in the peak of COVID looking into the field of biogerontology made me realize that it's kinda just sad as hell. If "defeating aging" is so important, AND FRANLY, I THINK IT IS, then why are we wasting SO much time on these hyper-individualistic factors like spending 2 million dollars on supplements with scientifically dubious sources? Why is most of the research and work trying to figure out how we can get EVEN THE FUNDAMENTALS that are much more important to aging as high as ever possible as a choice for everyone?
+LITERALLY within A MONTH of little old me in the peak of COVID looking into the field of biogerontology made me realize that it's kinda just sad as hell. If "defeating aging" is so important, AND FRANKLY, I THINK IT IS, then why are we wasting SO much time on these hyper-individualistic factors like spending 2 million dollars on supplements with scientifically dubious sources? Why is most of the research and work NOT trying to figure out how we can get EVEN THE FUNDAMENTALS that are much more important to aging as high as ever possible as a choice for everyone?
 
-There is a very obvious crossroads with a very obvious shitty cancerous tumor sticking out as a result when you just quickly look at the similarities of both cases. Quite funny considering cancerous tumors are usually a sign of hyperactivity in the hallmarks of aging [^18]. I'm not really a super anti-individualist person, nor am I the one to be an instigator to the ideologue...I have a similar level of qualms and assurances to collectivism anyway. The thing is though that the intersection between both, the state of biogerontology, and the state of city planning, are festered with a disease. A tumor.
+There is a very obvious crossroads with a very obvious shitty cancerous tumor sticking out as a result when you just quickly look at the similarities of both cases. Quite funny considering cancerous tumors are usually a sign of hyperactivity in the opposite direction for the hallmarks of aging [^18]. I'm not really a super anti-individualist person, nor am I the one to be an instigator to the ideologue...I have a similar level of qualms and assurances to collectivism anyway. The thing is though that the intersection between both, the state of biogerontology, and the state of city planning, are festered with this disease.
 
-I'm gonna be honest, it really seems like what I thought was the case before for years. Systemic issues need to be dealt with for aging research to have any semblance of sense to it. Systemic issues like the roads we have plastered everywhere on the planet lol. I am quite convinced that a conversion to city planning that is far more reliant on other modes of transportation compared to cars would allow us to require far less roads, which in turn provides many social cultural and environmental benefits, while also quite directly improving even the basic tenants of longer living by less potential factors of stress and more potential factors of basic exercise. Those other benefits will also directly apply to the basic tenants too.
+I'm gonna be honest, it really seems like what I thought was the case before for years. Systemic issues need to be dealt with for aging research to have any purpose to it. Systemic issues like the roads we have plastered everywhere on the planet lol. I am quite convinced that a conversion to city planning that is far more reliant on other modes of transportation compared to cars would allow us to require far less roads, which in turn provides many social cultural and environmental benefits, while also quite directly improving even the basic tenants of longer living by less potential factors of stress and more potential factors of basic exercise. Those social cultural and environmental benefits will also directly apply to the basic tenants too.
 
 Unfortunately however, such blasphemy with anti-individualist rhetoric is not viable because it's simply just not profitable. OH WELL xP I am hoping to move to Switzerland or Japan sooner than later anyway so Lawl.
 
-But seriously, we really need to kill this tumor. In case it hasn't been clear, the tumor is obviously fucking capitalism, but more specifically, the notion of hyper-individualism that festers as a result of capitalism itself [^27] [^28]. I am a big proponent of doing literally anything that goes against this, because I think they are all not only fighting against the core issue, but will also help with your own longevity if you so desire; whether it be, you know, and you have probably heard a lot of these time and time again:
+But seriously, we really need to kill this tumor. In case it hasn't been obvious at this point in the post, the tumor is obviously fucking capitalism. More specifically, it's the notion of hyper-individualism that festers as a result of capitalism itself [^27] [^28]. I am a big proponent of doing literally anything that goes against this, because I think they are all not only fighting against the core issue, but will also help with your own longevity if you so desire; whether it be, you know, and you have probably heard some of these time and time again but I'm listing them anyway:
 - Advocating for other modes of transport like biking infra and public transport and walking places
 - Advocating to kill zoning
 - Spamming the shit out of representatives and suggesting others to do it
@@ -86,7 +86,7 @@ Regardless, **mutual aid** and **direct action** are beautiful. Anything that ca
 
 We need to start there.
 
-The research is obviously useful, and it obviously shouldn't stop, but all of the research in aging that we will ever do is ultimately useless if the core foundation and tenants isn't even available for people.
+The research is definitely useful, and it obviously shouldn't stop, but all of the research in aging that we will ever do is ultimately useless if the core foundation and tenants aren't even solvable and available for people.
 
 Let's do this!!!!! Please!!!!!!! Help!!!!!!!!!!!m PLEASE HELP!!!!!!!!@!@!!!@!@
 
