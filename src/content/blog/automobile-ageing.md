@@ -7,6 +7,9 @@ tags:
 image: ./road.png
 imageAlt: Random road near Edmonton
 ---
+Edits:
+ - Small addition to small line at top. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/7be5d2c190c7d63d9ef012f3b7f5f42559295cf9)
+
 <small>I just want to preface that I don't actually like the word grifter it's actually kind of a useless fucking word but I use it a bit here because I am ANGYYYYY!!!! Also wanna know another useless word? Hypocrisy. Want to know another? Integrity. Another? Morality. Ok this is for another post tbh (maybe idk i kinda dont feel like talking about this)
 
 Also I use aging and ageing interchangeably cuz it doesnt matter</small>
