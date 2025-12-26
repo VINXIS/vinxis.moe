@@ -1,0 +1,182 @@
+---
+const { messages } = Astro.props;
+
+---
+<message-renderer data-messages={JSON.stringify(messages)}></message-renderer>
+<script>
+    import type { MessageRenderData } from "../utils/messageType";
+
+    const contrastingCodeBackground = (color: string | undefined) => {
+        if (!color)
+            return "#1e1e1e";
+
+        let hex = color.trim().toLowerCase();
+        if (!hex.startsWith("#"))
+            return "#1e1e1e";
+
+        hex = hex.replace("#", "");
+        if (hex.length === 3)
+            hex = hex.split("").map((c) => c + c).join("");
+
+        if (hex.length !== 6)
+            return "#1e1e1e";
+
+        const [r, g, b] = hex.match(/.{2}/g)!.map((pair) => parseInt(pair, 16) / 255);
+        if (r === undefined || g === undefined || b === undefined)
+            return "#1e1e1e";
+
+        const luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        return luminance > 0.45 ? "#0a0a0a" : "#f5f5f5";
+    };
+
+    class MessageRenderer extends HTMLElement {
+        static observedAttributes = ["message-number"];
+
+        private messages: MessageRenderData[] = [];
+        private messageNumber: number = 1;
+        private removingElements = new Set<HTMLElement>();
+
+        connectedCallback () {
+            this.messages = JSON.parse(this.dataset.messages || "[]") as MessageRenderData[];
+            this.messageNumber = parseInt(window.location.hash.substring(1), 10) || 1;
+            if (isNaN(this.messageNumber) || this.messageNumber < 1)
+                this.messageNumber = 1;
+            else
+                this.messageNumber = Math.min(Math.max(this.messageNumber, 1), this.messages.length);
+            this.updateMessageNumber();
+
+            // On spacebar or arrow right or arrow down, go to next message
+            window.addEventListener("keydown", (event) => {
+                if (event.code === "Space" || event.code === "ArrowRight" || event.code === "ArrowDown") {
+                    event.preventDefault();
+                    this.messageNumber = Math.min(this.messageNumber + 1, this.messages.length);
+                    this.updateMessageNumber();
+                }
+            });
+
+            // On arrow left or arrow up, go to previous message
+            window.addEventListener("keydown", (event) => {
+                if (event.code === "ArrowLeft" || event.code === "ArrowUp") {
+                    event.preventDefault();
+                    this.messageNumber = Math.max(this.messageNumber - 1, 1);
+                    this.updateMessageNumber();
+                }
+            });
+        }
+
+        private updateMessageNumber () {
+            window.location.hash = `#${this.messageNumber}`;
+            const index = this.messageNumber - 1;
+            if (!this.messages[index])
+                return;
+
+            // Only look at children that are not being removed to deal with race conditions from transitions
+            const actualChildCount = Array.from(this.children)
+                .filter(child => !this.removingElements.has(child as HTMLElement))
+                .length;
+
+            if (index < actualChildCount) {
+                for (let i = actualChildCount - 1; i > index; i--) {
+                    this.popMessage(this.children[i] as HTMLElement);
+                }
+            } else {
+                for (let i = actualChildCount; i <= index; i++) {
+                    this.appendMessage(this.messages[i]!);
+                }
+            }
+
+            // Scroll to where the new message is with smooth behavior
+            const visibleChildren = Array.from(this.children)
+                .filter(child => !this.removingElements.has(child as HTMLElement));
+            const targetChild = visibleChildren[index] as HTMLElement;
+            targetChild.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+
+        private appendMessage (data: MessageRenderData) {
+            const childElem = document.createElement("div");
+            childElem.innerHTML = data.html;
+            childElem.style.setProperty("--text-colour", data.textColour);
+            childElem.style.setProperty("--background-colour", data.backgroundColour);
+
+            if (data.extraStyles)
+                childElem.style.cssText += data.extraStyles;
+
+            // Dynamically change <code> bg colours based on textColour
+            const codeElems = childElem.getElementsByTagName("code");
+            const codeBackground = contrastingCodeBackground(data.textColour);
+            console.log(codeBackground);
+            for (let i = 0; i < codeElems.length; i++)
+                if (codeElems[i])
+                    codeElems[i]!.style.backgroundColor = codeBackground;
+
+            switch (data.anchor) {
+                case "left":
+                    childElem.style.textAlign = "left";
+                    break;
+                case "right":
+                    childElem.style.textAlign = "right";
+                    break;
+                case "top":
+                    childElem.style.alignItems = "flex-start";
+                    break;
+                case "bottom":
+                    childElem.style.alignItems = "flex-end";
+                    break;
+                case "center":
+                    childElem.style.textAlign = "center";
+                    break;
+                case "top-left":
+                    childElem.style.textAlign = "left";
+                    childElem.style.alignItems = "flex-start";
+                    break;
+                case "top-right":
+                    childElem.style.textAlign = "right";
+                    childElem.style.alignItems = "flex-start";
+                    break;
+                case "bottom-left":
+                    childElem.style.textAlign = "left";
+                    childElem.style.alignItems = "flex-end";
+                    break;
+                case "bottom-right":
+                    childElem.style.textAlign = "right";
+                    childElem.style.alignItems = "flex-end";
+                    break;
+            }
+
+            childElem.style.opacity = "0";
+            this.appendChild(childElem);
+            requestAnimationFrame(() => {
+                childElem.style.opacity = "1";
+            });
+        }
+
+        private popMessage (child: HTMLElement) {
+            this.removingElements.add(child);
+            child.style.opacity = "0";
+            child.addEventListener("transitionend", () => {
+                if (this.contains(child))
+                    this.removeChild(child);
+                this.removingElements.delete(child);
+            }, { once: true });
+        }
+    }
+
+    customElements.define("message-renderer", MessageRenderer);
+</script>
+<style is:global>
+    message-renderer div {
+        border-radius: 5px;
+        margin: 5px 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    message-renderer p {
+        transition: all 0.5s ease-in-out;
+        font-size: 2rem;
+        color: var(--text-colour);
+        background-color: var(--background-colour);
+        padding: 10px;
+        border-radius: 5px;
+        margin: 0;
+    }
+</style>

@@ -1,0 +1,278 @@
+---
+import type { GetStaticPaths } from "astro";
+import type { MessageRenderData } from "../../utils/messageType";
+import MessageRenderer from "../../components/MessageRenderer.astro";
+import Layout from "../../layouts/testing.astro";
+import { marked } from "marked";
+import { getCollection } from "astro:content";
+
+const meta = {
+    title: "test",
+    ogTitle: "test",
+    description: "testing and shit",
+    ogDescription: "testing and shit",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "test",
+    twitterDescription: "testing and shit",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+
+export const getStaticPaths = (async () => {
+    const testing = await getCollection("testing");
+    return testing.map((item) => ({
+        params: { markdown: item.id },
+        props: { page: item },
+    }));
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+
+if (!page.body)
+    throw new Error("No page body found");
+
+const lines = page.body.split("\n");
+const messages: MessageRenderData[] = [];
+for (const line of lines) {
+    // Usually it will be formatted like `Name: Message`
+    const colonIndex = line.indexOf(":");
+    if (colonIndex === -1)
+        continue;
+
+    const name = line.substring(0, colonIndex).trim();
+    const message = await marked.parse(line.substring(colonIndex + 1).trim());
+
+    // Check if the name corresponds to any name in page.data.people
+    const personData = page.data.people[name] || page.data.people[name.toLowerCase()] || page.data.people[name.toUpperCase()];
+    if (!personData)
+        continue;
+
+    messages.push({
+        person: name,
+        html: message,
+        anchor: personData.anchor,
+        textColour: personData.text,
+        backgroundColour: personData.background,
+        extraStyles: personData.extraStyles || "",
+    });
+}
+---
+<div id="play-overlay">
+    <button id="play-button">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45 35L85 60L45 85V35Z" fill="currentColor"/>
+        </svg>
+    </button>
+</div>
+
+<Layout meta={meta}>
+    <div class="messageRenderContainer">
+        <MessageRenderer messages={messages} />
+    </div>
+
+    <div class="audio-controls">
+        <button id="pause-button">
+            <svg width="50" height="50" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 35H55V85H40V35Z" fill="currentColor"/>
+                <path d="M65 35H80V85H65V35Z" fill="currentColor"/>
+            </svg>
+        </button>
+        <div class="volume">
+            <label for="volume-slider">Volume</label>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5" />
+        </div>
+        <div class="credits">
+            <div>
+                <small>{page.data.music.Artist} - {page.data.music.Title}</small>
+            </div>
+            <a href={page.data.music.Source} target="_blank" rel="noopener noreferrer">
+                <small>Source</small>
+            </a>
+        </div>
+    </div>
+</Layout>
+<script data-music={page.data.music.Filename} is:inline>
+    const musicFile = document.currentScript.getAttribute("data-music");
+    if (!musicFile)
+        throw new Error("No music file specified");
+
+    // audio API setup
+
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    let audioBuffer = null;
+    let sourceNode = null;
+    const gainNode = audioContext.createGain();
+    gainNode.connect(audioContext.destination);
+
+    const savedVolume = localStorage.getItem("musicVolume");
+    gainNode.gain.value = savedVolume ? parseFloat(savedVolume) : 0.5;
+
+    fetch(`/assets/${musicFile}`)
+        .then(response => response.arrayBuffer())
+        .then(arrayBuffer => audioContext.decodeAudioData(arrayBuffer))
+        .then(decodedAudio => {
+            audioBuffer = decodedAudio;
+        })
+        .catch(e => console.error("Error loading audio:", e));
+
+    function playAudio () {
+        if (!audioBuffer) {
+            console.error("Audio buffer not loaded yet");
+            return;
+        }
+
+        if (sourceNode)
+            sourceNode.stop();
+
+        sourceNode = audioContext.createBufferSource();
+        sourceNode.buffer = audioBuffer;
+        sourceNode.loop = true;
+        sourceNode.connect(gainNode);
+        sourceNode.start(0);
+    }
+
+    const playOverlay = document.getElementById("play-overlay");
+    const startButton = document.getElementById("play-button");
+    const pauseButton = document.getElementById("pause-button");
+    const volumeSlider = document.getElementById("volume-slider");
+
+    let isPaused = false;
+    const startAudio = async () => {
+        if (audioContext.state === "suspended")
+            await Promise.race([ // Probably the stupidest shit ever why does audioContext.resume not throw when not allowed to resume on autoplay
+                audioContext.resume(),
+                new Promise((_, reject) => setTimeout(() => reject(new Error("Audio context resume timeout")), 100)),
+            ]);
+
+        if (!sourceNode && audioBuffer)
+            playAudio();
+
+        playOverlay.style.opacity = "0";
+        setTimeout(() => {
+            playOverlay.style.display = "none";
+        }, 200);
+    };
+
+    // Tries autoplay first, waits for user interaction otherwise
+    startAudio()
+        .catch(() => {
+            startButton.addEventListener("click", () => {
+                startAudio().catch((e) => {
+                    console.error("Failed to play audio:", e);
+                    alert("Unable to play audio. Please check your browser settings.");
+                });
+            });
+        });
+
+    // Pause/unpause button
+    pauseButton.addEventListener("click", () => {
+        if (isPaused) {
+            audioContext.resume();
+            isPaused = false;
+            pauseButton.innerHTML = `<svg width="50" height="50" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 35H55V85H40V35Z" fill="currentColor"/>
+                <path d="M65 35H80V85H65V35Z" fill="currentColor"/>
+            </svg>`;
+        } else {
+            audioContext.suspend();
+            isPaused = true;
+            pauseButton.innerHTML = `<svg width="50" height="50" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M45 35L85 60L45 85V35Z" fill="currentColor"/>
+            </svg>`;
+        }
+    });
+
+    volumeSlider.value = gainNode.gain.value.toString();
+    volumeSlider.addEventListener("input", (event) => {
+        const target = event.target;
+        const volume = parseFloat(target.value);
+        gainNode.gain.value = volume;
+        localStorage.setItem("musicVolume", volume.toString());
+    });
+</script>
+
+<style>
+    .messageRenderContainer {
+        padding-bottom: 50px;
+    }
+
+    #play-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        transition: opacity 0.2s ease;
+    }
+
+    #play-button, #pause-button {
+        background: none;
+        border: none;
+        padding: 0;
+        color: white;
+        cursor: pointer;
+    }
+
+    #pause-button {
+        transition: color 0.2s ease, scale 0.2s ease;
+    }
+
+    #pause-button:hover {
+        color: #cccccc;
+        scale: 1.1;
+    }
+
+    .audio-controls {
+        position: fixed;
+        height: 75px;
+        bottom: 0;
+        left: 0;
+        margin: 40px;
+        margin-bottom: 0;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .audio-controls::before {
+        content: "";
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .volume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #volume-slider {
+        width: 100px;
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        color: white;
+    }
+
+    .credits {
+        display: flex;
+        flex-direction: column;
+    }
+</style>

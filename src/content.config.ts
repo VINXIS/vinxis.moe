@@ -31,8 +31,29 @@ const posts = defineCollection({
     }),
 });
 
+const testing = defineCollection({
+    loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/testing" }),
+    schema: z.object({
+        music: z.object({
+            Filename: z.string(),
+            Artist: z.string(),
+            Title: z.string(),
+            Source: z.string(),
+        }),
+        people: z.record(z.object({
+            text: z.string(),
+            background: z.string(),
+            anchor: z.string(),
+            extraStyles: z.string().optional(),
+        })),
+        next: z.string().optional(),
+        prev: z.string().optional(),
+    }),
+});
+
 export const collections = {
     "blog": blog,
     "notes": notes,
     "posts": posts,
+    "testing": testing,
 };
