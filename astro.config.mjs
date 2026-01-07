@@ -8,6 +8,8 @@ import remarkBreaks from "remark-breaks";
 import rehypeKatex from "rehype-katex";
 import remarkWikiLink from "remark-wiki-link";
 
+import mdx from "@astrojs/mdx";
+
 // Gets all content files and create an array of slug strings for the remark wiki link plugin
 const files = import.meta.glob("./src/content/**/*.md");
 const permalinks = [];
@@ -18,9 +20,7 @@ for (const file in files)
 export default defineConfig({
     output: "static",
     site: "https://vinxis.moe",
-    integrations: [
-        sitemap(),
-    ],
+    integrations: [sitemap(), mdx()],
     redirects: {
         "/about": "/me",
         "/now": "/me",
