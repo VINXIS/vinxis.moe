@@ -18,26 +18,48 @@ const meta = {
     twitterImage: "https://vinxis.moe/metaImage.png",
 };
 
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import type { PageInfo } from "../utils/pageInfo";
+import dateToString from "../utils/dateToString";
 
 const blog = await getCollection("blog");
 const notes = await getCollection("notes");
 const posts = await getCollection("posts");
 
-const pages = await Promise.all([...blog, ...notes, ...posts].map(async page => {
+const pages = [...blog, ...notes, ...posts].map(page => {
     return {
-        page,
-        render: await render(page),
+        ...page,
+        data: {
+            ...page.data,
+            created: dateToString(page.data.created),
+            lastModified: "lastModified" in page.data ? dateToString(page.data.lastModified) : undefined,
+        },
     };
-}));
+});
+
+const getPageTitle = (page: (typeof pages)[number]) => {
+    return "title" in page.data && page.data.title
+        ? page.data.title
+        : page.id.replace(/\.[^/\\.]*$/, "");
+};
+
+const searchPages = pages.map(page => {
+    return {
+        id: page.id,
+        collection: page.collection,
+        title: getPageTitle(page),
+        created: page.data.created,
+        lastModified: page.data.lastModified,
+        tags: page.data.tags ?? [],
+    };
+});
 pages.sort((a, b) => {
-    return new Date(b.render.remarkPluginFrontmatter.lastModified ?? b.render.remarkPluginFrontmatter.created).getTime() - new Date(a.render.remarkPluginFrontmatter.lastModified ?? a.render.remarkPluginFrontmatter.created).getTime();
+    return new Date(b.data.lastModified ?? b.data.created).getTime() - new Date(a.data.lastModified ?? a.data.created).getTime();
 });
 
 const tagDict: Record<string, number> = {};
 pages.forEach(page => {
-    page.render.remarkPluginFrontmatter.tags?.forEach((tag: string) => {
+    page.data.tags?.forEach((tag: string) => {
         tagDict[tag] = (tagDict[tag] ?? 0) + 1;
     });
 });
@@ -45,14 +67,14 @@ const tagList = new Set([...Object.entries(tagDict).sort((a, b) => b[1] - a[1]).
 
 const pageInfos: PageInfo[] = pages.map(page => {
     return {
-        name: `${page.page.collection} - ${"title" in page.page.data && page.page.data.title ? page.page.data.title : page.page.id.replace(/\.[^/\\.]*$/, "")}`,
-        id: page.page.id,
-        collection: page.page.collection,
+        name: `${page.collection} - ${getPageTitle(page)}`,
+        id: page.id,
+        collection: page.collection,
         internalLinks: [],
     };
 });
 pageInfos.forEach(pageInfo => {
-    const { page } = pages.find(p => p.page.id === pageInfo.id)!;
+    const page = pages.find(p => p.id === pageInfo.id)!;
     if (!page.body)
         return;
     page.body.replace(/\[\[([^|\]#]+)(?:#[^\]]*)?(?:\|([^\]]+))?\]\]/g, (_, link) => {
@@ -129,23 +151,23 @@ pageInfos.forEach(pageInfo => {
         <br>
         <div id="search-list">
             {
-                pages.filter(page => page.page.collection !== "notes").map((page) => {
+                pages.filter(page => page.collection !== "notes").map((page) => {
                     return (
-                        <a href={page.page.collection + "/" + page.page.id} style={`color:var(--${page.page.collection}); height:100px;`}>
+                        <a href={page.collection + "/" + page.id} style={`color:var(--${page.collection}); height:100px;`}>
                             <div style="display:flex; justify-content:space-between; gap:1rem;">
-                                <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title={page.render.remarkPluginFrontmatter.title}>{page.render.remarkPluginFrontmatter.title}</h2>
-                                <h2>{page.page.collection}</h2>
+                                <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title={getPageTitle(page)}>{getPageTitle(page)}</h2>
+                                <h2>{page.collection}</h2>
                             </div>
                             <div style="display:flex; gap:1rem;">
                                 {
-                                    page.render.remarkPluginFrontmatter.tags?.map((tag: string) => {
+                                    page.data.tags?.map((tag: string) => {
                                         return (<div>#{tag}</div>);
                                     })
                                 }
                             </div>
                             <div>
-                                <div>Created: {page.render.remarkPluginFrontmatter.created}</div>
-                                <div>Last modified: {page.render.remarkPluginFrontmatter.lastModified ?? "N/A"}</div>
+                                <div>Created: {page.data.created}</div>
+                                <div>Last modified: {page.data.lastModified ?? "N/A"}</div>
                             </div>
                         </a>
                     );
@@ -164,39 +186,35 @@ pageInfos.forEach(pageInfo => {
     <span slot="hidden" class="hidden hidden-search-info" style="left:5rem; top:9rem;">Not exactly optimized currently... will improve later</span>
 </Default>
 
-<script is:inline type="application/json" id="page-data" set:html={JSON.stringify(pages.map(page => page.page))}></script>
+<script is:inline type="application/json" id="page-data" set:html={JSON.stringify(searchPages)}></script>
 <script>
 import damerauLevenshteinDistance from "../utils/levenshtein";
 
 document.addEventListener("astro:page-load", async () => {
 
+
+    // Bullshit ass Astro typing
+    type page = {
+        id: string;
+        collection: string;
+        title: string;
+        created: string;
+        lastModified?: string;
+        tags: string[];
+    }
+
     const sortMethods = {
-        "modified-desc": (a: any, b: any) => new Date(b.rendered.metadata.frontmatter.lastModified ?? b.rendered.metadata.frontmatter.created).getTime() - new Date(a.rendered.metadata.frontmatter.lastModified ?? a.rendered.metadata.frontmatter.created).getTime(),
-        "modified-asc": (a: any, b: any) => new Date(a.rendered.metadata.frontmatter.lastModified ?? a.rendered.metadata.frontmatter.created).getTime() - new Date(b.rendered.metadata.frontmatter.lastModified ?? b.rendered.metadata.frontmatter.created).getTime(),
-        "created-desc": (a: any, b: any) => new Date(b.rendered.metadata.frontmatter.created).getTime() - new Date(a.rendered.metadata.frontmatter.created).getTime(),
-        "created-asc": (a: any, b: any) => new Date(a.rendered.metadata.frontmatter.created).getTime() - new Date(b.rendered.metadata.frontmatter.created).getTime(),
-        "title-asc": (a: any, b: any) => a.id.localeCompare(b.id),
-        "title-desc": (a: any, b: any) => b.id.localeCompare(a.id),
+        "modified-desc": (a: page, b: page) => new Date(b.lastModified ?? b.created).getTime() - new Date(a.lastModified ?? a.created).getTime(),
+        "modified-asc": (a: page, b: page) => new Date(a.lastModified ?? a.created).getTime() - new Date(b.lastModified ?? b.created).getTime(),
+        "created-desc": (a: page, b: page) => new Date(b.created).getTime() - new Date(a.created).getTime(),
+        "created-asc": (a: page, b: page) => new Date(a.created).getTime() - new Date(b.created).getTime(),
+        "title-asc": (a: page, b: page) => a.title.localeCompare(b.title),
+        "title-desc": (a: page, b: page) => b.title.localeCompare(a.title),
     };
     type SortMethod = keyof typeof sortMethods;
 
     const distanceCompare = damerauLevenshteinDistance(1);
 
-    // Bullshit ass Astro typing
-    type page = {
-        id: string;
-        rendered: {
-            metadata: {
-                frontmatter: {
-                    title: string;
-                    created: string;
-                    lastModified?: string;
-                    tags: string[];
-                };
-            };
-        };
-        collection: string;
-    }
     const pages: page[] = JSON.parse(document.getElementById("page-data")?.textContent || "[]");
     let filteredPages = [...pages];
 
@@ -207,7 +225,7 @@ document.addEventListener("astro:page-load", async () => {
     async function updateList () {
         filteredPages = pages.filter((page) => {
             if (search.length > 0 && !page.id.replace(/\.md$/, "").split(" ").some((word: string) => distanceCompare(word.toLowerCase(), search))) return false;
-            if (searchTags.length > 0 && !page.rendered.metadata.frontmatter.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
+            if (searchTags.length > 0 && !page.tags?.some((tag: string) => distanceCompare(tag.toLowerCase(), searchTags))) return false;
 
             if (!(document.getElementById("blog")! as HTMLInputElement).checked && page.collection === "blog") return false;
             if (!(document.getElementById("notes")! as HTMLInputElement).checked && page.collection === "notes") return false;
@@ -220,15 +238,15 @@ document.addEventListener("astro:page-load", async () => {
         document.getElementById("search-list")!.innerHTML = filteredPages.map(page => {
             return `<a href="${page.collection}/${page.id}" style="color:var(--${page.collection}); height:100px;">
                 <div style="display:flex; justify-content:space-between; gap:1rem;">
-                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.rendered.metadata.frontmatter.title}>${page.rendered.metadata.frontmatter.title}</h2>
+                    <h2 style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title=${page.title}>${page.title}</h2>
                     <h2>${page.collection}</h2>
                 </div>
                 <div style="display:flex; gap:1rem;">
-                    ${[...new Set((page.rendered.metadata.frontmatter.tags ?? []))].map((tag) => `<div>#${tag}</div>`).join("")}
+                    ${[...new Set((page.tags ?? []))].map((tag) => `<div>#${tag}</div>`).join("")}
                 </div>
                 <div>
-                    <div>Created: ${page.rendered.metadata.frontmatter.created}</div>
-                    <div>Last modified: ${page.rendered.metadata.frontmatter.lastModified ?? "N/A"}</div>
+                    <div>Created: ${page.created}</div>
+                    <div>Last modified: ${page.lastModified ?? "N/A"}</div>
                 </div>
             </a>`;
         }).join("");
