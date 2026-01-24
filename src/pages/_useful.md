@@ -1,4 +1,4 @@
-<small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 28 2025</small>
+<small>Small yellow text represents the last time I updated the text <br> Latest changes: Jan 23 2026</small>
 <br>
 
 ## Swiss Army Knives
@@ -372,16 +372,34 @@ Highly recommend getting these if u touch a computer
   - [Obsidian](https://obsidian.md) - Goated markdown editor again **SUPER USEFUL** <small>- Oct 27 2024</small>
 - [Excalidraw](https://excalidraw.com) - Whiteboard tool <small>- Oct 27 2024</small>
 - [Trello](https://trello.com) - Task management and organization <small>- Oct 27 2024</small>
-- [WolframAlpha](https://www.wolframalpha.com) - Goated calculator **SUPER USEFUL** <small>- Oct 27 2024</small>
-- [Desmos](https://www.desmos.com) - Graphing calculator <small>- Oct 27 2024</small>
-- [Anna's Archive](https://annas-archive.org/) - Largest archive of any type of text ever **SUPER USEFUL** <small>- Oct 27 2024</small>
-- [Library Genesis](https://libgen.is/) - Good for textbooks <small>- Oct 27 2024</small>
-- [Sci-Hub](https://sci-hub.se) - Access to scientific papers <small>- Oct 27 2024</small>
-- [Zotero](https://www.zotero.org) - Reference manager and generates citations **SUPER USEFUL** <small>- Oct 27 2024</small>
-- [LibreOffice](https://www.libreoffice.org) - Free office suite <small>- Oct 27 2024</small>
 - [Anki](https://apps.ankiweb.net) - Robust flashcard app <small>- Oct 27 2024</small>
 - [Pomofocus](https://pomofocus.io) - Timer that [breaks ur shit into intervals](https://en.wikipedia.org/wiki/Pomodoro_Technique) or whatever i don't actually do this myself and there isnt really any research done on its effectiveness (AFAIK) but it helps some people working on things this way <small>- Oct 27 2024</small>
 - [levels.fyi](https://www.levels.fyi) - Site to compare salaries and shit <small>- Oct 27 2024</small>
+<br>
+<br>
+
+### Office Tools
+- [LibreOffice](https://www.libreoffice.org) - Free office suite <small>- Jan 23 2026</small>
+- [Vertex42](https://www.vertex42.com/) - Shitton of spreadsheet templates, mainly business/finance related but also good for math/stats and general management/organization stuff <small>- Jan 23 2026</small>
+- 
+
+### Research
+- [Anna's Archive](https://annas-archive.org/) - Largest archive of any type of text ever **SUPER USEFUL** <small>- Jan 23 2026</small>
+- [Library Genesis](https://libgen.li/) - Good for textbooks <small>- Jan 23 2026</small>
+- [Sci-Hub](https://sci-hub.ru) - Access to scientific papers <small>- Jan 23 2026</small>
+- [Zotero](https://www.zotero.org) - Reference manager and generates citations **SUPER USEFUL** <small>- Jan 23 2026</small>
+- [WebPlotDigitizer](https://automeris.io/WebPlotDigitizer/) - Helps extract data from plots, images, graphs, maps, e.t.c. **SUPER USEFUL** <small>- Jan 23 2026</small>
+  - If you don't want to make an account, you can use a version of it that's up by the University of Tennessee [here](https://web.eecs.utk.edu/~dcostine/personal/PowerDeviceLib/DigiTest/index.html) <small>- Jan 23 2026</small>
+  - It's also [open source](https://github.com/automeris-io/WebPlotDigitizer) if u wanna self-host or download locally <small>- Jan 23 2026</small>
+<br>
+<br>
+
+### Math Tools
+- [WolframAlpha](https://www.wolframalpha.com) - Goated calculator **SUPER USEFUL** <small>- Jan 23 2026</small>
+- [Desmos](https://www.desmos.com) - Graphing calculator <small>- Jan 23 2026</small>
+- [GeoGebra](https://www.geogebra.org/) - 3D Graphing calculator but also interactive geometry, algebra, statistics, and calculus stuff <small>- Jan 23 2026</small>
+  - Desmos can also do 3D graphing as well, but the prios are diff (Desmos -> 2D; GeoGebra -> 3D) <small>- Jan 23 2026</small>
+- [Symbolab](https://www.symbolab.com) - Step by step calculator <small>- Jan 23 2026</small>
 <br>
 <br>
 <br>
