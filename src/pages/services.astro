@@ -1,0 +1,138 @@
+---
+import Default from "../layouts/Default.astro";
+
+const meta = {
+    title: "Web Development Services",
+    ogTitle: "Web Development Services",
+    description: "Info for web development services, pricing tiers, and ongoing maintenance.",
+    ogDescription: "Info for web development services, pricing tiers, and ongoing maintenance.",
+    ogType: "website",
+    ogUrl: "https://vinxis.moe/services",
+    ogSiteName: "VINXIS",
+    ogLocale: "en_US",
+    ogImage: "https://vinxis.moe/metaImage.png",
+    twitterCard: "summary_large_image",
+    twitterTitle: "Web Development Services",
+    twitterDescription: "Info for web development services, pricing tiers, and ongoing maintenance.",
+    twitterImage: "https://vinxis.moe/metaImage.png",
+};
+
+import corsace from "../images/websites/corsace.png";
+import ayim from "../images/websites/ayim.png";
+import mca from "../images/websites/mca.png";
+import corsaceOpen from "../images/websites/corsaceOpen.png";
+import adhd from "../images/websites/adhd.png";
+import alikamal from "../images/websites/alikamal.png";
+import asv from "../images/websites/asv.png";
+import pillars from "../images/websites/pillars.png";
+
+const sites: Array<{
+    title: string;
+    url: string;
+    description: string;
+    image: string;
+}> = [
+    {
+        title: "This Website",
+        url: "https://vinxis.moe",
+        description: "My personal website, portfolio, and blog built with Astro, Tailwind CSS, and hosted on Vercel",
+        image: "https://vinxis.moe/metaImage.png",
+    },
+    {
+        title: "Corsace",
+        url: "https://corsace.io",
+        description: "Main hub website for Corsace, a project related to the rhythm game osu! that conducted various events and tournaments",
+        image: corsace.src,
+    },
+    {
+        title: "A Year in Mapping",
+        url: "https://ayim.corsace.io/2024",
+        description: "Website showcasing the results of beatmapping in osu! each year with a bunch stats and visualizations",
+        image: ayim.src,
+    },
+    {
+        title: "Mapper's Choice Awards",
+        url: "https://mca.corsace.io/2024",
+        description: "Website that allowed users to nominate and vote on their favourite beatmaps in osu! each year, while allowing staff to manage the nomination and voting process",
+        image: mca.src,
+    },
+    {
+        title: "Corsace Open",
+        url: "https://open.corsace.io",
+        description: "The largest community-run tournament in osu! at its time, allowing users to sign up, view brackets, and see match schedules and results, as well as allowing staff to manage the tournament",
+        image: corsaceOpen.src,
+    },
+    {
+        title: "ADHD Screening Survey",
+        url: "https://kraut-adhd-form.vercel.app/?clinic=Shifa",
+        description: "A super simple web form replicating ADHD screening surveys used in clinics to conduct research on differences in screening results between forms",
+        image: adhd.src,
+    },
+    {
+        title: "Mohammad Ali Kamal for Pihêsiwin Ward",
+        url: "https://alikamal.ca",
+        description: "Campaign website for Mohammad Ali Kamal who ran as a candidate running for city council in Edmonton's Pihêsiwin ward",
+        image: alikamal.src,
+    },
+    {
+        title: "ASV",
+        url: "https://asv-three.vercel.app",
+        description: "Visualizer for bioinformatics research to analyze alternative splicing events from a program called rMATS, and also generates publication ready figs",
+        image: asv.src,
+    },
+    {
+        title: "5 Pillars Therapy",
+        url: "https://5pillarstherapy.com",
+        description: "Psychotherapy clinic in Toronto, Ontario offering a large range of mental health and therapy services, also focused on community outreach and support stuff",
+        image: pillars.src,
+    },
+].reverse();
+---
+
+<Default meta={meta}>
+    <div class="page">
+        <h1 class="title">Web Development Services</h1>
+        <p>Apparently people want to pay for me to make their website LOL, so I made this page for more info on that</p>
+        <br>
+        <p>I have 3 tiers to go off of as ballpark prices <strong>(for reference)</strong>:</p>
+        <ul>
+            <li>Simple portfolio/info site <strong>(500-1500 CAD)</strong></li>
+            <li>Business site with forms and interactivity <strong>(1500-3500 CAD)</strong></li>
+            <li>E-commerce or server-based features <strong>(3500+ CAD)</strong></li>
+        </ul>
+        <br>
+        <p>For reference, if u asked me to make my own entire website again, I'd make it in <strong>~2250 CAD</strong></p>
+        <br>
+        <p>Every project is different for sure, and some people have unique needs. Just get in touch with me in however way you want from the bottom of my <a href="/contact">contact page</a> and we can discuss for an actual price. I expect payment to be provided before the final iteration of the website goes live.</p>
+        <br>
+        <p><strong>After the final delivery (the website is built and deployed and there are no initial requirements), I will give it to you for full control, and it will be completely out of my hands.</strong></p>
+        <br>
+        <p>If ongoing maintenance/updates are needed (such as you want me to add something else later), then it will be <strong>billed hourly at a rate of 125 CAD/hr.</strong> I can also recommend hosting and editing platforms and tools to make it easier for you to edit and make simple changes yourself too <strong>without extra cost.</strong></p>
+        <br>
+        <hr>
+        <br>
+        <h2>Sites I have made</h2>
+        <p>Here are some websites I have created for people: <span class="small-text">(newest to oldest)</span></p>
+        <div class="site-grid" id="services-list">
+            {sites.map((site) => (
+                <a href={site.url} target="_blank" rel="noreferrer noopener">
+                    <img style="max-width: 100%" src={site.image} alt={`${site.title} preview`} loading="lazy" />
+                </a>
+                <div>
+                    <h3><a href={site.url} target="_blank" rel="noreferrer noopener">{site.title}</a></h3>
+                    <p>{site.description}</p>
+                    <a href={site.url} target="_blank" rel="noreferrer noopener">{site.url.replace(/^https?:\/\//, "")}</a>
+                </div>
+            ))}
+        </div>
+    </div>
+</Default>
+
+<style>
+.site-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+</style>
