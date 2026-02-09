@@ -21,17 +21,19 @@ import corsace from "../images/websites/corsace.png";
 import ayim from "../images/websites/ayim.png";
 import mca from "../images/websites/mca.png";
 import corsaceOpen from "../images/websites/corsaceOpen.png";
+import shifa from "../images/websites/shifa.png";
 import adhd from "../images/websites/adhd.png";
 import alikamal from "../images/websites/alikamal.png";
 import asv from "../images/websites/asv.png";
 import pillars from "../images/websites/pillars.png";
+import deprescribe from "../images/websites/deprescribe.png";
 
-const sites: Array<{
+const sites: {
     title: string;
     url: string;
     description: string;
     image: string;
-}> = [
+}[] = [
     {
         title: "This Website",
         url: "https://vinxis.moe",
@@ -63,6 +65,12 @@ const sites: Array<{
         image: corsaceOpen.src,
     },
     {
+        title: "Shifa Medical Clinic",
+        url: "https://shifamedical.clinic",
+        description: "Medical clinic in Edmonton, Alberta. Basic website that just provides info about the clinic and services and people, with third party booking embedded",
+        image: shifa.src,
+    },
+    {
         title: "ADHD Screening Survey",
         url: "https://kraut-adhd-form.vercel.app/?clinic=Shifa",
         description: "A super simple web form replicating ADHD screening surveys used in clinics to conduct research on differences in screening results between forms",
@@ -85,6 +93,12 @@ const sites: Array<{
         url: "https://5pillarstherapy.com",
         description: "Psychotherapy clinic in Toronto, Ontario offering a large range of mental health and therapy services, also focused on community outreach and support stuff",
         image: pillars.src,
+    },
+    {
+        title: "Deprescribing Form Replicate",
+        url: "https://kraut-deprescribing-form.vercel.app/?location=Kingston",
+        description: "A web page replicating deprescribing forms used in clinics for old people to analyze data and research on current deprescribing practices and how it can be improved and stuff",
+        image: deprescribe.src,
     },
 ].reverse();
 ---
