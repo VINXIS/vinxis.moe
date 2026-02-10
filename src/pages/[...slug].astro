@@ -138,23 +138,53 @@ document.addEventListener("astro:page-load", () => {
         backToTopButton.blur();
     });
   
-    // Show/hide the button based on scroll position
     function toggleBackToTopButton () {
-        if (window.scrollY > 300) // Arbitrary value for button showing
+        if (window.scrollY > 300) // Arbitrary
             backToTopButton!.classList.add("visible");
         else
             backToTopButton!.classList.remove("visible");
     }
     window.addEventListener("scroll", toggleBackToTopButton);
   
-    // Initial check
+    // Initial check cuz honestly i forgot but it fixes the button state i think
     toggleBackToTopButton();
+    
+    const images = document.querySelectorAll(".post-page img:not(.post-headerImage)");
 
-    // Handle lazy loading for images
-    setupLazyLoading();
+    // Store the original src in data-src for lazy loading, and set src to a placeholder.
+    // Then the lazy observer loads the actual image near the viewport
+
+    images.forEach(img => {
+        const originalSrc = img.getAttribute("src");
+        if (originalSrc) {
+            img.setAttribute("data-src", originalSrc);
+            img.setAttribute("src", "/placeholder.svg");
+            img.setAttribute("loading", "lazy");
+            img.classList.add("lazy-image");
+        }
+    });
+
+    const lazyImageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const lazyImage = entry.target as HTMLImageElement;
+                const dataSrc = lazyImage.getAttribute("data-src");
+                if (dataSrc) {
+                    // Load AND stop observing the image
+                    lazyImage.src = dataSrc;
+                    lazyImage.classList.add("loaded");
+                    observer.unobserve(lazyImage);
+                }
+            }
+        });
+    }, {
+        rootMargin: "200px 0px", // Loads images when entering the viewport by 200px
+        threshold: 0.01,
+    });
+
+    document.querySelectorAll(".lazy-image").forEach(img => lazyImageObserver.observe(img));
 
     // For any images in the post, add a click event to open them in a new tab
-    const images = document.querySelectorAll(".post-page img:not(.post-headerImage)");
     images.forEach(image => {
         image.addEventListener("click", () => {
             const src = image.getAttribute("src");
@@ -162,55 +192,6 @@ document.addEventListener("astro:page-load", () => {
                 window.open(src, "_blank");
         });
     });
-
-    // Setup IntersectionObserver for lazy loading
-    function setupLazyLoading () {
-    // Convert all content images (except the header image) to lazy-loaded images
-        const contentImages = document.querySelectorAll(".post-page img:not(.post-headerImage)");
-    
-        contentImages.forEach(img => {
-        // Store the original src in data-src
-            const originalSrc = img.getAttribute("src");
-            if (originalSrc) {
-            // Set data attributes
-                img.setAttribute("data-src", originalSrc);
-            
-                // Set a small placeholder or blur image
-                img.setAttribute("src", "/placeholder.svg");
-            
-                // Add loading=lazy attribute for native lazy loading support
-                img.setAttribute("loading", "lazy");
-            
-                // Add class for styling
-                img.classList.add("lazy-image");
-            }
-        });
-    
-        // Use Intersection Observer to load images when they enter the viewport
-        const lazyImageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const lazyImage = entry.target as HTMLImageElement;
-                    const dataSrc = lazyImage.getAttribute("data-src");
-                
-                    if (dataSrc) {
-                    // Load the image
-                        lazyImage.src = dataSrc;
-                        lazyImage.classList.add("loaded");
-                    
-                        // Stop observing this image
-                        observer.unobserve(lazyImage);
-                    }
-                }
-            });
-        }, {
-            rootMargin: "200px 0px", // Load images when they're 200px from entering the viewport
-            threshold: 0.01,
-        });
-    
-        // Observe all lazy images
-        document.querySelectorAll(".lazy-image").forEach(img => lazyImageObserver.observe(img));
-    }
 });
 </script>
 
