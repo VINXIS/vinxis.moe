@@ -1,11 +1,16 @@
 ---
 isObsidianImport: false
 created: "1771115635587"
-lastModified: "1771117378522"
+lastModified: "1771289853683"
 tags:
   - neon_white
 ---
 A [[Neon White Card]] that legit gives the worst fuckin g gun in teh game, oh and also a ground pound
+
+## Shooting
+The gun will shoot bullets within a round area shown by the crosshair. The round area expands the longer u hold the shoot button.
+
+The pattern however is the same every time u press the shoot button. So basically it will always start around slightly left to ur actual crosshair. Burst clicking with a drift to the left is ideal for aiming
 
 ## Ground Pound / Stomp
 Triggering the effect will basically make u drop at -70 downwards; obviously u can also break some platforms with it basically anything that has the asme textures as breakable doors/walls
