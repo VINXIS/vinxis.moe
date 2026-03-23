@@ -47,6 +47,19 @@ const apple = (id: string): SongLink => ({
 // Updated songs array using the functions
 export const songs: Song[] = [
     {
+        title: "Swim Bird",
+        year: 2026,
+        genre: "Downtempo",
+        length: "2:21",
+        links: [
+            youtube("m7rML_vacI8"),
+            soundcloud("swim-bird"),
+            bandcamp("swim-bird"),
+            spotify("50x3kLTaR2L5NHD17BfhXy"),
+            apple("1885203788"),
+        ],
+    },
+    {
         title: "gaburyu - サモンセンス (VINXIS Remix)",
         year: 2025,
         genre: "Electronic",
