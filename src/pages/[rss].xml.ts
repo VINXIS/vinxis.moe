@@ -1,6 +1,7 @@
 import type { APIRoute } from "astro";
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import rss from "@astrojs/rss";
+import { excerpt, previewImage } from "../utils/pageMeta";
 
 export const GET: APIRoute = async ({ site, params }) => {
     const pages: (CollectionEntry<"blog"> | CollectionEntry<"notes"> | CollectionEntry<"posts">)[] = [];
@@ -16,9 +17,10 @@ export const GET: APIRoute = async ({ site, params }) => {
         description: `${params.rss === "rss_blog" || params.rss === "feed_blog" ? "Blog" : params.rss === "rss_notes" || params.rss === "feed_notes" ? "Notes" : params.rss === "rss_posts" || params.rss === "feed_posts" ? "Posts" : ""} content created by VINXIS`,
         site: site ?? "https://vinxis.moe",
         items: await Promise.all(pages.map(async (page) => {
+            const image = await previewImage(page);
             return {
                 title: `${page.collection} - ${"title" in page.data && page.data.title ? page.data.title : page.id.replace(/\.[^/\\.]*$/, "")}`,
-                description: `${"image" in page.data && page.data.image ? `<img src="${site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}" alt="${page.data.imageAlt}" /><br />` : ""}${page.body?.slice(0, 99) || ""}...`,
+                description: `${image ? `<img src="${new URL(image.src, site ?? "https://vinxis.moe")}" alt="${image.alt ?? ""}" /><br />` : ""}${excerpt(page.body)}`,
                 link: `${site ?? "https://vinxis.moe/"}${page.collection}/${page.id}`,
                 pubDate: (await render(page)).remarkPluginFrontmatter.created,
             };

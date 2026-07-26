@@ -6,6 +6,7 @@ import Comments from "../components/Comments.astro";
 import FileGraph from "../components/FileGraph.astro";
 import TableOfContents from "../components/TableOfContents.astro";
 import type { BasePageInfo, PageLink } from "../utils/pageInfo";
+import { excerpt, isoDate, previewImage } from "../utils/pageMeta";
 import { Image } from "astro:assets";
 
 export const getStaticPaths = (async () => {
@@ -76,22 +77,18 @@ const { page, title, backlinks, forwardlinks } = Astro.props;
 
 const renderRes = await render(page);
 const { headings, Content } = renderRes;
-const description = page.body ? page.body.slice(0, 99) + "…" : "";
 
+const image = await previewImage(page);
 const meta = {
-    title, 
-    description,
-    ogTitle: title,
-    ogDescription: description,
-    ogType: "website",
-    ogUrl: "https://vinxis.moe",
-    ogSiteName: title,
-    ogLocale: "en_US",
-    ogImage: "image" in page.data && page.data.image ? `${Astro.site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}?${Math.round(Math.random() * 1000000)}` : "https://vinxis.moe/metaImage.png",
-    twitterCard: "summary_large_image",
-    twitterTitle: title,
-    twitterDescription: description,
-    twitterImage: "image" in page.data && page.data.image ? `${Astro.site?.toString().replace(/\/$/g, "") ?? "https://vinxis.moe"}${page.data.image.src}?${Math.round(Math.random() * 1000000)}` : "https://vinxis.moe/metaImage.png",
+    title,
+    description: excerpt(page.body),
+    image: image?.src,
+    imageAlt: image?.alt ?? (image ? title : undefined),
+    imageWidth: image?.width,
+    imageHeight: image?.height,
+    type: "article" as const,
+    publishedTime: isoDate(page.data.created),
+    modifiedTime: isoDate("lastModified" in page.data ? page.data.lastModified : undefined),
 };
 ---
 <link href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" rel="stylesheet">

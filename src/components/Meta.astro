@@ -1,0 +1,76 @@
+---
+import type { MetaProps } from "../utils/pageMeta";
+
+type Props = MetaProps;
+
+const siteName = "VINXIS";
+const site = Astro.site ?? new URL("https://vinxis.moe");
+const defaultImage = "/metaImage.png";
+
+const {
+    title,
+    description,
+    image = defaultImage,
+    imageAlt,
+    imageWidth,
+    imageHeight,
+    type = "website",
+    publishedTime,
+    modifiedTime,
+    noindex = false,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, site);
+const imageURL = new URL(image, site);
+const tabTitle = title === siteName ? title : `${title} | ${siteName}`;
+---
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{tabTitle}</title>
+<meta name="theme-color" content="#FF6200" />
+<meta name="author" content="VINXIS" />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+{description && <meta name="description" content={description} />}
+<meta property="og:title" content={title} />
+{description && <meta property="og:description" content={description} />}
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content={imageURL} />
+{imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+{imageWidth && <meta property="og:image:width" content={String(imageWidth)} />}
+{imageHeight && <meta property="og:image:height" content={String(imageHeight)} />}
+{type === "article" && publishedTime && <meta property="article:published_time" content={publishedTime} />}
+{type === "article" && modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+{type === "article" && <meta property="article:author" content={siteName} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+{description && <meta name="twitter:description" content={description} />}
+<meta name="twitter:image" content={imageURL} />
+{imageAlt && <meta name="twitter:image:alt" content={imageAlt} />}
+<link
+    rel="alternate"
+    type="application/rss+xml"
+    title="VINXIS"
+    href={new URL("rss.xml", site)}
+/>
+<link
+    rel="alternate"
+    type="application/rss+xml"
+    title="VINXIS - Blog"
+    href={new URL("rss_blog.xml", site)}
+/>
+<link
+    rel="alternate"
+    type="application/rss+xml"
+    title="VINXIS - Notes"
+    href={new URL("rss_notes.xml", site)}
+/>
+<link
+    rel="alternate"
+    type="application/rss+xml"
+    title="VINXIS - Posts"
+    href={new URL("rss_posts.xml", site)}
+/>

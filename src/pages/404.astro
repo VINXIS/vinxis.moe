@@ -3,17 +3,7 @@ import Default from "../layouts/Default.astro";
 const meta = {
     title: "404",
     description: "Page not found",
-    ogTitle: "404",
-    ogDescription: "Page not found",
-    ogType: "website",
-    ogUrl: "https://vinxis.moe",
-    ogSiteName: "VINXIS",
-    ogLocale: "en_US",
-    ogImage: "https://vinxis.moe/metaImage.png",
-    twitterCard: "summary_large_image",
-    twitterTitle: "404",
-    twitterDescription: "Page not found",
-    twitterImage: "https://vinxis.moe/metaImage.png",
+    noindex: true,
 };
 
 const isNote = Astro.url.pathname.startsWith("/notes/");

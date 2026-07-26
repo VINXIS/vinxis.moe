@@ -3,70 +3,16 @@ import { ClientRouter } from "astro:transitions";
 import Analytics from "@vercel/analytics/astro";
 import NavigationBar from "../components/NavigationBar.astro";
 import Flashlight from "../components/Flashlight.astro";
+import Meta from "../components/Meta.astro";
+import type { MetaProps } from "../utils/pageMeta";
 import "../styles/main.css";
-
-interface MetaProps {
-  title: string;
-  description?: string;
-  ogTitle?: string;
-  ogDescription?: string;
-  ogType?: string;
-  ogUrl?: string;
-  ogSiteName?: string;
-  ogLocale?: string;
-  ogImage?: string;
-  twitterCard?: string;
-  twitterTitle?: string;
-  twitterDescription?: string;
-  twitterImage?: string;
-}
 
 const { meta } = Astro.props as { meta: MetaProps };
 ---
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{meta.title}</title>
-        <meta name="theme-color" content="#FF6200" />
-        <meta name="author" content="VINXIS" />
-        {meta.description && <meta name="description" content={meta.description} />}
-        {meta.ogTitle && <meta property="og:title" content={meta.ogTitle} />}
-        {meta.ogDescription && <meta property="og:description" content={meta.ogDescription} />}
-        {meta.ogType && <meta property="og:type" content={meta.ogType} />}
-        {meta.ogUrl && <meta property="og:url" content={meta.ogUrl} />}
-        {meta.ogSiteName && <meta property="og:site_name" content={meta.ogSiteName} />}
-        {meta.ogLocale && <meta property="og:locale" content={meta.ogLocale} />}
-        {meta.ogImage && <meta property="og:image" content={meta.ogImage} />}
-        {meta.twitterCard && <meta name="twitter:card" content={meta.twitterCard} />}
-        {meta.twitterTitle && <meta name="twitter:title" content={meta.twitterTitle} />}
-        {meta.twitterDescription && <meta name="twitter:description" content={meta.twitterDescription} />}
-        {meta.twitterImage && <meta name="twitter:image" content={meta.twitterImage} />}
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS"
-            href={new URL("rss.xml", Astro.site)}
-        />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS - Blog"
-            href={new URL("rss_blog.xml", Astro.site)}
-        />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS - Notes"
-            href={new URL("rss_notes.xml", Astro.site)}
-        />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS - Posts"
-            href={new URL("rss_posts.xml", Astro.site)}
-        />
+        <Meta {...meta} />
         <Analytics />
         <ClientRouter />
     </head>

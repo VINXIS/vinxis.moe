@@ -1,41 +1,20 @@
 ---
 const { frontmatter } = Astro.props;
 import Analytics from "@vercel/analytics/astro";
+import Meta from "../components/Meta.astro";
+import { isoDate } from "../utils/pageMeta";
 ---
 
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{frontmatter.title}</title>
-        <meta name="description" content=`Writing practice from ${new Date(frontmatter.date).toLocaleString()}` />
-        <meta name="theme-color" content="#FF6200" />
-        <meta name="author" content="VINXIS" />
+        <Meta
+            title={frontmatter.title}
+            description={`Writing practice from ${new Date(frontmatter.date).toLocaleString()}`}
+            type="article"
+            publishedTime={isoDate(frontmatter.date)}
+            noindex={frontmatter.ultraHidden}
+        />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css">
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS"
-            href={new URL("rss.xml", Astro.site)}
-        />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS - Blog"
-            href={new URL("rss_blog.xml", Astro.site)}
-        />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS - Notes"
-            href={new URL("rss_notes.xml", Astro.site)}
-        />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="VINXIS - Posts"
-            href={new URL("rss_posts.xml", Astro.site)}
-        />
         <Analytics />
     </head>
     <body>
