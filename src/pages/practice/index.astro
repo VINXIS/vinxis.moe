@@ -1,7 +1,12 @@
 ---
+import type { MarkdownInstance } from "astro";
 import Default from "../../layouts/Default.astro";
 
-const markdownFiles = await Astro.glob("./*.md");
+const markdownFiles: MarkdownInstance<{
+    title: string;
+    date: number;
+    ultraHidden: boolean;
+}>[] = Object.values(import.meta.glob("./*.md", { eager: true }));
 
 // Filter out files with ultraHidden: true
 const visibleFiles = markdownFiles.filter(file => !file.frontmatter.ultraHidden);
@@ -112,68 +117,75 @@ const meta = {
 </script>
 
 <style>
-  .practice-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-  
-  h1 {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .sort-controls {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-  
-  .sort-controls button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    color: #666;
-  }
-  
-  .sort-controls button.active {
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .separator {
-    padding: 0 0.5rem;
-  }
-  
-  .practice-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .practice-item {
-    border-bottom: 1px solid #eee;
-    padding: 1.5rem 0;
-  }
-  
-  .practice-item:last-child {
-    border-bottom: none;
-  }
-  
-  .practice-item a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .practice-item h2 {
-    margin: 0 0 0.5rem;
-  }
-  
-  .practice-item time {
-    color: #666;
-    font-size: 0.9rem;
-  }
+    body {
+        background: #cccccc;
+        color: #222222;
+        margin: 40px;
+        line-height: 1.5;
+    }
+    
+    .practice-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+    
+    h1 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .sort-controls {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
+    .sort-controls button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: inherit;
+        color: #666;
+    }
+    
+    .sort-controls button.active {
+        font-weight: bold;
+        color: #000;
+    }
+    
+    .separator {
+        padding: 0 0.5rem;
+    }
+    
+    .practice-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .practice-item {
+        border-bottom: 1px solid #eee;
+        padding: 1.5rem 0;
+    }
+    
+    .practice-item:last-child {
+        border-bottom: none;
+    }
+    
+    .practice-item a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .practice-item h2 {
+        margin: 0 0 0.5rem;
+    }
+    
+    .practice-item time {
+        color: #666;
+        font-size: 0.9rem;
+    }
 </style>
