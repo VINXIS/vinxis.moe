@@ -20,6 +20,7 @@ for (const file in files)
 export default defineConfig({
     output: "static",
     site: "https://vinxis.moe",
+    compressHTML: true,
     integrations: [sitemap(), mdx()],
     redirects: {
         "/about": "/me",
