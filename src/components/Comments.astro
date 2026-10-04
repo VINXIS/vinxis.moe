@@ -14,7 +14,7 @@ if (!postID) {
         postID !== "me" &&
         postID !== "comments" &&
         postID.split("/").length < 2 &&
-        ["blog", "posts"].includes(postID.split("/")[0]!)
+        ["blog", "posts", "writings"].includes(postID.split("/")[0]!)
     )
         throw new Error("Invalid post ID");
 

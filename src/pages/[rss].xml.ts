@@ -4,17 +4,19 @@ import rss from "@astrojs/rss";
 import { excerpt, previewImage } from "../utils/pageMeta";
 
 export const GET: APIRoute = async ({ site, params }) => {
-    const pages: (CollectionEntry<"blog"> | CollectionEntry<"notes"> | CollectionEntry<"posts">)[] = [];
+    const pages: (CollectionEntry<"blog"> | CollectionEntry<"notes"> | CollectionEntry<"posts"> | CollectionEntry<"writings">)[] = [];
     if (params.rss === "rss" || params.rss === "feed" || params.rss === "rss_blog" || params.rss === "feed_blog")
         pages.push(...await getCollection("blog"));
     if (params.rss === "rss" || params.rss === "feed" || params.rss === "rss_notes" || params.rss === "feed_notes")
         pages.push(...await getCollection("notes"));
     if (params.rss === "rss" || params.rss === "feed" || params.rss === "rss_posts" || params.rss === "feed_posts")
         pages.push(...await getCollection("posts"));
+    if (params.rss === "rss" || params.rss === "feed" || params.rss === "rss_writings" || params.rss === "feed_writings")
+        pages.push(...await getCollection("writings"));
 
     return rss({
-        title: `VINXIS ${params.rss === "rss_blog" || params.rss === "feed_blog" ? "Blog" : params.rss === "rss_notes" || params.rss === "feed_notes" ? "Notes" : params.rss === "rss_posts" || params.rss === "feed_posts" ? "Posts" : ""}`,
-        description: `${params.rss === "rss_blog" || params.rss === "feed_blog" ? "Blog" : params.rss === "rss_notes" || params.rss === "feed_notes" ? "Notes" : params.rss === "rss_posts" || params.rss === "feed_posts" ? "Posts" : ""} content created by VINXIS`,
+        title: `VINXIS ${params.rss === "rss_blog" || params.rss === "feed_blog" ? "Blog" : params.rss === "rss_notes" || params.rss === "feed_notes" ? "Notes" : params.rss === "rss_posts" || params.rss === "feed_posts" ? "Posts" : params.rss === "rss_writings" || params.rss === "feed_writings" ? "Writings" : ""}`,
+        description: `${params.rss === "rss_blog" || params.rss === "feed_blog" ? "Blog" : params.rss === "rss_notes" || params.rss === "feed_notes" ? "Notes" : params.rss === "rss_posts" || params.rss === "feed_posts" ? "Posts" : params.rss === "rss_writings" || params.rss === "feed_writings" ? "Writings" : ""} content created by VINXIS`,
         site: site ?? "https://vinxis.moe",
         items: await Promise.all(pages.map(async (page) => {
             const image = await previewImage(page);
@@ -39,5 +41,7 @@ export function getStaticPaths () {
         { params: { rss: "feed_notes"} },
         { params: { rss: "rss_posts"} },
         { params: { rss: "feed_posts"} },
+        { params: { rss: "rss_writings"} },
+        { params: { rss: "feed_writings"} },
     ];
 }

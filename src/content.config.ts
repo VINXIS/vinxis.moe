@@ -32,8 +32,16 @@ const posts = defineCollection({
     }),
 });
 
+const writings = defineCollection({
+    loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/writings" }),
+    schema: z.object({
+        created: z.string(),
+    }),
+});
+
 export const collections = {
     "blog": blog,
     "notes": notes,
     "posts": posts,
+    "writings": writings,
 };
