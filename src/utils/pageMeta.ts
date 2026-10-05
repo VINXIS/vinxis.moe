@@ -79,7 +79,6 @@ export async function previewImage (entry: ContentEntry): Promise<PreviewImage |
 
     const match = entry.body?.match(markdownImage);
     const image = header ?? await resolveContentImage(entry.filePath, match?.[1] ?? match?.[2] ?? "");
-    console.log(header, alt, match?.[1], match?.[2], image, entry.filePath);
     if (!image)
         return undefined;
 
