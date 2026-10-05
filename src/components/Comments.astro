@@ -150,6 +150,8 @@ document.addEventListener("astro:page-load", () => {
         });
     };
 
+    const escapeAttr = (text: string) => escapeHtml(text).replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+
     const escapeHtml = (text: string) => {
         const element = document.createElement("div");
         element.textContent = text;
@@ -537,17 +539,17 @@ document.addEventListener("astro:page-load", () => {
             : "";
         const commentLink = `<a class="comment-link" href="#comment-${comment.ID}" aria-label="Link to comment #${comment.ID}">#${comment.ID}</a>`;
         const websiteLink = comment.website
-            ? `<a href="${escapeHtml(comment.website)}" target="_blank" class="comment-website">Website</a>`
+            ? `<a href="${escapeAttr(comment.website)}" target="_blank" class="comment-website">Website</a>`
             : "";
         const allowReply = Boolean(postID);
         const replyButton = isReply && allowReply
             ? ""
             : allowReply
-                ? `<button class="reply-button" data-id="${comment.ID}" data-name="${escapeHtml(username)}">Reply</button>`
+                ? `<button class="reply-button" data-id="${comment.ID}" data-name="${escapeAttr(username)}">Reply</button>`
                 : "";
         const postHref = !postID ? buildPostHref(comment.postID) : null;
         const postLink = !postID && postHref
-            ? `<a class="comment-post-link" href="${postHref}">${escapeHtml(comment.postID)}</a>`
+            ? `<a class="comment-post-link" href="${postHref}">${escapeAttr(comment.postID)}</a>`
             : "";
         const replyLabel = comment.replyID && currentMode === "flat"
             ? "<span class=\"comment-reply-label\">Reply</span>"
@@ -563,7 +565,7 @@ document.addEventListener("astro:page-load", () => {
             <div class="${classList.join(" ")}" id="comment-${comment.ID}">
                 <div class="comment-header">
                     ${commentLink}
-                    <span class="comment-username">${escapeHtml(username)}</span>
+                    <span class="comment-username">${escapeAttr(username)}</span>
                     ${ownerTag}
                     ${replyLabel}
                     ${parentLink}
