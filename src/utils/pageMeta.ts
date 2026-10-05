@@ -27,10 +27,7 @@ export interface MetaProps {
     noindex?: boolean | undefined;
 }
 
-export interface PreviewImage {
-    src: string;
-    width: number;
-    height: number;
+export interface PreviewImage extends ImageMetadata {
     alt?: string | undefined;
 }
 
@@ -82,18 +79,23 @@ export async function previewImage (entry: ContentEntry): Promise<PreviewImage |
 
     const match = entry.body?.match(markdownImage);
     const image = header ?? await resolveContentImage(entry.filePath, match?.[1] ?? match?.[2] ?? "");
+    console.log(header, alt, match?.[1], match?.[2], image, entry.filePath);
     if (!image)
         return undefined;
 
     const longestEdge = Math.max(image.width, image.height);
-    if (image.format === "svg" || image.format === "gif" || longestEdge <= previewImageSize)
-        return { src: image.src, width: image.width, height: image.height, alt };
+    if (image.format === "svg" || image.format === "gif" || longestEdge <= previewImageSize) 
+        return {
+            ...image,
+            alt,
+        };
 
     // Scale the longest edge down
     const scale = previewImageSize / longestEdge;
     const built = await getImage({
         src: image,
         width: Math.round(image.width * scale),
+        height: Math.round(image.height * scale),
         format: previewFormats.includes(image.format) ? image.format as ImageOutputFormat : "jpeg",
         quality: 80,
     });
@@ -102,6 +104,7 @@ export async function previewImage (entry: ContentEntry): Promise<PreviewImage |
         src: built.src,
         width: built.attributes.width ?? image.width,
         height: built.attributes.height ?? image.height,
+        format: previewFormats.includes(image.format) ? image.format : "jpeg",
         alt,
     };
 }
