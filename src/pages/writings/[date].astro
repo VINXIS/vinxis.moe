@@ -1,0 +1,125 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import Default from "../../layouts/Default.astro";
+import { excerpt, isoDate, previewImage } from "../../utils/pageMeta";
+import { Image } from "astro:assets";
+import Comments from "../../components/Comments.astro";
+export const getStaticPaths = (async () => {
+    const writings = await getCollection("writings");
+    
+    return writings.map(page => {
+        return {
+            params: {
+                date: `/${page.id}`
+            },
+            props: {
+                page,
+            }
+        }
+    });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+
+const renderRes = await render(page);
+const { Content } = renderRes;
+
+const image = await previewImage(page);
+const title = `Writing - ${page.id}`;
+const meta = {
+    title,
+    description: excerpt(page.body),
+    image: image?.src,
+    imageAlt: image?.alt ?? (image ? title : undefined),
+    imageWidth: image?.width,
+    imageHeight: image?.height,
+    type: "article" as const,
+    publishedTime: isoDate(page.data.created),
+};
+---
+<Default meta={meta}>
+    <div class="page writing-page">
+        <h1>{title}</h1>
+        <h2>Created: {renderRes.remarkPluginFrontmatter.created}</h2>
+        {renderRes.remarkPluginFrontmatter.lastModified && (<h2>Last Modified: {renderRes.remarkPluginFrontmatter.lastModified}</h2>)}
+        <Content />
+        <Comments />
+    </div>
+</Default>
+
+<style>
+    .writing-page {
+        position: relative;
+        min-width: 250px;
+        @media (min-width: 860px) { /* Width of the page will become the minimum allowed (250px) */
+            width: calc(100% - 10rem - 450px);
+        }
+    }
+
+    .writing-page :global(a), .writing-page :global(code) {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .writing-page, .writing-page :global(details) {
+        display: flex;
+        flex-direction: column;
+        gap: 2ch;
+    }
+
+    .writing-page :global(h1), .post-backlink {
+        text-transform: capitalize;
+    }
+
+    .writing-page :global(p:has(img)) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .writing-page :global(img), .writing-page :global(p img) {
+        max-width: 33%;
+        cursor: pointer;
+        height: auto;
+    }
+
+    .writing-page :global(.lazy-image) {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .writing-page :global(.lazy-image.loaded) {
+        opacity: 1;
+    }
+
+    .post-headerImage {
+        max-width: 100% !important;
+    }
+
+    .post-backlinks {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    #back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1000;
+    }
+
+    #back-to-top.visible {
+        opacity: 0.7;
+        visibility: visible;
+    }
+    
+    #back-to-top:hover {
+        opacity: 1;
+    }
+</style>

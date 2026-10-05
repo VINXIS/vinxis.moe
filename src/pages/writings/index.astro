@@ -1,0 +1,65 @@
+---
+import Default from "../../layouts/Default.astro";
+const meta = {
+    title: "Search",
+    description: "Search pages",
+};
+
+import { getCollection } from "astro:content";
+import dateToString from "../../utils/dateToString";
+import { previewImage } from "../../utils/pageMeta";
+import { Image } from "astro:assets";
+
+const writings = await getCollection("writings");
+const pages = await Promise.all([...writings].map(async page => {
+    return {
+        ...page,
+        data: {
+            ...page.data,
+            image: await previewImage(page),
+            created: dateToString(page.data.created),
+        },
+    };
+}));
+pages.sort((a, b) => {
+    return new Date(b.data.created).getTime() - new Date(a.data.created).getTime();
+});
+---
+
+<Default meta={meta}>
+    <div class="page">
+        <h1>Writings</h1>
+        <h2>Writing practice + Pseudo-journal</h2>
+        I sometimes write entries.<br>Originally this was to practice my writing, and I still am doing this for practice (alongside some other, more intentional practice I've added since), but I've used this just to keep something relatively more "up to date" about my stuff
+        <br>
+        <br>
+        <div class="writings-list">
+            {
+                pages.map(page => {
+                    return (
+                        <a class="writings-entry" href={`writings/${page.id}`}>
+                            <h3>{page.id}</h3>
+                            {
+                                "image" in page.data && page.data.image && <Image src={page.data.image.src} width={page.data.image.width / 3} height={page.data.image.height / 3} alt="Image of the handwritten entry"/> || <span>No image O_o</span>
+                            }
+                        </a>
+                    );
+                })
+            }
+        </div>
+    </div>
+</Default>
+
+<style>
+    .writings-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .writings-entry {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
