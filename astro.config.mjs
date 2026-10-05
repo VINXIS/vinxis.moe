@@ -23,7 +23,7 @@ for (const file in files) {
     if (!match)
         continue;
     const [, y, m, d] = match;
-    writingsRedir[`/posts/writing-${y}-${m}-${d}`] = `/writings/writing-${y}-${m}-${d}`;
+    writingsRedir[`/posts/writing-${y}-${m}-${d}`] = `/writings/${y}-${m}-${d}`;
 }
 
 // https://astro.build/config
