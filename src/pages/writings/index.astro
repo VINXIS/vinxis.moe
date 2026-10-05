@@ -37,7 +37,7 @@ pages.sort((a, b) => {
             {
                 pages.map(page => {
                     return (
-                        <a class="writings-entry" href={`writings/${page.id}`}>
+                        <a class="writings-entry" href={`/writings/${page.id}`}>
                             <h3>{page.id}</h3>
                             {
                                 "image" in page.data && page.data.image && <Image src={page.data.image.src} width={page.data.image.width / 3} height={page.data.image.height / 3} alt="Image of the handwritten entry"/> || <span>No image O_o</span>
