@@ -16,6 +16,16 @@ const permalinks = [];
 for (const file in files)
     permalinks.push(file.split("/").pop().replace(".md", "").replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase());
 
+// Till 2026-09-30 Writings were under the posts collection until I decided to move them cuz clutter, and this fixes discord links and stuff
+const writingsRedir = {};
+for (const file in files) {
+    const match = file.match(/\/writings\/(\d{4})-(\d{2})-(\d{2})\.md$/);
+    if (!match)
+        continue;
+    const [, y, m, d] = match;
+    writingsRedir[`/posts/writing-${y}-${m}-${d}`] = `/writings/writing-${y}-${m}-${d}`;
+}
+
 // https://astro.build/config
 export default defineConfig({
     output: "static",
@@ -26,6 +36,7 @@ export default defineConfig({
         "/about": "/me",
         "/now": "/me",
         "/contact": "/me",
+        ...writingsRedir,
     },
     server: {
         open: true,
