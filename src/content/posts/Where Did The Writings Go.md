@@ -12,3 +12,5 @@ I decided to separate them from posts basically cuz I'm ending up making a decen
 I've made posts/writing-yyyy-mm-dd reroute to writings/yyyy-mm-dd cuz some of these are linked in places like Discord so
 
 **ALSO** some comments in rly old writings ended up hidden cuz i changed how some of the URLs work a while ago, but I have now fixed it yay
+
+I'll make a new writing tmrw
