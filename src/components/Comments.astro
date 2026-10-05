@@ -549,7 +549,7 @@ document.addEventListener("astro:page-load", () => {
                 : "";
         const postHref = !postID ? buildPostHref(comment.postID) : null;
         const postLink = !postID && postHref
-            ? `<a class="comment-post-link" href="${postHref}">${escapeAttr(comment.postID)}</a>`
+            ? `<a class="comment-post-link" href="${postHref}">${escapeHtml(comment.postID)}</a>`
             : "";
         const replyLabel = comment.replyID && currentMode === "flat"
             ? "<span class=\"comment-reply-label\">Reply</span>"
@@ -565,7 +565,7 @@ document.addEventListener("astro:page-load", () => {
             <div class="${classList.join(" ")}" id="comment-${comment.ID}">
                 <div class="comment-header">
                     ${commentLink}
-                    <span class="comment-username">${escapeAttr(username)}</span>
+                    <span class="comment-username">${escapeHtml(username)}</span>
                     ${ownerTag}
                     ${replyLabel}
                     ${parentLink}
