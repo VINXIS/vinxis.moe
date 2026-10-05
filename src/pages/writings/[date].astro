@@ -3,7 +3,6 @@ import type { GetStaticPaths } from "astro";
 import { getCollection, render } from "astro:content";
 import Default from "../../layouts/Default.astro";
 import { excerpt, isoDate, previewImage } from "../../utils/pageMeta";
-import { Image } from "astro:assets";
 import Comments from "../../components/Comments.astro";
 export const getStaticPaths = (async () => {
     const writings = await getCollection("writings");
@@ -49,6 +48,7 @@ const meta = {
 </Default>
 
 <style>
+    /* CSS Copypaste from [...slug].astro cba */
     .writing-page {
         position: relative;
         min-width: 250px;
