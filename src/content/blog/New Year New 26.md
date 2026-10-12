@@ -1,16 +1,13 @@
 ---
 title: New Year New 26
 created: "1767823677034"
-lastModified: "1767851135640"
+lastModified: "1791848405808"
 tags:
   - life
   - korea
 image: ./sunrise.jpg
 imageAlt: New Year's Sunrise in Korea
 ---
-import hevc from "./sunrisefast-hevc.mp4";
-import h264 from "./sunrisefast-h264.mp4";
-
 Edits:
   - Added images from my time in Korea. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/d0ccf5e46845c3771dbfb0eb37e65edcbd047bc5)
 
@@ -20,9 +17,9 @@ It was an absolutely great time though, seeing so many people I've known for a w
 
 The picture above was a bit after we watched the sunrise. I also have a REALLY TERRIBLY MADE video of the sunrise slowly showing up right below. Sorry for the shaking and the random ISO changes LMFAO it was on phone and it was actually the coldest time during my trip so hands were cold as fuck
 
-<video controls preload="metadata" muted playsInline>
-  <source src={hevc} type='video/mp4; codecs="hvc1"' />
-  <source src={h264} type="video/mp4" />
+<video controls preload="metadata" muted playsinline>
+  <source src="/videos/sunrisefast-hevc.mp4" type='video/mp4; codecs="hvc1"' />
+  <source src="/videos/sunrisefast-h264.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
