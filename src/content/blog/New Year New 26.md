@@ -10,6 +10,7 @@ imageAlt: New Year's Sunrise in Korea
 ---
 Edits:
   - Added images from my time in Korea. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/d0ccf5e46845c3771dbfb0eb37e65edcbd047bc5)
+  - Changed the format of this post and moved the location of the sunrise vid. See edit [here](https://github.com/VINXIS/vinxis.moe/commit/51be46e2cb7b711e0bfdaf30f5c2113d4131f291)
 
 Happy New Year!!! I just came back from Korea and IMMEDIATELY resumed Masters LOL. Wanted to make a short blog post about this because I wanted to say just a couple things
 
