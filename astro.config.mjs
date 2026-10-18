@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import { unified } from "@astrojs/markdown-remark";
 import sitemap from "@astrojs/sitemap";
 import remarkContentTags from "./plugins/remark-content-tags.mjs";
 import remarkModifiedTime from "./plugins/remark-modified-time.mjs";
@@ -42,24 +43,26 @@ export default defineConfig({
         open: true,
     },
     markdown: {
-        remarkPlugins: [
-            remarkContentTags,
-            remarkModifiedTime,
-            remarkTitle,
-            remarkMath,
-            remarkBreaks,
-            [
-                remarkWikiLink,
-                {
-                    permalinks,
-                    pageResolver: (name) => [name.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase()],
-                    hrefTemplate: (permalink) => `../notes/${permalink}`,
-                    newClassName: "invalid-internal-link",
-                },
+        processor: unified({
+            remarkPlugins: [
+                remarkContentTags,
+                remarkModifiedTime,
+                remarkTitle,
+                remarkMath,
+                remarkBreaks,
+                [
+                    remarkWikiLink,
+                    {
+                        permalinks,
+                        pageResolver: (name) => [name.replace(/\p{punct}/gu, "").replace(/ /g, "-").toLowerCase()],
+                        hrefTemplate: (permalink) => `../notes/${permalink}`,
+                        newClassName: "invalid-internal-link",
+                    },
+                ],
             ],
-        ],
-        rehypePlugins: [
-            rehypeKatex,
-        ],
+            rehypePlugins: [
+                rehypeKatex,
+            ],
+        }),
     },
 });
