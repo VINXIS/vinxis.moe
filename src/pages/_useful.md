@@ -1,4 +1,4 @@
-<small>Small yellow text represents the last time I updated the text <br> Latest changes: Jan 23 2026</small>
+<small>Small yellow text represents the last time I updated the text <br> Latest changes: Nov 18 2026</small>
 <br>
 
 ## Swiss Army Knives
@@ -156,6 +156,7 @@ Highly recommend getting these if u touch a computer
   - Mandatory if no Windows then try [SnapX](https://github.com/SnapXL/SnapX) <small>- Nov 21 2025</small>
 - [Ezgif](https://ezgif.com/) - Absolutely goated online GIF editor with literally every gif editing feature ever **SUPER USEFUL** <small>- Oct 25 2024</small>
 - [Photopea](https://www.photopea.com) - Basically free and online Photoshop <small>- Oct 25 2024</small>
+  - [Photocraft](https://getartcraft.com/apps/photocraft) - Someone reverse-engineered and vibe-coded a Photoshop copy and put it out for free. It's absolutely insane. It is vibecoded though, but it works completely fine so... **SUPER USEFUL**<small>- Nov 18 2026</small>
 - [ffmpeg](https://ffmpeg.org) - It does images too! (Don't need ImageMagick) <small>- Oct 25 2024</small>
 - [Photomosh](https://photomosh.com) - Glitch art generation site <small>- Oct 25 2024</small>
 - [ExifTool](https://exiftool.org) - Metadata editor <small>- Oct 25 2024</small>
@@ -300,6 +301,14 @@ Highly recommend getting these if u touch a computer
 <br>
 <br>
 
+### Code Hosting
+- [GitHub](https://github.com) - Code hosting and version control platform owned by Microsoft <small>- Nov 18 2026</small>
+- [GitLab](https://gitlab.com) - Another one hosted by themselves <small>- Nov 18 2026</small>
+- [SourceHut](https://sourcehut.org) - Ze Hacker's Forge and also based <small>- Nov 18 2026</small>
+- [Codeberg](https://codeberg.org) - Another one that's based <small>- Nov 18 2026</small>
+- [git.gay](http://git.gay/) - Much tinier than the others but also epic <small>- Nov 18 2026</small>
+  - [pages.gay](https://pages.gay/) - Free static website hosting for git.gay users <small>- Nov 18 2026</small>
+
 ### Coding Resources
 - [Regex101](https://regex101.com) - Online regex tester and debugger **SUPER USEFUL** <small>- Nov 21 2025</small>
 - [DevDocs](https://devdocs.io) - Documentation for pretty much every coding language and framework <small>- Oct 25 2024</small>
@@ -327,6 +336,7 @@ Highly recommend getting these if u touch a computer
 - [Astro](https://astro.build) - Good static framework (not good for server-side/beginners) <small>- Oct 25 2024</small>
 - [Neocities](https://neocities.org) - Free web hosting and pseudo-social media site <small>- Oct 25 2024</small>
   - [Nekoweb](https://nekoweb.org/) - Neocities 2.0 <small>- Oct 25 2024</small>
+  - [pages.gay](https://pages.gay/) - Free static website hosting for [git.gay](https://git.gay/) users, haven't used it myself (yet) but potentially the best option for simple web hosting<small>- Nov 18 2026</small>
   - [GitHub Pages](https://pages.github.com) - If ur just looking for free web hosting this is probably the simplest and most reliable <small>- Oct 25 2024</small>
   - [Vercel](https://vercel.com) - Can host sites that arent static <small>- Oct 25 2024</small>
     - **NOTE:** [Vercel's CEO is a shithead AND zionist](http://archive.today/nJbVp), DO NOT PAY FOR THEIR SERVICES!!! Personally I think using their free tier is still completely fine tho since thats effectively just leeching off them <small>- Nov 21 2025</small>
